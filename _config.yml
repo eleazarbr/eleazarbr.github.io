@@ -6,13 +6,13 @@ url: "" # the base hostname & protocol for the site e.g. http://example.com
 
 author:
   name: Eleazar Resendez
-  picture: ""
+  picture: https://avatars1.githubusercontent.com/u/4369018
   twitter: eleazarbr
 
 twitter_username: eleazarbr
 github_username: eleazarbr
 
-logo: ""
+logo: https://avatars1.githubusercontent.com/u/4369018
 
 social:
   links:
