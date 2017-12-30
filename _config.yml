@@ -22,6 +22,11 @@ social:
 google_site_verification: ""
 
 markdown: kramdown
+exclude: [Gemfile, Gemfile.lock, LICENSE, README.md]
+sass:
+  style: compressed
+  sass_dir: assets/styles
+
 plugins:
   - jekyll-feed
   - jekyll-redirect-from
