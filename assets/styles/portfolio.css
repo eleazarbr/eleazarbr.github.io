@@ -89,7 +89,7 @@
 	}
 
 		a:hover {
-			color: #d64760;
+			color: #000769;
 		}
 
 	h1, h2, h3, h4, h5, h6 {
@@ -194,7 +194,7 @@
 
 	#header {
 		position: relative;
-		background: #d64760 url("images/overlay.png");
+		background: #000769 url("images/overlay.png");
 		color: #fff;
 		cursor: default;
 	}
@@ -214,10 +214,10 @@
 			}
 
 			body {
-				background-image: url("images/overlay.png"), -moz-linear-gradient(top, rgba(0, 0, 0, 0) 75%, rgba(0, 0, 0, 0.65)), url("../../images/bg.jpg");
-				background-image: url("images/overlay.png"), -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 75%, rgba(0, 0, 0, 0.65)), url("../../images/bg.jpg");
-				background-image: url("images/overlay.png"), -ms-linear-gradient(top, rgba(0, 0, 0, 0) 75%, rgba(0, 0, 0, 0.65)), url("../../images/bg.jpg");
-				background-image: url("images/overlay.png"), linear-gradient(top, rgba(0, 0, 0, 0) 75%, rgba(0, 0, 0, 0.65)), url("../../images/bg.jpg");
+				background-image: url("images/overlay.png"), -moz-linear-gradient(top, rgba(0, 0, 0, 0) 75%, rgba(0, 0, 0, 0.65)), url("../../assets/images/portfolio/bg.jpg");
+				background-image: url("images/overlay.png"), -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 75%, rgba(0, 0, 0, 0.65)), url("../../assets/images/portfolio/bg.jpg");
+				background-image: url("images/overlay.png"), -ms-linear-gradient(top, rgba(0, 0, 0, 0) 75%, rgba(0, 0, 0, 0.65)), url("../../assets/images/portfolio/bg.jpg");
+				background-image: url("images/overlay.png"), linear-gradient(top, rgba(0, 0, 0, 0) 75%, rgba(0, 0, 0, 0.65)), url("../../assets/images/portfolio/bg.jpg");
 				background-position: top left, bottom left, auto;
 				background-size: auto, 100% 100%, cover;
 				background-repeat: repeat, no-repeat, auto;
