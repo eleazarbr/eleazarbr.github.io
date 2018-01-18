@@ -1,19 +1,30 @@
 ---
 layout: default
+robots: noindex
 ---
-<main class="page--index">
-	<article>
-		<header>
-			<a class="avatar" href="https://github.com/eleazarbr">
-				<img src="{{ site.logo }}" alt="{{ site.title }}">
-			</a>
-			<h1>{{ site.title }}</h1>
-		</header>
-		
-		<p>I'm a very passionate Web Developer and Software Engineer, constantly experimenting with new technologies and striving to better as a developer and the development community as a whole. I share links on <a target="_blank" href="https://twitter.com/eleazarbr">Twitter</a> and occasionally write some coding blurbs on <a target="_blank" href="https://coderwall.com/eresendez">Coderwall</a></p>
-		
-		<footer>
-			<small><a href="{{ site.github.repository_url }}/blob/master/LICENSE">&copy; MIT {{ site.time | date: '%Y' }}</a></small>
-		</footer>
-	</article>
-</main>
+
+<div class="main-post-list">
+
+  <ol class="post-list">
+    {% for post in paginator.posts %}
+      <li>
+        <h2 class="post-list__post-title post-title"><a href="{{ site.baseurl }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h2>
+        <p class="excerpt">{{ post.excerpt | strip_html }}&hellip;</p>
+        <div class="post-list__meta">
+            <time datetime="{{ post.date | date: "%Y-%m-%d %H:%M" }}" class="post-list__meta--date date">{{ post.date | date: "%-d %b %Y" }}</time>
+            {% if post.tags.size > 0 %}
+            &#8226; <span class="post-meta__tags">on {% for tag in post.tags %}<a href="{{ site.baseurl }}/tags/#{{ tag }}">{{ tag }}</a> {% endfor %}</span>
+            {% endif %}
+        </div>
+        <hr class="post-list__divider">
+      </li>
+    {% endfor %}
+  </ol>
+
+  <hr class="post-list__divider ">
+
+  {% if paginator.previous_page or paginator.next_page %}
+      {% include pagination.html %}
+  {% endif %}
+
+</div>
