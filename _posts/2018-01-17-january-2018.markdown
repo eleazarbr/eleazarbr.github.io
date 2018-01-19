@@ -1,0 +1,10 @@
+---
+title:  "Enero 2018"
+date:   2018-01-17 15:04:23
+categories: [backend development]
+tags: [php, laravel, internet]
+---
+Ahora con 2018, en este nuevo año, planeo hacer listas mensuales de artículos interesantes relacionados con la tecnología.
+
+En marzo voy a cumplir un año como desarrollador back-end en Kuantics IT, por lo que el contenido de estos resúmenes será las tecnologías que utilizo en mi vida diaria, principalmente PHP.
+

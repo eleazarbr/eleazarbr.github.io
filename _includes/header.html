@@ -67,6 +67,16 @@
               </li>
             {% endif %}
 
+            {% if site.author.coderwall_username %}
+              <!-- Coderwall -->
+              <li class="navigation__item">
+                <a href="https://coderwall.com/{{ site.author.coderwall_username }}" title="{{ site.author.coderwall_username }} on Coderwall" target="_blank">
+                  <i class="icon icon-clipboard-pencil"></i>
+                  <span class="label">Coderwall</span>
+                </a>
+              </li>
+            {% endif %}
+
             {% if site.author.email %}
               <!-- Email -->
               <li class="navigation__item">
