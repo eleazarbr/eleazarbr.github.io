@@ -6,5 +6,31 @@ tags: [php, laravel, internet]
 ---
 Ahora con 2018, en este nuevo año, planeo hacer listas mensuales de artículos interesantes relacionados con la tecnología.
 
-En marzo voy a cumplir un año como desarrollador back-end en Kuantics IT, por lo que el contenido de estos resúmenes será las tecnologías que utilizo en mi vida diaria, principalmente PHP.
+En marzo voy a cumplir un año como desarrollador back-end en [Kuantics IT](http://www.kuantics.com/), por lo que el contenido de estos resúmenes será las tecnologías que utilizo en mi vida diaria, principalmente PHP.
 
+### Continuous Integration
+
+Me pareció muy interesante el concepto de _continuous integration_. [Aquí](https://martinfowler.com/articles/continuousIntegration.html) pueden encontrar la mejor explicación que he leído hasta ahora. En pocas palabras es:
+
+> Una práctica de desarrollo de software donde los miembros de un equipo integran su trabajo con más frecuencia, generalmente cada persona integra cambios al menos diariamente, lo que lleva a integraciones múltiples por día. 
+
+Lo anterior es referente a la nota que Edmond Lau compartió sobre [invertir en herramientas para ahorrar tiempo](http://www.effectiveengineer.com/blog/the-compounding-power-of-time-saving-tools). Para ello, ya utilizo [Buffer](https://buffer.com/app) y puedo programar el contenido de las redes sociales, después, quiero mejorar en las siguientes áreas para ahorrar más tiempo con las herramientas que utilizo día a día:
+
+1. Personalizar más Visual Studio Code para poder navegar eficientemente entre archivos y otras actividades comunes.
+2. Aprender un lenguaje como Python o Ruby, los cuales se consideran muy productivos. Asimismo, buscar y usar sus interpretes interactivos para probar rápidamente funciones.
+3. Familiarizarme con los comandos: grep, sort, uniq, awk, sed, xargs, find, etc. Para manipular datos con la terminal o ver el screencast de Jeff Way sobre [Vim](https://laracasts.com/series/vim-mastery).
+
+
+### Jekyll - Transform your plain text into static websites and blogs
+
+Hace aproximadamente un año, leí acerca de otras opciones para llevar un blog y encontré [Jekyll](https://jekyllrb.com/), ahora es el motor principal de mi sitio. 
+
+Jekyll es un _generador de páginas estáticas_ del ecosistema de Ruby, fácil de aprender y muy bien [documentado](https://jekyllrb.com/docs/home/), el producto final es simplemente HTML, JavaScript y CSS, con mucha seguridad porque no se utiliza un backend y rápido porque los datos no se extraen de ninguna base de datos.
+
+
+### E-Commerce
+
+Mientras espero a que el calendario cambie a 28 de febrero de 2018, para obtener el primer release de [GetCandy](https://getcandy.io/), una API de comercio electrónico y sistema de administración diseñado para crear tiendas, empecé a utilizar [Magento](https://magento.com/).
+
+<!-- Todo: Falta compartir los articulos -->
+<!-- Despues de leer demasiado sobre el tema, considero que es la mejor opción de sistemas open source que existen, además el stack que utiliza es de mi agrado porque es lo que he estado utilizando estos últimos años: *PHP, Zend Framework, PSR0-4, composer, HTML5, CSS3 (SASS), jQuery, Symfony, Apache, MySQL, Gulp y Twig*.  -->
