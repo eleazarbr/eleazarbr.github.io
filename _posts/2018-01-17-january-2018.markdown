@@ -1,6 +1,6 @@
 ---
 title:  "Enero 2018"
-date:   2018-01-17 15:04:23
+date:   2018-01-28 13:04:25
 categories: [backend development]
 tags: [php, laravel, internet]
 ---
@@ -8,17 +8,33 @@ Ahora con 2018, en este nuevo año, planeo hacer listas mensuales de artículos 
 
 En marzo voy a cumplir un año como desarrollador back-end en [Kuantics IT](http://www.kuantics.com/), por lo que el contenido de estos resúmenes será las tecnologías que utilizo en mi vida diaria, principalmente PHP.
 
-### Continuous Integration
+### Lecturas, artículos, noticias interesantes
 
-Me pareció muy interesante el concepto de _continuous integration_. En el siguiente enlace pueden encontrar la mejor explicación que he leído hasta ahora [Continuous Integration by Martin Fowler](https://martinfowler.com/articles/continuousIntegration.html). En pocas palabras es:
+Me pareció muy interesante el concepto de _continuous integration_. En el siguiente enlace se puede encontrar la mejor explicación que he leído hasta ahora: [Continuous Integration by Martin Fowler](https://martinfowler.com/articles/continuousIntegration.html). En pocas palabras es:
 
-> Una práctica de desarrollo de software donde los miembros de un equipo integran su trabajo con más frecuencia, generalmente cada persona integra cambios al menos diariamente, lo que lleva a integraciones múltiples por día.
+_"Una práctica de desarrollo de software donde los miembros de un equipo integran su trabajo con más frecuencia, generalmente cada persona integra cambios al menos diariamente, lo que lleva a integraciones múltiples por día"_
 
-Lo anterior es referente a la nota que Edmond Lau compartió sobre [invertir en herramientas para ahorrar tiempo](http://www.effectiveengineer.com/blog/the-compounding-power-of-time-saving-tools). 
+Lo anterior es referente a una nota que Edmond Lau compartió sobre [invertir en herramientas para ahorrar tiempo](http://www.effectiveengineer.com/blog/the-compounding-power-of-time-saving-tools). 
 
-¿Cómo se puede ahorrar más tiempo con las herramientas que se utilizan día a día?. 
+¿Cómo se puede ahorrar más tiempo con las herramientas que se utilizan día a día?
 
-En mi caso: personalizar más Visual Studio Code para poder navegar eficientemente entre archivos y otras actividades comunes, aprender un lenguaje como Python o Ruby, los cuales se consideran muy _productivos_. Asimismo, buscar y usar sus interpretes interactivos para probar funciones rápidamente. Estar familiarizado con los comandos: grep, sort, uniq, awk, sed, xargs, find, etc., para manipular datos con la terminal o ver el screencast de Jeff Way sobre [Vim](https://laracasts.com/series/vim-mastery).
+En mi caso: personalizar más `Visual Studio Code` para poder navegar eficientemente entre archivos, aprender un lenguaje como _Python o Ruby_, los cuales se consideran muy _productivos_. Asimismo, buscar y usar sus interpretes interactivos para probar funciones rápidamente, estar familiarizado con los comandos: **grep, sort, uniq, awk, sed, xargs, find**, etc., para manipular datos con la terminal o ver el screencast de Jeff Way sobre [Vim](https://laracasts.com/series/vim-mastery).
+
+Me gustó la siguiente respuesta en StackOverflow a la pregunta: [Insert new item in array on any position in PHP](https://stackoverflow.com/a/3797526/6456709). `array_splice` remueve una porción del arreglo y la reemplaza con algo más. [PHP manual: array_splice](http://php.net/manual/en/function.array-splice.php).
+
+Igualmente: [How to get everything after a certain character?](https://stackoverflow.com/questions/11405493/how-to-get-everything-after-a-certain-character/47468908#47468908), para obtener algo que se encuentra después de un delimitador. Existen muchas alternativas como usar una expresión regular, pero me fue útil la función `strtok`.
+
+[Oh shit, git!](http://ohshitgit.com/), cuando arruinamos algo en `git` es difícil reparar el problema, a menos que conozcamos el nombre de lo que necesitamos saber para solucionar el problema. 
+
+También, como recurso de aprendizaje me gustó mucho [Save your Code Revisions Forever with Git](https://www.freecodecamp.org/challenges/save-your-code-revisions-forever-with-git) de [freeCodeCamp](http://freecodecamp.org/), un reto recomendado para aprender más sobre `git`.
+
+[Keeping Parts of Your Codebase Private on GitHub](https://24ways.org/2013/keeping-parts-of-your-codebase-private-on-github/), en este post de Harry Roberts se expone como mantener privadas algunas partes de nuestros proyectos para nosotros mismos, creando repositorios privados.
+
+Acerca de la versión más reciente de PHP 7, **PHP 7.2**, todas las características nuevas se pueden encontrar en la RFC de PHP 7.2. Lo más notable a mencionar es:
+
+- Hashing de contraseña con Argon2
+- Eliminación de la extensión MCrypt del núcleo
+- [El primer lenguaje de programación en agregar criptografía moderna a su biblioteca estándar](https://dev.to/paragonie/php-72-the-first-programming-language-to-add-modern-cryptography-to-its-standard-library)
 
 ### Jekyll - Transform your plain text into static websites and blogs
 
@@ -30,5 +46,14 @@ Jekyll es un _generador de páginas estáticas_ del ecosistema de Ruby, fácil d
 
 Mientras espero a que el calendario cambie a 28 de febrero de 2018, para obtener el primer release de [GetCandy](https://getcandy.io/), una API de comercio electrónico y sistema de administración diseñado para crear tiendas, empezaré a utilizar [Magento 2.2](https://magento.com/).
 
-<!-- Todo: Falta compartir los articulos -->
-<!-- Despues de leer demasiado sobre el tema, considero que es la mejor opción de sistemas open source que existen, además el stack que utiliza es de mi agrado porque es lo que he estado utilizando estos últimos años: *PHP, Zend Framework, PSR0-4, composer, HTML5, CSS3 (SASS), jQuery, Symfony, Apache, MySQL, Gulp y Twig*.  -->
+Magento es una plataforma de código abierto, funciona en la mayoria de hosting, su stack es de mi agrado: **PHP, Zend framework, PSR 0-1, composer, Symfony,** etc. Magento 2 trabaja con MySQL 5.6, mientras que Magento 1 con MySQL 5.5 y puede funcionar con 5.6.
+
+### E-Learning
+
+Acerca de LMS (plataformas de e-Learning), entre [Teacheable](https://teachable.com/) y [Udemy](https://www.udemy.com/), ambas son plataformas similares para vender un curso, la diferencia esta en si tenemos un trafico o una lista de emails, entonces es mejor utilizar Teachable, de lo contrario aprovechar la base de usuarios que tiene Udemy. Otra alternativa es [Zenler](https://www.zenler.com/).
+
+
+### Favourite coding music
+
+[Canon in D Major, P.37](https://open.spotify.com/track/6A6vSsLkXoTJZ8cA4vtznl)
+
