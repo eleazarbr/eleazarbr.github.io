@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2018-07-10T18:10:47-05:00</updated><id>/</id><title type="html">Eleazar Resendez</title><subtitle>Web developer and Software Engineer</subtitle><entry><title type="html">Enero 2018</title><link href="/january-2018" rel="alternate" type="text/html" title="Enero 2018" /><published>2018-01-28T07:04:25-06:00</published><updated>2018-01-28T07:04:25-06:00</updated><id>/january-2018</id><content type="html" xml:base="/january-2018">&lt;p&gt;Ahora con 2018, en este nuevo año, planeo hacer listas mensuales de artículos interesantes relacionados con la tecnología.&lt;/p&gt;
+
+&lt;p&gt;En marzo voy a cumplir un año como desarrollador back-end en &lt;a href=&quot;http://www.kuantics.com/&quot;&gt;Kuantics IT&lt;/a&gt;, por lo que el contenido de estos resúmenes será las tecnologías que utilizo en mi vida diaria, principalmente PHP.&lt;/p&gt;
+
+&lt;h3 id=&quot;lecturas-artículos-noticias-interesantes&quot;&gt;Lecturas, artículos, noticias interesantes&lt;/h3&gt;
+
+&lt;p&gt;Me pareció muy interesante el concepto de &lt;em&gt;continuous integration&lt;/em&gt;. En el siguiente enlace se puede encontrar la mejor explicación que he leído hasta ahora: &lt;a href=&quot;https://martinfowler.com/articles/continuousIntegration.html&quot;&gt;Continuous Integration by Martin Fowler&lt;/a&gt;. En pocas palabras es:&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;“Una práctica de desarrollo de software donde los miembros de un equipo integran su trabajo con más frecuencia, generalmente cada persona integra cambios al menos diariamente, lo que lleva a integraciones múltiples por día”&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Lo anterior es referente a una nota que Edmond Lau compartió sobre &lt;a href=&quot;http://www.effectiveengineer.com/blog/the-compounding-power-of-time-saving-tools&quot;&gt;invertir en herramientas para ahorrar tiempo&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;¿Cómo se puede ahorrar más tiempo con las herramientas que se utilizan día a día?&lt;/p&gt;
+
+&lt;p&gt;En mi caso: personalizar más &lt;code class=&quot;highlighter-rouge&quot;&gt;Visual Studio Code&lt;/code&gt; para poder navegar eficientemente entre archivos, aprender un lenguaje como &lt;em&gt;Python o Ruby&lt;/em&gt;, los cuales se consideran muy &lt;em&gt;productivos&lt;/em&gt;. Asimismo, buscar y usar sus interpretes interactivos para probar funciones rápidamente, estar familiarizado con los comandos: &lt;strong&gt;grep, sort, uniq, awk, sed, xargs, find&lt;/strong&gt;, etc., para manipular datos con la terminal o ver el screencast de Jeff Way sobre &lt;a href=&quot;https://laracasts.com/series/vim-mastery&quot;&gt;Vim&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Me gustó la siguiente respuesta en StackOverflow a la pregunta: &lt;a href=&quot;https://stackoverflow.com/a/3797526/6456709&quot;&gt;Insert new item in array on any position in PHP&lt;/a&gt;. &lt;code class=&quot;highlighter-rouge&quot;&gt;array_splice&lt;/code&gt; remueve una porción del arreglo y la reemplaza con algo más. &lt;a href=&quot;http://php.net/manual/en/function.array-splice.php&quot;&gt;PHP manual: array_splice&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Igualmente: &lt;a href=&quot;https://stackoverflow.com/questions/11405493/how-to-get-everything-after-a-certain-character/47468908#47468908&quot;&gt;How to get everything after a certain character?&lt;/a&gt;, para obtener algo que se encuentra después de un delimitador. Existen muchas alternativas como usar una expresión regular, pero me fue útil la función &lt;code class=&quot;highlighter-rouge&quot;&gt;strtok&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://ohshitgit.com/&quot;&gt;Oh shit, git!&lt;/a&gt;, cuando arruinamos algo en &lt;code class=&quot;highlighter-rouge&quot;&gt;git&lt;/code&gt; es difícil reparar el problema, a menos que conozcamos el nombre de lo que necesitamos saber para solucionar el problema.&lt;/p&gt;
+
+&lt;p&gt;También, como recurso de aprendizaje me gustó mucho &lt;a href=&quot;https://www.freecodecamp.org/challenges/save-your-code-revisions-forever-with-git&quot;&gt;Save your Code Revisions Forever with Git&lt;/a&gt; de &lt;a href=&quot;http://freecodecamp.org/&quot;&gt;freeCodeCamp&lt;/a&gt;, un reto recomendado para aprender más sobre &lt;code class=&quot;highlighter-rouge&quot;&gt;git&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://24ways.org/2013/keeping-parts-of-your-codebase-private-on-github/&quot;&gt;Keeping Parts of Your Codebase Private on GitHub&lt;/a&gt;, en este post de Harry Roberts se expone como mantener privadas algunas partes de nuestros proyectos para nosotros mismos, creando repositorios privados.&lt;/p&gt;
+
+&lt;p&gt;Acerca de la versión más reciente de PHP 7, &lt;strong&gt;PHP 7.2&lt;/strong&gt;, todas las características nuevas se pueden encontrar en la RFC de PHP 7.2. Lo más notable a mencionar es:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Hashing de contraseña con Argon2&lt;/li&gt;
+  &lt;li&gt;Eliminación de la extensión MCrypt del núcleo&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://dev.to/paragonie/php-72-the-first-programming-language-to-add-modern-cryptography-to-its-standard-library&quot;&gt;El primer lenguaje de programación en agregar criptografía moderna a su biblioteca estándar&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;jekyll---transform-your-plain-text-into-static-websites-and-blogs&quot;&gt;Jekyll - Transform your plain text into static websites and blogs&lt;/h3&gt;
+
+&lt;p&gt;Hace aproximadamente un año, leí acerca de otras opciones para llevar un blog y encontré &lt;a href=&quot;https://jekyllrb.com/&quot;&gt;Jekyll&lt;/a&gt;, ahora es el motor principal de este sitio.&lt;/p&gt;
+
+&lt;p&gt;Jekyll es un &lt;em&gt;generador de páginas estáticas&lt;/em&gt; del ecosistema de Ruby, fácil de aprender y muy bien &lt;a href=&quot;https://jekyllrb.com/docs/home/&quot;&gt;documentado&lt;/a&gt;, el producto final es simplemente HTML, JavaScript y CSS, con mucha seguridad porque no se utiliza un backend y rápido porque los datos no se extraen de ninguna base de datos.&lt;/p&gt;
+
+&lt;h3 id=&quot;e-commerce&quot;&gt;E-Commerce&lt;/h3&gt;
+
+&lt;p&gt;Mientras espero a que el calendario cambie a 28 de febrero de 2018, para obtener el primer release de &lt;a href=&quot;https://getcandy.io/&quot;&gt;GetCandy&lt;/a&gt;, una API de comercio electrónico y sistema de administración diseñado para crear tiendas, empezaré a utilizar &lt;a href=&quot;https://magento.com/&quot;&gt;Magento 2.2&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Magento es una plataforma de código abierto, funciona en la mayoria de hosting, su stack es de mi agrado: &lt;strong&gt;PHP, Zend framework, PSR 0-1, composer, Symfony,&lt;/strong&gt; etc. Magento 2 trabaja con MySQL 5.6, mientras que Magento 1 con MySQL 5.5 y puede funcionar con 5.6.&lt;/p&gt;
+
+&lt;h3 id=&quot;e-learning&quot;&gt;E-Learning&lt;/h3&gt;
+
+&lt;p&gt;Acerca de LMS (plataformas de e-Learning), entre &lt;a href=&quot;https://teachable.com/&quot;&gt;Teacheable&lt;/a&gt; y &lt;a href=&quot;https://www.udemy.com/&quot;&gt;Udemy&lt;/a&gt;, ambas son plataformas similares para vender un curso, la diferencia esta en si tenemos un trafico o una lista de emails, entonces es mejor utilizar Teachable, de lo contrario aprovechar la base de usuarios que tiene Udemy. Otra alternativa es &lt;a href=&quot;https://www.zenler.com/&quot;&gt;Zenler&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h3 id=&quot;favourite-coding-music&quot;&gt;Favourite coding music&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://open.spotify.com/track/6A6vSsLkXoTJZ8cA4vtznl&quot;&gt;Canon in D Major, P.37&lt;/a&gt;&lt;/p&gt;</content><author><name>Eleazar Resendez</name></author><summary type="html">Ahora con 2018, en este nuevo año, planeo hacer listas mensuales de artículos interesantes relacionados con la tecnología.</summary></entry></feed>
