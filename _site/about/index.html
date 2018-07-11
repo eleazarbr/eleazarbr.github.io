@@ -52,27 +52,27 @@
     <meta property="og:image:height" content="933" />
 
     <script type="application/ld+json">
-{
-    "@context": "https://schema.org",
-    "@type": "Website",
-    "publisher": {
-        "@type": "Organization",
-        "name": "Eleazar Resendez",
-        "logo": "/"
-    },
-    "url": "/about/",
-    "image": {
-        "@type": "ImageObject",
-        "url": "/assets/images/blog-cover.jpg",
-        "width": 2000,
-        "height": 666
-    },
-    "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "/about/"
-    },
-    "description": "Ghost is professional publishing platform designed for modern journalism. This is a demo site of a basic Ghost install to give you a general sense of what a new Ghost site looks like when set up for the first time. > If you'd like to set up a site like"
-}
+    {
+        "@context": "https://schema.org",
+        "@type": "Website",
+        "publisher": {
+            "@type": "Organization",
+            "name": "Eleazar Resendez",
+            "logo": "/"
+        },
+        "url": "/about/",
+        "image": {
+            "@type": "ImageObject",
+            "url": "/assets/images/blog-cover.jpg",
+            "width": 2000,
+            "height": 666
+        },
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "/about/"
+        },
+        "description": "Ghost is professional publishing platform designed for modern journalism. This is a demo site of a basic Ghost install to give you a general sense of what a new Ghost site looks like when set up for the first time. > If you'd like to set up a site like"
+    }
     </script>
 
     <meta name="generator" content="Jekyll 3.6.2" />
@@ -101,8 +101,8 @@ into the {body} of the default.hbs template -->
         
             <ul class="nav" role="menu">
     <li class="nav-home" role="menuitem"><a href="/">Home</a></li>
+    <li class="nav-getting-started" role="menuitem"><a href="/tag/projects/">Work</a></li>
     <!-- <li class="nav-about" role="menuitem"><a href="/about/">About</a></li> -->
-    <!-- <li class="nav-getting-started" role="menuitem"><a href="/tag/getting-started/">Getting Started</a></li> -->
     <!-- <li class="nav-try-ghost" role="menuitem"><a href="https://ghost.org">Try Ghost</a></li> -->
 </ul>
 
@@ -150,8 +150,6 @@ into the {body} of the default.hbs template -->
 </a>
             
         </div>
-        
-            <a class="subscribe-button" href="#subscribe">Subscribe</a>
         
     </div>
 </nav>
@@ -226,25 +224,6 @@ $(function() {
     </div>
 
     <!-- The big email subscribe modal content -->
-    
-        <div id="subscribe" class="subscribe-overlay">
-            <a class="subscribe-overlay-close" href="#"></a>
-            <div class="subscribe-overlay-content">
-                
-                <h1 class="subscribe-overlay-title">Subscribe to Eleazar Resendez</h1>
-                <p class="subscribe-overlay-description">Stay up to date! Get all the latest &amp; greatest posts delivered straight to your inbox</p>
-                <form method="post" action="/subscribe/" class="">
-    <input class="confirm" type="hidden" name="confirm"  /><input class="location" type="hidden" name="location"  /><input class="referrer" type="hidden" name="referrer"  />
-
-    <div class="form-group">
-        <input class="subscribe-email" type="email" name="email"  placeholder="youremail@example.com" />
-    </div>
-    <button class="" type="submit" disabled><span>Subscribe</span></button>
-    <script type="text/javascript">(function(g,h,o,s,t){h[o]('.location')[s]=h[o]('.location')[s] || g.location.href;h[o]('.referrer')[s]=h[o]('.referrer')[s] || h.referrer;})(window,document,'querySelector','value');</script>
-</form>
-
-            </div>
-        </div>
     
 
     <!-- highlight.js -->

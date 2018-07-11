@@ -25,7 +25,7 @@ Herramientas usadas en este proyecto:
 
 Para este proyecto se utilizó CSS plano porque es el tema principal en las lecciones de freeCodeCamp, excluyendo el uso de jQuery, React, Angular y Vue.
 
-A continuación se puede observar el HTML final:
+A continuación, el HTML final:
 
 ```html
 <h1 id="title">Survey Form</h1>
