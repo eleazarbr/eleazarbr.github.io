@@ -1,4 +1,24 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2018-07-10T18:10:47-05:00</updated><id>/</id><title type="html">Eleazar Resendez</title><subtitle>Web developer and Software Engineer</subtitle><entry><title type="html">Enero 2018</title><link href="/january-2018" rel="alternate" type="text/html" title="Enero 2018" /><published>2018-01-28T07:04:25-06:00</published><updated>2018-01-28T07:04:25-06:00</updated><id>/january-2018</id><content type="html" xml:base="/january-2018">&lt;p&gt;Ahora con 2018, en este nuevo año, planeo hacer listas mensuales de artículos interesantes relacionados con la tecnología.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2018-07-11T13:41:03-05:00</updated><id>/</id><title type="html">Eleazar Resendez</title><subtitle>Web developer and Software Engineer</subtitle><entry><title type="html">Responsive Web Design Projects - Build a Survey Form</title><link href="/project-survey-form" rel="alternate" type="text/html" title="Responsive Web Design Projects - Build a Survey Form" /><published>2018-07-11T04:04:01-05:00</published><updated>2018-07-11T04:04:01-05:00</updated><id>/project-survey-form</id><content type="html" xml:base="/project-survey-form">&lt;p&gt;Objetivo: Construir una app en &lt;a href=&quot;https://codepen.io/#&quot;&gt;CodePen.io&lt;/a&gt; con una funcionalidad similar a: &lt;a href=&quot;https://codepen.io/freeCodeCamp/full/VPaoNP&quot;&gt;https://codepen.io/freeCodeCamp/full/VPaoNP&lt;/a&gt;.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;URL del proyecto: &lt;a href=&quot;https://codepen.io/eleazarbr/pen/jpEpoB&quot;&gt;Build a Survery Form&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Estado: &lt;strong&gt;En progreso&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Herramientas usadas en este proyecto:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;HTML&lt;/li&gt;
+  &lt;li&gt;Javascript&lt;/li&gt;
+  &lt;li&gt;CSS&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Para este proyecto se utilizó CSS plano porque es el tema principal en las lecciones de freeCodeCamp, excluyendo el uso de jQuery, React, Angular y Vue.&lt;/p&gt;
+
+&lt;p&gt;A continuación se puede observar el HTML final:&lt;/p&gt;
+
+&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;h1&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;id=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;title&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;Survey Form&lt;span class=&quot;nt&quot;&gt;&amp;lt;/h1&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>Eleazar Resendez</name></author><category term="Computer Science" /><category term="Frontend" /><summary type="html">Objetivo: Construir una app en CodePen.io con una funcionalidad similar a: https://codepen.io/freeCodeCamp/full/VPaoNP.</summary></entry><entry><title type="html">Enero 2018</title><link href="/january-2018" rel="alternate" type="text/html" title="Enero 2018" /><published>2018-01-28T07:04:25-06:00</published><updated>2018-01-28T07:04:25-06:00</updated><id>/january-2018</id><content type="html" xml:base="/january-2018">&lt;p&gt;Ahora con 2018, en este nuevo año, planeo hacer listas mensuales de artículos interesantes relacionados con la tecnología.&lt;/p&gt;
 
 &lt;p&gt;En marzo voy a cumplir un año como desarrollador back-end en &lt;a href=&quot;http://www.kuantics.com/&quot;&gt;Kuantics IT&lt;/a&gt;, por lo que el contenido de estos resúmenes será las tecnologías que utilizo en mi vida diaria, principalmente PHP.&lt;/p&gt;
 
