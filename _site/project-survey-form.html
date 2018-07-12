@@ -190,8 +190,8 @@ into the {body} of the default.hbs template -->
                     <span class="date-divider">/</span>
 					
 					
-						1 min read
-					
+					    2 mins read
+                    
                 </section>
                 <h1 class="post-full-title">Responsive Web Design Projects - Build a Survey Form</h1>
             </header>
@@ -221,11 +221,56 @@ into the {body} of the default.hbs template -->
 
 <p>Para este proyecto se utilizó CSS plano porque es el tema principal en las lecciones de freeCodeCamp, excluyendo el uso de jQuery, React, Angular y Vue.</p>
 
-<p>A continuación, el HTML final:</p>
+<p>A continuación, un progreso del HTML:</p>
 
-<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;h1</span> <span class="na">id=</span><span class="s">"title"</span><span class="nt">&gt;</span>Survey Form<span class="nt">&lt;/h1&gt;</span>
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	<span class="nt">&lt;h1</span> <span class="na">id=</span><span class="s">"title"</span><span class="nt">&gt;</span>Survey Form<span class="nt">&lt;/h1&gt;</span>
+	<span class="nt">&lt;p</span> <span class="na">id=</span><span class="s">"description"</span><span class="nt">&gt;</span>
+		Thanks for your time, I'm doing some research on 
+		"people between 20 and 35 have desire to hire a dessert table for events". 
+		Before we start, can you tell me a bit about yourself?
+	<span class="nt">&lt;/p&gt;</span>
+	<span class="nt">&lt;form</span> <span class="na">id=</span><span class="s">"survey-form"</span><span class="nt">&gt;</span>
+		<span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"name"</span> <span class="na">id=</span><span class="s">"name-label"</span><span class="nt">&gt;</span> * Name <span class="nt">&lt;/label&gt;</span>
+		<span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">name=</span><span class="s">"name"</span> <span class="na">id=</span><span class="s">"name"</span> <span class="na">placeholder=</span><span class="s">"Enter your name"</span> <span class="na">required</span> <span class="na">autofocus</span><span class="nt">&gt;</span>
+		<span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"email"</span> <span class="na">id=</span><span class="s">"email-label"</span><span class="nt">&gt;</span> * Email <span class="nt">&lt;/label&gt;</span>
+		<span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"email"</span> <span class="na">name=</span><span class="s">"email"</span> <span class="na">id=</span><span class="s">"email"</span> <span class="na">placeholder=</span><span class="s">"Enter your email"</span> <span class="na">required</span><span class="nt">&gt;</span>
+		<span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"age"</span> <span class="na">id=</span><span class="s">"age-label"</span><span class="nt">&gt;</span> * Age <span class="nt">&lt;/label&gt;</span>
+		<span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"number"</span> <span class="na">name=</span><span class="s">"age"</span> <span class="na">id=</span><span class="s">"number"</span> <span class="na">min=</span><span class="s">"20"</span> <span class="na">max=</span><span class="s">"35"</span> <span class="na">placeholder=</span><span class="s">"You must be between 20 and 35 :)"</span><span class="nt">&gt;</span>
+
+		<span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"question-1"</span><span class="nt">&gt;</span>
+			When was the last time you hired a dessert table?
+		<span class="nt">&lt;/label&gt;</span>
+		<span class="nt">&lt;select</span> <span class="na">id=</span><span class="s">"dropdown"</span> <span class="na">name=</span><span class="s">"question-1"</span><span class="nt">&gt;</span>
+			<span class="nt">&lt;option&gt;</span>Since 1 to 3 months<span class="nt">&lt;/option&gt;</span>
+			<span class="nt">&lt;option&gt;</span>Since 3 to 6 months  <span class="nt">&lt;/option&gt;</span>
+			<span class="nt">&lt;option&gt;</span>Since 6 months<span class="nt">&lt;/option&gt;</span>
+		<span class="nt">&lt;/select&gt;</span>
+
+		<span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"question-2"</span><span class="nt">&gt;</span>
+			What’s the biggest challenge you face when hiring a dessert table?
+		<span class="nt">&lt;/label&gt;</span>
+		<span class="nt">&lt;textarea</span> <span class="na">id=</span><span class="s">"question-2"</span> <span class="na">name=</span><span class="s">"question-2"</span><span class="nt">&gt;&lt;/textarea&gt;</span>
+
+		<span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"question-3"</span><span class="nt">&gt;</span>
+			Why is this a problem for you?
+		<span class="nt">&lt;/label&gt;</span>
+		<span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">id=</span><span class="s">"question-3"</span> <span class="na">name=</span><span class="s">"quesiton-3"</span><span class="nt">&gt;</span>
+		<span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"question-4"</span><span class="nt">&gt;</span>
+			How often does this happen?
+			<span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">name=</span><span class="s">"rarely"</span><span class="nt">&gt;</span>Rarely
+			<span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">name=</span><span class="s">"occasionally"</span><span class="nt">&gt;</span>Occasionally
+			<span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">name=</span><span class="s">"very-often"</span><span class="nt">&gt;</span>Very often
+		<span class="nt">&lt;/label&gt;</span>
+	<span class="nt">&lt;/form&gt;</span>
 </code></pre></div></div>
 
+<p>Hasta el momento, es una simple encuesta para probar una hipotesis cualquiera, para conocer si las personas tienen ese problema.</p>
+
+<blockquote>
+  <p>Personas entre 20 y 35 años tienen el deseo de contratar una mesa de postres</p>
+</blockquote>
+
+<!-- Puedes contestar la encuesta en [ingles](#) o en [español](#). -->
 
                 </div> 
             </section>
