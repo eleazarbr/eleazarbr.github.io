@@ -69,7 +69,7 @@ A continuación, un progreso del HTML:
 	</form>
 ```
 
-Hasta el momento, es una simple encuesta para probar una hipotesis cualquiera, para conocer si las personas tienen ese problema.
+Hasta el momento, es una simple encuesta para probar una hipótesis cualquiera y conocer si las personas tienen ese problema.
 
 > Personas entre 20 y 35 años tienen el deseo de contratar una mesa de postres
 

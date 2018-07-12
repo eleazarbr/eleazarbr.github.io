@@ -1,0 +1,61 @@
+---
+layout: post
+current: post
+cover: assets/images/cover/darts.jpg
+navigation: True
+title: ¿Las metas son efectivas?
+date: 2018-07-12
+tags: [Business, Goals]
+class: post-template
+subclass: 'post'
+author: eleazar
+---
+
+Respuesta corta: si.
+
+Las metas son efectivas si se utilizan los principios de la formula *SMART* y serán efectivas si son llevadas a la acción, si se aprende en el proceso y se mejora hasta alcanzar la meta.
+
+Las metas correctas permiten:
+
+- Tener una dirección clara en nuestra mente
+- Evitar la procastinación
+- Saber decir no y enfocarse en lo que realmente es importante
+- Ser medibles para conocer el progreso, ajustarlo, celebrarlo, aprender o cambiar.
+
+Los principios SMART proveen un _framework_ para asegurarse de dar a las metas una correcta estructura.
+
+SMART representa:
+
+**Specific**: Las metas deben establecer exactamente lo que se debe alcanzar. Evitar las metas generales.
+
+**Measurable**: Son medibles. Saber que existe una fecha limite ayuda a ajustar los objetivos necesarios para lograr la meta.
+
+**Assignable**: ¿Quien es la persona responsable del éxito o fracaso de la meta?
+
+**Realistic**: Las metas son realistas, basadas en nuestra situación actual, con los recursos que disponemos (incluyendo el tiempo) y que tan importante es para uno mismo.
+
+![Smart Goals Principles]({{ "/assets/images/blog-content/are-goals-effective.jpg" | relative_url }})
+
+## Ejemplo pŕactico
+
+De acuerdo al [Top ten New Year’s resolutions](https://www.finder.com.au/top-10-new-years-resolutions), el próposito número 1 de año nuevo es: *"Mejorar el estado físico"*.
+
+Mejorar el estado físico no dice nada. No aclara de que forma se va a mejorar el estado físico, ni en cuanto tiempo se piensa lograr, ni cuando empezar. 
+
+_"Yo subiré 10 kilos (en masa muscular) en tres meses"_
+
+Ahora, la meta anterior es:
+
+**Especifica**: da claridad en cuantos kilos debe subir.
+
+**Medible**: se debe subir 10 kilos para lograr la meta, el progreso es medible y se puede ajustar objetivamente.
+
+**Asignable**: La meta esta asignada a uno mismo.
+
+**Realista**: No sé si tres meses sea realista pero creo que tendrá que comer mucho más y mejor.
+
+![Smart Goals Sample]({{ "/assets/images/blog-content/goals-sample.jpg" | relative_url }})
+
+Finalmente, a partir de una meta, se crean pequeños objetivos o plan de acción para emprender el camino a su realización.
+
+> [Original Question: Quora - Are goals effective?](https://www.quora.com/Are-goals-effective)

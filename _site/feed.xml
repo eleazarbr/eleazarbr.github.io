@@ -1,4 +1,55 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2018-07-12T12:09:11-05:00</updated><id>/</id><title type="html">Eleazar Resendez</title><subtitle>Web developer and Software Engineer</subtitle><entry><title type="html">Responsive Web Design Projects - Build a Survey Form</title><link href="/project-survey-form" rel="alternate" type="text/html" title="Responsive Web Design Projects - Build a Survey Form" /><published>2018-07-11T04:04:01-05:00</published><updated>2018-07-11T04:04:01-05:00</updated><id>/project-survey-form</id><content type="html" xml:base="/project-survey-form">&lt;p&gt;Objetivo: Construir una app en &lt;a href=&quot;https://codepen.io/#&quot;&gt;CodePen.io&lt;/a&gt; con una funcionalidad similar a: &lt;a href=&quot;https://codepen.io/freeCodeCamp/full/VPaoNP&quot;&gt;https://codepen.io/freeCodeCamp/full/VPaoNP&lt;/a&gt;.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2018-07-12T16:52:32-05:00</updated><id>/</id><title type="html">Eleazar Resendez</title><subtitle>Web developer and Software Engineer</subtitle><entry><title type="html">¿Las metas son efectivas?</title><link href="/are-goals-effective" rel="alternate" type="text/html" title="¿Las metas son efectivas?" /><published>2018-07-12T00:00:00-05:00</published><updated>2018-07-12T00:00:00-05:00</updated><id>/are-goals-effective</id><content type="html" xml:base="/are-goals-effective">&lt;p&gt;Respuesta corta: si.&lt;/p&gt;
+
+&lt;p&gt;Las metas son efectivas si se utilizan los principios de la formula &lt;em&gt;SMART&lt;/em&gt; y serán efectivas si son llevadas a la acción, si se aprende en el proceso y se mejora hasta alcanzar la meta.&lt;/p&gt;
+
+&lt;p&gt;Las metas correctas permiten:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Tener una dirección clara en nuestra mente&lt;/li&gt;
+  &lt;li&gt;Evitar la procastinación&lt;/li&gt;
+  &lt;li&gt;Saber decir no y enfocarse en lo que realmente es importante&lt;/li&gt;
+  &lt;li&gt;Ser medibles para conocer el progreso, ajustarlo, celebrarlo, aprender o cambiar.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Los principios SMART proveen un &lt;em&gt;framework&lt;/em&gt; para asegurarse de dar a las metas una correcta estructura.&lt;/p&gt;
+
+&lt;p&gt;SMART representa:&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Specific&lt;/strong&gt;: Las metas deben establecer exactamente lo que se debe alcanzar. Evitar las metas generales.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Measurable&lt;/strong&gt;: Son medibles. Saber que existe una fecha limite ayuda a ajustar los objetivos necesarios para lograr la meta.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Assignable&lt;/strong&gt;: ¿Quien es la persona responsable del éxito o fracaso de la meta?&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Realistic&lt;/strong&gt;: Las metas son realistas, basadas en nuestra situación actual, con los recursos que disponemos (incluyendo el tiempo) y que tan importante es para uno mismo.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/blog-content/are-goals-effective.jpg&quot; alt=&quot;Smart Goals Principles&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;ejemplo-pŕactico&quot;&gt;Ejemplo pŕactico&lt;/h2&gt;
+
+&lt;p&gt;De acuerdo al &lt;a href=&quot;https://www.finder.com.au/top-10-new-years-resolutions&quot;&gt;Top ten New Year’s resolutions&lt;/a&gt;, el próposito número 1 de año nuevo es: &lt;em&gt;“Mejorar el estado físico”&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;Mejorar el estado físico no dice nada. No aclara de que forma se va a mejorar el estado físico, ni en cuanto tiempo se piensa lograr, ni cuando empezar.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;“Yo subiré 10 kilos (en masa muscular) en tres meses”&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Ahora, la meta anterior es:&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Especifica&lt;/strong&gt;: da claridad en cuantos kilos debe subir.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Medible&lt;/strong&gt;: se debe subir 10 kilos para lograr la meta, el progreso es medible y se puede ajustar objetivamente.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Asignable&lt;/strong&gt;: La meta esta asignada a uno mismo.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Realista&lt;/strong&gt;: No sé si tres meses sea realista pero creo que tendrá que comer mucho más y mejor.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/images/blog-content/goals-sample.jpg&quot; alt=&quot;Smart Goals Sample&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Finalmente, a partir de una meta, se crean pequeños objetivos o plan de acción para emprender el camino a su realización.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;a href=&quot;https://www.quora.com/Are-goals-effective&quot;&gt;Original Question: Quora - Are goals effective?&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;</content><author><name>Eleazar Resendez</name></author><category term="Business" /><category term="Goals" /><summary type="html">Respuesta corta: si.</summary></entry><entry><title type="html">Responsive Web Design Projects - Build a Survey Form</title><link href="/project-survey-form" rel="alternate" type="text/html" title="Responsive Web Design Projects - Build a Survey Form" /><published>2018-07-11T04:04:01-05:00</published><updated>2018-07-11T04:04:01-05:00</updated><id>/project-survey-form</id><content type="html" xml:base="/project-survey-form">&lt;p&gt;Objetivo: Construir una app en &lt;a href=&quot;https://codepen.io/#&quot;&gt;CodePen.io&lt;/a&gt; con una funcionalidad similar a: &lt;a href=&quot;https://codepen.io/freeCodeCamp/full/VPaoNP&quot;&gt;https://codepen.io/freeCodeCamp/full/VPaoNP&lt;/a&gt;.&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;URL del proyecto (editor view): &lt;a href=&quot;https://codepen.io/eleazarbr/pen/jpEpoB&quot;&gt;@eleazarbr ~ Build a Survey Form&lt;/a&gt;&lt;/li&gt;
@@ -59,7 +110,7 @@
 	&lt;span class=&quot;nt&quot;&gt;&amp;lt;/form&amp;gt;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;Hasta el momento, es una simple encuesta para probar una hipotesis cualquiera, para conocer si las personas tienen ese problema.&lt;/p&gt;
+&lt;p&gt;Hasta el momento, es una simple encuesta para probar una hipótesis cualquiera y conocer si las personas tienen ese problema.&lt;/p&gt;
 
 &lt;blockquote&gt;
   &lt;p&gt;Personas entre 20 y 35 años tienen el deseo de contratar una mesa de postres&lt;/p&gt;
