@@ -13,7 +13,7 @@ author: eleazar
 
 Respuesta corta: si.
 
-Las metas son efectivas si se utilizan los principios de la formula *SMART* y serán efectivas si son llevadas a la acción, si se aprende en el proceso y se mejora hasta alcanzar la meta.
+Las metas son efectivas si se utilizan junto a los principios de la fórmula *SMART* y si son llevadas a la acción. Entonces, se puede aprender en el proceso y mejorar si es necesario hasta alcanzar la meta.
 
 Las metas correctas permiten:
 

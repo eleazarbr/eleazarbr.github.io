@@ -26,6 +26,8 @@ twitter: eleazarbr # replace by your username
 facebook: eleazarbrr # replace by your username
 github: eleazarbr # replace by your username
 youtube: eleazarbr # replace by your username
+linkedin: eleazarbr # replace by your username
+instagram: eleazarbr # replace by your username
 
 # Disqus
 disqus: True
@@ -43,7 +45,6 @@ permalink: /:title
 # Tags' info in `_data/tags_info.yml`
 
 # gems and other configs
-destination: _site
 plugins: [jekyll-paginate, jekyll-feed]
 
 feed:
@@ -72,8 +73,8 @@ lsi: False
 username: eleazarbr
 repo: eleazarbr.github.io
 branch: master
-relative_source: ../jasper2/
-destination: ../jasper2-pages/
+relative_source: _site
+destination: _site
 production_url:  https://eresendez.com/
 source_url:  https://github.com/eleazarbr/eleazarbr.github.io/
 
