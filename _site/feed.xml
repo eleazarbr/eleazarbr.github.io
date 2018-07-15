@@ -1,4 +1,37 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2018-07-13T16:44:04-05:00</updated><id>/</id><title type="html">Eleazar Resendez</title><subtitle>Web developer and Software Engineer</subtitle><entry><title type="html">¿Las metas son efectivas?</title><link href="/are-goals-effective" rel="alternate" type="text/html" title="¿Las metas son efectivas?" /><published>2018-07-12T00:00:00-05:00</published><updated>2018-07-12T00:00:00-05:00</updated><id>/are-goals-effective</id><content type="html" xml:base="/are-goals-effective">&lt;p&gt;Respuesta corta: si.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2018-07-14T23:20:42-05:00</updated><id>/</id><title type="html">Eleazar Resendez</title><subtitle>Web developer and Software Engineer</subtitle><entry><title type="html">Cómo usar ingeniería inversa para alcanzar metas</title><link href="/reach-goals-reverse-engineered" rel="alternate" type="text/html" title="Cómo usar ingeniería inversa para alcanzar metas" /><published>2018-07-13T00:00:00-05:00</published><updated>2018-07-13T00:00:00-05:00</updated><id>/reach-goals-reverse-engineered</id><content type="html" xml:base="/reach-goals-reverse-engineered">&lt;p&gt;Esto funciona para metas a corto o largo plazo, da igual. Lo primordial es conocer exactamente &lt;a href=&quot;https://eresendez.com/are-goals-effective&quot;&gt;adonde quieres llegar&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;En el mundo de las Ciencias de la Computación, existe un algoritmo popular conocido como &lt;em&gt;divide-conquer algorithm&lt;/em&gt;. El concepto detrás del algoritmo divide y vencerás es: romper un gran problema en partes más pequeñas, y posteriormente romper los subproblemas en subproblemas más pequeños, así hasta que sean tan simples que puedan resolverse directamente.&lt;/p&gt;
+
+&lt;p&gt;Al final de este ejercicio será posible dar respuesta a las siguientes preguntas:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;¿Qué necesito saber para alcanzar mis metas?&lt;/li&gt;
+  &lt;li&gt;¿Qué herramientas necesito?&lt;/li&gt;
+  &lt;li&gt;¿Con quién puedo hablar que lo haya hecho anteriormente?&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;cómo-usar-este-metodo&quot;&gt;¿Cómo usar este metodo?&lt;/h3&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Elegir una meta. &lt;a href=&quot;https://eresendez.com/are-goals-effective&quot;&gt;ver SMART framework&lt;/a&gt;.&lt;/li&gt;
+  &lt;li&gt;Establecer los pasos:&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;La ingeniería inversa se aplica empezando desde nuestra meta principal hasta el objetivo más bajo y simple. Pensar, analizar todos los pasos que se deben tomar para bajar esa escalera.&lt;/p&gt;
+
+&lt;p&gt;Estos objetivos más pequeños es la parte práctica, lo que se debe de hacer cada día para alcanzar la meta principal.&lt;/p&gt;
+
+&lt;p&gt;Eso es exactamente lo que significa hacer ingeniería inversa, empezar con el fin en la mente y esencialmente averiguar cómo llegar allí.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Cada objetivo es escalable y puede descomponerse mediante ingeniería inversa.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Finalmente, &lt;strong&gt;empezar&lt;/strong&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Comenzar, de lo contrario nada sucederá. Dar el primer paso por la escalera que lleva a la meta, siempre habrá problemas y para eso hay que cambiar de método, pero a fin de cuentas la meta sigue siendo la misma.&lt;/p&gt;</content><author><name>Eleazar Resendez</name></author><category term="Business" /><category term="Goals" /><summary type="html">Esto funciona para metas a corto o largo plazo, da igual. Lo primordial es conocer exactamente adonde quieres llegar.</summary></entry><entry><title type="html">¿Las metas son efectivas?</title><link href="/are-goals-effective" rel="alternate" type="text/html" title="¿Las metas son efectivas?" /><published>2018-07-12T00:00:00-05:00</published><updated>2018-07-12T00:00:00-05:00</updated><id>/are-goals-effective</id><content type="html" xml:base="/are-goals-effective">&lt;p&gt;Respuesta corta: si.&lt;/p&gt;
 
 &lt;p&gt;Las metas son efectivas si se utilizan junto a los principios de la fórmula &lt;em&gt;SMART&lt;/em&gt; y si son llevadas a la acción. Entonces, se puede aprender en el proceso y mejorar si es necesario hasta alcanzar la meta.&lt;/p&gt;
 
