@@ -4,7 +4,7 @@ current: post
 cover: assets/images/bus.jpg
 navigation: True
 title: Enero 2018
-date: 2018-01-28 13:04:25
+date: 2018-01-28
 tags:
 class: post-template
 subclass: 'post'

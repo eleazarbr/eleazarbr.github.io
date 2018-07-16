@@ -3,7 +3,7 @@ layout: post
 current: post
 cover: assets/images/cover/darts.jpg
 navigation: True
-title: ¿Las metas son efectivas?
+title: ¿Son tus metas efectivas?
 date: 2018-07-12
 tags: [Business, Goals]
 class: post-template
@@ -11,7 +11,7 @@ subclass: 'post'
 author: eleazar
 ---
 
-Respuesta corta: si.
+Respuesta corta: si, depende.
 
 Las metas son efectivas si se utilizan junto a los principios de la fórmula *SMART* y si son llevadas a la acción. Entonces, se puede aprender en el proceso y mejorar si es necesario hasta alcanzar la meta.
 
@@ -56,6 +56,6 @@ Ahora, la meta anterior es:
 
 ![Smart Goals Sample]({{ "/assets/images/blog-content/goals-sample.jpg" | relative_url }})
 
-Finalmente, a partir de una meta, se crean pequeños objetivos o plan de acción para emprender el camino a su realización.
+Posteriormente, a partir de una meta, se [crean pequeños objetivos](https://eresendez.com/reach-goals-reverse-engineered) o plan de acción para emprender el camino a su realización.
 
 > [Original Question: Quora - Are goals effective?](https://www.quora.com/Are-goals-effective)
