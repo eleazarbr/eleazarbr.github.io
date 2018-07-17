@@ -6,6 +6,7 @@ rvm:
 install:
 - bundle install
 script: bundle exec rake site:deploy --trace #--quiet
+
 # Generate your secure token with the travis gem:
 # get Github token from your Travis CI profile page
 # gem install travis
@@ -13,7 +14,8 @@ script: bundle exec rake site:deploy --trace #--quiet
 # travis encrypt 'GIT_NAME="YOUR_USERNAME" GIT_EMAIL="YOUR_EMAIL" GH_TOKEN=YOUR_TOKEN'
 env:
   global:
-  - secure: 0vmvXCo412gpLMJYi8junQbwfopEvVkcPNu84ZKypiseT+cgKoJ10TcaPpZkxGmYc5YLzATTVkXdgpmoFytdKIvurXTIoUvnt06ycC6v0WQiTeNQGr1vxcrlz5hUNUvPEPu2rmr5vhwMtT+lWn8vv6wzPDAu3nQ8n0cCNQewICIiMb8bNGpmG0y6/puTd9CEwqtgn7yyrTwfexTuQ7KJdRmIYFjgFgzA7Nxhobc5WMhQuwEPrl45sk3vePPq0lBhgtH9nYUv0HkqO5tdfFz5K7XsfaJ+SvNYWXpgshICH43GOk8PqEsiC2uFxa6qOvUbipnk/KSwPgK0ozKIqr+jHjkLXMJ3PLRWvnGqsPrZjLwR8IfLcnaIYdMvb2waqTYeohP4hsJuaYju94T87oOfpz1J7OhZFYjKodxS3lJhtslZ0Bs2i81dUj7NtSBXJfzZMe+ZTO34FF6DaYvK55AZlq+SQuT03hMjFfmzoLMh4NWEJMA7rJrVDdmh3FqWDFQmTaFitIzhPbte3ndEYlwyCsw5oJZbKFagmpDkii830BQd5iRHfrHR0jsu1zPAaemeQrW+HvcnOr1/IfqafG80YIu8rH7NO6iydXmQjpuxcku8BlGN0GtcQghYGISA/3rvy0VM3I3OlFOkTzljmIg/2thT+LkTaTZLxuwZN0/nu4o=
+  - GITHUB_REPO: "eleazarbr/eleazarbr.github.io"
+  - secure: hUZePxIxQ7ZQ3AUgoI8MgronSzKhJuChQqB+MpcxUKwgGoaw8qOKlo5jsu7QmYDr40grjbDr+KUtlV4E+eBAxz3uWySA3slHd299dZc67a/FuL1FEfbjUpESnRI+FjSIwEOVrEoZmxMcm9wMAbqSnBeEEHosVTvf9pkCkTbW1vkn+P8zhcJRC7qZdmIXAnVkPO5Bdh63/0EwVvlrMbk9sfXLPORF2dfAwbOdQx2Lu1zRuRZCAzodOCnO6mfVXFwRChaM1Ka9S8lxrPN7LTnUDZsEiSQkZCUdsrFTVNKlnTfK9cMJVAabyHSa91fyLdpG2YP63X2a2KTOuyz3XoQIvn+3qq04PwZ6a3JEuW9uopjZ+vaJS93IzDWI4Gg2ZKxGwHkWH7+QRuR40i3vc4zVcaImCm7J2cv15TnvBfTxz7e60d7DodhBVHsfZS9Ab8Sq2L9B1FiZLBiTcmNddPmFIcwNW4bFNO7buBDLAP5mXYgXhRbuj1zWnlQW9WKmjufAflnT+T/4XMpJubPArUji+THVs+UVztdccZafCYL2OehcXnj4jJRQfMFEhHnjgElbhljdRmZwX30CCPulzVZ0q8CqmN7ftXGErJqmcHsfCBF/NJlm9+uIaql5wwI0bH7nKQE6r9QJSMlhx/IejzIt0gfLYrri7VbZyGiArx5zsIo=
 branches:
   only:
   - master
