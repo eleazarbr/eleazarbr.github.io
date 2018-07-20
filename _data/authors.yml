@@ -1,10 +1,12 @@
 eleazar:
-  username: eleazarbr 
+  username: eleazar 
   name: Eleazar Resendez
   url_full: https://eresendez.com
   url: eresendez.com
-  bio: Web artisan.
-  picture: assets/images/ghost.png
-  facebook: eleazarbrr
+  bio: Web developer and Software Engineer
+  picture: assets/images/eleazar.jpeg
+  facebook: 
   twitter: eleazarbr
+  github: eleazarbr
+  linkedin: eleazarbr
   cover: False

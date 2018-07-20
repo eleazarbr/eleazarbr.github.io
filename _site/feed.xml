@@ -1,4 +1,126 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2018-07-16T18:16:14-05:00</updated><id>/</id><title type="html">Eleazar Resendez</title><subtitle>Web developer and Software Engineer</subtitle><entry><title type="html">¿Cuál es un hábito que tienen las personas exitosas?</title><link href="/what-habit-that-successful-people-have" rel="alternate" type="text/html" title="¿Cuál es un hábito que tienen las personas exitosas?" /><published>2018-07-16T00:00:00-05:00</published><updated>2018-07-16T00:00:00-05:00</updated><id>/what-habit-that-successful-people-have</id><content type="html" xml:base="/what-habit-that-successful-people-have">&lt;p&gt;Desde el multimillonario Jeff Hoffman hasta tipos como Gary Vaynerchuk, Grant Cardone, Robert Greene y los principales pensadores, autores, científicos y empresarios del mundo.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2018-07-20T08:00:36-05:00</updated><id>/</id><title type="html">Eleazar Resendez</title><subtitle>Business &amp; Technology</subtitle><entry><title type="html">¿Cuáles son los 5 pilares principales de una Landing Page exitosa?</title><link href="/pillars-of-a-successful-landing-page" rel="alternate" type="text/html" title="¿Cuáles son los 5 pilares principales de una Landing Page exitosa?" /><published>2018-07-17T00:00:00-05:00</published><updated>2018-07-17T00:00:00-05:00</updated><id>/pillars-of-a-successful-landing-page</id><content type="html" xml:base="/pillars-of-a-successful-landing-page">&lt;p&gt;Una landing page es una pieza muy importante para construir una estrategia exitosa de generación de prospectos o leads.&lt;/p&gt;
+
+&lt;p&gt;Esta es la razón por la cual una gran cantidad de dueños de negocios dedican su tiempo a dirigir el tráfico a sus landing pages, con una esperanza de conversión.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Aquí un tablero de Pinterest lleno de ejemplos de landing pages de alta resolución: &lt;a href=&quot;https://www.pinterest.com.mx/Mr_Ed/top-saas-landing-pages/&quot;&gt;Top SaaS Landing Pages&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Ahora vamos a analizar 5 pilares principales de una landing page exitosa.&lt;/p&gt;
+
+&lt;h3 id=&quot;1-pensar-más-allá-de-un-simple-formulario-que-impulse-la-participación-del-usuario&quot;&gt;1. Pensar más allá de un simple formulario que impulse la participación del usuario&lt;/h3&gt;
+
+&lt;p&gt;Uno de los factores que contribuyen a la conversión en una landing page es la participación del usuario (engagement). La landing page debe involucrar a los usuarios hasta el punto de convertirlos. Una de las formas para involucrar a los usuarios es agregando videos. Incluir video puede aumentar las conversiones en un 80 por ciento.&lt;/p&gt;
+
+&lt;p&gt;El video permite compartir una historia de marca atractiva y generar confianza. Hace que los usuarios permanezcan más tiempo en su página, lo que les da tiempo para procesar la información de la marca y, en última instancia, reducir su tasa de rebote.&lt;/p&gt;
+
+&lt;h3 id=&quot;2-crear-una-llamada-a-la-acción-convincente-y-explícita&quot;&gt;2. Crear una llamada a la acción convincente y explícita&lt;/h3&gt;
+
+&lt;p&gt;&lt;em&gt;(Con lo explícito no me refiero a un botón que diga: “Haga clic aquí, f***ing noob”).&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Un buen botón ayuda a convertir visitantes en suscriptores, prospectos o clientes. Un botón efectivo es simple, claro y es clickeable. Debería atraer a los usuarios para tentarlos a tomar la acción requerida.&lt;/p&gt;
+
+&lt;p&gt;El texto del botón debe indicar explícitamente qué está haciendo el usuario cuando hace clic en él. De esa forma, harán clic en él con total intención y conocimiento de las consecuencias, y no se sorprenderán por un comportamiento inesperado.&lt;/p&gt;
+
+&lt;p&gt;CTA no explícito (malo):&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;¡Suban a bordo!&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;CTA explícito (bueno):&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Comenzar mi prueba gratuita de 30 días&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Hay cuatro elementos específicos de un botón de llamada a la acción que son muy importantes para el éxito:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;El color&lt;/strong&gt;: el color del botón debe contrastar con el fondo de su página de inicio. Usualmente, un CTA rojo, azul o verde son efectivos.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://qph.fs.quoracdn.net/main-qimg-3328eb538775305032570fc901ff60a8&quot; alt=&quot;CTA Color buttons&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Imagen vía Chartmogul; más de la mitad de todos los botones de CTA son verdes.&lt;/em&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Tamaño&lt;/strong&gt;: El tamaño del botón también es importante. No debe ser demasiado pequeño para que los usuarios lo pasen por alto, ni demasiado grande en la medida que ahuyente a los usuarios. Debe ser del tamaño adecuado y encajar con el diseño de la página.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Ubicación&lt;/strong&gt;: la posición del botón es muy importante. Debería mostrarse de forma destacada donde los usuarios puedan verlo. No esconderlo en una esquina o debajo de un objeto que lo hará parecer oscuro. Deje que los usuarios lo noten inmediatamente cuando lleguen a la página mostrándolo en el lugar correcto.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Contenido&lt;/strong&gt;: el mensaje en el botón también importa mucho. Debería atraer al público para que haga clic en él. Debe relacionarse con lo que le ofrece a sus usuarios. No use “enviar” ya que suena aterrador porque las personas no gustan dar sus detalles fácilmente.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;3-elegir-imágenes-relevantes&quot;&gt;3. Elegir imágenes relevantes&lt;/h3&gt;
+
+&lt;p&gt;Las imágenes también son muy importantes. Como dice la famosa frase, “Una imagen vale más que mil palabras”. Las páginas que convierten deben tener imágenes relevantes. Según Hubspot, &lt;a href=&quot;https://blog.hubspot.com/blog/tabid/6307/bid/33423/19-Reasons-You-Should-Include-Visual-Content-in-Your-Marketing-Data.aspx?__hsfp=1356452246&amp;amp;__hssc=76279882.1.1517997863932&amp;amp;__hstc=76279882.c939a70d636e118ab13bcba1cc19ad34.1517594403892.1517594403892.1517997863932.2#sm.00000gq4z8px1vfelr6ncsmhseya9&quot;&gt;el 80 por ciento de las personas recuerda lo que ven y hacen&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h3 id=&quot;4-optimizar-el-formulario-de-prospectos-para-máximas-conversiones&quot;&gt;4. Optimizar el formulario de prospectos para máximas conversiones&lt;/h3&gt;
+
+&lt;p&gt;El formulario es otro elemento importante de conversión. Hay dos tipos diferentes de formularios que puede usar en la página: formularios cortos y largos. El formulario no debe ser demasiado largo para desalentar a sus usuarios de llenarla. Tampoco debe ser demasiado corto para poder recolectar detalles relevantes para su negocio.&lt;/p&gt;
+
+&lt;h3 id=&quot;5-criterios-de-desempeño&quot;&gt;5. Criterios de desempeño&lt;/h3&gt;
+
+&lt;p&gt;Medir el rendimiento de la página es muy importante para saber si los visitantes del sitio están convirtiendo o no. Una buena herramienta para medir el rendimiento de la página es utilizar Google Analytics. Esto ayudará a medir cuántas personas llegaron a la página y cuantas se han convertido al proporcionarle sus detalles. Los siguientes son los criterios de rendimiento que ayudarán a saber cómo se está llevando la conversión en su landing page:&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;La tasa de rebote&lt;/strong&gt;: es la cantidad de visitantes que ingresaron a su página y no convirtieron. Si este número es alto, significa que no está utilizando las palabras clave adecuadas para atraer al público adecuado. También podría significar que el diseño de la página no es bueno.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Tiempo en la página&lt;/strong&gt;: necesita saber la duración de un visitante en su sitio web. ¿Cuánto tiempo se quedaron? ¿Dónde más visitaron mientras estuvo en el sitio web?&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Fuente de tráfico&lt;/strong&gt;: saber de dónde provienen los visitantes de su sitio web le permitirá crear una página efectiva. Esto podría ser redes sociales, motores de búsqueda, etc.&lt;/p&gt;
+
+&lt;h3 id=&quot;otras-recomendaciones&quot;&gt;Otras recomendaciones:&lt;/h3&gt;
+
+&lt;p&gt;&lt;strong&gt;La Propuesta Unica de Ventas (USP) debe ser clara y concisa&lt;/strong&gt;:&lt;/p&gt;
+
+&lt;p&gt;La USP necesita resumir lo que hace su negocio o producto, y necesita hacerlo en pocas palabras. MUCHAS personas decoran su USP con elaborados adverbios y adjetivos que simplemente no son necesarios.&lt;/p&gt;
+
+&lt;p&gt;Mala USP:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;“Comunicación crítica con el cliente con simplicidad sin esfuerzo y eficacia hermosa”.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Buena USP:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;“Comunicación con el cliente hecha simple”.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;strong&gt;Beneficios, no características&lt;/strong&gt;:&lt;/p&gt;
+
+&lt;p&gt;Uno de los mayores errores que se cometen es enumerar las excelentes funciones que ofrece el producto. La página se trata de mostrar los &lt;em&gt;BENEFICIOS&lt;/em&gt; que el cliente recibirá al comprar su producto. Hay un lugar para listar las funciones, pero no en la landing page.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Características (malas):&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;1TB espacio de almacenamiento&lt;/li&gt;
+  &lt;li&gt;Cifrado SSL&lt;/li&gt;
+  &lt;li&gt;Software alojado en la nube&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Beneficios (bueno):&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Nunca más te preocupes por quedarte sin espacio de almacenamiento.&lt;/li&gt;
+  &lt;li&gt;Tranquilidad y protección contra hackers maliciosos.&lt;/li&gt;
+  &lt;li&gt;Acceso desde cualquier lugar del mundo, en cualquier dispositivo.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Finalmente, una prueba social REAL y convincente&lt;/strong&gt;:&lt;/p&gt;
+
+&lt;p&gt;La prueba social en la landing page debe ser lo más genuina posible. Es necesario ir más allá de simplemente mostrar un montón de logotipos de la empresa: ¡muestre a las personas que usan el producto! Mostrar cotizaciones, vincular a estudios de casos, ¡incluso por todas partes mostrar videos con entrevistas de clientes! Cuanto más “reales” se sientan, más personas se comprometerán con ellos y mayor será el efecto sobre su confianza.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.quora.com/What-are-the-5-main-pillars-of-a-successful-landing-page&quot;&gt;Original Q&amp;amp;A at Quora - What are the 5 main pillars of a successful landing page&lt;/a&gt;&lt;/p&gt;</content><author><name>Eleazar Resendez</name></author><category term="Business" /><category term="Marketing" /><summary type="html">Una landing page es una pieza muy importante para construir una estrategia exitosa de generación de prospectos o leads.</summary></entry><entry><title type="html">¿Cuál es un hábito que tienen las personas exitosas?</title><link href="/what-habit-that-successful-people-have" rel="alternate" type="text/html" title="¿Cuál es un hábito que tienen las personas exitosas?" /><published>2018-07-16T00:00:00-05:00</published><updated>2018-07-16T00:00:00-05:00</updated><id>/what-habit-that-successful-people-have</id><content type="html" xml:base="/what-habit-that-successful-people-have">&lt;p&gt;Desde el multimillonario Jeff Hoffman hasta tipos como Gary Vaynerchuk, Grant Cardone, Robert Greene y los principales pensadores, autores, científicos y empresarios del mundo.&lt;/p&gt;
 
 &lt;p&gt;Casi TODOS ellos dicen las mismas cosas una y otra vez (aunque de maneras ligeramente diferentes).&lt;/p&gt;
 
@@ -112,7 +234,7 @@
   &lt;li&gt;HTML&lt;/li&gt;
   &lt;li&gt;JavaScript&lt;/li&gt;
   &lt;li&gt;CSS (FlexBox)&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>Eleazar Resendez</name></author><category term="Computer Science" /><category term="Frontend" /><category term="Projects" /><summary type="html">Objetivo: Construir una app en CodePen.io que funcione de manera similar a: https://codepen.io/freeCodeCamp/full/RKRbwL</summary></entry><entry><title type="html">Cómo usar ingeniería inversa para alcanzar metas</title><link href="/reach-goals-reverse-engineered" rel="alternate" type="text/html" title="Cómo usar ingeniería inversa para alcanzar metas" /><published>2018-07-13T00:00:00-05:00</published><updated>2018-07-13T00:00:00-05:00</updated><id>/reach-goals-reverse-engineered</id><content type="html" xml:base="/reach-goals-reverse-engineered">&lt;p&gt;Esto funciona para metas a corto o largo plazo, da igual. Lo primordial es conocer exactamente &lt;a href=&quot;https://eresendez.com/are-goals-effective&quot;&gt;adonde quieres llegar&lt;/a&gt;.&lt;/p&gt;
+&lt;/ul&gt;</content><author><name>Eleazar Resendez</name></author><category term="Computer Science" /><category term="Frontend" /><category term="Projects" /><summary type="html">Objetivo: Construir una app en CodePen.io que funcione de manera similar a: https://codepen.io/freeCodeCamp/full/RKRbwL</summary></entry><entry><title type="html">¿Cómo usar ingeniería inversa para alcanzar metas?</title><link href="/reach-goals-reverse-engineered" rel="alternate" type="text/html" title="¿Cómo usar ingeniería inversa para alcanzar metas?" /><published>2018-07-13T00:00:00-05:00</published><updated>2018-07-13T00:00:00-05:00</updated><id>/reach-goals-reverse-engineered</id><content type="html" xml:base="/reach-goals-reverse-engineered">&lt;p&gt;Esto funciona para metas a corto o largo plazo, da igual. Lo primordial es conocer exactamente &lt;a href=&quot;https://eresendez.com/are-goals-effective&quot;&gt;adonde quieres llegar&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;En el mundo de las Ciencias de la Computación, existe un algoritmo popular conocido como &lt;em&gt;divide-conquer algorithm&lt;/em&gt;. El concepto detrás del algoritmo divide y vencerás es: romper un gran problema en partes más pequeñas, y posteriormente romper los subproblemas en subproblemas más pequeños, así hasta que sean tan simples que puedan resolverse directamente.&lt;/p&gt;
 
@@ -131,9 +253,9 @@
   &lt;li&gt;Establecer los pasos:&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p&gt;La ingeniería inversa se aplica empezando desde nuestra meta principal hasta el objetivo más bajo y simple. Pensar, analizar todos los pasos que se deben tomar para bajar esa escalera.&lt;/p&gt;
+&lt;p&gt;La ingeniería inversa se aplica empezando desde nuestra meta principal hasta el objetivo más bajo y simple. Hay que pensar y analizar todos los pasos que se deben tomar para bajar esa escalera.&lt;/p&gt;
 
-&lt;p&gt;Estos objetivos más pequeños es la parte práctica, lo que se debe de hacer cada día para alcanzar la meta principal.&lt;/p&gt;
+&lt;p&gt;Estos objetivos más pequeños son la parte práctica, lo que se debe de hacer cada día para alcanzar la meta principal.&lt;/p&gt;
 
 &lt;p&gt;Eso es exactamente lo que significa hacer ingeniería inversa, empezar con el fin en la mente y esencialmente averiguar cómo llegar allí.&lt;/p&gt;
 

@@ -3,7 +3,7 @@ layout: post
 current: post
 cover: assets/images/cover/clock.jpg
 navigation: True
-title: Cómo usar ingeniería inversa para alcanzar metas
+title: ¿Cómo usar ingeniería inversa para alcanzar metas?
 date: 2018-07-13
 tags: [Business, Goals]
 class: post-template
@@ -26,14 +26,14 @@ Al final de este ejercicio será posible dar respuesta a las siguientes pregunta
 1. Elegir una meta. [ver SMART framework](https://eresendez.com/are-goals-effective).
 2. Establecer los pasos:
 
-La ingeniería inversa se aplica empezando desde nuestra meta principal hasta el objetivo más bajo y simple. Pensar, analizar todos los pasos que se deben tomar para bajar esa escalera.
+La ingeniería inversa se aplica empezando desde nuestra meta principal hasta el objetivo más bajo y simple. Hay que pensar y analizar todos los pasos que se deben tomar para bajar esa escalera.
 
-Estos objetivos más pequeños es la parte práctica, lo que se debe de hacer cada día para alcanzar la meta principal.
+Estos objetivos más pequeños son la parte práctica, lo que se debe de hacer cada día para alcanzar la meta principal.
 
 Eso es exactamente lo que significa hacer ingeniería inversa, empezar con el fin en la mente y esencialmente averiguar cómo llegar allí.
 
 > Cada objetivo es escalable y puede descomponerse mediante ingeniería inversa.
 
-1. Finalmente, **empezar**.
+3. Finalmente, **empezar**.
 
 Comenzar, de lo contrario nada sucederá. Dar el primer paso por la escalera que lleva a la meta, siempre habrá problemas y para eso hay que cambiar de método, pero a fin de cuentas la meta sigue siendo la misma.
