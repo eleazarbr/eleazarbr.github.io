@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2018-07-20T16:36:50-05:00</updated><id>/</id><title type="html">Eleazar Resendez</title><subtitle>Business &amp; Technology</subtitle><entry><title type="html">¿Cómo Escribir Un Buen Documento De Diseño De Software?</title><link href="/how-to-write-a-good-software-design-document" rel="alternate" type="text/html" title="¿Cómo Escribir Un Buen Documento De Diseño De Software?" /><published>2018-07-18T00:00:00-05:00</published><updated>2018-07-18T00:00:00-05:00</updated><id>/how-to-write-a-good-software-design-document</id><content type="html" xml:base="/how-to-write-a-good-software-design-document">&lt;p&gt;Angela Zhang en su &lt;a href=&quot;https://medium.freecodecamp.org/how-to-write-a-good-software-design-document-66fcf019569c&quot;&gt;blog post&lt;/a&gt; comenta las mejores prácticas para escribir un buen documento de especificaciones de software.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2018-07-20T17:46:37-05:00</updated><id>/</id><title type="html">Eleazar Resendez</title><subtitle>Business &amp; Technology</subtitle><entry><title type="html">¿Cómo Escribir Un Buen Documento De Diseño De Software?</title><link href="/how-to-write-a-good-software-design-document" rel="alternate" type="text/html" title="¿Cómo Escribir Un Buen Documento De Diseño De Software?" /><published>2018-07-18T00:00:00-05:00</published><updated>2018-07-18T00:00:00-05:00</updated><id>/how-to-write-a-good-software-design-document</id><content type="html" xml:base="/how-to-write-a-good-software-design-document">&lt;p&gt;Angela Zhang en su &lt;a href=&quot;https://medium.freecodecamp.org/how-to-write-a-good-software-design-document-66fcf019569c&quot;&gt;blog post&lt;/a&gt; comenta las mejores prácticas para escribir un buen documento de especificaciones de software.&lt;/p&gt;
 
 &lt;p&gt;Después de haber revisado cientos de estos documentos, ella ha observado una fuerte correlación entre los buenos documentos y el éxito final del proyecto.&lt;/p&gt;
 
@@ -433,7 +433,27 @@ End Date: Add feature X, Y, Z to new system: July 14th, 2018
   &lt;li&gt;HTML&lt;/li&gt;
   &lt;li&gt;JavaScript&lt;/li&gt;
   &lt;li&gt;CSS (FlexBox)&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>Eleazar Resendez</name></author><category term="Computer Science" /><category term="Frontend" /><category term="Projects" /><summary type="html">Objetivo: Construir una app en CodePen.io que funcione de manera similar a: https://codepen.io/freeCodeCamp/full/RKRbwL</summary></entry><entry><title type="html">¿Cómo usar ingeniería inversa para alcanzar metas?</title><link href="/reach-goals-reverse-engineered" rel="alternate" type="text/html" title="¿Cómo usar ingeniería inversa para alcanzar metas?" /><published>2018-07-13T00:00:00-05:00</published><updated>2018-07-13T00:00:00-05:00</updated><id>/reach-goals-reverse-engineered</id><content type="html" xml:base="/reach-goals-reverse-engineered">&lt;p&gt;Esto funciona para metas a corto o largo plazo, da igual. Lo primordial es conocer exactamente &lt;a href=&quot;https://eresendez.com/are-goals-effective&quot;&gt;adonde quieres llegar&lt;/a&gt;.&lt;/p&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Como el &lt;em&gt;diseño gráfico&lt;/em&gt; no es lo mío, me basé en la siguiente &lt;a href=&quot;https://get.leadsbridge.com/webinar-leadsbridge-2-0/&quot;&gt;Landing Page de Leadsbridge.com&lt;/a&gt;. Esta vez, no voy a compartir aquí todo el código HTML, en lugar de eso, ésto es lo más relevante:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;La landing page tiene un &lt;em&gt;header&lt;/em&gt; con el logo de la empresa dentro. Utilicé un logo random de León.&lt;/li&gt;
+  &lt;li&gt;También, en el header existe un elemento &lt;em&gt;nav&lt;/em&gt; con links que apuntan a las secciones dentro de la página.&lt;/li&gt;
+  &lt;li&gt;La barra de navegación tiene 3 elementos clickeables.&lt;/li&gt;
+  &lt;li&gt;Se puede observar un video embebido en la pagina.&lt;/li&gt;
+  &lt;li&gt;La landing page tiene un formulario.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;…&lt;/p&gt;
+
+&lt;p&gt;El siguiente repositorio contiene el código fuente de un proyecto en &lt;em&gt;Laravel&lt;/em&gt; utilizando el framework &lt;a href=&quot;https://tailwindcss.com/&quot;&gt;TailwindCSS&lt;/a&gt;. La idea fue aprender a usar &lt;em&gt;Tailwind CSS&lt;/em&gt; haciendo un sitio web corporativo estilo landing page.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/eleazarbr/isadeli&quot;&gt;Isadeli Landing Page&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Finalmente, un post acerca de: &lt;a href=&quot;https://eresendez.com/pillars-of-a-successful-landing-page&quot;&gt;¿Cuáles son los 5 pilares principales de una Landing Page exitosa?&lt;/a&gt;&lt;/p&gt;</content><author><name>Eleazar Resendez</name></author><category term="Computer Science" /><category term="Frontend" /><category term="Projects" /><summary type="html">Objetivo: Construir una app en CodePen.io que funcione de manera similar a: https://codepen.io/freeCodeCamp/full/RKRbwL</summary></entry><entry><title type="html">¿Cómo usar ingeniería inversa para alcanzar metas?</title><link href="/reach-goals-reverse-engineered" rel="alternate" type="text/html" title="¿Cómo usar ingeniería inversa para alcanzar metas?" /><published>2018-07-13T00:00:00-05:00</published><updated>2018-07-13T00:00:00-05:00</updated><id>/reach-goals-reverse-engineered</id><content type="html" xml:base="/reach-goals-reverse-engineered">&lt;p&gt;Esto funciona para metas a corto o largo plazo, da igual. Lo primordial es conocer exactamente &lt;a href=&quot;https://eresendez.com/are-goals-effective&quot;&gt;adonde quieres llegar&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;En el mundo de las Ciencias de la Computación, existe un algoritmo popular conocido como &lt;em&gt;divide-conquer algorithm&lt;/em&gt;. El concepto detrás del algoritmo divide y vencerás es: romper un gran problema en partes más pequeñas, y posteriormente romper los subproblemas en subproblemas más pequeños, así hasta que sean tan simples que puedan resolverse directamente.&lt;/p&gt;
 
