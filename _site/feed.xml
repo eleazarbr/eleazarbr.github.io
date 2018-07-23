@@ -1,4 +1,51 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2018-07-20T17:46:37-05:00</updated><id>/</id><title type="html">Eleazar Resendez</title><subtitle>Business &amp; Technology</subtitle><entry><title type="html">¿Cómo Escribir Un Buen Documento De Diseño De Software?</title><link href="/how-to-write-a-good-software-design-document" rel="alternate" type="text/html" title="¿Cómo Escribir Un Buen Documento De Diseño De Software?" /><published>2018-07-18T00:00:00-05:00</published><updated>2018-07-18T00:00:00-05:00</updated><id>/how-to-write-a-good-software-design-document</id><content type="html" xml:base="/how-to-write-a-good-software-design-document">&lt;p&gt;Angela Zhang en su &lt;a href=&quot;https://medium.freecodecamp.org/how-to-write-a-good-software-design-document-66fcf019569c&quot;&gt;blog post&lt;/a&gt; comenta las mejores prácticas para escribir un buen documento de especificaciones de software.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2018-07-23T14:26:47-05:00</updated><id>/</id><title type="html">Eleazar Resendez</title><subtitle>Business &amp; Technology</subtitle><entry><title type="html">¿Cuáles son algunos consejos para que trabajar de forma remota sea lo más efectivo?</title><link href="/what-are-some-tips-to-make-working-remotely-the-most-effective" rel="alternate" type="text/html" title="¿Cuáles son algunos consejos para que trabajar de forma remota sea lo más efectivo?" /><published>2018-07-19T00:00:00-05:00</published><updated>2018-07-19T00:00:00-05:00</updated><id>/what-are-some-tips-to-make-working-remotely-the-most-effective</id><content type="html" xml:base="/what-are-some-tips-to-make-working-remotely-the-most-effective">&lt;p&gt;Investigando cómo se desenvuelven los trabajadores remotos de compañías como Buffer, Automattic, GitHub y Basecamp. Avadhoot Kulkarni notó prácticas comunes que los trabajadores remotos exitosos comparten y a continuación hay cinco consejos sobre el trabajo a distancia que es bueno conocer antes de trabajar de ésta manera.&lt;/p&gt;
+
+&lt;h3 id=&quot;1-crea-un-espacio-de-trabajo-dedicado&quot;&gt;1. Crea un espacio de trabajo dedicado&lt;/h3&gt;
+
+&lt;p&gt;Es realmente importante crear un espacio dedicado para ser utilizado exclusivamente para el trabajo. El objetivo es:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Mantener el trabajo y cosas personales separadas.&lt;/li&gt;
+  &lt;li&gt;Permitir que otros (cónyuge, hijos, padres, mascotas …) sepan que está trabajando para que no le molesten.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;2-seguir-un-cronograma&quot;&gt;2. Seguir un cronograma&lt;/h3&gt;
+
+&lt;p&gt;Es necesario dar prioridad a ciertas tareas y establecer &lt;em&gt;deadlines&lt;/em&gt;. En &lt;a href=&quot;https://www.wrike.com/blog/10-encouraging-productivity-proverbs-for-your-office-wall-part-2/&quot;&gt;encuestas recientes&lt;/a&gt; se descubrió que las deadlines ayudan a motivar al 54% de los encuestados.&lt;/p&gt;
+
+&lt;p&gt;Experimente y elija la hora del día en la que tienda a tener la mayor cantidad de energía para maximizar su productividad.&lt;/p&gt;
+
+&lt;h3 id=&quot;3-tome-descansos-regulares&quot;&gt;3. Tome descansos regulares&lt;/h3&gt;
+
+&lt;p&gt;Administra tu energía, no tu tiempo. Afronte las tareas de acuerdo con la cantidad de energia que tomarán y cuánto puedes enfocarte en diferentes momentos durante el día.&lt;/p&gt;
+
+&lt;p&gt;Los descansos son realmente importantes. Al trabajar continuamente sin interrupciones, comenzará a perder el enfoque y se volverá improductivo. Esto es especialmente cierto cuando trabajas solo, entonces, programar pausas por adelantado puede ayudar mucho.&lt;/p&gt;
+
+&lt;p&gt;Diseñar una agenda de tal forma que puedas trabajar cuando tengas más energía y tomes descansos durante tus períodos de baja energía.&lt;/p&gt;
+
+&lt;h3 id=&quot;4-aprender-a-comunicarse-de-manera-efectiva-usando-la-comunicación-escrita&quot;&gt;4. Aprender a comunicarse de manera efectiva usando la comunicación escrita&lt;/h3&gt;
+
+&lt;p&gt;Como la mayoría de la comunicación en un equipo remoto ocurre a través de mensajes de texto (correos electrónicos, chat, etc.), es importante aprender a comunicarse de manera efectiva mediante la comunicación escrita. Hay un equilibrio entre decir demasiado y no decir lo suficiente.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Ser claro: la claridad es esencial y la clave para una comunicación efectiva. No deje espacio para la ambigüedad en su escritura. Reitera lo que otros te piden que hagas para asegurarte de que entiendes correctamente. Pregunta claramente qué necesitas de los demás.&lt;/li&gt;
+  &lt;li&gt;Usar listas cuando esté discutiendo más de una cosa a la vez. Será menos abarrotado, más fácil de entender y más fácil para la otra persona hacer referencia cuando responda.&lt;/li&gt;
+  &lt;li&gt;A veces no es fácil explicar algo con el texto. Puede ser útil usar capturas de pantalla. O mejor aún, compartir la pantalla cuando se necesite explicar algo.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;5-salidas-sociales&quot;&gt;5. Salidas sociales&lt;/h3&gt;
+
+&lt;p&gt;El aislamiento es parte inevitable del trabajo a distancia. Sentirse aislado no lo es.&lt;/p&gt;
+
+&lt;p&gt;Incluso las personas que no son sociables necesitan estar con los demás de vez en cuando. Para combatir la soledad, puedes:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Unirte a un espacio de coworking.&lt;/li&gt;
+  &lt;li&gt;Trabajar desde cafeterías.&lt;/li&gt;
+  &lt;li&gt;Chatear con tus compañeros de trabajo con más frecuencia. No necesariamente tiene que ser sobre el trabajo. La mayoría de las compañías remotas tienen salas en Slack o HipChat para conversaciones generales. Usalos.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.quora.com/What-are-some-tips-to-make-working-remotely-the-most-effective&quot;&gt;Original Question &amp;amp; Answer at Quora - What are some tips to make working remotely the most effective&lt;/a&gt;&lt;/p&gt;</content><author><name>Eleazar Resendez</name></author><category term="Computer Science" /><category term="Web development" /><summary type="html">Investigando cómo se desenvuelven los trabajadores remotos de compañías como Buffer, Automattic, GitHub y Basecamp. Avadhoot Kulkarni notó prácticas comunes que los trabajadores remotos exitosos comparten y a continuación hay cinco consejos sobre el trabajo a distancia que es bueno conocer antes de trabajar de ésta manera.</summary></entry><entry><title type="html">¿Cómo Escribir Un Buen Documento De Diseño De Software?</title><link href="/how-to-write-a-good-software-design-document" rel="alternate" type="text/html" title="¿Cómo Escribir Un Buen Documento De Diseño De Software?" /><published>2018-07-18T00:00:00-05:00</published><updated>2018-07-18T00:00:00-05:00</updated><id>/how-to-write-a-good-software-design-document</id><content type="html" xml:base="/how-to-write-a-good-software-design-document">&lt;p&gt;Angela Zhang en su &lt;a href=&quot;https://medium.freecodecamp.org/how-to-write-a-good-software-design-document-66fcf019569c&quot;&gt;blog post&lt;/a&gt; comenta las mejores prácticas para escribir un buen documento de especificaciones de software.&lt;/p&gt;
 
 &lt;p&gt;Después de haber revisado cientos de estos documentos, ella ha observado una fuerte correlación entre los buenos documentos y el éxito final del proyecto.&lt;/p&gt;
 
@@ -776,56 +823,4 @@ End Date: Add feature X, Y, Z to new system: July 14th, 2018
 &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;Ver el proyecto terminado en: &lt;a href=&quot;https://codepen.io/eleazarbr/full/mjejQQ/&quot;&gt;Build a Survey Form - CodePen.io/eleazarbr&lt;/a&gt;&lt;/p&gt;</content><author><name>Eleazar Resendez</name></author><category term="Computer Science" /><category term="Frontend" /><category term="Projects" /><summary type="html">Objetivo: Construir una app en CodePen.io con una funcionalidad similar a: https://codepen.io/freeCodeCamp/full/VPaoNP.</summary></entry><entry><title type="html">Enero 2018</title><link href="/january-2018" rel="alternate" type="text/html" title="Enero 2018" /><published>2018-01-28T00:00:00-06:00</published><updated>2018-01-28T00:00:00-06:00</updated><id>/january-2018</id><content type="html" xml:base="/january-2018">&lt;p&gt;Ahora con 2018, en este nuevo año, planeo hacer listas mensuales de artículos interesantes relacionados con la tecnología.&lt;/p&gt;
-
-&lt;p&gt;En marzo voy a cumplir un año como desarrollador back-end en &lt;a href=&quot;http://www.kuantics.com/&quot;&gt;Kuantics IT&lt;/a&gt;, por lo que el contenido de estos resúmenes será las tecnologías que utilizo en mi vida diaria, principalmente PHP.&lt;/p&gt;
-
-&lt;h3 id=&quot;lecturas-artículos-noticias-interesantes&quot;&gt;Lecturas, artículos, noticias interesantes&lt;/h3&gt;
-
-&lt;p&gt;Me pareció muy interesante el concepto de &lt;em&gt;continuous integration&lt;/em&gt;. En el siguiente enlace se puede encontrar la mejor explicación que he leído hasta ahora: &lt;a href=&quot;https://martinfowler.com/articles/continuousIntegration.html&quot;&gt;Continuous Integration by Martin Fowler&lt;/a&gt;. En pocas palabras es:&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;“Una práctica de desarrollo de software donde los miembros de un equipo integran su trabajo con más frecuencia, generalmente cada persona integra cambios al menos diariamente, lo que lleva a integraciones múltiples por día”&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;Lo anterior es referente a una nota que Edmond Lau compartió sobre &lt;a href=&quot;http://www.effectiveengineer.com/blog/the-compounding-power-of-time-saving-tools&quot;&gt;invertir en herramientas para ahorrar tiempo&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;¿Cómo se puede ahorrar más tiempo con las herramientas que se utilizan día a día?&lt;/p&gt;
-
-&lt;p&gt;En mi caso: personalizar más &lt;code class=&quot;highlighter-rouge&quot;&gt;Visual Studio Code&lt;/code&gt; para poder navegar eficientemente entre archivos, aprender un lenguaje como &lt;em&gt;Python o Ruby&lt;/em&gt;, los cuales se consideran muy &lt;em&gt;productivos&lt;/em&gt;. Asimismo, buscar y usar sus interpretes interactivos para probar funciones rápidamente, estar familiarizado con los comandos: &lt;strong&gt;grep, sort, uniq, awk, sed, xargs, find&lt;/strong&gt;, etc., para manipular datos con la terminal o ver el screencast de Jeff Way sobre &lt;a href=&quot;https://laracasts.com/series/vim-mastery&quot;&gt;Vim&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Me gustó la siguiente respuesta en StackOverflow a la pregunta: &lt;a href=&quot;https://stackoverflow.com/a/3797526/6456709&quot;&gt;Insert new item in array on any position in PHP&lt;/a&gt;. &lt;code class=&quot;highlighter-rouge&quot;&gt;array_splice&lt;/code&gt; remueve una porción del arreglo y la reemplaza con algo más. &lt;a href=&quot;http://php.net/manual/en/function.array-splice.php&quot;&gt;PHP manual: array_splice&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Igualmente: &lt;a href=&quot;https://stackoverflow.com/questions/11405493/how-to-get-everything-after-a-certain-character/47468908#47468908&quot;&gt;How to get everything after a certain character?&lt;/a&gt;, para obtener algo que se encuentra después de un delimitador. Existen muchas alternativas como usar una expresión regular, pero me fue útil la función &lt;code class=&quot;highlighter-rouge&quot;&gt;strtok&lt;/code&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;http://ohshitgit.com/&quot;&gt;Oh shit, git!&lt;/a&gt;, cuando arruinamos algo en &lt;code class=&quot;highlighter-rouge&quot;&gt;git&lt;/code&gt; es difícil reparar el problema, a menos que conozcamos el nombre de lo que necesitamos saber para solucionar el problema.&lt;/p&gt;
-
-&lt;p&gt;También, como recurso de aprendizaje me gustó mucho &lt;a href=&quot;https://www.freecodecamp.org/challenges/save-your-code-revisions-forever-with-git&quot;&gt;Save your Code Revisions Forever with Git&lt;/a&gt; de &lt;a href=&quot;http://freecodecamp.org/&quot;&gt;freeCodeCamp&lt;/a&gt;, un reto recomendado para aprender más sobre &lt;code class=&quot;highlighter-rouge&quot;&gt;git&lt;/code&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://24ways.org/2013/keeping-parts-of-your-codebase-private-on-github/&quot;&gt;Keeping Parts of Your Codebase Private on GitHub&lt;/a&gt;, en este post de Harry Roberts se expone como mantener privadas algunas partes de nuestros proyectos para nosotros mismos, creando repositorios privados.&lt;/p&gt;
-
-&lt;p&gt;Acerca de la versión más reciente de PHP 7, &lt;strong&gt;PHP 7.2&lt;/strong&gt;, todas las características nuevas se pueden encontrar en la RFC de PHP 7.2. Lo más notable a mencionar es:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Hashing de contraseña con Argon2&lt;/li&gt;
-  &lt;li&gt;Eliminación de la extensión MCrypt del núcleo&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://dev.to/paragonie/php-72-the-first-programming-language-to-add-modern-cryptography-to-its-standard-library&quot;&gt;El primer lenguaje de programación en agregar criptografía moderna a su biblioteca estándar&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;jekyll---transform-your-plain-text-into-static-websites-and-blogs&quot;&gt;Jekyll - Transform your plain text into static websites and blogs&lt;/h3&gt;
-
-&lt;p&gt;Hace aproximadamente un año, leí acerca de otras opciones para llevar un blog y encontré &lt;a href=&quot;https://jekyllrb.com/&quot;&gt;Jekyll&lt;/a&gt;, ahora es el motor principal de este sitio.&lt;/p&gt;
-
-&lt;p&gt;Jekyll es un &lt;em&gt;generador de páginas estáticas&lt;/em&gt; del ecosistema de Ruby, fácil de aprender y muy bien &lt;a href=&quot;https://jekyllrb.com/docs/home/&quot;&gt;documentado&lt;/a&gt;, el producto final es simplemente HTML, JavaScript y CSS, con mucha seguridad porque no se utiliza un backend y rápido porque los datos no se extraen de ninguna base de datos.&lt;/p&gt;
-
-&lt;h3 id=&quot;e-commerce&quot;&gt;E-Commerce&lt;/h3&gt;
-
-&lt;p&gt;Mientras espero a que el calendario cambie a 28 de febrero de 2018, para obtener el primer release de &lt;a href=&quot;https://getcandy.io/&quot;&gt;GetCandy&lt;/a&gt;, una API de comercio electrónico y sistema de administración diseñado para crear tiendas, empezaré a utilizar &lt;a href=&quot;https://magento.com/&quot;&gt;Magento 2.2&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Magento es una plataforma de código abierto, funciona en la mayoria de hosting, su stack es de mi agrado: &lt;strong&gt;PHP, Zend framework, PSR 0-1, composer, Symfony,&lt;/strong&gt; etc. Magento 2 trabaja con MySQL 5.6, mientras que Magento 1 con MySQL 5.5 y puede funcionar con 5.6.&lt;/p&gt;
-
-&lt;h3 id=&quot;e-learning&quot;&gt;E-Learning&lt;/h3&gt;
-
-&lt;p&gt;Acerca de LMS (plataformas de e-Learning), entre &lt;a href=&quot;https://teachable.com/&quot;&gt;Teacheable&lt;/a&gt; y &lt;a href=&quot;https://www.udemy.com/&quot;&gt;Udemy&lt;/a&gt;, ambas son plataformas similares para vender un curso, la diferencia esta en si tenemos un trafico o una lista de emails, entonces es mejor utilizar Teachable, de lo contrario aprovechar la base de usuarios que tiene Udemy. Otra alternativa es &lt;a href=&quot;https://www.zenler.com/&quot;&gt;Zenler&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h3 id=&quot;favourite-coding-music&quot;&gt;Favourite coding music&lt;/h3&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://open.spotify.com/track/6A6vSsLkXoTJZ8cA4vtznl&quot;&gt;Canon in D Major, P.37&lt;/a&gt;&lt;/p&gt;</content><author><name>Eleazar Resendez</name></author><summary type="html">Ahora con 2018, en este nuevo año, planeo hacer listas mensuales de artículos interesantes relacionados con la tecnología.</summary></entry></feed>
+&lt;p&gt;Ver el proyecto terminado en: &lt;a href=&quot;https://codepen.io/eleazarbr/full/mjejQQ/&quot;&gt;Build a Survey Form - CodePen.io/eleazarbr&lt;/a&gt;&lt;/p&gt;</content><author><name>Eleazar Resendez</name></author><category term="Computer Science" /><category term="Frontend" /><category term="Projects" /><summary type="html">Objetivo: Construir una app en CodePen.io con una funcionalidad similar a: https://codepen.io/freeCodeCamp/full/VPaoNP.</summary></entry></feed>
