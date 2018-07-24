@@ -11,9 +11,9 @@ subclass: 'post'
 author: eleazar
 ---
 
-Una landing page es una pieza muy importante para construir una estrategia exitosa de generación de prospectos o leads.
+Una landing page es una pieza muy importante para construir una estrategia exitosa de generación de prospectos o leads. Esta es la razón por la cual una gran cantidad de dueños de negocios dedican su tiempo a dirigir el tráfico a sus landing pages, con una esperanza de conversión. 
 
-Esta es la razón por la cual una gran cantidad de dueños de negocios dedican su tiempo a dirigir el tráfico a sus landing pages, con una esperanza de conversión. 
+> UPDATE: Una entrada de blog reciente recomendada: [How to market your new project, incorporate design, create a landing page and get your users](https://medium.freecodecamp.org/how-to-market-your-new-project-incorporate-design-create-a-landing-page-and-get-your-users-97812fd9dd4d)
 
 > Aquí un tablero de Pinterest lleno de ejemplos de landing pages de alta resolución: [Top SaaS Landing Pages](https://www.pinterest.com.mx/Mr_Ed/top-saas-landing-pages/)
 
