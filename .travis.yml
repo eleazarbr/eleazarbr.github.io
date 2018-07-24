@@ -5,17 +5,26 @@ rvm:
 - 2.4.2
 install:
 - bundle install
-script: bundle exec rake site:deploy --trace #--quiet
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN
+  local_dir: _site
+  target_branch: master
+  on:
+    branch: source 
+
+# script: bundle exec rake site:deploy --trace #--quiet
 
 # Generate your secure token with the travis gem:
 # get Github token from your Travis CI profile page
 # gem install travis
 # GH_TOKEN from https://github.com/settings/tokens
 # travis encrypt 'GIT_NAME="YOUR_USERNAME" GIT_EMAIL="YOUR_EMAIL" GH_TOKEN=YOUR_TOKEN'
-env:
-  global:
-  - GITHUB_REPO: eleazarbr/eleazarbr.github.io
-  - secure: gIKBBXIfLR/aNGSrUGT+Icj5RGwwgfgUpea2dw6bggxKyn8chm+SwXp5akEesTN2zGYVGvuFcbGLeiJoizTCx8kptHzWJjp8h1+QBxPJF8baPpVQCumdoxPrrV91D5FttWJRVhTE+SPv27MGJ7xxwxsACpkV6AjOEjoujufw6Bp+GIi7AXJ6zckGu6+cEc5njo9UdQyDTrbNvk1x/ZEkwRjA9DCvhSPhasY4Zn4BvulqzwP4rgVSSSdOBrdFLCIg40LVDS8KcUo6YvxCnMdQ5cTMhAaenkUDTvp9bby8kHJcFtnYKLU0TSZYFJzbPZcKe6kNUoLuZpwWv84y6KzSxjKuFF20dRjm8h79P6Nwu3epYFyUZFpaMOjUOg1qMH8Kn7yPecyVUbRa1W+LHU8gpsSI7JHxUTiq++23Uo0ZBrLbKep4+9woYiAPTS8AVczFXcPXb4EaCLaVDGtw1IUee9uFTXFLOunWGdIykNS894GDCiO7e+gfyfr/hox9QPCUHYmq1oLdg+k/kw7t6LB27aOE4b+wQHvQS4UvUHAm2/bkXwPynbufPX+CnqLEkzhMZhHvzioXaS65zYh9mM6Xeu66vO0PC/9dULj+NQpMqtLEgvMXGnUzUXfUcV0cE/GDcvwDyCSUuPgHVaJvb4mU5ccWIew8flIjUj4ajvNjakk=
-branches:
-  only:
-  - master
+# env:
+#   global:
+#   - GITHUB_REPO: eleazarbr/eleazarbr.github.io
+#   - secure: gIKBBXIfLR/aNGSrUGT+Icj5RGwwgfgUpea2dw6bggxKyn8chm+SwXp5akEesTN2zGYVGvuFcbGLeiJoizTCx8kptHzWJjp8h1+QBxPJF8baPpVQCumdoxPrrV91D5FttWJRVhTE+SPv27MGJ7xxwxsACpkV6AjOEjoujufw6Bp+GIi7AXJ6zckGu6+cEc5njo9UdQyDTrbNvk1x/ZEkwRjA9DCvhSPhasY4Zn4BvulqzwP4rgVSSSdOBrdFLCIg40LVDS8KcUo6YvxCnMdQ5cTMhAaenkUDTvp9bby8kHJcFtnYKLU0TSZYFJzbPZcKe6kNUoLuZpwWv84y6KzSxjKuFF20dRjm8h79P6Nwu3epYFyUZFpaMOjUOg1qMH8Kn7yPecyVUbRa1W+LHU8gpsSI7JHxUTiq++23Uo0ZBrLbKep4+9woYiAPTS8AVczFXcPXb4EaCLaVDGtw1IUee9uFTXFLOunWGdIykNS894GDCiO7e+gfyfr/hox9QPCUHYmq1oLdg+k/kw7t6LB27aOE4b+wQHvQS4UvUHAm2/bkXwPynbufPX+CnqLEkzhMZhHvzioXaS65zYh9mM6Xeu66vO0PC/9dULj+NQpMqtLEgvMXGnUzUXfUcV0cE/GDcvwDyCSUuPgHVaJvb4mU5ccWIew8flIjUj4ajvNjakk=
+# branches:
+#   only:
+#   - master
