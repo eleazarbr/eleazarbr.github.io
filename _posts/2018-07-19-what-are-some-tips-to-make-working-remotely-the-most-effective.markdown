@@ -20,11 +20,23 @@ Es realmente importante crear un espacio dedicado para ser utilizado exclusivame
 - Mantener el trabajo y cosas personales separadas.
 - Permitir que otros (cónyuge, hijos, padres, mascotas ...) sepan que está trabajando para que no le molesten.
 
-### 2. Seguir un cronograma
+### 2. Seguir un cronograma y dar seguimiento al tiempo
 
-Es necesario dar prioridad a ciertas tareas y establecer _deadlines_. En [encuestas recientes](https://www.wrike.com/blog/10-encouraging-productivity-proverbs-for-your-office-wall-part-2/) se descubrió que las deadlines ayudan a motivar al 54% de los encuestados.
+Peter F. Drucker, el famoso consultor de negocios y empresario, tiene un famoso dicho que dice:
 
-Experimente y elija la hora del día en la que tienda a tener la mayor cantidad de energía para maximizar su productividad.
+> Lo que se mide se gestiona
+
+Y para decirlo sin rodeos, el 99% de la población pasa por la vida sin medir su rendimiento.
+
+El éxito, nos guste o no, estará determinado en gran medida por nuestra capacidad de realizar grandes cantidades de trabajo de la manera más rápida y efectiva posible.
+
+El único problema es que la mayoría de la gente desconoce por completo cómo sus hábitos afectan su productividad.
+
+Por ejemplo:
+
+- Experimentar con diferentes rutinas en la mañana para encontrar cual es la forma mas efectiva de empezar el día.
+- Usar la técnica Pomodoro durante 2 semanas y comparar la productividad con semanas anteriores.
+- Intentar diferentes metodos de planficación y ver cuál es el más efectivo.
 
 ### 3. Tome descansos regulares
 
