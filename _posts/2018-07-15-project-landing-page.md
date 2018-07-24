@@ -23,7 +23,7 @@ Herramientas utilizadas en este proyecto:
 - JavaScript
 - CSS (FlexBox)
 
-Como el _diseño gráfico_ no es lo mío, me basé en la siguiente [Landing Page de Leadsbridge.com](https://get.leadsbridge.com/webinar-leadsbridge-2-0/). Esta vez, no voy a compartir aquí todo el código HTML, en lugar de eso, ésto es lo más relevante:
+Debido a que el _diseño gráfico_ no es lo mío, me basé en la siguiente [Landing Page de Leadsbridge.com](https://get.leadsbridge.com/webinar-leadsbridge-2-0/). Esta vez, no voy a compartir aquí todo el código HTML, en lugar de eso, escribo lo más relevante:
 
 1. La landing page tiene un _header_ con el logo de la empresa dentro. Utilicé un logo random de León.
 2. También, en el header existe un elemento _nav_ con links que apuntan a las secciones dentro de la página.
