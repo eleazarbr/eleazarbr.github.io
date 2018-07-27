@@ -4,7 +4,7 @@ current: post
 cover: assets/images/cover/survey-form.jpg
 navigation: True
 title: Responsive Web Design Projects - Build a Survey Form
-date: 2018-07-11 09:04:01
+date: 2018-07-11
 tags: [Computer Science, Frontend, Projects]
 class: post-template
 subclass: 'post'

@@ -1,16 +1,40 @@
-speeches:
-  name: speeches
-  description: Some of the greatest words ever spoken.
-  cover: assets/images/speeches.jpg
-fiction:
-  name: fiction
-  description: False
-  cover: False
-fables:
-  name: fables
-  description: A series of short stories that make you think.
-  cover: assets/images/fables.jpg
-getting-started:
-  name: getting-started
-  description: False
-  cover: False
+business:
+  name: business
+  description: false
+  cover: assets/images/others/hannah-cover.jpg
+computer-science:
+  name: computer-science
+  description: false
+  cover: assets/images/others/writing.jpg
+self-improvement:
+  name: self-improvement
+  description: false
+  cover: false
+web-development:
+  name: web-development
+  description: false
+  cover: false
+software-design:
+  name: software-design
+  description: false
+  cover: false
+marketing:
+  name: marketing
+  description: false
+  cover: false
+goals:
+  name: goals
+  description: false
+  cover: false
+frontend:
+  name: frontend
+  description: false
+  cover: false
+backend:
+  name: backend
+  description: false
+  cover: false
+projects:
+  name: project
+  description: false
+  cover: false
