@@ -11,7 +11,7 @@ subclass: 'post'
 author: eleazar
 ---
 
-Algolia es un servicio que hace que la búsqueda avanzada sea muy fácil. Está bien documentado y es rapidísimo. Puedes ver algunos ejemplos impresionantes en su [sitio](https://www.algolia.com/).
+Algolia es un servicio que hace que la búsqueda avanzada sea muy sencilla. Está bien documentado y es rapidísimo. Puedes ver algunos ejemplos impresionantes en su [sitio](https://www.algolia.com/).
 
 Para usar Algolia en Jekyll, se utilizará el plugin `jekyll-algolia` que permite enviar contenidos a nuestro index.
 
@@ -63,7 +63,7 @@ ALGOLIA_API_KEY='your_admin_api_key' bundle exec jekyll algolia
 
 `ALGOLIA_API_KEY` es una clave de administrador. Tiene acceso de escritura al index, por lo que es posible enviar nuevos datos. Por este motivo se establece en línea de comando y no en el archivo `_config.yml`, se debe mantener en secreto y no cargarla al sistema de control de versiones.
 
-El plugin solo se encarga de extraer los datos y llevarlos a un índice en Algolia. Ahora, sólamente es necesario crear el front-end que permita a los usuarios buscar esos datos. 
+El plugin solo se encarga de extraer los datos y llevarlos a un índice en Algolia. Ahora, sólamente es necesario crear el front-end que permita a los usuarios buscar esos datos.
 
 Más información:
 

@@ -35,6 +35,6 @@ backend:
   description: false
   cover: false
 projects:
-  name: project
+  name: projects
   description: false
-  cover: false
+  cover: assets/images/cover/portfolio.jpg
