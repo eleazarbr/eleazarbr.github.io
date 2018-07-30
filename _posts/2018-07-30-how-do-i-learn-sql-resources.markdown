@@ -3,7 +3,7 @@ layout: post
 current: post
 cover: assets/images/cover/db-schema.png
 navigation: True
-title: Algunos recursos para aprender SQL
+title: Recursos para aprender SQL
 date: 2018-07-30
 tags: [Computer Science, SQL]
 class: post-template
