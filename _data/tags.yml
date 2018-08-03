@@ -38,3 +38,11 @@ projects:
   name: projects
   description: false
   cover: assets/images/cover/portfolio.jpg
+git:
+  name: git
+  description: false
+  cover: false
+woocommerce:
+  name: woocommerce
+  description: false
+  cover: false

@@ -40,7 +40,7 @@ SMART representa:
 
 De acuerdo al [Top ten New Year’s resolutions](https://www.finder.com.au/top-10-new-years-resolutions), el próposito número 1 de año nuevo es: *"Mejorar el estado físico"*.
 
-Mejorar el estado físico no dice nada. No aclara de que forma se va a mejorar el estado físico, ni en cuanto tiempo se piensa lograr, ni cuando empezar. 
+Mejorar el estado físico no dice nada. No aclara de que forma se va a mejorar el estado físico, ni en cuanto tiempo se piensa lograr, ni cuando empezar.
 
 _"Yo subiré 10 kilos (en masa muscular) en tres meses"_
 
@@ -57,5 +57,12 @@ Ahora, la meta anterior es:
 ![Smart Goals Sample]({{ "/assets/images/blog-content/goals-sample.jpg" | relative_url }})
 
 Posteriormente, a partir de una meta, se [crean pequeños objetivos](https://eresendez.com/reach-goals-reverse-engineered) o plan de acción para emprender el camino a su realización.
+
+En resumen:
+
+- La metas se definen mejor si son SMART.
+- Una meta se debe convertir en un plan de acción con objetivos atómicos.
+- Todo se debe de llevar a la acción lo antes posible.
+- Siempre habrá problemas, no se obtiene el resultado, entonces hacer _pivot_, la meta es la misma, solo se intenta otro camino.
 
 > [Original Question: Quora - Are goals effective?](https://www.quora.com/Are-goals-effective)

@@ -5,7 +5,7 @@ cover: assets/images/cover/gitignore.png
 navigation: true
 title: Una colección útil de archivos .gitignore
 date: 2018-08-02
-tags: [git]
+tags: [Computer Science, Git]
 class: post-template
 subclass: 'post'
 author: eleazar
