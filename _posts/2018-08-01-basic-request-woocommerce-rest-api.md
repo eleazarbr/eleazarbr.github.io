@@ -4,6 +4,7 @@ current: post
 cover: assets/images/cover/ecommerce.png
 navigation: True
 title: ¿Cómo hacer una request básica con la REST API de WooCommerce?
+description: En este artículo vamos a utilizar la REST API de WooCommerce 2.6 para obtener todos los productos en formato JSON.
 date: 2018-08-01
 tags: [Computer Science, WooCommerce]
 class: post-template
@@ -13,15 +14,19 @@ author: eleazar
 
 De acuerdo a la buena documentación de la [REST API](https://docs.woocommerce.com/document/woocommerce-rest-api/) de [WooCommerce](https://woocommerce.com/), prácticamente lo que se necesita para empezar es lo siguiente:
 
-- Activar los permalinks en WordPress: **Settings > Permalinks**.
+- WooCommerce 2.6+.
+- WordPress 4.4+.
+- Acceder mediante HTTP o HTTPS, HTTPS se recomienda más.
+- Activar los permalinks en WordPress: **Settings > Permalinks**. *Con los permalinks de default no funcionará*.
 - Activar la opción REST API en **WooCommerce > Settings > Advanced > Legacy API**.
-- Generar las API Keys en **WooCommerce > Settings > Advanced > REST API**.
-- Elegir el scope de cada llave (lectura y/o escritura) y asignar a un usuario.
-- Listo, con estas Keys es posible realizar la siguiente prueba.
+- [Generar API Keys](http://woocommerce.github.io/woocommerce-rest-api-docs/#rest-api-keys) en **WooCommerce > Settings > Advanced > REST API**.
+- Elegir el scope para cada llave (lectura y/o escritura) y asignar a un usuario.
 
-## Testing API
+Listo, con estas Keys (_Consumer Key_ y _Consumer Secret_) es posible realizar la siguiente prueba.
 
-Una request básica: en un ambiente local tengo un solo producto. La [API de productos](http://woocommerce.github.io/woocommerce-rest-api-docs/#product-properties) permite crear, ver, actualizar y eliminar productos individuales o por lotes.
+## Testing API - Una request básica
+
+En un ambiente local tengo un solo producto. La [API de productos](http://woocommerce.github.io/woocommerce-rest-api-docs/#product-properties) permite crear, ver, actualizar y eliminar productos individuales o por lotes.
 
 > HTTP Request **GET**: Listar todos los productos
 
@@ -29,14 +34,14 @@ Una request básica: en un ambiente local tengo un solo producto. La [API de pro
 /wp-json/wc/v2/products
 ```
 
-Voy a realizar la prueba con [Postman](https://www.getpostman.com/apps), pero antes es necesario configurar la pestaña de _Authorization_.
+Para esta prueba se utilizó [Postman](https://www.getpostman.com/apps), pero antes es necesario configurar la pestaña de _Authorization_.
 
 - Elegir _basic auth_
 - Agregar nuestro _consumer key_ y _secret key_ en los campos de _username_ y _password_.
 
 ![Postman]({{ "/assets/images/blog-content/postman.png" | relative_url }})
 
-Listo, con lo anterior ya es posible hacer la petición y ver que se obtiene un código 200 success.
+Una vez hecho lo anterior, ya es posible hacer la petición y ver que se obtiene un estado HTTP `200 OK` (successful). Y finalmente, se realizó una pequeña prueba con la API de WooCommerce.
 
 ```json
 [
@@ -62,10 +67,16 @@ Listo, con lo anterior ya es posible hacer la petición y ver que se obtiene un 
 
 ## Recursos de utilidad
 
-- [Test if the API is working. Guía paso a paso](https://github.com/woocommerce/woocommerce/wiki/Getting-started-with-the-REST-API).
-- [Documentación para desarrolladores](http://woocommerce.github.io/woocommerce-rest-api-docs/)
+- La API facilita un Index con información de todos los endpoints, no necesita autenticación para acceder: `/wp-json/wc/v2`
+- [Guía paso a paso. Test if the API is working.](https://github.com/woocommerce/woocommerce/wiki/Getting-started-with-the-REST-API)
+- [Documentación para desarrolladores.](http://woocommerce.github.io/woocommerce-rest-api-docs/)
+- [Tutorial Setting Up Basic Auth.](https://code.tutsplus.com/es/tutorials/wp-rest-api-setting-up-and-using-basic-authentication--cms-24762)
+
+## Librerías y herramientas
+
 - [PHP Library](https://github.com/woocommerce/wc-api-php)
 - [Node.js Library](https://www.npmjs.com/package/woocommerce-api)
 - [Python Library](https://pypi.python.org/pypi/WooCommerce)
 - [Ruby Library](https://rubygems.org/gems/woocommerce_api)
-- [Tutorial Setting Up Basic Auth](https://code.tutsplus.com/es/tutorials/wp-rest-api-setting-up-and-using-basic-authentication--cms-24762)
+- [Postman](https://www.getpostman.com/)
+

@@ -2,7 +2,7 @@
 markdown: kramdown
 highlighter: rouge
 paginate: 100 # it will paginate after this number
-language: 'en-uk'
+language: 'es_ES'
 
 # edit baseurl to simply '/' if using as your personal page (instead of a project page)
 baseurl: '/'
@@ -22,7 +22,7 @@ subscribers: False # you need to connect an external service for this to work,
 # if 'true' the submit button is disabled for now, but you can change that
 # by editing `_includes/subscribe-form.html`
 twitter: eleazarbr # replace by your username
-facebook: eleazarbrr # replace by your username
+facebook: eleazaresendez # replace by your username
 github: eleazarbr # replace by your username
 youtube: eleazarbr # replace by your username
 linkedin: eleazarbr # replace by your username
