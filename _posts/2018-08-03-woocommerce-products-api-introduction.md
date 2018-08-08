@@ -3,7 +3,7 @@ layout: post
 current: post
 cover: assets/images/cover/woocommerce.png
 navigation: true
-title: Introducción - API de productos de WooCommerce 2.6
+title: Introducción - API de productos de WooCommerce v2
 description: La API de productos de WooCommerce permite crear, ver, actualizar y eliminar productos individuales o por lotes, en este artículo se realizará un CRUD sencillo.
 date: 2018-08-03
 tags: [Computer Science, WooCommerce]

@@ -46,3 +46,7 @@ woocommerce:
   name: woocommerce
   description: false
   cover: false
+laravel:
+  name: laravel
+  description: false
+  cover: false
