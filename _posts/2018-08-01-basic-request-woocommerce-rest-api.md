@@ -80,3 +80,26 @@ Una vez hecho lo anterior, ya es posible hacer la petición y ver que se obtiene
 - [Ruby Library](https://rubygems.org/gems/woocommerce_api)
 - [Postman](https://www.getpostman.com/)
 
+Si utilizas Laravel, te recomiendo el paquete [pixelpeter/laravel5-woocommerce-api-client](https://github.com/pixelpeter/laravel5-woocommerce-api-client) que puede ser instalado vía composer. Es un wrapper para la API y con los datos obtenidos anteriormente se agregan al archivo `.env`.
+
+```
+WOOCOMMERCE_STORE_URL=http://example.org
+WOOCOMMERCE_CONSUMER_KEY=ck_your-consumer-key
+WOOCOMMERCE_CONSUMER_SECRET=cs_your-consumer-secret
+WOOCOMMERCE_VERIFY_SSL=false
+WOOCOMMERCE_VERSION=v2
+WOOCOMMERCE_WP_API=true
+WOOCOMMERCE_WP_QUERY_STRING_AUTH=false
+WOOCOMMERCE_WP_TIMEOUT=15
+```
+
+Por ejemplo, para ver el Index con la información de todos los endpoints disponibles:
+
+```php
+use Woocommerce;
+
+return Woocommerce::get('');
+```
+
+Es todo.
+
