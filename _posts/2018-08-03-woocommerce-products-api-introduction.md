@@ -71,7 +71,7 @@ $data = [
 ];
 ```
 
-Como se observa en el ejemplo anterior, a un producto se le puede asignar varias categorías y para crear nuestras primeras categorías se realiza mediante el siguiente webservice:
+Como se observa en el ejemplo anterior, la propiedad `regular_price` _debe ser un string_. También, a un producto se le puede asignar varias categorías y para crear nuestras primeras categorías se realiza mediante el siguiente webservice:
 
 `POST /wp-json/wc/v2/products/categories`
 
@@ -85,15 +85,17 @@ $data = [
 ];
 ```
 
-- Ejemplo de como crear un producto con atributos globales y no globales:
-
-
 ## Obtener un producto
+
+
 
 ## Actualizar un producto
 
+
+
 ## Eliminar un producto
 
-## Batch update products
 
+
+## Batch update products
 

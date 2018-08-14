@@ -1,7 +1,7 @@
 ---
 layout: post
 current: post
-cover: assets/images/cover/db-laravel.png
+cover: assets/images/cover/laravel-sync.png
 navigation: true
 title: Laravel 5.6 función Sync para una relación Has Many
 description: Un método simple para sincronizar una relación Has Many utilizando Collections en Laravel.
