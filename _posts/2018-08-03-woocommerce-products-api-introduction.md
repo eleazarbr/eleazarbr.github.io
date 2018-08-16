@@ -40,7 +40,7 @@ La API nos ayuda a crear nuevos productos, mediante el siguiente endpoint:
 
 `POST /wp-json/wc/v2/products`
 
-Para crear un simple producto, es necesario hacer la siguiente estructura.
+Para almacenar un simple producto, es necesario recrear la siguiente estructura.
 
 ```php
 <?php
@@ -71,7 +71,7 @@ $data = [
 ];
 ```
 
-Como se observa en el ejemplo anterior, la propiedad `regular_price` _debe ser un string_. También, a un producto se le puede asignar varias categorías y para crear nuestras primeras categorías se realiza mediante el siguiente webservice:
+Como se observa en el ejemplo anterior, la propiedad `regular_price` _debe ser un string_. Si se omite el atributo `position => 0` entonces el producto no tendrá una imagen de producto "destacada", sino que esta imagen formará parte de una galería. También, a un producto se le puede asignar varias categorías y para crear nuestras primeras categorías se realiza mediante el siguiente webservice:
 
 `POST /wp-json/wc/v2/products/categories`
 
@@ -80,21 +80,33 @@ Como se observa en el ejemplo anterior, la propiedad `regular_price` _debe ser u
 $data = [
     'name' => 'Clothing',
     'image' => [
-        'src' => 'http://demo.woothemes.com/woocommerce/wp-content/uploads/sites/56/2013/06/T_2_front.jpg'
+        'src' => 'http://demo.woothemes.com/woocommerce/wp-content/uploads/sites/56/2013/06/T_2_front.jpg',
     ]
 ];
 ```
 
 ## Obtener un producto
 
+El siguiente endpoint nos ayuda a obtener toda la lista de productos.
 
+`GET /wp-json/wc/v2/products`
+
+Opcionalmente, se le puede pasar una [variedad de parametros](http://woocommerce.github.io/woocommerce-rest-api-docs/?php#list-all-products) como:
+
+- page
+- per_page (máximo número de items en el resultado. Por default es 10)
+- search (filtar por un término de búsqueda)
+- sku
+- in_stock
 
 ## Actualizar un producto
 
+Para actualizar un producto, es necesario conocer su {id}.
+
+`PUT /wp-json/wc/v2/products/<id>`
 
 
 ## Eliminar un producto
-
 
 
 ## Batch update products
