@@ -14,6 +14,11 @@ author: eleazar
 
 Con una nueva instalación de Laravel y despues de ejecutar `php artisan make:auth` para generar el sistema de autenticación básico de Laravel, ahora vamos configurar una autenticación Social OAuth.
 
+Contenido:
+- [Configuración](#configuraci%C3%B3n)
+- [Rutas](#rutas)
+- [Migraciones](#migraciones)
+
 Primero instalar el paquete `laravel/socialite` usando Composer:
 
 ```bash
@@ -65,6 +70,33 @@ Route::get('login/{provider}', 'Auth\LoginController@redirectToProvider')->name(
 Route::get('login/{provider}/callback', 'Auth\LoginController@handleProviderCallback')->name('login.callback');
 ```
 
+## Migraciones
+
+También necesitamos ejecutar las migraciones para crear la tabla de usuarios, pero antes de eso debemos modificarla para almacenar el token de OAuth. Para ello, vamos a editar las migración `CreateUsersTable` en `database/migrations`, quedaría así:
+
+```php
+public function up()
+{
+    Schema::create('users', function (Blueprint $table) {
+        $table->increments('id');
+        $table->string('name');
+        $table->string('email')->unique();
+        $table->string('password')->nullable(); // Cambiar a nullable
+        $table->string('token'); // OAuth Token
+        $table->rememberToken();
+        $table->timestamps();
+    });
+}
+```
+
+Recuerda agregar el atributo `token` al arreglo `$fillable` en el modelo `User` para evitar la excepción de asignación de Eloquent.
+
+```php
+protected $fillable = [
+    'name', 'email', 'password', 'token',
+];
+```
+
 Solo falta añadir a la vista `login.blade.php` un simple botón para iniciar sesión con Google.
 
 ```php
@@ -93,10 +125,20 @@ public function redirectToProvider($provider)
 public function handleProviderCallback($provider)
 {
     $user = Socialite::driver($provider)->user();
-    return $user->token;
+    $user = User::updateOrCreate([
+            'email' => $user->email
+        ],[
+            'token' => $user->token,
+            'name'  =>  $user->name
+        ]);
+
+    auth()->login($user, true);
+    return redirect()->to($this->redirectPath());
 }
 ```
 
 La función de `redirect()` se encarga de enviar al usuario al proveedor OAuth, mientras que el método `user()` leerá la solicitud entrante y recuperará la información del usuario del proveedor.
+
+En el método `handleProviderCallback($provider)` se crea o se actualiza un nuevo usuario cuando sea redireccionado después de una autenticación exitosa desde la página OAuth.
 
 ¡Es todo!
