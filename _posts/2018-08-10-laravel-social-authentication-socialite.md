@@ -100,7 +100,7 @@ protected $fillable = [
 Solo falta añadir a la vista `login.blade.php` un simple botón para iniciar sesión con Google.
 
 ```php
-<a class="btn btn-block btn-social btn-google" href="{{ route('login.socialite', ['provider' => 'google']) }}">
+<a class="btn btn-block btn-social btn-google" href="{!! route('login.socialite', ['provider' => 'google']) !!}">
   <i class="fa fa-google-plus"></i> Iniciar sesión G Suite
 </a>
 ```

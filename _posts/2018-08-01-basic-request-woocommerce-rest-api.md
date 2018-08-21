@@ -12,11 +12,15 @@ subclass: 'post'
 author: eleazar
 ---
 
-De acuerdo a la buena documentación de la [REST API](https://docs.woocommerce.com/document/woocommerce-rest-api/) de [WooCommerce](https://woocommerce.com/), prácticamente lo que se necesita para empezar es lo siguiente:
+De acuerdo a la documentación de la [REST API](https://docs.woocommerce.com/document/woocommerce-rest-api/) de [WooCommerce](https://woocommerce.com/), prácticamente lo que se necesita para empezar es lo siguiente:
 
 - WooCommerce 2.6+.
-- WordPress 4.4+.
-- Acceder mediante HTTP o HTTPS, HTTPS se recomienda más.
+- WordPress 4.4+ (memory limit de 128 MB o más).
+- PHP versión 7/superior y MySQL 5.6/superior o MariaDB 10.0/superior
+
+> PHP 5.2.4+ y MySQL 5.0+ llegaron a su fin y ya no se mantienen y, como tales, pueden exponer el sitio a vulnerabilidades de seguridad.
+
+- Soporte HTTP o HTTPS.
 - Activar los permalinks en WordPress: **Settings > Permalinks**. *Con los permalinks de default no funcionará*.
 - Activar la opción REST API en **WooCommerce > Settings > Advanced > Legacy API**.
 - [Generar API Keys](http://woocommerce.github.io/woocommerce-rest-api-docs/#rest-api-keys) en **WooCommerce > Settings > Advanced > REST API**.
