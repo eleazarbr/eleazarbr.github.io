@@ -76,3 +76,19 @@ Y en la clase `SimpleNotification`, modificar:
 ```
 
 Finalmente, cualquier otro texto debe ser modificado directamente en la vista.
+
+Dado que Mailtrap es concebido para ser utilizado en un ambiente de desarrollo y si tienes una aplicación que envía muchos correos, Mailtrap tiene una restricción que solamente es posible enviar 2 emails por segundo. Entonces, si esperas más de 5 correos electrónicos y no tienes la opción de cambiar Mailtrap, intenta:
+
+```php
+foreach ($emails as $email) {
+     ...
+
+     Mail::send(...$email);
+
+     if (env('MAIL_HOST', false) == 'smtp.mailtrap.io') {
+         sleep(1); // o usleep (500000) para medio segundo
+     }
+}
+```
+
+El código anterior solo debe ejecutarse en un entorno de prueba.
