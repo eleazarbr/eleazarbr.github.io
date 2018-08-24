@@ -6,4 +6,5 @@ gem "rake", "~> 12.3.0"
 
 group :jekyll_plugins do
   gem "jekyll-algolia", "~> 1.4.7"
+  gem 'jekyll-livereload'
 end
