@@ -17,7 +17,7 @@ Por ejemplo:
 
 ### Cómo eliminar últimos commits y volver a hacer push
 
-Para remover el último commit de git, podemos hacer simplemente `git reset --soft HEAD^`. Si vamos a remover multiples commits del top, entonces `git reset --hard HEAD~2` para remover los últimos dos commits. Podemos incrementar el número para eliminar más commits.
+Para remover el último commit de git, podemos hacer simplemente `git reset --soft HEAD^`. Si vamos a remover multiples commits del top, entonces `git reset --soft HEAD~2` para remover los últimos dos commits. Podemos incrementar el número para eliminar más commits.
 
 Finalmente, forzamos push usando `git push origin +branchName`.
 

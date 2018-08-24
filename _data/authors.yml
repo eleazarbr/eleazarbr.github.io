@@ -1,5 +1,5 @@
 eleazar:
-  username: eleazar 
+  username: eleazar
   name: Eleazar Resendez
   url_full: https://eresendez.com
   url:
@@ -9,4 +9,5 @@ eleazar:
   twitter: eleazarbr
   github: eleazarbr
   linkedin: eleazarbr
-  cover: False
+  buymeacoffee: true
+  cover: false

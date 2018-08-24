@@ -1190,6 +1190,7 @@ Usage (In Ghost editor):
 }
 
 .post-full-footer-right {
+    display: flex;
     flex-shrink: 0;
     margin-left: 20px;
 }

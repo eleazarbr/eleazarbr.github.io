@@ -53,10 +53,10 @@ into the {body} of the default.hbs template -->
             </figure>
             {% endif %}
 
-            <section class="post-full-content"> 
+            <section class="post-full-content">
                 <div class="kg-card-markdown">
                     {{ content }}
-                </div> 
+                </div>
             </section>
 
             <!-- Email subscribe form at the bottom of the page -->
@@ -87,6 +87,7 @@ into the {body} of the default.hbs template -->
                             </section>
                         </section>
                         <div class="post-full-footer-right">
+                            <a href="#" onclick="window.open('https://twitter.com/intent/user?original_referer=&amp;region=screen_name&amp;screen_name=eleazarbr&amp;source=followbutton&amp;variant=1.1', 'twitter', 'toolbar=no, width=650, height=300'); trackSocial('Twitter', 'Follow', 'https://www.eresendez.com'); return false;" class="author-card-button" data-show-count="false">Follow @eleazarbr</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
                             <a class="author-card-button" href="{{ site.baseurl }}author/{{ page.author }}">Read More</a>
                         </div>
                     {% endif %}
