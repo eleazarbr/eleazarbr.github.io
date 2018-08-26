@@ -68,3 +68,10 @@ El plugin solo se encarga de extraer los datos y llevarlos a un índice en Algol
 Más información:
 
 - [Algolia for Jekyll](https://community.algolia.com/jekyll-algolia/getting-started.html)
+
+### Issues
+
+Si por alguna razón tu sitio Jekyll utiliza el plugin desactualizado `jekyll-paginate` tendrás el siguiente error: `jekyll 3.6.2 | Error:  Infinity`, este problema se trata en el siguiente Issue en GitHub y prácticamente lo que se tiene que hacer es cambiar al plugin a `jekyll-paginatev2`
+
+- [FloatDomainError: Infinity when trying to build an index](https://github.com/algolia/jekyll-algolia/issues/64)
+

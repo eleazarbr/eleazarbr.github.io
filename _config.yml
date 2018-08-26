@@ -30,7 +30,7 @@ instagram: eleazarbr # replace by your username
 
 # Search engine
 algolia:
-  application_id: QIPNH26NOO
+  application_id: 'QIPNH26NOO'
   index_name: eresendez
   extensions_to_index:
     - markdown
