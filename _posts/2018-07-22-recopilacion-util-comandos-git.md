@@ -13,11 +13,15 @@ author: eleazar
 
 En esta entrada voy a recopilar algunas caracteristicas de git que me han ayudado.
 
-Por ejemplo:
-
 ### Cómo eliminar últimos commits y volver a hacer push
 
-Para remover el último commit de git, podemos hacer simplemente `git reset --soft HEAD^`. Si vamos a remover multiples commits del top, entonces `git reset --soft HEAD~2` para remover los últimos dos commits. Podemos incrementar el número para eliminar más commits.
+> Cuando el último commit **no** es el primer commit:
+
+Para remover el último commit, podemos hacer simplemente `git reset --soft HEAD^`. Si vamos a remover multiples commits del top, entonces `git reset --soft HEAD~2` para remover los últimos dos commits. Podemos incrementar el número para eliminar más commits.
+
+> Cuando el último commit **es** el primer commit:
+
+Ejecuta `git update-ref -d HEAD`.
 
 Finalmente, forzamos push usando `git push origin +branchName`.
 
