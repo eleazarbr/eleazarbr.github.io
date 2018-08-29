@@ -16,7 +16,7 @@ Instalar MongoDB Community Edition en Ubuntu:
 
 > Importante: El paquete no oficial de mongodb provisto por Ubuntu no es mantenido por MongoDB. Siempre debes usar los paquetes oficiales de MongoDB mongodb-org, que se mantienen actualizados con las versiones de MongoDB mayores y menores más recientes.
 
-MongoDB solo proporciona paquetes para LTS de 64 bits (soporte a largo plazo); lanzamientos de Ubuntu; por ejemplo, 14.04 LTS (de confianza) y 16.04 LTS (xenial). Consulte [Plataformas compatibles](https://docs.mongodb.com/manual/installation/#mongodb-supported-platforms) para obtener más información.
+MongoDB solo proporciona paquetes para LTS de 64 bits (soporte a largo plazo); lanzamientos de Ubuntu; por ejemplo, 14.04 LTS (trusty) y 16.04 LTS (xenial). Consulte [Plataformas compatibles](https://docs.mongodb.com/manual/installation/#mongodb-supported-platforms) para obtener más información.
 
 1. Importe la clave pública utilizada por el sistema de gestión de paquetes. Ver [Import the public key](https://docs.mongodb.com/manual/tutorial/install-mongodb-on-ubuntu/#import-the-public-key-used-by-the-package-management-system) Ejemplo: `sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 9DA31620334BD75D9DCB49F368818C72E52529D4`
 2. Ubuntu 16.04: Ver [Create a list file for mongodb](https://docs.mongodb.com/manual/tutorial/install-mongodb-on-ubuntu/#create-a-list-file-for-mongodb) Ejemplo: `echo "deb [ arch=amd64,arm64 ] https://repo.mongodb.org/apt/ubuntu xenial/mongodb-org/4.0 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-4.0.list`

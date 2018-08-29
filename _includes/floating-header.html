@@ -23,6 +23,14 @@
 			onclick="window.open(this.href, 'share-linkedin','width=580,height=296');return false;">
 			{% include linkedin.html %}
 		</a>
+		<a class="floating-header-share-pt" href="https://pinterest.com/pin/create/link/?url={{ site.production_url }}{{ page.url | remove_first: '/' }}&media={{ site.production_url }}{{ page.cover }}&description={{ page.title | url_encode }}"
+			onclick="window.open(this.href, 'share-pinterest','width=580,height=296');return false;">
+			{% include pinterest.html %}
+		</a>
+		<a class="floating-header-share-wa" href="https://web.whatsapp.com/send?text={{ site.production_url }}{{ page.url | remove_first: '/' }}" data-action="share/whatsapp/share"
+			onclick="window.open(this.href, 'share-whatsapp','width=580,height=296');return false;">
+			{% include whatsapp.html %}
+		</a>
 	</div>
 	<progress class="progress" value="0">
 		<div class="progress-container">
