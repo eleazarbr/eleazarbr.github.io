@@ -39,3 +39,18 @@ git reset HEAD@{index}
 # magic time machine
 ```
 
+### Basics
+
+> Crear una nueva rama y saltar a ella
+
+´´´
+git checkout -b branchname
+
+// Lo anterior es un atajo a:
+git branch branchname
+git checkout branchname
+´´´
+
+
+
+
