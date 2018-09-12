@@ -51,6 +51,17 @@ git branch branchname
 git checkout branchname
 ´´´
 
+> Eliminar una rama local
+
+´´´
+git branch -d branchname
+´´´
+
+> Eliminar una rama remota
+
+´´´
+git push origin --delete branchname
+´´´
 
 
 
