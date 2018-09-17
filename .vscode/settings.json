@@ -1,4 +1,6 @@
 {
     "spellright.language": "es",
-    "spellright.documentTypes": []
+    "spellright.documentTypes": [
+        "markdown"
+    ]
 }
