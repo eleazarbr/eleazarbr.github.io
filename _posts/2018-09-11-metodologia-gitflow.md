@@ -24,7 +24,6 @@ Gitflow es solo una idea abstracta de un flujo de trabajo con git publicada por 
     - [Hotfix branches](#hotfix-branches)
 - [En resumen](#en-resumen)
 - [Herramientas](#herramientas)
-- [Más información](#m%C3%A1s-informaci%C3%B3n)
 
 ## Keypoints
 
@@ -77,16 +76,35 @@ git merge release/0.1.0
 
 ### Hotfix branches
 
--
+Usadas para actualizar rápidamente ramas de producción. Son como ramas de `release` y de `features`, excepto que se basan de la rama de producción `master` en lugar de `develop`. Tan rápido como el fix este completo, debe mezclarse con tanto en `master` como en `develop`
+
+```
+git checkout master
+git checkout -b hotfix_branch
+```
+
+Y para finalizar:
+
+```
+git checkout master
+git merge hotfix_branch
+git checkout develop
+git merge hotfix_branch
+git branch -D hotfix_branch
+```
 
 ## En resumen
 
+El flujo general de Gitflow es:
+
+1. Una rama para develop se crea desde master
+2. Se crea una rama de release desde develop
+3. Las ramas de features se crean a partir de develop
+4. Cuando se completa una feature, se fusiona en la rama develop
+5. Cuando se completa la rama de release, se fusiona en develop y master
+6. Si se detecta un problema en master, se crea una rama de hotfix desde master
+7. Una vez que se completa hotfix, se combina en develop y master
 
 ## Herramientas
 
-- [Tool](#tool)
-
-## Más información
-
-- [¿Cómo funciona?](#%C2%BFc%C3%B3mo-funciona)
-- [Hotfix branches](#hotfix-branches)
+- [Gitfow Toolset](https://github.com/nvie/gitflow)
