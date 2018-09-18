@@ -153,7 +153,7 @@ Funciona igual que `auto-fill`, la diferencia es cuando se excede el tamaño del
 
 ### Usar Media Queries para crear diseños responsivos
 
-CSS Grid puede ser una manera fácil de hacer que el sitio sea más receptivo utilizando Media Queries para reorganizar las áreas, cambiar dimensiones de un grid y reorganizar la ubicación de los elementos.
+CSS Grid puede ser una manera fácil de hacer que el sitio sea más responsivo utilizando Media Queries para reorganizar las áreas, cambiar dimensiones de un grid y reorganizar la ubicación de los elementos.
 
 Cuando el ancho del viewport es `400px` o más el header ocupa la fila superior completamente y el footer la inferior.
 
@@ -179,7 +179,7 @@ Cuando el ancho del viewport es `400px` o más el header ocupa la fila superior 
   }
 ```
 
-### Crear grids dentro de grids
+### Crear grids dentro de grids
 
 Convertir un elemento en un `grid` solo afecta el comportamiento de sus descendientes directos. Entonces, al convertir un descendiente directo en un `grid`, tienes un `grid` dentro de un `grid`.
 
