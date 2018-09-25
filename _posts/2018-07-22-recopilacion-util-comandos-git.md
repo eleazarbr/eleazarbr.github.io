@@ -43,7 +43,7 @@ git reset HEAD@{index}
 
 ## Basics
 
-### Crear una nueva rama y saltar a ella
+**Crear una nueva rama y saltar a ella:**
 
 ```
 git checkout -b branchname
@@ -53,17 +53,22 @@ git branch branchname
 git checkout branchname
 ```
 
-### Eliminar una rama local
+**Eliminar una rama local:**
 
 ```
 git branch -d branchname
 ```
 
-### Eliminar una rama remota
+**Eliminar una rama remota:**
 
 ```
 git push origin --delete branchname
 ```
 
+**Renombrar una rama local y remota:**
 
+- Si nos encontramos en la rama que queremos renombrar: `git branch -m new-name`
+- Si estamos en una rama diferente: `git branch -m old-name new-name`
+- Hacer los cambios en la rama remota: `git push origin :old-name new-name`
+- Reset el upstream branch para la nueva rama local: `git push origin -u new-name`
 

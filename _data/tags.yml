@@ -6,6 +6,14 @@ computer-science:
   name: computer-science
   description: false
   cover: assets/images/others/writing.jpg
+projects:
+  name: projects
+  description: false
+  cover: assets/images/cover/banner-hacking.jpg
+mcc:
+  name: mcc
+  description: Artículos de Maestría en Ciencias de la Computación
+  cover: assets/images/cover/banner-digital.jpg
 self-improvement:
   name: self-improvement
   description: false
@@ -34,10 +42,6 @@ backend:
   name: backend
   description: false
   cover: false
-projects:
-  name: projects
-  description: false
-  cover: assets/images/cover/portfolio.jpg
 git:
   name: git
   description: false
