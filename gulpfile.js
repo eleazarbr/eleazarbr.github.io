@@ -1,5 +1,6 @@
 var gulp = require('gulp');
 
+var tailwindcss = require('tailwindcss');
 // gulp plugins and utils
 var gutil = require('gulp-util');
 var livereload = require('gulp-livereload');
@@ -7,6 +8,7 @@ var nodemon = require('gulp-nodemon');
 var postcss = require('gulp-postcss');
 var sourcemaps = require('gulp-sourcemaps');
 var zip = require('gulp-zip');
+var sass = require('gulp-sass');
 
 // postcss plugins
 var autoprefixer = require('autoprefixer');
@@ -25,7 +27,7 @@ var nodemonServerInit = function () {
     livereload.listen(1234);
 };
 
-gulp.task('build', ['css'], function (/* cb */) {
+gulp.task('build', ['css', 'sass'], function (/* cb */) {
     return nodemonServerInit();
 });
 
@@ -42,13 +44,23 @@ gulp.task('css', function () {
         .on('error', swallowError)
         .pipe(sourcemaps.init())
         .pipe(postcss(processors))
+        .pipe(postcss([
+            tailwindcss('./tailwind.js')
+        ]))
         .pipe(sourcemaps.write('.'))
         .pipe(gulp.dest('assets/built/'))
         .pipe(livereload());
 });
 
+gulp.task('sass', function() {
+    return gulp.src('assets/css/main.scss')
+      .pipe(sass())
+      .pipe(gulp.dest('assets/built/'))
+  });
+
 gulp.task('watch', function () {
     gulp.watch('assets/css/**', ['css']);
+    gulp.watch('./tailwind.js', ['css']);
 });
 
 gulp.task('zip', ['css'], function() {
