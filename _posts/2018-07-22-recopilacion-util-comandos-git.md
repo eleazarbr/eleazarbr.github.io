@@ -55,6 +55,8 @@ git checkout branchname
 
 **Eliminar una rama local:**
 
+Mostrar las ramas locales y remotas `git branch -a`, mientras que con `git branch -r` se muestran únicamente las ramas remotas.
+
 ```
 git branch -d branchname
 ```
