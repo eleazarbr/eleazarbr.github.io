@@ -52,5 +52,8 @@
     },
     "config": {
         "posts_per_page": 25
+    },
+    "dependencies": {
+        "tingle.js": "^0.13.2"
     }
 }
