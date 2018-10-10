@@ -14,23 +14,66 @@ author: eleazar
 
 En la búsqueda de un modal que sea realmente sencillo, sin tanta dependencia y sin usar jQuery, encontré el siguiente modal: [Tingle](https://robinparisi.github.io/tingle/).
 
-Tingle is a simple modal plugin written in pure JavaScript (Source code on GitHub).
+[Código fuente en Github](https://github.com/robinparisi/tingle)
 
-- No dependencies required
-- Fully customizable via CSS
+- Sin dependencias
+- Totalmente personalizable con CSS
 - CSS transitions
 - Simple API
-- No extra files to download
-- Created with UX in mind
-
+- Creado con UX en mente
 
 ### Intalación
 
-### Configuración
+|Método|Procedimiento|
+|---|---|
+|Bower|bower install tingle --save|
+|NPM|npm install tingle.js --save|
+|Download básico|[download.zip](https://github.com/robinparisi/tingle/archive/master.zip)|
+
+Solo es necesario agregar el CSS y JS.
+
+```html
+<link rel="stylesheet" href="tingle.min.css">
+<script src="tingle.min.js"></script>
+```
 
 ### Ejemplo
 
-### Opciones
+Haz clic en el botón para ver el modal en acción.
 
+<div class="tingle-demo tingle-demo-tiny hidden">
+<h1>Tingle test</h1>
+<p>Hello world!</p>
+</div>
 
+<button class="bg-red hover:bg-blue text-blue-dark font-semibold hover:text-white py-2 px-4 border border-blue hover:border-transparent rounded js-tingle-modal-1">Click me!</button>
 
+Solo es necesario lo siguiente:
+
+```javascript
+var modal = new tingle.modal({
+    cssClass: ['class1', 'class2']
+});
+
+var btn = document.querySelector('.js-tingle-modal-1');
+btn.addEventListener('click', function() {
+    modal.open();
+});
+
+modal.setContent(document.querySelector('.tingle-demo-tiny').innerHTML);
+```
+
+Para más opciones y configuración ver: [https://robinparisi.github.io/tingle/](https://robinparisi.github.io/tingle/)
+
+<script>
+var modal = new tingle.modal({
+    cssClass: ['class1', 'class2']
+});
+
+var btn = document.querySelector('.js-tingle-modal-1');
+btn.addEventListener('click', function() {
+    modal.open();
+});
+
+modal.setContent(document.querySelector('.tingle-demo-tiny').innerHTML);
+</script>
