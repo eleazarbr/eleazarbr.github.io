@@ -45,7 +45,7 @@ gulp.task('css', function () {
         .pipe(sourcemaps.init())
         .pipe(postcss(processors))
         .pipe(postcss([
-            tailwindcss('./tailwind.js')
+            tailwindcss('tailwind.js')
         ]))
         .pipe(sourcemaps.write('.'))
         .pipe(gulp.dest('assets/built/'))
@@ -60,7 +60,7 @@ gulp.task('sass', function() {
 
 gulp.task('watch', function () {
     gulp.watch('assets/css/**', ['css']);
-    gulp.watch('./tailwind.js', ['css']);
+    gulp.watch('tailwind.js', ['css']);
 });
 
 gulp.task('zip', ['css'], function() {
