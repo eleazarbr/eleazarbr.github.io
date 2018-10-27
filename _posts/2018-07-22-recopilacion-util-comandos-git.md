@@ -67,6 +67,11 @@ git branch -d branchname
 git push origin --delete branchname
 ```
 
+**Eliminar todas las ramas de origin que ya no existan**
+```
+git remote prune origin
+```
+
 **Renombrar una rama local y remota:**
 
 - Si nos encontramos en la rama que queremos renombrar: `git branch -m new-name`

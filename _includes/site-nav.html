@@ -22,6 +22,9 @@
 			{% if site.linkedin %}
 				<a class="social-link social-link-ln" href="https://linkedin.com/in/{{ site.linkedin }}" target="_blank" rel="noopener">{% include linkedin.html %}</a>
 			{% endif %}
+			{% if site.email %}
+				<a class="social-link social-link-ml send-email-modal" href="#send-email">{% include envelope.html %}</a>
+			{% endif %}
 		</div>
 		{% if site.subscribers %}
 			<a class="subscribe-button" href="#subscribe">Subscribe</a>
