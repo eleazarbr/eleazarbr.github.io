@@ -63,7 +63,6 @@
 				</nav>
 			</div>
 		</footer>
-
 	</div>
 
 	<!-- The big email subscribe modal content -->
@@ -78,6 +77,14 @@
 				<p class="subscribe-overlay-description">Stay up to date! Get all the latest &amp; greatest posts delivered straight to your inbox</p>
 				{% include subscribe-form.html placeholder="youremail@example.com" %}
 			</div>
+		</div>
+	{% endif %}
+
+	<!-- Other Modals -->
+
+	{% if site.email %}
+		<div class="hidden">
+			{% include modal/email.html %}
 		</div>
 	{% endif %}
 

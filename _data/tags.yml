@@ -54,3 +54,7 @@ laravel:
   name: laravel
   description: false
   cover: false
+opensource:
+  name: opensource
+  description: false
+  cover: false

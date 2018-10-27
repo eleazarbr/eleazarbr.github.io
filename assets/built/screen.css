@@ -1004,14 +1004,6 @@ body {
   fill: #fff;
 }
 
-.social-link-fb svg {
-  height: 1.5rem;
-}
-
-.social-link-wb svg {
-  height: 1.6rem;
-}
-
 .social-link-wb svg path {
   stroke: #fff;
 }
