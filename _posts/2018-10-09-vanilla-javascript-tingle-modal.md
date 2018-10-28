@@ -46,7 +46,7 @@ Haz clic en el botón para ver el modal en acción.
 <p>Hello world!</p>
 </div>
 
-<button class="bg-red hover:bg-blue text-blue-dark font-semibold hover:text-white py-2 px-4 border border-blue hover:border-transparent rounded js-tingle-modal-1">Click me!</button>
+<button class="hover:bg-blue text-blue-dark font-semibold hover:text-white py-2 px-4 border border-blue hover:border-transparent rounded js-tingle-modal-1">Click me!</button>
 
 Solo es necesario lo siguiente:
 
@@ -66,14 +66,12 @@ modal.setContent(document.querySelector('.tingle-demo-tiny').innerHTML);
 Para más opciones y configuración ver: [https://robinparisi.github.io/tingle/](https://robinparisi.github.io/tingle/)
 
 <script>
-var modal = new tingle.modal({
-    cssClass: ['class1', 'class2']
+var modal_tingle_sample = new tingle.modal();
+
+var btn_sample = document.querySelector('.js-tingle-modal-1');
+btn_sample.addEventListener('click', function() {
+    modal_tingle_sample.open();
 });
 
-var btn = document.querySelector('.js-tingle-modal-1');
-btn.addEventListener('click', function() {
-    modal.open();
-});
-
-modal.setContent(document.querySelector('.tingle-demo-tiny').innerHTML);
+modal_tingle_sample.setContent(document.querySelector('.tingle-demo-tiny').innerHTML);
 </script>
