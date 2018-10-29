@@ -54,6 +54,7 @@
         "posts_per_page": 25
     },
     "dependencies": {
+        "just-validate": "^1.2.0",
         "tingle.js": "^0.13.2"
     }
 }
