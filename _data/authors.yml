@@ -5,11 +5,11 @@ eleazar:
   url:
   bio: Web developer and Software Engineer
   picture: assets/images/eleazar.jpeg
-  facebook:
+  cover: assets/images/tag-cover/northern-lights.jpg
+  facebook: # add facebook fan page
   twitter: eleazarbr
   github: eleazarbr
   linkedin: eleazarbr
   skype: e.resendez1519
   buymeacoffee: false
   email: true
-  cover: false
