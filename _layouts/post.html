@@ -25,15 +25,15 @@ into the {body} of the default.hbs template -->
         <article class="post-full {{ page.subclass }} {% unless page.cover %}no-image{% endunless %}">
 
             <header class="post-full-header">
-                <section class="post-full-meta">
-                    <time class="post-full-meta-date" datetime="{{ page.date | date:'%e %B %Y' }}">{{ page.date | date:'%e %B %Y' }}</time>
+                <section class="post-full-meta flex flex-col sm:flex-row">
+                    <time class="post-full-meta-date" datetime="{{ page.date | date:'%e %B %Y' }}">{{ page.date | date:'%e %B, %Y' }}</time>
                     {% if page.tags.size > 0 %}
                         <span class="date-divider">/</span>
                         {% for tag in page.tags %}
                             {% if forloop.index == page.tags.size %}
                                <a href='{{ site.baseurl }}tag/{{ tag | downcase | replace: ' ', '-' }}/'>{{ tag | upcase }}</a>
                             {% else %}
-                               <a href='{{ site.baseurl }}tag/{{ tag | downcase | replace: ' ', '-' }}/'>{{ tag | upcase }}</a>~
+                               <a href='{{ site.baseurl }}tag/{{ tag | downcase | replace: ' ', '-' }}/'>{{ tag | upcase }}</a>—
                             {% endif %}
                         {% endfor %}
                     {% endif %}
@@ -87,7 +87,6 @@ into the {body} of the default.hbs template -->
                             </section>
                         </section>
                         <div class="post-full-footer-right">
-                            <a href="javascript:void(0)" onclick="window.open('https://twitter.com/intent/user?original_referer=&amp;region=screen_name&amp;screen_name=eleazarbr&amp;source=followbutton&amp;variant=1.1', 'twitter', 'toolbar=no, width=650, height=300'); trackSocial('Twitter', 'Follow', 'https://www.eresendez.com'); return false;" class="author-card-button" data-show-count="false">Follow @eleazarbr</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
                             <a class="author-card-button" href="{{ site.baseurl }}author/{{ page.author }}">Read More</a>
                         </div>
                     {% endif %}

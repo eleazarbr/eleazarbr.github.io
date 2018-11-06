@@ -7,9 +7,14 @@
         <nav class="site-footer-nav">
             <a href="{{ site.baseurl }}">Últimos Posts</a>
             <!-- {% if site.facebook %}<a href="https://facebook.com/{{ site.facebook }}" target="_blank" rel="noopener">Facebook</a>{% endif %} -->
-            {% if site.twitter %}<a href="https://twitter.com/{{ site.twitter }}" target="_blank" rel="noopener">Follow me on Twitter</a>{% endif %}
+            {% if site.twitter %}
+                <!-- <a href="https://twitter.com/{{ site.twitter }}" target="_blank" rel="noopener">Follow me on Twitter</a> -->
+                <a href="javascript:void(0)" onclick="window.open('https://twitter.com/intent/user?original_referer=&amp;region=screen_name&amp;screen_name={{ site.twitter }}&amp;source=followbutton&amp;variant=1.1', 'twitter', 'toolbar=no, width=650, height=300'); trackSocial('Twitter', 'Follow', '{{ site.production_url }}'); return false;" data-show-count="false">Follow me on Twitter</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            {% endif %}
             <!-- {% if site.github %}<a href="https://github.com/{{ site.github }}" target="_blank" rel="noopener">GitHub</a>{% endif %} -->
-            {% if site.youtube %}<a href="https://youtube.com/{{ site.youtube }}" target="_blank" rel="noopener">Youtube</a>{% endif %}
+            {% if site.youtube %}
+                <a href="https://youtube.com/{{ site.youtube }}" target="_blank" rel="noopener">Youtube</a>
+            {% endif %}
             <a target="_blank" href='https://ko-fi.com/M4M6IKJ3'>Buy me a coffee</a>
         </nav>
     </div>
