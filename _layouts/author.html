@@ -48,7 +48,7 @@ logo: 'assets/images/ghost.png'
                     {% if site.linkedin %}
                         <a class="social-link" href="https://linkedin.com/in/{{ site.linkedin }}" target="_blank" rel="noopener">{% include linkedin.html %}</a>
                     {% endif %}
-                    {% if site.email %}
+                    {% if author[1].email %}
                         <a class="social-link send-email-modal-author" href="#send-email">{% include icons/envelope.html %}</a>
                     {% endif %}
                     {% if author[1].skype %}
