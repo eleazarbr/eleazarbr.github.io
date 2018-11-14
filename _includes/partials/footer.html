@@ -1,16 +1,27 @@
 <footer class="site-footer outer">
     <div class="site-footer-content inner">
-        <section class="copyright"><a href="{{ site.url }}{{ site.baseurl }}">{{ site.title }}</a> &copy; {{  site.time | date: '%Y' }}</section>
-        <section class="poweredby">Proudly published with <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> &
+        <section class="copyright">&copy; {{ site.time | date: '%Y' }} <a href="{{ site.url }}{{ site.baseurl }}">{{ site.title }}</a></section>
+        <!-- <section class="poweredby">Proudly published with <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> &
             <a href="https://pages.github.com/" target="_blank" rel="noopener">GitHub Pages</a>
-        </section>
+        </section> -->
         <nav class="site-footer-nav">
-            <a href="{{ site.baseurl }}">Últimos Posts</a>
-            <!-- {% if site.facebook %}<a href="https://facebook.com/{{ site.facebook }}" target="_blank" rel="noopener">Facebook</a>{% endif %} -->
-            {% if site.twitter %}<a href="https://twitter.com/{{ site.twitter }}" target="_blank" rel="noopener">Follow me on Twitter</a>{% endif %}
-            <!-- {% if site.github %}<a href="https://github.com/{{ site.github }}" target="_blank" rel="noopener">GitHub</a>{% endif %} -->
-            {% if site.youtube %}<a href="https://youtube.com/{{ site.youtube }}" target="_blank" rel="noopener">Youtube</a>{% endif %}
-            <a target="_blank" href='https://ko-fi.com/M4M6IKJ3'>Buy me a coffee</a>
+            <a href="{{ site.baseurl }}">Blog</a>
+            {% if site.facebook %}
+                <!-- <a href="https://facebook.com/{{ site.facebook }}" target="_blank" rel="noopener">Facebook</a> -->
+            {% endif %}
+            {% if site.twitter %}
+                <a href="https://twitter.com/{{ site.twitter }}" target="_blank" rel="noopener">Twitter</a>
+                <!-- <a href="javascript:void(0)" onclick="window.open('https://twitter.com/intent/user?original_referer=&amp;region=screen_name&amp;screen_name={{ site.twitter }}&amp;source=followbutton&amp;variant=1.1', 'twitter', 'toolbar=no, width=650, height=300'); trackSocial('Twitter', 'Follow', '{{ site.production_url }}'); return false;" data-show-count="false">Follow me on Twitter</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> -->
+            {% endif %}
+            {% if site.github %}
+                <a href="https://github.com/{{ site.github }}" target="_blank" rel="noopener">GitHub</a>
+            {% endif %}
+            {% if site.youtube %}
+                <a href="https://youtube.com/{{ site.youtube }}" target="_blank" rel="noopener">Youtube</a>
+            {% endif %}
+            {% if site.buymeacoffee %}
+                <a target="_blank" href='https://ko-fi.com/M4M6IKJ3'>Buy me a coffee</a>
+            {% endif %}
         </nav>
     </div>
 </footer>

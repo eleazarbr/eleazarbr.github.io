@@ -48,14 +48,14 @@ logo: 'assets/images/ghost.png'
                     {% if site.linkedin %}
                         <a class="social-link" href="https://linkedin.com/in/{{ site.linkedin }}" target="_blank" rel="noopener">{% include linkedin.html %}</a>
                     {% endif %}
-                    {% if site.email %}
+                    {% if author[1].email %}
                         <a class="social-link send-email-modal-author" href="#send-email">{% include icons/envelope.html %}</a>
                     {% endif %}
                     {% if author[1].skype %}
                         <a class="social-link" href="skype:e.resendez1519?call">{% include icons/skype.html %}</a>
                     {% endif %}
                         <a class="social-link social-link-rss" href="https://feedly.com/i/subscription/feed/{{ site.url }}{{ site.baseurl }}feed.xml" target="_blank" rel="noopener">{% include rss.html %}</a>
-                    {% if author[1].buymeacoffee %}
+                    {% if site.buymeacoffee %}
                         <script type='text/javascript' src='https://ko-fi.com/widgets/widget_2.js'></script><script type='text/javascript'>kofiwidget2.init('Buy me a coffee', '#090A0B', 'M4M6IKJ3');kofiwidget2.draw();</script>
                     {% endif %}
                 </div>

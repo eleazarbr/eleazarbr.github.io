@@ -3,7 +3,7 @@ eleazar:
   name: Eleazar Resendez
   url_full: https://eresendez.com
   url:
-  bio: Web developer and Software Engineer
+  bio: "A software engineer and web developer — for the last 3 years focused on Laravel framework. Reliable, responsible, serious with a strong entrepreneurial can-Do mentality and the goal of making a huge positive impact on this world."
   picture: assets/images/eleazar.jpeg
   cover: assets/images/tag-cover/northern-lights.jpg
   facebook: # add facebook fan page
@@ -12,4 +12,4 @@ eleazar:
   linkedin: eleazarbr
   skype: e.resendez1519
   buymeacoffee: false
-  email: true
+  email: false
