@@ -9,7 +9,7 @@ computer-science:
 projects:
   name: projects
   description: false
-  cover: assets/images/tag-cover/code.jpg
+  cover: assets/images/tag-cover/northern-lights.jpg
 mcc:
   name: mcc
   description: Artículos de Maestría en Ciencias de la Computación
