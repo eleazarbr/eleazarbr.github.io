@@ -1,11 +1,11 @@
 business:
   name: business
   description: false
-  cover: assets/images/others/hannah-cover.jpg
+  cover:
 computer-science:
   name: computer-science
   description: false
-  cover: assets/images/others/writing.jpg
+  cover: assets/images/tag-cover/digital.jpg
 projects:
   name: projects
   description: false
