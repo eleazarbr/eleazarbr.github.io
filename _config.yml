@@ -28,7 +28,7 @@ instagram: eleazarbr
 skype: e.resendez1519
 buymeacoffee: false
 # youtube: eleazarbr
-email: true # show the send email form
+email: false # show the send email form
 
 # Search engine
 algolia:

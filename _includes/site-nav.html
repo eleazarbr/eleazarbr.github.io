@@ -23,8 +23,9 @@
 				<a class="social-link social-link-ln" href="https://linkedin.com/in/{{ site.linkedin }}" target="_blank" rel="noopener">{% include linkedin.html %}</a>
 			{% endif %}
 			{% if site.email %}
-				<a class="social-link social-link-ml send-email-modal" href="#send-email">{% include icons/envelope.html %}</a>
+				<a id="email-modal" class="social-link social-link-ml send-email-modal" href="#send-modal">{% include icons/envelope.html %}</a>
 			{% endif %}
+				<a id="search-modal" class="social-link social-link-ml" href="#search-modal">{% include icons/search.html %}</a>
 		</div>
 		{% if site.subscribers %}
 			<a class="subscribe-button" href="#subscribe">Subscribe</a>

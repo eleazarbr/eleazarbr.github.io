@@ -66,12 +66,12 @@
 	{% endif %}
 
 	<!-- Other Modals -->
-
-	{% if site.email %}
-		<div class="hidden">
+	<div class="hidden">
+		{% if site.email %}
 			{% include modal/email.html %}
-		</div>
-	{% endif %}
+		{% endif %}
+		{% include modal/search.html %}
+	</div>
 
 	<!-- jQuery + Fitvids, which makes all video embeds responsive -->
 	<script
