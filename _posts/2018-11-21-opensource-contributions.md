@@ -1,0 +1,29 @@
+---
+layout: post
+current: post
+cover: assets/images/cover/opensource.png
+navigation: true
+title: Contribuciones Open Source
+description:
+date: 2018-11-21
+tags: [Computer Science, Open Source, Projects]
+class: post-template
+subclass: 'post'
+author: eleazar
+---
+
+Hay muchas razones para contribuir a proyectos OpenSource, cada quien tiene sus razones personales, por lo que es necesario conocer nuestras fortalezas y debilidades relacionadas con los proyectos que elegimos.
+
+De acuerdo a nuestros intereses y conocimientos podemos escoger uno o dos proyectos, eso es tarea sencilla y ya de aquí viene la parte interesante.
+
+Aquí escribiré lo que he hecho para empezar a contribuir en proyectos de código abierto.
+
+<!--
+Read More
+
+- https://www.quora.com/How-do-I-get-started-with-Open-Source-Contributions
+- https://www.quora.com/search?q=open+source+contribution
+- https://www.quora.com/search?q=open+source+contribution
+
+-->
+
