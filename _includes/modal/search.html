@@ -1,6 +1,6 @@
 <div id="search-form">
-    <form onSubmit="return lunr_search(document.getElementById('lunrsearch').value);">
-        <p><input autocomplete="off" type="text" class="transition focus:outline-0 border border-transparent focus:bg-white focus:border-grey-light placeholder-grey-darkest rounded bg-grey-lighter py-2 pr-4 pl-10 block w-full appearance-none leading-normal ds-input" id="lunrsearch" name="q" maxlength="255" value="" placeholder="Search the website" /></p>
+    <form onSubmit="return lunr_search(document.getElementById('lunrsearch').value);" novalidate name="search">
+        <input autocomplete="off" type="text" class="transition focus:outline-0 border border-transparent focus:bg-white focus:border-grey-light placeholder-grey-darkest rounded bg-grey-lighter py-2 pr-4 pl-10 block w-full appearance-none leading-normal ds-input" id="lunrsearch" name="q" maxlength="255" value="" placeholder="Search the website" data-error-text="The search field is required :)" required>
     </form>
     <div id="lunrsearchresults">
         <ul></ul>
@@ -12,6 +12,7 @@
         footer: true,
         stickyFooter: true
     });
+
 	var btn = document.querySelector('#search-modal');
     btn.addEventListener('click', function() {
         modal.open();
@@ -22,6 +23,15 @@
     });
 
     modal.setContent(document.querySelector('#search-form').innerHTML);
+
+    // Validations
+    const myForm = document.querySelector("form[name=search]");
+    myForm.addEventListener("submit", function() {
+        if (validator.checkForm(myForm)) {
+            // If all required form fields are validated, continue processing form
+        }
+        event.preventDefault();
+    });
 </script>
 
 {% if jekyll.environment != "development" %}

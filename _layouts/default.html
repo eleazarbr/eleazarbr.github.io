@@ -1,29 +1,29 @@
 <!DOCTYPE html>
 <html>
 <head>
-
 	<!-- Document Settings -->
-	<meta charset="utf-8" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 
 	<!-- Base Meta -->
 	{% include dynamic_title.html %}
-	<title>{% if title %}{{ title }}{% elsif page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
-	<meta name="HandheldFriendly" content="True" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>
+		{% if title %}{{ title }}{% elsif page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}
+	</title>
+	<meta name="HandheldFriendly" content="True">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 	<!-- Styles'n'Scripts -->
-	<link rel="stylesheet" type="text/css" href="{{ site.baseurl }}assets/built/screen.css" />
-	<link rel="stylesheet" type="text/css" href="{{ site.baseurl }}assets/built/main.css" />
-	<link rel="stylesheet" type="text/css" href="{{ site.baseurl }}assets/built/screen.edited.css" />
-	<link rel="stylesheet" type="text/css" href="{{ site.baseurl }}assets/built/syntax.css" />
-	<script type="text/javascript" src="{{ site.baseurl }}assets/js/tingle.min.js"></script>
-	<!-- highlight.js -->
+	<link rel="stylesheet" type="text/css" href="{{ site.baseurl }}assets/built/screen.css">
+	<link rel="stylesheet" type="text/css" href="{{ site.baseurl }}assets/built/main.css">
+	<link rel="stylesheet" type="text/css" href="{{ site.baseurl }}assets/built/screen.edited.css">
+	<link rel="stylesheet" type="text/css" href="{{ site.baseurl }}assets/built/syntax.css">
 	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css">
+	<script type="text/javascript" src="{{ site.baseurl }}assets/js/tingle.min.js"></script>
 	<style>.hljs { background: none; }</style>
 
 	<!-- This tag outputs SEO meta+structured data and other important settings -->
 	{% include head.html %}
-
 </head>
 <body class="{% if paginator.page > 1 %}paged archive-template{% elsif page.class %}{{ page.class }}{% else %}home-template{% endif %}">
 
@@ -80,6 +80,7 @@
 		crossorigin="anonymous">
 	</script>
 	<script type="text/javascript" src="{{ site.baseurl }}assets/js/jquery.fitvids.js"></script>
+	<script type="text/javascript" src="{{ site.baseurl }}assets/js/validator-standalone.js"></script>
 
 	<!-- highlight.js -->
 	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/components/prism-abap.min.js"></script> -->
