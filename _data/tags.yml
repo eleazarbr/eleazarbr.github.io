@@ -1,19 +1,19 @@
 business:
   name: business
   description: false
-  cover: assets/images/others/hannah-cover.jpg
+  cover:
 computer-science:
   name: computer-science
   description: false
-  cover: assets/images/others/writing.jpg
+  cover: assets/images/tag-cover/digital.jpg
 projects:
   name: projects
   description: false
-  cover: assets/images/cover/banner-hacking.jpg
+  cover: assets/images/tag-cover/northern-lights.jpg
 mcc:
   name: mcc
   description: Artículos de Maestría en Ciencias de la Computación
-  cover: assets/images/cover/banner-digital.jpg
+  cover: assets/images/tag-cover/digital.jpg
 self-improvement:
   name: self-improvement
   description: false
