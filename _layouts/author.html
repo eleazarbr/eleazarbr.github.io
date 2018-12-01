@@ -37,10 +37,10 @@ logo: 'assets/images/ghost.png'
                         {% if paginator.total_posts == 0 %}No posts{% elsif paginator.total_posts == 1 %}1 post{% else %}{{ paginator.total_posts }} posts{% endif %} <span class="bull">&bull;</span>
                     </div>
                     {% if author[1].url %}
-                        <a class="social-link" href="{{ author[1].url_full }}" target="_blank" rel="noopener">{% include website.html %}</a>
+                        <a class="social-link" href="{{ author[1].url_full }}" target="_blank" rel="noopener">{% include icons/website.html %}</a>
                     {% endif %}
                     {% if author[1].twitter %}
-                        <a class="social-link" href="https://twitter.com/{{ author[1].twitter }}" target="_blank" rel="noopener" data-tooltip="Follow on Twitter">{% include twitter.html %}</a>
+                        <a class="social-link" href="https://twitter.com/{{ author[1].twitter }}" target="_blank" rel="noopener" data-tooltip="Follow on Twitter">{% include icons/twitter.html %}</a>
                     {% endif %}
                     {% if author[1].facebook %}
                         <a class="social-link" href="https://facebook.com/{{ author[1].facebook }}" target="_blank" rel="noopener">{% include icons/facebook.html %}</a>
@@ -49,7 +49,7 @@ logo: 'assets/images/ghost.png'
                         <a class="social-link" href="https://github.com/{{ site.github }}" target="_blank" rel="noopener" data-tooltip="Overview - GitHub">{% include icons/github.html %}</a>
                     {% endif %}
                     {% if site.linkedin %}
-                        <a class="social-link" href="https://linkedin.com/in/{{ site.linkedin }}" target="_blank" rel="noopener" data-tooltip="Let's connect!">{% include linkedin.html %}</a>
+                        <a class="social-link" href="https://linkedin.com/in/{{ site.linkedin }}" target="_blank" rel="noopener" data-tooltip="Let's connect!">{% include icons/linkedin.html %}</a>
                     {% endif %}
                     {% if author[1].email %}
                         <a class="social-link send-email-modal-author" href="#send-email">{% include icons/envelope.html %}</a>
@@ -57,7 +57,7 @@ logo: 'assets/images/ghost.png'
                     {% if author[1].skype %}
                         <a class="social-link" href="skype:e.resendez1519?call" data-tooltip="Call now!">{% include icons/skype.html %}</a>
                     {% endif %}
-                        <a class="social-link social-link-rss" href="https://feedly.com/i/subscription/feed/{{ site.url }}{{ site.baseurl }}feed.xml" target="_blank" rel="noopener" data-tooltip="Add RSS feed">{% include rss.html %}</a>
+                        <a class="social-link social-link-rss" href="https://feedly.com/i/subscription/feed/{{ site.url }}{{ site.baseurl }}feed.xml" target="_blank" rel="noopener" data-tooltip="Add RSS feed">{% include icons/rss.html %}</a>
                     {% if site.buymeacoffee %}
                         <script type='text/javascript' src='https://ko-fi.com/widgets/widget_2.js'></script><script type='text/javascript'>kofiwidget2.init('Buy me a coffee', '#090A0B', 'M4M6IKJ3');kofiwidget2.draw();</script>
                     {% endif %}

@@ -10,28 +10,8 @@
 	<span class="floating-header-divider">&mdash;</span>
 	<div class="floating-header-title">{{ page.title }}</div>
 	<div class="floating-header-share">
-		<div class="floating-header-share-label">Share this {% include point.html %}</div>
+		<div class="floating-header-share-label">Share this {% include icons/point.html %}</div>
 		<div class="addthis_inline_share_toolbox"></div>
-		<!-- <a class="floating-header-share-fb" href="https://www.facebook.com/sharer/sharer.php?u={{ site.production_url }}{{ page.url | remove_first: '/' }}"
-			onclick="window.open(this.href, 'share-facebook','width=580,height=296');return false;">
-			{% include icons/facebook.html %}
-		</a>
-		<a class="floating-header-share-tw" href="https://twitter.com/share?text={{ page.title | url_encode }}&amp;url={{ site.production_url }}{{ page.url | remove_first: '/' }}"
-			onclick="window.open(this.href, 'share-twitter', 'width=550,height=235');return false;">
-			{% include twitter.html %}
-		</a>
-		<a class="floating-header-share-ln" href="https://www.linkedin.com/shareArticle?mini=true&url={{ site.production_url }}{{ page.url | remove_first: '/' }}&title={{ page.title | url_encode }}&source=eresendez.com"
-			onclick="window.open(this.href, 'share-linkedin','width=580,height=296');return false;">
-			{% include linkedin.html %}
-		</a>
-		<a class="floating-header-share-pt" href="https://pinterest.com/pin/create/link/?url={{ site.production_url }}{{ page.url | remove_first: '/' }}&media={{ site.production_url }}{{ page.cover }}&description={{ page.title | url_encode }}"
-			onclick="window.open(this.href, 'share-pinterest','width=580,height=296');return false;">
-			{% include pinterest.html %}
-		</a>
-		<a class="floating-header-share-wa" href="https://web.whatsapp.com/send?text={{ site.production_url }}{{ page.url | remove_first: '/' }}" data-action="share/whatsapp/share"
-			onclick="window.open(this.href, 'share-whatsapp','width=580,height=296');return false;">
-			{% include whatsapp.html %}
-		</a> -->
 	</div>
 	<progress class="progress" value="0">
 		<div class="progress-container">
