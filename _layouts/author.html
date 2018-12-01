@@ -24,7 +24,10 @@ logo: 'assets/images/ghost.png'
                 {% endif %}
                 <h1 class="site-title">{{ author[1].name }}</h1>
                 {% if author[1].bio %}
-                    <h2 class="author-bio">{{ author[1].bio }}</h2>
+                    <h2 class="author-bio">
+                        {% capture filename %}{{ author[1].bio }}{% endcapture %}
+                        {% include {{ filename }} %}
+                    </h2>
                 {% endif %}
                 <div class="author-meta">
                     {% if author[1].location %}
@@ -77,3 +80,19 @@ logo: 'assets/images/ghost.png'
 
     </div>
 </main>
+
+<script>
+(function() {
+    document.addEventListener('DOMContentLoaded', function(){
+        var children = document.getElementsByClassName('changing-keywords')[0].children;
+        var length = children.length;
+        var idx = 0;
+
+        setInterval(function() {
+            children[idx].className = "hidden";
+            idx = (idx + 1) % length;
+            children[idx].className = "visible";
+            }, 2000);
+        });
+})();
+</script>
