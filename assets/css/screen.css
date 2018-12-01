@@ -2006,10 +2006,8 @@ Usage (In Ghost editor):
     opacity: 1;
 }
 
+/* Create the parallax scrolling effect */
 .parallax {
-    min-height: 300px;
-
-    /* Create the parallax scrolling effect */
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;

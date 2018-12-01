@@ -2682,7 +2682,6 @@ body {
 }
 
 .parallax {
-  min-height: 300px;
   background-attachment: fixed;
   background-position: 50%;
   background-repeat: no-repeat;
