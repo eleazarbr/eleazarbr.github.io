@@ -21,13 +21,13 @@ into the {body} of the default.hbs template -->
                 {% endif %}
             </h1>
             <h2 class="site-description">{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}</h2>
-            <h2 class="site-description">
+            <!-- <h2 class="site-description">
                 <span class="changing-keywords w-auto relative align-top inline-block">
                     <span class="visible">Learn  <i>ideas</i></span>
                     <span class="hidden">Build   <i>code</i></span>
                     <span class="hidden">Measure <i>data</i></span>
                 </span>
-            </h2>
+            </h2> -->
         </div>
         {% include site-nav.html %}
     </div>
@@ -45,7 +45,7 @@ into the {body} of the default.hbs template -->
     </div>
 </main>
 
-<script src="{{ site.baseurl }}assets/js/changing-keywords.js"></script>
+<!-- <script src="{{ site.baseurl }}assets/js/changing-keywords.js"></script> -->
 <script src="{{ site.baseurl }}assets/js/snowflakes.min.js"></script>
 <script>
     var sf = new Snowflakes({
