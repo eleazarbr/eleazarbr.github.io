@@ -2014,21 +2014,21 @@ Usage (In Ghost editor):
     background-size: cover;
 }
 
-/* Footer colorcycle effect */
-#overlay {
+/* Footer animation wave color effect */
+/* #overlay {
     -o-animation: colorcycle 20s infinite;
     -moz-animation: colorcycle20s infinite;
     -webkit-animation: colorcycle 20s infinite;
     animation: colorcycle 20s infinite;
-}
+} */
 
-@-o-keyframes colorcycle {
+/* @-o-keyframes colorcycle {
     0%   {background: #000D29;}
     25%  {background: #118C8B;}
     50%  {background: #BE3B45;}
     75%  {background: #F14D49;}
     100% {background: #000D29;}
-  }
+}
 
 @-moz-keyframes colorcycle {
     0%   {background: #000D29;}
@@ -2038,7 +2038,7 @@ Usage (In Ghost editor):
     100% {background: #000D29;}
 }
 
-  @-webkit-keyframes colorcycle {
+@-webkit-keyframes colorcycle {
     0%   {background: #000D29;}
     25%  {background: #118C8B;}
     50%  {background: #BE3B45;}
@@ -2052,4 +2052,85 @@ Usage (In Ghost editor):
     50%  {background: #BE3B45;}
     75%  {background: #F14D49;}
     100% {background: #000D29;}
+} */
+
+.overlay {
+    background: #59adeb;
+    background: -moz-linear-gradient(-45deg, #59adeb 0%, #42c2b5 52%, #34ce93 100%);
+    background: -webkit-linear-gradient(-45deg, #59adeb 0%, #42c2b5 52%, #34ce93 100%);
+    background: linear-gradient(135deg, #59adeb 0%, #42c2b5 52%, #34ce93 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#59adeb', endColorstr='#34ce93', GradientType=1);
+    background-size: 350% 350%;
+    animation: waveColors 8s ease infinite;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+@-moz-keyframes waveColors {
+    0% {
+      background-position: 0% 7%;
+    }
+    50% {
+      background-position: 100% 94%;
+    }
+    100% {
+      background-position: 0% 7%;
+    }
 }
+
+@-webkit-keyframes waveColors {
+    0% {
+      background-position: 0% 7%;
+    }
+    50% {
+      background-position: 100% 94%;
+    }
+    100% {
+      background-position: 0% 7%;
+    }
+}
+
+@keyframes waveColors {
+    0% {
+      background-position: 0% 7%;
+    }
+    50% {
+      background-position: 100% 94%;
+    }
+    100% {
+      background-position: 0% 7%;
+    }
+}
+
+.site-header:after{
+    content:"";
+    width:100%;
+    height:40%;
+    position:absolute;
+    bottom:0;
+    left:0;
+    z-index:-1;
+   background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(27,32,48,1) 100%);
+  }
+
+.site-header:before{
+    content:"";
+  width:100%;
+  height:100%;
+  position:absolute;
+  top:0;
+  left:0;
+    -webkit-backface-visibility: hidden;
+    -webkit-transform: translateZ(0) scale(1.0, 1.0);
+    transform: translateZ(0);
+  animation: grow 60s  linear 10ms infinite;
+  transition:all 0.2s ease-in-out;
+  z-index:-2
+}
+
+@keyframes grow{
+    0% { transform:scale(1)}
+    50% { transform:scale(1.2)}
+  }
