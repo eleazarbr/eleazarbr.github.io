@@ -2013,3 +2013,43 @@ Usage (In Ghost editor):
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+/* Footer colorcycle effect */
+#overlay {
+    -o-animation: colorcycle 20s infinite;
+    -moz-animation: colorcycle20s infinite;
+    -webkit-animation: colorcycle 20s infinite;
+    animation: colorcycle 20s infinite;
+}
+
+@-o-keyframes colorcycle {
+    0%   {background: #000D29;}
+    25%  {background: #118C8B;}
+    50%  {background: #BE3B45;}
+    75%  {background: #F14D49;}
+    100% {background: #000D29;}
+  }
+
+@-moz-keyframes colorcycle {
+    0%   {background: #000D29;}
+    25%  {background: #118C8B;}
+    50%  {background: #BE3B45;}
+    75%  {background: #F14D49;}
+    100% {background: #000D29;}
+}
+
+  @-webkit-keyframes colorcycle {
+    0%   {background: #000D29;}
+    25%  {background: #118C8B;}
+    50%  {background: #BE3B45;}
+    75%  {background: #F14D49;}
+    100% {background: #000D29;}
+}
+
+@keyframes colorcycle {
+    0%   {background: #000D29;}
+    25%  {background: #118C8B;}
+    50%  {background: #BE3B45;}
+    75%  {background: #F14D49;}
+    100% {background: #000D29;}
+}

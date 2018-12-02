@@ -2688,4 +2688,30 @@ body {
   background-size: cover;
 }
 
+#overlay {
+  animation: a 20s infinite;
+}
+
+@keyframes a {
+  0% {
+    background: #000d29;
+  }
+
+  25% {
+    background: #118c8b;
+  }
+
+  50% {
+    background: #be3b45;
+  }
+
+  75% {
+    background: #f14d49;
+  }
+
+  to {
+    background: #000d29;
+  }
+}
+
 /*# sourceMappingURL=screen.css.map */
