@@ -1,6 +1,25 @@
+<div id="myNav" class="covering">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    {% for tag in site.data.tags %}
+        <div class="covering-content">
+            <a href="/tag/{{ tag[1].name }}"><code>{{ tag[1].display }}</code></a>
+        </div>
+    {% endfor %}
+</div>
+
 <ul class="nav" role="menu">
     <li role="menuitem"><a href="{{ site.baseurl }}">Home</a></li>
     <li role="menuitem"><a href="{{ site.baseurl }}tag/projects/">Work</a></li>
+    <li role="menuitem"><a href="#filter-by-tags" onclick="openNav()">Categories</a></li>
     <li role="menuitem"><a href="{{ site.baseurl }}author/eleazar">About</a></li>
-    <!-- <li role="menuitem"><a href="{{ site.baseurl }}tag/mcc">MCC</a></li> -->
 </ul>
+
+<script>
+    function openNav() {
+        document.getElementById("myNav").style.height = "100%";
+    }
+
+    function closeNav() {
+        document.getElementById("myNav").style.height = "0%";
+    }
+</script>

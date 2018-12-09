@@ -1,60 +1,70 @@
 business:
   name: business
+  display: Business
   description: false
   cover:
 computer-science:
   name: computer-science
+  display: Computer Science
   description: false
   cover: assets/images/tag-cover/digital.jpg
 projects:
   name: projects
+  display: Portfolio
   description: false
   cover: assets/images/tag-cover/mac-dark.jpg
-mcc:
-  name: mcc
-  description: Artículos de Maestría en Ciencias de la Computación
-  cover: assets/images/tag-cover/digital.jpg
-self-improvement:
-  name: self-improvement
-  description: false
-  cover: false
 web-development:
   name: web-development
-  description: false
-  cover: false
-software-design:
-  name: software-design
+  display: Web Development
   description: false
   cover: false
 marketing:
   name: marketing
-  description: false
-  cover: false
-goals:
-  name: goals
+  display: Marketing
   description: false
   cover: false
 frontend:
   name: frontend
+  display: Frontend
   description: false
   cover: false
 backend:
   name: backend
+  display: Backend
+  description: false
+  cover: false
+software-design:
+  name: software-design
+  display: Software Design
   description: false
   cover: false
 git:
   name: git
+  display: Git
   description: false
   cover: false
 woocommerce:
   name: woocommerce
+  display: WooCommerce
   description: false
   cover: false
 laravel:
   name: laravel
+  display: Laravel
   description: false
   cover: false
 opensource:
   name: opensource
+  display: OpenSource
+  description: false
+  cover: false
+self-improvement:
+  name: self-improvement
+  display: Self Improvement
+  description: false
+  cover: false
+goals:
+  name: goals
+  display: Goals
   description: false
   cover: false

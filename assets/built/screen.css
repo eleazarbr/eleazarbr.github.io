@@ -2744,4 +2744,69 @@ body {
   }
 }
 
+.covering {
+  height: 0%;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #000;
+  background-color: rgba(0, 0, 0, .9);
+  overflow-y: hidden;
+  transition: .5s;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: row wrap;
+      flex-flow: row wrap;
+}
+
+.covering-content {
+  position: relative;
+  top: 15%;
+  margin-top: 15px;
+  -ms-flex: 1 auto;
+      flex: 1 auto;
+  padding: .5rem;
+  text-align: center;
+}
+
+.covering a {
+  text-decoration: none;
+  font-size: 30px;
+  color: #f1d9d9;
+  display: block;
+  transition: .3s;
+  padding: .5rem 1rem;
+  border-radius: 3px;
+}
+
+.covering a:focus,
+.covering a:hover {
+  color: #f1f1f1;
+}
+
+.covering .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+@media screen and (max-height:450px) {
+  .covering {
+    overflow-y: auto;
+  }
+
+  .covering a {
+    font-size: 20px;
+  }
+
+  .covering .closebtn {
+    font-size: 35px;
+    top: 15px;
+    right: 35px;
+  }
+}
+
 /*# sourceMappingURL=screen.css.map */
