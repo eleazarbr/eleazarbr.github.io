@@ -69,7 +69,7 @@ Para ello vamos a utilizar una variedad de herramientas que pueden facilitar est
 
 [The Stocks](http://thestocks.im/) reúne las mejores fotos sin royalties en un sitio web limpio y fácil de navegar.
 
-[Death To Stock Photo](http://join.deathtothestockphoto.com/) envía imágenes gratuitas por corre electrónico una vez al mes, por lo que es una opción para comenzar a crear una colección de imágenes únicas y usarlas en el futuro.
+[Death To Stock Photo](http://join.deathtothestockphoto.com/) envía imágenes gratuitas por correo electrónico una vez al mes, por lo que es una opción para comenzar a crear una colección de imágenes únicas y usarlas en el futuro.
 
 [Pixabay](http://pixabay.com/) Más de 400,000 imágenes gratis, vectores e ilustraciones artísticas, todas las imágenes de este sitio son de Pixabay.
 

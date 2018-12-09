@@ -26,6 +26,8 @@ Para este ejemplo, se _seleccionó el proyecto_ [alexeymezenin/laravel-best-prac
 
 ### Enviar un correo de introducción
 
+Una vez que haya encontrado el proyecto, suscríbase a su lista de correo de desarrollo. La mayoría de los proyectos tienen detalles sobre cómo contribuir / comenzar las secciones. Si todavía no se siente cómodo presentándose a la comunidad, espere un momento y lea los correos que vienen de la lista.
+
 ### Empezar a contribuir
 
 Aparte de _codificar_, existen muchas maneras de contribuir, por ejemplo:
