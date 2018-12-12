@@ -22,6 +22,7 @@ Desde luego que hay muchos recursos en la web, solo hay que *googlear* y encontr
 - [author: eleazar](#author-eleazar)
 - [CSS Selectors](#css-selectors)
 - [CSS Class](#css-class)
+- [Naming Conventions](#naming-conventions)
 - [Importar un Google Font](#importar-un-google-font)
 - [El atributo id para dar estilo](#el-atributo-id-para-dar-estilo)
 - [Usar notación de reloj para especificar el Padding y Margin de un elemento](#usar-notaci%C3%B3n-de-reloj-para-especificar-el-padding-y-margin-de-un-elemento)
@@ -62,6 +63,33 @@ Las clases son estilos reutilizables que se agregan a los elementos HTML.
 
 Lo anterior, se puede aplicar a cualquier elemento HTML: `<h2 class="blue-text">CatPhotoApp</h2>`.
 
+## Naming Conventions
+
+La idea es hacer que cada clase sea un componente individual que pueda ser reutiizado, dar a cada elemento una clase que lo represente, ser específicos con el nombre de las clases para que puedan ser reutilizables y fácil de identificar.
+
+En resumen:
+
+- Mantener el nombre en minúsculas y utilizar guiones (no guiones bajos o camelCase). Los guiones sirven como rupturas naturales en la clase relacionada (por ejemplo, `.btn` y `.btn-danger`).
+- Evitar la notación abreviada excesiva y arbitraria. `.btn` es útil para *button*, pero `.s` no significa nada.
+- Mantenga las clases lo más cortas y concisas posible.
+- Use nombres significativos; Utilice nombres *estructurales* o de *propósito* sobre presentacionales. Nombrar de acuerdo al uso en lugar de la apariencia.
+- Usar prefijos basadas en la clase primaria o base más cercana.
+- Use las clases `.js-*` para denotar el comportamiento (a diferencia del estilo), pero mantenga estas clases fuera de su CSS.
+
+También es útil aplicar muchas de estas reglas al crear nombres de variables Sass y Less.
+
+```css
+    /* Ejemplo malo */
+    .t { ... }
+    .red { ... }
+    .header { ... }
+
+    /* Ejemplo bueno */
+    .tweet { ... }
+    .important { ... }
+    .tweet-header { ... }
+```
+
 ## Importar un Google Font
 
 En adición a los fonts comunes, se puede especificar *custom web fonts*. Google Fonts es una librería gratis, para importar un Google Font, simplemente se copia la URL y se pega en el HTML.
@@ -87,6 +115,8 @@ Un `id` incluso tiene más importancia que una `class` , si ambos son aplicados 
       background-color: green;
     }
 ```
+
+> Casi nunca deberías usar `id` para dar estilo. El comportamiento roto debido a las colisiones con `id` es difícil de rastrear y es molesto.
 
 ## Usar notación de reloj para especificar el Padding y Margin de un elemento
 
