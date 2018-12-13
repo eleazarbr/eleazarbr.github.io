@@ -17,17 +17,12 @@ web-development:
   name: web-development
   display: Web Development
   description: false
-  cover: false
-marketing:
-  name: marketing
-  display: Marketing
-  description: false
-  cover: false
+  cover: assets/images/tag-cover/web-development.jpg
 frontend:
   name: frontend
   display: Frontend
   description: false
-  cover: false
+  cover: assets/images/tag-cover/frontend.jpg
 backend:
   name: backend
   display: Backend
@@ -66,5 +61,10 @@ self-improvement:
 goals:
   name: goals
   display: Goals
+  description: false
+  cover: false
+marketing:
+  name: marketing
+  display: Marketing
   description: false
   cover: false
