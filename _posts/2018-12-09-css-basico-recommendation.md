@@ -12,7 +12,7 @@ subclass: 'post'
 author: eleazar
 ---
 
-El término *recommendation* básicamente significa un estándar no forzoso, por lo que hay recomendaciones en este tema; mantenerse al día con todo lo que es el desarrollo web es una tarea casi imposible.
+Recomendaciones para conocer y desarrollar un CSS flexible, duradero y sostenible (@mdo).
 
 Lo mejor siempre será aprender bien los fundamentos (HTML, CSS y Javascript) ya que la web gira entorno a estas tecnologías, por lo que vale la pena invertir el tiempo.
 
@@ -22,7 +22,9 @@ Desde luego que hay muchos recursos en la web, solo hay que *googlear* y encontr
 - [author: eleazar](#author-eleazar)
 - [CSS Selectors](#css-selectors)
 - [CSS Class](#css-class)
+- [Orden de declaraciones](#orden-de-declaraciones)
 - [Naming Conventions](#naming-conventions)
+- [Media query placement](#media-query-placement)
 - [Importar un Google Font](#importar-un-google-font)
 - [El atributo id para dar estilo](#el-atributo-id-para-dar-estilo)
 - [Usar notación de reloj para especificar el Padding y Margin de un elemento](#usar-notaci%C3%B3n-de-reloj-para-especificar-el-padding-y-margin-de-un-elemento)
@@ -43,10 +45,10 @@ Desde luego que hay muchos recursos en la web, solo hay que *googlear* y encontr
 
 ## CSS Selectors
 
-Existen cientos de `properties` CSS para dar estilo a la página. Un CSS Selector es por ejemplo, si queremos que todos los elementos `h2` sean rojos, añadimos la siguiente regla de estilo:
+Existen cientos de `properties` CSS para dar estilo a los elementos HTML. Un [CSS Selector](https://www.w3schools.com/cssref/css_selectors.asp) es un patrón usado para seleccionar el elemento al cual se le va dar estilo. Por ejemplo, si queremos que todos los elementos `h2` sean rojos, añadimos la siguiente regla de estilo:
 
 ```css
-h2 {color: red;}
+h2 { color: red; }
 ```
 
 Es importante recordar agregar el punto y coma al final de cada regla de estilo.
@@ -62,6 +64,53 @@ Las clases son estilos reutilizables que se agregan a los elementos HTML.
 ```
 
 Lo anterior, se puede aplicar a cualquier elemento HTML: `<h2 class="blue-text">CatPhotoApp</h2>`.
+
+## Orden de declaraciones
+
+Las declaraciones de propiedades se deben agrupar siguiendo el orden:
+
+1. Posicionamiento
+2. Box model
+3. Tipográfico
+4. Visual
+
+El posicionamiento es lo primero porque puede re-mover un elemento del flujo normal del documento y anular los estilos relacionados con el *box-model*.
+
+El box-model viene a continuación, ya que dicta las dimensiones y la ubicación de un componente.
+
+Todo lo demás tiene lugar dentro del componente o sin afectar a las dos secciones anteriores, y por lo tanto, son las últimas.
+
+```scss
+    .declaration-order {
+      /* Positioning */
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      z-index: 100;
+
+      /* Box-model */
+      display: block;
+      float: right;
+      width: 100px;
+      height: 100px;
+
+      /* Typography */
+      font: normal 13px "Helvetica Neue", sans-serif;
+      line-height: 1.5;
+      color: #333;
+      text-align: center;
+
+      /* Visual */
+      background-color: #f5f5f5;
+      border: 1px solid #e5e5e5;
+      border-radius: 3px;
+
+      /* Misc */
+      opacity: 1;
+    }
+```
 
 ## Naming Conventions
 
@@ -90,11 +139,36 @@ También es útil aplicar muchas de estas reglas al crear nombres de variables S
     .tweet-header { ... }
 ```
 
+## Media query placement
+
+Colocar los `media query` lo más cerca posible del conjunto de reglas. No los agrupe todos en una hoja de estilo separada o al final del documento. Ejemplo:
+
+```css
+    .element { ... }
+    .element-avatar { ... }
+    .element-selected { ... }
+
+    @media (min-width: 480px) {
+      .element { ...}
+      .element-avatar { ... }
+      .element-selected { ... }
+    }
+```
+
 ## Importar un Google Font
 
 En adición a los fonts comunes, se puede especificar *custom web fonts*. Google Fonts es una librería gratis, para importar un Google Font, simplemente se copia la URL y se pega en el HTML.
 
 `<link href="[https://fonts.googleapis.com/css?family=Lobster](https://fonts.googleapis.com/css?family=Lobster)" rel="stylesheet" type="text/css">`
+
+> No uses @import
+
+Comparado con `<link>`, `@import` es más lento, añade peticiones extra y puede causar otros problemas imprevistos.
+
+```html
+    <!-- Use link elements -->
+    <link rel="stylesheet" href="core.css">
+```
 
 Ahora, ya podemos utilizar el font Lobster con la regla: `font-family: Lobster;`. Cuando un font no esta disponible, podemos decirle al navegador que utilice otro font, separándolo con comas.
 
@@ -282,3 +356,4 @@ Si se definen las variables en el elemento `:root` estarán disponibles para tod
 
 - Un buen recurso es [CanIUse.com](https://caniuse.com/) en donde puedes tipear cualquier *feature* en su buscador para saber si el navegador soporta la característica y en que versión.
 - [Mozilla Developer Network](https://developer.mozilla.org/), es otro gran sitio que uso diariamente.
+- [codeguide.co](http://codeguide.co/#html-syntax)
