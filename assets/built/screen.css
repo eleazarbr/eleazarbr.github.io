@@ -2781,7 +2781,7 @@ body {
 .go-top {
   position: fixed;
   bottom: 100px;
-  right: 20px;
+  right: 30px;
   background: #000;
   background: rgba(0, 0, 0, .7);
   width: 50px;

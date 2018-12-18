@@ -2121,7 +2121,7 @@ Usage (In Ghost editor):
 .go-top {
     position: fixed;
     bottom: 100px;
-    right: 20px;
+    right: 30px;
     background: rgb(0, 0, 0);
     background: rgba(0, 0, 0, 0.7);
     width: 50px;
@@ -2129,7 +2129,7 @@ Usage (In Ghost editor):
     display: block;
     text-decoration: none;
     -webkit-border-radius: 35px;
-    -moz-border-radius: 35px;
+    -moz-border-radius: 30px;
     border-radius: 35px;
     display: none;
     -webkit-transition: all 0.3s linear;
