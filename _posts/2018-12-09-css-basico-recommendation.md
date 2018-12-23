@@ -6,7 +6,7 @@ navigation: true
 title: CSS básico — Recommendation
 description:
 date: 2018-12-09
-tags: [web development, frontend]
+tags: [Web Development, Frontend]
 class: post-template
 subclass: 'post'
 author: eleazar

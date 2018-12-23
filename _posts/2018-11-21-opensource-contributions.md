@@ -3,10 +3,10 @@ layout: post
 current: post
 cover: assets/images/cover/opensource.png
 navigation: true
-title: Contribuciones Open Source
+title: Contribuciones OpenSource
 description:
 date: 2018-11-21
-tags: [Computer Science, Open Source, Projects]
+tags: [Projects, OpenSource]
 class: post-template
 subclass: 'post'
 author: eleazar
