@@ -1267,6 +1267,8 @@ body {
 .post-full-title {
   margin: 0;
   color: #090a0b;
+  font-family: Playfair Display, serif;
+  font-weight: 900;
 }
 
 .date-divider {
