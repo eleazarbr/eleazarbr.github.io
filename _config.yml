@@ -70,6 +70,8 @@ feed:
 # Disqus comments as a per-post basis
 # ...
 
+snowflakes: false
+
 # Settings for builing master branch with travis-ci
 # with jekyll-travis
 

@@ -45,11 +45,6 @@ into the {body} of the default.hbs template -->
     </div>
 </main>
 
-<!-- <script src="{{ site.baseurl }}assets/js/changing-keywords.js"></script> -->
-<script src="{{ site.baseurl }}assets/js/snowflakes.min.js"></script>
-<script>
-    var sf = new Snowflakes({
-        count: 25,
-        speed: 0.8
-    });
-</script>
+{% if site.snowflakes %}
+    {% include snowflakes.html %}
+{% endif %}

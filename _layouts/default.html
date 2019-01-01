@@ -1,22 +1,21 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<!-- Document Settings -->
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-
 	<!-- Base Meta -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="HandheldFriendly" content="True">
+	<meta charset="utf-8">
+
 	{% include dynamic_title.html %}
 	<title>
 		{% if title %}{{ title }}{% elsif page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}
 	</title>
-	<meta name="HandheldFriendly" content="True">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 	<!-- Styles'n'Scripts -->
 	<link rel="stylesheet" type="text/css" href="{{ site.baseurl }}assets/built/screen.css">
-	<link rel="stylesheet" type="text/css" href="{{ site.baseurl }}assets/built/main.css">
 	<link rel="stylesheet" type="text/css" href="{{ site.baseurl }}assets/built/screen.edited.css">
+	<link rel="stylesheet" type="text/css" href="{{ site.baseurl }}assets/built/main.css">
 	<link rel="stylesheet" type="text/css" href="{{ site.baseurl }}assets/built/syntax.css">
 	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
