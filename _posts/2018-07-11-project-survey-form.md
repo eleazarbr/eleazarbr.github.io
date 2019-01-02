@@ -2,10 +2,10 @@
 layout: post
 current: post
 cover: assets/images/cover/survey-form.jpg
-navigation: True
+navigation: true
 title: Responsive Web Design Projects - Build a Survey Form
 date: 2018-07-11
-tags: [Computer Science, Frontend, Projects]
+tags: [Projects, Frontend]
 class: post-template
 subclass: 'post'
 author: eleazar
@@ -31,8 +31,8 @@ A continuación, el código HTML final:
 	<form id="survey-form" class="form-container">
 		<h1 id="title">Survey Form</h1>
 		<p id="description">
-			Thanks for your time, I'm doing some research on 
-			<br>"People between 20 and 35 have desire to hire a dessert table for events". 
+			Thanks for your time, I'm doing some research on
+			<br>"People between 20 and 35 have desire to hire a dessert table for events".
 			<br>Before we start, can you tell me a bit about yourself?
 		</p>
 		<div class="flex-items">
@@ -40,7 +40,7 @@ A continuación, el código HTML final:
 				<label for="name" id="name-label"> * Name </label>
 			</div>
 			<div class="right-item">
-				<input type="text" class="text-input" name="name" id="name" 
+				<input type="text" class="text-input" name="name" id="name"
 					placeholder="Enter your name" required autofocus>
 			</div>
 		</div>
@@ -50,7 +50,7 @@ A continuación, el código HTML final:
 				<label for="email" id="email-label"> * Email </label>
 			</div>
 			<div class="right-item">
-				<input type="email" class="text-input" name="email" id="email" 
+				<input type="email" class="text-input" name="email" id="email"
 					placeholder="Enter your email" required>
 			</div>
 		</div>
@@ -60,11 +60,11 @@ A continuación, el código HTML final:
 				<label for="age" id="age-label"> * Age </label>
 			</div>
 			<div class="right-item">
-				<input  class="text-input" type="number" name="age" id="number" min="20" max="35" 
+				<input  class="text-input" type="number" name="age" id="number" min="20" max="35"
 					placeholder="You must be between 20 and 35 :)">
 			</div>
 		</div>
-	
+
 		<div class="flex-items">
 			<div class="left-item">
 				<label for="question-1">
@@ -90,7 +90,7 @@ A continuación, el código HTML final:
 				<textarea class="text-input" id="question-2" name="question-2"></textarea>
 			</div>
 		</div>
-		
+
 		<div class="flex-items">
 			<div class="left-item">
 				<label for="question-3"> Why is this a problem for you? </label>
@@ -116,7 +116,7 @@ A continuación, el código HTML final:
 		<div class="flex-items">
 			<div class="left-item">
 				<label for="question-5">
-					I’m actually exploring a solution to solve your problem. 
+					I’m actually exploring a solution to solve your problem.
 					Can I contact you for feedback if we find a solution?
 				</label>
 			</div>
@@ -139,7 +139,7 @@ A continuación, el código HTML final:
 </div>
 ```
 
-En resumen de la parte CSS: 
+En resumen de la parte CSS:
 
 * Hay una división llamada `container` con un `width: 100%;` y `display: flex;`, dentro del mismo, un formulario con `width: 50%;`
 * Se aplica una clase para los items de la izquierda y otra para los items de derecha
@@ -184,8 +184,8 @@ En resumen de la parte CSS:
 }
 
 body {
-	font-family: system-ui, BlinkMacSystemFont, 
-		Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, 
+	font-family: system-ui, BlinkMacSystemFont,
+		Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell,
 		Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 

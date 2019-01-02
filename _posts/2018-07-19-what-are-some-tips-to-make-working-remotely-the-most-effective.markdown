@@ -5,7 +5,7 @@ cover: assets/images/cover/remote-laptop.jpg
 navigation: True
 title: ¿Cuáles son algunos consejos para que trabajar de forma remota sea lo más efectivo?
 date: 2018-07-19
-tags: [Computer Science, Web development]
+tags: [Technology, Web development]
 class: post-template
 subclass: 'post'
 author: eleazar

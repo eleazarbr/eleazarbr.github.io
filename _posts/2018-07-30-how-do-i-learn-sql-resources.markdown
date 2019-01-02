@@ -5,7 +5,7 @@ cover: assets/images/cover/db-schema.png
 navigation: True
 title: Recursos para aprender SQL
 date: 2018-07-30
-tags: [Computer Science, SQL]
+tags: [Technology, SQL]
 class: post-template
 subclass: 'post'
 author: eleazar

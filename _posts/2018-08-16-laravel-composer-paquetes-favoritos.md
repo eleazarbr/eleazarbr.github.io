@@ -6,7 +6,7 @@ navigation: true
 title: "Laravel 5.6: Lista de paquetes favoritos"
 description:
 date: 2018-08-16
-tags: [Computer Science, Laravel]
+tags: [Technology, Laravel]
 class: post-template
 subclass: 'post'
 author: eleazar

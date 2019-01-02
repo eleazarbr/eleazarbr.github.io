@@ -6,7 +6,7 @@ navigation: true
 title: "Laravel 5.6: Enviar notificaciones por correo con Mailtrap.io"
 description: En este ejemplo vamos a enviar una notificación por correo electrónico utilizando Mailtrap en Laravel 5.6
 date: 2018-08-14
-tags: [Computer Science, Laravel]
+tags: [Technology, Laravel]
 class: post-template
 subclass: 'post'
 author: eleazar

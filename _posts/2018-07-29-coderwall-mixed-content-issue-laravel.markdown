@@ -5,7 +5,7 @@ cover: assets/images/cover/coderwall.jpg
 navigation: true
 title: "Coderwall Tip: Mixed content issue - Content must be served as HTTPS in Laravel"
 date: 2018-07-29
-tags: [Computer Science, Coderwall]
+tags: [Technology, Coderwall]
 class: post-template
 subclass: 'post'
 author: eleazar

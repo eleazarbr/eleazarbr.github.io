@@ -5,7 +5,7 @@ cover: assets/images/cover/habit.jpg
 navigation: True
 title: ¿Cuál es un hábito que tienen las personas exitosas?
 date: 2018-07-16
-tags: [Business, Goals]
+tags: [Technopreneurship, Goals]
 class: post-template
 subclass: 'post'
 author: eleazar

@@ -6,7 +6,7 @@ navigation: true
 title: Principios del Diseño Web Responsivo
 description:
 date: 2018-09-16
-tags: [Computer Science, CSS]
+tags: [Frontend, CSS]
 class: post-template
 subclass: 'post'
 author: eleazar
@@ -17,9 +17,10 @@ Existen muchos tipos de dispositivos que pueden acceder a la web. Estos disposit
 Esta entrada cubrirá las formas básicas de usar CSS para el Diseño Web Responsivo.
 
 ## Table of contents
+- [author: eleazar](#author-eleazar)
 - [Table of contents](#table-of-contents)
 - [Media Query](#media-query)
-    - [Diferencia entre max-width y min-width](#diferencia-entre-max-width-y-min-width)
+  - [Diferencia entre max-width y min-width](#diferencia-entre-max-width-y-min-width)
 - [Imágenes responsivas](#im%C3%A1genes-responsivas)
 
 ## Media Query

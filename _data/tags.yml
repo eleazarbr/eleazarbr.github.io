@@ -1,70 +1,65 @@
-business:
-  name: business
-  display: Business
-  description: false
-  cover:
-computer-science:
-  name: computer-science
-  display: Computer Science
-  description: false
-  cover: assets/images/tag-cover/digital.jpg
+technopreneurship:
+  name: technopreneurship
+  display: Technopreneurship
+  description: "A collection of articles related to technopreneurship"
+  cover: technopreneurship.jpg
+technology:
+  name: technology
+  display: Technology
+  description: "A collection of articles related to computer science, programming languages, tools and technologies that I use on a daily basis"
+  cover: code-2.jpg
 projects:
   name: projects
   display: Portfolio
   description: false
-  cover: assets/images/tag-cover/mac-dark.jpg
+  cover: projects.jpg
 web-development:
   name: web-development
   display: Web Development
   description: false
-  cover: assets/images/tag-cover/web-development.jpg
+  cover: web-development.jpg
 frontend:
   name: frontend
   display: Frontend
   description: false
-  cover: assets/images/tag-cover/frontend.jpg
+  cover: frontend.jpg
 backend:
   name: backend
   display: Backend
   description: false
-  cover: false
+  cover: backend.png
 software-design:
   name: software-design
   display: Software Design
   description: false
-  cover: false
+  cover: software-design.png
 git:
   name: git
   display: Git
   description: false
-  cover: false
+  cover: blue-keyboard.jpg
 woocommerce:
   name: woocommerce
   display: WooCommerce
   description: false
-  cover: false
+  cover: ecommerce.jpg
 laravel:
   name: laravel
   display: Laravel
   description: false
-  cover: false
+  cover: php.jpg
 opensource:
   name: opensource
   display: OpenSource
   description: false
-  cover: false
-self-improvement:
-  name: self-improvement
-  display: Self Improvement
-  description: false
-  cover: false
+  cover: opensource.jpg
 goals:
   name: goals
   display: Goals
   description: false
-  cover: false
+  cover: doors.jpg
 marketing:
   name: marketing
   display: Marketing
   description: false
-  cover: false
+  cover: marketing.jpg

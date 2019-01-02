@@ -6,7 +6,7 @@ navigation: false
 title: Cómo crear Hero-Images hermosas (y persuasivas) para tu tienda en línea
 description:
 date: 2018-11-24
-tags: [Business, Marketing]
+tags: [Technopreneurship, Marketing]
 class: post-template
 subclass: 'post'
 author: eleazar

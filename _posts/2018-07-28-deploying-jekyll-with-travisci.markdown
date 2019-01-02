@@ -5,7 +5,7 @@ cover: assets/images/cover/programmer.png
 navigation: true
 title: Hacer deploy de Jekyll a GH Pages con plugins y TravisCI
 date: 2018-07-28
-tags: [Computer Science, Web Development]
+tags: [Technology, Web Development]
 class: post-template
 subclass: 'post'
 author: eleazar

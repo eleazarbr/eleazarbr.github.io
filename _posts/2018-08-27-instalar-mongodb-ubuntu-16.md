@@ -6,7 +6,7 @@ navigation: true
 title: Instalar MongoDB Community Edition en Ubuntu 16.04 LTS
 description: Use este tutorial para instalar MongoDB Community Edition en sistemas LTS Ubuntu Linux usando paquetes .deb.
 date: 2018-08-27
-tags: [Computer Science, NoSQL]
+tags: [Backend]
 class: post-template
 subclass: 'post'
 author: eleazar

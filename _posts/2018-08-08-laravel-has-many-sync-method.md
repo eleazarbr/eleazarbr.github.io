@@ -6,7 +6,7 @@ navigation: true
 title: "Laravel 5.6: función Sync para una relación Has Many"
 description: Un método simple para sincronizar una relación Has Many utilizando Collections en Laravel.
 date: 2018-08-08
-tags: [Computer Science, Laravel]
+tags: [Technology, Laravel]
 class: post-template
 subclass: 'post'
 author: eleazar

@@ -5,7 +5,7 @@ cover: assets/images/cover/coderwall.jpg
 navigation: True
 title: "Coderwall Tip: .gitignore is not working"
 date: 2018-07-21
-tags: [Computer Science, Coderwall]
+tags: [Technology, Coderwall]
 class: post-template
 subclass: 'post'
 author: eleazar

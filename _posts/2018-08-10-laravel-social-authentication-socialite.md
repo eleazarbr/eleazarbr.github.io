@@ -6,7 +6,7 @@ navigation: true
 title: "Laravel 5.6: Autenticación social con Laravel Socialite"
 description: Para iniciar sesión en Laravel mediante medios sociales como Facebook, Twitter, Github, Google, se recomienda utilizar Laravel Socialite.
 date: 2018-08-10
-tags: [Computer Science, Laravel]
+tags: [Technology, Laravel]
 class: post-template
 subclass: 'post'
 author: eleazar

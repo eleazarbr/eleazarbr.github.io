@@ -6,7 +6,7 @@ navigation: true
 title: Mini-CRM con Laravel 5.6 y AdminBSB
 description: Un mini CRM utilizando Laravel 5.6 y el tema front-end AdminBSB.
 date: 2018-07-23
-tags: [Computer Science, Web Development, Projects]
+tags: [Technology, Web Development, Projects]
 class: post-template
 subclass: 'post'
 author: eleazar

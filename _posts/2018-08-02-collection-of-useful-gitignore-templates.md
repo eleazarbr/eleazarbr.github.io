@@ -6,7 +6,7 @@ navigation: true
 title: Una colección útil de archivos .gitignore
 description: El siguiente repositorio de GitHub contiene una colección útil de plantillas .gitignore. De hecho, es la colección de plantillas que se utiliza al crear nuevos repositorios. Echa un vistazo!
 date: 2018-08-02
-tags: [Computer Science, Git]
+tags: [Technology, Git]
 class: post-template
 subclass: 'post'
 author: eleazar

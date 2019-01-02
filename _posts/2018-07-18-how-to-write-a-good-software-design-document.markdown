@@ -5,7 +5,7 @@ cover: assets/images/cover/workstation.jpg
 navigation: True
 title: ¿Cómo Escribir Un Buen Documento De Diseño De Software?
 date: 2018-07-18
-tags: [Computer Science, Software Design]
+tags: [Technology, Software Design]
 class: post-template
 subclass: 'post'
 author: eleazar

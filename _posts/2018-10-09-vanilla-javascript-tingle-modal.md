@@ -6,7 +6,7 @@ navigation: true
 title: Vanilla Javascript Tingle Modal
 description:
 date: 2018-10-09
-tags: [Computer Science, Javascript]
+tags: [Frontend, Javascript]
 class: post-template
 subclass: 'post'
 author: eleazar

@@ -5,7 +5,7 @@ cover: assets/images/cover/marketing.jpg
 navigation: True
 title: ¿Cuáles son los 5 pilares principales de una Landing Page exitosa?
 date: 2018-07-17
-tags: [Business, Marketing]
+tags: [Technopreneurship, Marketing]
 class: post-template
 subclass: 'post'
 author: eleazar

@@ -6,7 +6,7 @@ navigation: True
 title: Responsive Web Design Projects - Build a Product Landing Page
 description: Una CodePen App de Landing Page para el proyecto de freeCodeCamp Responsive Web Design.
 date: 2018-07-15
-tags: [Computer Science, Frontend, Projects]
+tags: [Technology, Frontend, Projects]
 class: post-template
 subclass: 'post'
 author: eleazar

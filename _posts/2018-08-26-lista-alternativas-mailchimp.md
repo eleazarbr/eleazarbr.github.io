@@ -6,7 +6,7 @@ navigation: true
 title: ¿Cuáles son algunas alternativas más baratas y mejores a MailChimp?
 description: Una lista con una variedad de alternativas baratas a Mailchimp que vale la pena usar.
 date: 2018-08-26
-tags: [Business, Marketing]
+tags: [Technopreneurship, Marketing]
 class: post-template
 subclass: 'post'
 author: eleazar

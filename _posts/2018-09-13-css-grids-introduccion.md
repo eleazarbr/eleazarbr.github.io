@@ -6,7 +6,7 @@ navigation: true
 title: CSS Grid - Introducción
 description:
 date: 2018-09-13
-tags: [Computer Science, CSS]
+tags: [Frontend, CSS]
 class: post-template
 subclass: 'post'
 author: eleazar

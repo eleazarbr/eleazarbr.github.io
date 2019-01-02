@@ -6,7 +6,7 @@ navigation: true
 title: Configurando Jekyll en GitLab Pages
 description: En esta entrada se va a configurar un proyecto local de Jekyll para alojarse en GitLab Pages.
 date: 2018-08-18
-tags: [Computer Science, Jekyll]
+tags: [Technology, Jekyll]
 class: post-template
 subclass: 'post'
 author: eleazar

@@ -6,7 +6,7 @@ navigation: true
 title: LiveReload actualiza (refreshing) el navegador automáticamente
 description: "Actualiza el navegador automáticamente con LiveReload, haz cambios en tus archivos y deja de dar refresh al navegador"
 date: 2018-08-23
-tags: [Computer Science, Javascript]
+tags: [Frontend, Javascript]
 class: post-template
 subclass: 'post'
 author: eleazar
@@ -36,7 +36,7 @@ end
 
 <iframe src="https://giphy.com/embed/1BG0hiW7taCxS6tCEX" width="480" height="122" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/1BG0hiW7taCxS6tCEX"></a></p>
 
-## BrowserSync en Laravel
+## BrowserSync en Laravel
 
 En `webpack.mix.js` agregamos lo siguiente, cambiando `domain.test` por tu URL de desarrollo:
 

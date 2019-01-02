@@ -5,7 +5,7 @@ cover: assets/images/cover/clock.jpg
 navigation: True
 title: ¿Cómo usar ingeniería inversa para alcanzar metas?
 date: 2018-07-13
-tags: [Business, Goals]
+tags: [Technopreneurship, Goals]
 class: post-template
 subclass: 'post'
 author: eleazar

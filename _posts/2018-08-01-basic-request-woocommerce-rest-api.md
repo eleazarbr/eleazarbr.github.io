@@ -6,7 +6,7 @@ navigation: True
 title: ¿Cómo hacer una request básica con la REST API de WooCommerce?
 description: En este artículo vamos a utilizar la REST API de WooCommerce 2.6 para obtener todos los productos en formato JSON.
 date: 2018-08-01
-tags: [Computer Science, WooCommerce]
+tags: [Technology, WooCommerce]
 class: post-template
 subclass: 'post'
 author: eleazar

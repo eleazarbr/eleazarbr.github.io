@@ -3,7 +3,7 @@ layout: post
 current: post
 cover: assets/images/cover/bulma.jpg
 navigation: true
-title: Laravel 5.7 + Bulma.io perspectiva general
+title: Laravel 5.7 & Bulma.io perspectiva general
 description: Bulma es un framework CSS opensource, basado en Flexbox. 100% responsivo y modular, provee un sistema simple de grid.
 date: 2018-12-13
 tags: [Web Development, Frontend]

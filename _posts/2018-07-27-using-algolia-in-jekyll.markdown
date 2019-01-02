@@ -5,7 +5,7 @@ cover: assets/images/cover/search.png
 navigation: True
 title: ¿Cómo usar Algolia en Jekyll?
 date: 2018-07-27
-tags: [Computer Science, Web Development]
+tags: [Technology, Web Development]
 class: post-template
 subclass: 'post'
 author: eleazar

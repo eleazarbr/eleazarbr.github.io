@@ -6,7 +6,7 @@ navigation: true
 title: Docker - Introducción
 description:
 date: 2018-09-10
-tags: [Computer Science, Laravel]
+tags: [Laravel, Backend]
 class: post-template
 subclass: 'post'
 author: eleazar
@@ -17,11 +17,12 @@ Docker es una plataforma que permite separar las aplicaciones de la infraestruct
 Una ventaja que me gusta es que deja el equipo limpio, al no instalar tantas cosas, ni cambiar la configuración del sistema.
 
 ### Table of contents
-- [Table of contents](#table-of-contents)
-- [Requerimientos](#requerimientos)
-- [Terminología](#terminolog%C3%ADa)
-- [Run your containers](#run-your-containers)
-- [Más información](#m%C3%A1s-informaci%C3%B3n)
+- [author: eleazar](#author-eleazar)
+  - [Table of contents](#table-of-contents)
+  - [Requerimientos](#requerimientos)
+  - [Terminología](#terminolog%C3%ADa)
+  - [Run your containers](#run-your-containers)
+  - [Más información](#m%C3%A1s-informaci%C3%B3n)
 
 ### Requerimientos
 

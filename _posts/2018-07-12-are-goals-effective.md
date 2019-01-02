@@ -5,7 +5,7 @@ cover: assets/images/cover/darts.jpg
 navigation: True
 title: ¿Son tus metas efectivas?
 date: 2018-07-12
-tags: [Business, Goals]
+tags: [Technopreneurship, Goals]
 class: post-template
 subclass: 'post'
 author: eleazar

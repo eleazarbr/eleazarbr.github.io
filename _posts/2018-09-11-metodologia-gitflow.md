@@ -6,7 +6,7 @@ navigation: true
 title: GitFlow - Flujo de trabajo
 description:
 date: 2018-09-10
-tags: [Computer Science, Git]
+tags: [Git]
 class: post-template
 subclass: 'post'
 author: eleazar
@@ -16,12 +16,13 @@ Gitflow es solo una idea abstracta de un flujo de trabajo con git publicada por 
 
 ## Table of contents
 
+- [author: eleazar](#author-eleazar)
 - [Table of contents](#table-of-contents)
 - [Keypoints](#keypoints)
 - [¿Cómo funciona?](#%C2%BFc%C3%B3mo-funciona)
-    - [Feature branch](#feature-branch)
-    - [Terminando una feature branch](#terminando-una-feature-branch)
-    - [Hotfix branches](#hotfix-branches)
+  - [Feature branch](#feature-branch)
+  - [Terminando una feature branch](#terminando-una-feature-branch)
+  - [Hotfix branches](#hotfix-branches)
 - [En resumen](#en-resumen)
 - [Herramientas](#herramientas)
 

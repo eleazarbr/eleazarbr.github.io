@@ -6,7 +6,7 @@ navigation: true
 title: "Laravel 5.6: Localization. Cómo hacer un proyecto multilenguaje"
 description: Con el siguiente ejemplo será posible implementar traducciones en las vistas utilizando Laravel 5.6 Localization.
 date: 2018-08-15
-tags: [Computer Science, Laravel]
+tags: [Technology, Laravel]
 class: post-template
 subclass: 'post'
 author: eleazar
