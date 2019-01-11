@@ -1,25 +1,28 @@
-<div id="myNav" class="covering">
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-    {% for tag in site.data.tags %}
-        <div class="covering-content">
-            <a href="/tag/{{ tag[1].name }}"><code>{{ tag[1].display }}</code></a>
-        </div>
-    {% endfor %}
+<div id="overlay-nav" class="covering">
+	<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+	<div class="covering-content">
+		<a href="/"><code>Home</code></a>
+		<a href="/tag/projects"><code>Work</code></a>
+		<a href="/tag/web-development"><code>Web development</code></a>
+		<a href="/tag/laravel"><code>Laravel</code></a>
+		<a href="/tag/woocommerce"><code>WooCommerce</code></a>
+		<a href="/author/eleazar"><code>About</code></a>
+	</div>
 </div>
 
 <ul class="nav" role="menu">
-    <li role="menuitem"><a href="#filter-by-tags" onclick="openNav()"><i class="fas fa-bars"></i></a></li>
-    <li role="menuitem"><a href="{{ site.baseurl }}">Home</a></li>
-    <li role="menuitem"><a href="{{ site.baseurl }}tag/projects/">Work</a></li>
-    <li role="menuitem"><a href="{{ site.baseurl }}author/eleazar">About</a></li>
+	<li role="menuitem"><a href="#filter-by-tags" onclick="openNav()"><i class="fas fa-bars"></i></a></li>
+	<li role="menuitem"><a href="{{ site.baseurl }}">Home</a></li>
+	<li role="menuitem"><a href="{{ site.baseurl }}tag/projects/">Work</a></li>
+	<li role="menuitem"><a href="{{ site.baseurl }}author/eleazar">About</a></li>
 </ul>
 
 <script>
-    function openNav() {
-        document.getElementById("myNav").style.height = "100%";
-    }
+	function openNav() {
+		document.getElementById("overlay-nav").style.height = "100%";
+	}
 
-    function closeNav() {
-        document.getElementById("myNav").style.height = "0%";
-    }
+	function closeNav() {
+		document.getElementById("overlay-nav").style.height = "0%";
+	}
 </script>

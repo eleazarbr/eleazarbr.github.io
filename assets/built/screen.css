@@ -2734,8 +2734,8 @@ body {
 
 .covering-content {
   position: relative;
-  top: 15%;
-  margin-top: 15px;
+  top: 25%;
+  margin-top: 30px;
   -ms-flex: 1 auto;
       flex: 1 auto;
   padding: .5rem;
@@ -2748,7 +2748,7 @@ body {
   color: #f1d9d9;
   display: block;
   transition: .3s;
-  padding: .5rem 1rem;
+  padding-bottom: 3rem;
   border-radius: 3px;
 }
 
