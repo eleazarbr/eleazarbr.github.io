@@ -25,17 +25,37 @@ MAIL_PASSWORD=smtp.mailtrap.password
 MAIL_ENCRYPTION=null
 ```
 
-Con los recursos que proporciona Laravel sobre [Notificaciones](https://laravel.com/docs/5.6/notifications), vamos a utilizar el método `notify`, el cual espera una instancia de notificación.
+Con los recursos que proporciona Laravel sobre [Notificaciones](https://laravel.com/docs/5.7/notifications), crearemos una nueva notificación; el siguiente comando artisan, creará una nueva clase en el carpeta Notifications.
 
-```php
-$request->user()->notify(new SimpleNotification);
-```
+ ```
+php artisan make:notification SimpleNotification
+ ```
+
+Recordar que se tiene que agregar el trait Notifiable al modelo `User.php`
+
+ ```php
+<?php
+
+namespace App;
+
+use Illuminate\Notifications\Notifiable;
+use Illuminate\Foundation\Auth\User as Authenticatable;
+
+class User extends Authenticatable
+{
+    use Notifiable;
+}
+ ```
+
+Después vamos a utilizar el método `notify`, el cual espera una instancia de la notificación creada anteriormente.
 
 > `notify` se encuentra implementada en el trait `Notifiable` -> `RoutesNotifications` del modelo `User`.
+>
+```php
+User::someUser()->first()->notify(new SimpleNotification);
+```
 
-El siguiente comando artisan `php artisan make:notification SimpleNotification`, creará una nueva clase en el carpeta Notifications. Con la ejecución del código anterior, las notificaciones ya deben de llegar a la bandeja de entrada en Mailtrap.
-
-Si se requiere personalizar el contenido de la notificación, pasamos un arreglo de la siguiente forma:
+Con la ejecución del código anterior, las notificaciones ya deben de llegar a la bandeja de entrada en Mailtrap. Si se requiere personalizar el contenido de la notificación, pasamos un arreglo de la siguiente forma:
 
 ```php
 $request->user()->notify(new SimpleNotification([
