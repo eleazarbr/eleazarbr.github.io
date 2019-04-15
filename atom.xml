@@ -1,0 +1,550 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title> - Articles</title>
+    <description>Business &amp; Technology</description>
+    <link>
+    https://eresendez.com</link>
+    
+      
+      <item>
+        <title>Laravel 5.7 &amp; Bulma.io perspectiva general</title>
+        
+          <description>&lt;p&gt;Bulma es un framework CSS opensource, basado en Flexbox. 100% responsivo, modular y provee un sistema simple de grid.&lt;/p&gt;
+
+</description>
+        
+        <pubDate>Thu, 13 Dec 2018 00:00:00 +0000</pubDate>
+        <link>
+        https://eresendez.com/laravel-bulma-perspectiva-general</link>
+        <guid isPermaLink="true">https://eresendez.com/laravel-bulma-perspectiva-general</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>CSS básico — Recommendation</title>
+        
+          <description>&lt;p&gt;Recomendaciones para conocer y desarrollar un CSS flexible, duradero y sostenible (@mdo).&lt;/p&gt;
+
+</description>
+        
+        <pubDate>Sun, 09 Dec 2018 00:00:00 +0000</pubDate>
+        <link>
+        https://eresendez.com/css-basico-recommendation</link>
+        <guid isPermaLink="true">https://eresendez.com/css-basico-recommendation</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>Cómo crear Hero-Images hermosas (y persuasivas) para tu tienda en línea</title>
+        
+          <description>&lt;p&gt;Muchas páginas y plantillas tienen un componente importante en común: una imagen principal en su &lt;em&gt;homepage&lt;/em&gt;. Esta imagen es conocida como &lt;em&gt;hero&lt;/em&gt;, &lt;em&gt;banner&lt;/em&gt;, o &lt;em&gt;imágenes carrusel&lt;/em&gt;.&lt;/p&gt;
+
+</description>
+        
+        <pubDate>Sat, 24 Nov 2018 00:00:00 +0000</pubDate>
+        <link>
+        https://eresendez.com/como-crear-hero-images-para-tu-eshop</link>
+        <guid isPermaLink="true">https://eresendez.com/como-crear-hero-images-para-tu-eshop</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>Contribuciones OpenSource</title>
+        
+          <description>&lt;p&gt;Hay muchas razones para contribuir a proyectos Open Source, cada quien tiene sus razones personales, por lo que es necesario conocer nuestras fortalezas y debilidades relacionadas con los proyectos que elegimos.&lt;/p&gt;
+
+</description>
+        
+        <pubDate>Wed, 21 Nov 2018 00:00:00 +0000</pubDate>
+        <link>
+        https://eresendez.com/opensource-contributions</link>
+        <guid isPermaLink="true">https://eresendez.com/opensource-contributions</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>Vanilla Javascript Tingle Modal</title>
+        
+          <description>&lt;p&gt;En la búsqueda de un modal que sea realmente sencillo, sin tanta dependencia y sin usar jQuery, encontré el siguiente modal: &lt;a href=&quot;https://robinparisi.github.io/tingle/&quot;&gt;Tingle&lt;/a&gt;.&lt;/p&gt;
+
+</description>
+        
+        <pubDate>Tue, 09 Oct 2018 00:00:00 +0000</pubDate>
+        <link>
+        https://eresendez.com/vanilla-javascript-tingle-modal</link>
+        <guid isPermaLink="true">https://eresendez.com/vanilla-javascript-tingle-modal</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>Principios del Diseño Web Responsivo</title>
+        
+          <description>&lt;p&gt;Existen muchos tipos de dispositivos que pueden acceder a la web. Estos dispositivos tienen diferentes tamaños de pantalla, resoluciones y potencia de procesamiento. La estructura de la página y las reglas de CSS deben ser flexibles para acomodar estas diferencias. En general, se diseña el CSS de la página para el público objetivo.&lt;/p&gt;
+
+</description>
+        
+        <pubDate>Sun, 16 Sep 2018 00:00:00 +0000</pubDate>
+        <link>
+        https://eresendez.com/principios-del-dise%C3%B1o-web-adaptable</link>
+        <guid isPermaLink="true">https://eresendez.com/principios-del-dise%C3%B1o-web-adaptable</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>CSS Grid - Introducción</title>
+        
+          <description>&lt;p&gt;CSS Grid ayuda crear fácilmente diseños web complejos. Funciona convirtiendo un elemento HTML en un contenedor de cuadrícula con filas y columnas para colocar elementos secundarios donde desees.&lt;/p&gt;
+
+</description>
+        
+        <pubDate>Thu, 13 Sep 2018 00:00:00 +0000</pubDate>
+        <link>
+        https://eresendez.com/css-grids-introduccion</link>
+        <guid isPermaLink="true">https://eresendez.com/css-grids-introduccion</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>GitFlow - Flujo de trabajo</title>
+        
+          <description>&lt;p&gt;Gitflow es solo una idea abstracta de un flujo de trabajo con git publicada por &lt;a href=&quot;http://nvie.com/posts/a-successful-git-branching-model/&quot;&gt;Vincent D&lt;/a&gt;. Básicamente define un estricto modelo de branching centrado en el release del proyecto, provee un framework para gestionar grandes proyectos.&lt;/p&gt;
+
+</description>
+        
+        <pubDate>Mon, 10 Sep 2018 00:00:00 +0000</pubDate>
+        <link>
+        https://eresendez.com/metodologia-gitflow</link>
+        <guid isPermaLink="true">https://eresendez.com/metodologia-gitflow</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>Docker - Introducción</title>
+        
+          <description>&lt;p&gt;Docker es una plataforma que permite separar las aplicaciones de la infraestructura, reduciendo el tiempo entre escribir código y administrar producción.&lt;/p&gt;
+
+</description>
+        
+        <pubDate>Mon, 10 Sep 2018 00:00:00 +0000</pubDate>
+        <link>
+        https://eresendez.com/docker-introduccion</link>
+        <guid isPermaLink="true">https://eresendez.com/docker-introduccion</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>Instalar MongoDB Community Edition en Ubuntu 16.04 LTS</title>
+        
+          <description>&lt;p&gt;Instalar MongoDB Community Edition en Ubuntu:&lt;/p&gt;
+
+</description>
+        
+        <pubDate>Mon, 27 Aug 2018 00:00:00 +0000</pubDate>
+        <link>
+        https://eresendez.com/instalar-mongodb-ubuntu-16</link>
+        <guid isPermaLink="true">https://eresendez.com/instalar-mongodb-ubuntu-16</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>¿Cuáles son algunas alternativas más baratas y mejores a MailChimp?</title>
+        
+          <description>&lt;p&gt;Aquí hay una lista de algunas alternativas baratas de MailChimp que vale la pena usar:&lt;/p&gt;
+
+</description>
+        
+        <pubDate>Sun, 26 Aug 2018 00:00:00 +0000</pubDate>
+        <link>
+        https://eresendez.com/lista-alternativas-mailchimp</link>
+        <guid isPermaLink="true">https://eresendez.com/lista-alternativas-mailchimp</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>LiveReload actualiza (refreshing) el navegador automáticamente</title>
+        
+          <description>&lt;p&gt;&lt;a href=&quot;http://livereload.com/&quot;&gt;LiveReload&lt;/a&gt;, el país de las maravillas para los desarrolladores web, un lugar increíble donde los navegadores no necesitan un botón de Refresh.&lt;/p&gt;
+
+</description>
+        
+        <pubDate>Thu, 23 Aug 2018 00:00:00 +0000</pubDate>
+        <link>
+        https://eresendez.com/livereload-actualiza-navegador-automaticamente</link>
+        <guid isPermaLink="true">https://eresendez.com/livereload-actualiza-navegador-automaticamente</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>Configurando Jekyll en GitLab Pages</title>
+        
+          <description>&lt;p&gt;&lt;a href=&quot;https://about.gitlab.com/features/pages/&quot;&gt;GitLab Pages&lt;/a&gt; es un servicio para crear y alojar websites gratis para tus proyectos, donde es posible utilizar generadores de sitios estáticos, como Jekyll, Middleman, Hexo, Hugo, etc. y conectarlo con un dominio.&lt;/p&gt;
+
+</description>
+        
+        <pubDate>Sat, 18 Aug 2018 00:00:00 +0000</pubDate>
+        <link>
+        https://eresendez.com/setting-up-gitlab-pages</link>
+        <guid isPermaLink="true">https://eresendez.com/setting-up-gitlab-pages</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>Laravel 5.6: Lista de paquetes favoritos</title>
+        
+          <description>&lt;p&gt;En esta entrada recopilo una lista de mis paquetes favoritos, se estará actualizando constantemente:&lt;/p&gt;
+
+</description>
+        
+        <pubDate>Thu, 16 Aug 2018 00:00:00 +0000</pubDate>
+        <link>
+        https://eresendez.com/laravel-composer-paquetes-favoritos</link>
+        <guid isPermaLink="true">https://eresendez.com/laravel-composer-paquetes-favoritos</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>Laravel 5.6: Localization. Cómo hacer un proyecto multilenguaje</title>
+        
+          <description>&lt;p&gt;Las funciones de localización de Laravel proporcionan una forma conveniente de obtener cadenas de texto en varios idiomas, lo que permite admitir fácilmente varios idiomas dentro de la aplicación.&lt;/p&gt;
+
+</description>
+        
+        <pubDate>Wed, 15 Aug 2018 00:00:00 +0000</pubDate>
+        <link>
+        https://eresendez.com/laravel-localization-how-to-make-multilanguage-project</link>
+        <guid isPermaLink="true">https://eresendez.com/laravel-localization-how-to-make-multilanguage-project</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>Laravel 5.6: Enviar notificaciones por correo con Mailtrap.io</title>
+        
+          <description>&lt;p&gt;&lt;a href=&quot;https://mailtrap.io&quot;&gt;Mailtrap&lt;/a&gt; es una solución que permite probar notificaciones por correo electrónico sin enviarlas a los usuarios reales de la aplicación. También permite ver todos sus correos electrónicos en línea, reenviarlos a su buzón habitual, compartirlos con el equipo y más. &lt;a href=&quot;https://mailtrap.io/how-it-works&quot;&gt;Ver cómo funciona&lt;/a&gt;.&lt;/p&gt;
+
+</description>
+        
+        <pubDate>Tue, 14 Aug 2018 00:00:00 +0000</pubDate>
+        <link>
+        https://eresendez.com/laravel-send-mail-notification-using-mailtrap</link>
+        <guid isPermaLink="true">https://eresendez.com/laravel-send-mail-notification-using-mailtrap</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>Laravel 5.6: Autenticación social con Laravel Socialite</title>
+        
+          <description>&lt;p&gt;Con una nueva instalación de Laravel y despues de ejecutar &lt;code class=&quot;highlighter-rouge&quot;&gt;php artisan make:auth&lt;/code&gt; para generar el sistema de autenticación básico de Laravel, ahora vamos configurar una autenticación Social OAuth.&lt;/p&gt;
+
+</description>
+        
+        <pubDate>Fri, 10 Aug 2018 00:00:00 +0000</pubDate>
+        <link>
+        https://eresendez.com/laravel-social-authentication-socialite</link>
+        <guid isPermaLink="true">https://eresendez.com/laravel-social-authentication-socialite</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>Laravel 5.6: función Sync para una relación Has Many</title>
+        
+          <description>&lt;p&gt;Laravel tiene un método de sincronización para crear asociaciones con una relación de muchos a muchos. El método de sincronización acepta un arreglo de IDs para colocarlos en la tabla intermedia. Cualquier ID que no esté en el arreglo se eliminará de la tabla intermedia.&lt;/p&gt;
+
+</description>
+        
+        <pubDate>Wed, 08 Aug 2018 00:00:00 +0000</pubDate>
+        <link>
+        https://eresendez.com/laravel-has-many-sync-method</link>
+        <guid isPermaLink="true">https://eresendez.com/laravel-has-many-sync-method</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>Introducción - API de productos de WooCommerce v2</title>
+        
+          <description>&lt;p&gt;Debido a que WooCommerce es un plugin, utiliza varias tablas de WordPress. WooCommerce almacena la información de los productos, cupones y pedidos en la tabla &lt;code class=&quot;highlighter-rouge&quot;&gt;posts&lt;/code&gt;, también agrega su propias tablas: &lt;a href=&quot;https://github.com/woocommerce/woocommerce/wiki/Database-Description&quot;&gt;descripción de la base de datos&lt;/a&gt;.&lt;/p&gt;
+
+</description>
+        
+        <pubDate>Fri, 03 Aug 2018 00:00:00 +0000</pubDate>
+        <link>
+        https://eresendez.com/woocommerce-products-api-introduction</link>
+        <guid isPermaLink="true">https://eresendez.com/woocommerce-products-api-introduction</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>Una colección útil de archivos .gitignore</title>
+        
+          <description>&lt;p&gt;El siguiente repositorio de &lt;a href=&quot;https://github.com/github/gitignore&quot;&gt;GitHub&lt;/a&gt; contiene una colección útil de plantillas .gitignore. De hecho, es la colección de plantillas que se utiliza al crear nuevos repositorios.&lt;/p&gt;
+
+</description>
+        
+        <pubDate>Thu, 02 Aug 2018 00:00:00 +0000</pubDate>
+        <link>
+        https://eresendez.com/collection-of-useful-gitignore-templates</link>
+        <guid isPermaLink="true">https://eresendez.com/collection-of-useful-gitignore-templates</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>¿Cómo hacer una request básica con la REST API de WooCommerce?</title>
+        
+          <description>&lt;p&gt;De acuerdo a la documentación de la &lt;a href=&quot;https://docs.woocommerce.com/document/woocommerce-rest-api/&quot;&gt;REST API&lt;/a&gt; de &lt;a href=&quot;https://woocommerce.com/&quot;&gt;WooCommerce&lt;/a&gt;, prácticamente lo que se necesita para empezar es lo siguiente:&lt;/p&gt;
+
+</description>
+        
+        <pubDate>Wed, 01 Aug 2018 00:00:00 +0000</pubDate>
+        <link>
+        https://eresendez.com/basic-request-woocommerce-rest-api</link>
+        <guid isPermaLink="true">https://eresendez.com/basic-request-woocommerce-rest-api</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>Recursos para aprender SQL</title>
+        
+          <description>&lt;p&gt;La mejor manera de aprender cualquier lenguaje, incluido SQL, es utilizarlo en proyectos de la vida real o en algo que nos interese, esto ayuda a analizar mejor los conceptos.&lt;/p&gt;
+
+</description>
+        
+        <pubDate>Mon, 30 Jul 2018 00:00:00 +0000</pubDate>
+        <link>
+        https://eresendez.com/how-do-i-learn-sql-resources</link>
+        <guid isPermaLink="true">https://eresendez.com/how-do-i-learn-sql-resources</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>Coderwall Tip: Mixed content issue - Content must be served as HTTPS in Laravel</title>
+        
+          <description>&lt;p&gt;Quiero recordar lo siguiente:&lt;/p&gt;
+
+</description>
+        
+        <pubDate>Sun, 29 Jul 2018 00:00:00 +0000</pubDate>
+        <link>
+        https://eresendez.com/coderwall-mixed-content-issue-laravel</link>
+        <guid isPermaLink="true">https://eresendez.com/coderwall-mixed-content-issue-laravel</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>Hacer deploy de Jekyll a GH Pages con plugins y TravisCI</title>
+        
+          <description>&lt;p&gt;Después de probar muchas soluciones inefectivas para hacer deploy del sitio en GH-Pages, por la cuestión que Jekyll en GitHub corre en safe-mode y no es posible instalar &lt;em&gt;plugins&lt;/em&gt; por razones de seguridad, llegué al siguiente &lt;a href=&quot;http://joshfrankel.me/blog/deploying-a-jekyll-blog-to-github-pages-with-custom-plugins-and-travisci/&quot;&gt;post de Josh Frankel&lt;/a&gt; para hacer deploy utilizando &lt;a href=&quot;http://travis-ci.org/&quot;&gt;TravisCI&lt;/a&gt;.&lt;/p&gt;
+
+</description>
+        
+        <pubDate>Sat, 28 Jul 2018 00:00:00 +0000</pubDate>
+        <link>
+        https://eresendez.com/deploying-jekyll-with-travisci</link>
+        <guid isPermaLink="true">https://eresendez.com/deploying-jekyll-with-travisci</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>¿Cómo usar Algolia en Jekyll?</title>
+        
+          <description>&lt;p&gt;Algolia es un servicio que hace que la búsqueda avanzada sea muy sencilla. Está bien documentado y es rapidísimo. Puedes ver algunos ejemplos impresionantes en su &lt;a href=&quot;https://www.algolia.com/&quot;&gt;sitio&lt;/a&gt;.&lt;/p&gt;
+
+</description>
+        
+        <pubDate>Fri, 27 Jul 2018 00:00:00 +0000</pubDate>
+        <link>
+        https://eresendez.com/using-algolia-in-jekyll</link>
+        <guid isPermaLink="true">https://eresendez.com/using-algolia-in-jekyll</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>Mini-CRM con Laravel 5.6 y AdminBSB</title>
+        
+          <description>&lt;p&gt;Objetivo: Construir un mini CRM utilizando &lt;a href=&quot;https://laravel.com/&quot;&gt;Laravel 5.6&lt;/a&gt; y &lt;a href=&quot;https://gurayyarar.github.io/AdminBSBMaterialDesign/&quot;&gt;AdminBSB&lt;/a&gt;.&lt;/p&gt;
+
+</description>
+        
+        <pubDate>Mon, 23 Jul 2018 00:00:00 +0000</pubDate>
+        <link>
+        https://eresendez.com/project-laravel-mini-crm</link>
+        <guid isPermaLink="true">https://eresendez.com/project-laravel-mini-crm</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>Una recopilación de comandos git que me han ayudado</title>
+        
+          <description>&lt;p&gt;En esta entrada voy a recopilar algunas caracteristicas de git que me han ayudado.&lt;/p&gt;
+
+</description>
+        
+        <pubDate>Sun, 22 Jul 2018 00:00:00 +0000</pubDate>
+        <link>
+        https://eresendez.com/recopilacion-util-comandos-git</link>
+        <guid isPermaLink="true">https://eresendez.com/recopilacion-util-comandos-git</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>Coderwall Tip: .gitignore is not working</title>
+        
+          <description>&lt;p&gt;Algunas veces quiero ignorar un archivo, lo agrego a &lt;code class=&quot;highlighter-rouge&quot;&gt;.gitignore&lt;/code&gt;  y el archivo no desaparece de mi lista de cambios. Lo siguiente es un tip que quiero recordar porque siempre termino entrando a StackOverflow para leer la respuesta a esta &lt;a href=&quot;https://stackoverflow.com/questions/11451535/gitignore-is-not-working&quot;&gt;pregunta&lt;/a&gt;.&lt;/p&gt;
+
+</description>
+        
+        <pubDate>Sat, 21 Jul 2018 00:00:00 +0000</pubDate>
+        <link>
+        https://eresendez.com/coderwall-gitignore-is-not-working</link>
+        <guid isPermaLink="true">https://eresendez.com/coderwall-gitignore-is-not-working</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>¿Cuáles son algunos consejos para que trabajar de forma remota sea lo más efectivo?</title>
+        
+          <description>&lt;p&gt;Investigando cómo se desenvuelven los trabajadores remotos de compañías como Buffer, Automattic, GitHub y Basecamp. Avadhoot Kulkarni notó prácticas comunes que los trabajadores remotos exitosos comparten y a continuación hay cinco consejos sobre el trabajo a distancia que es bueno conocer antes de trabajar de ésta manera.&lt;/p&gt;
+
+</description>
+        
+        <pubDate>Thu, 19 Jul 2018 00:00:00 +0000</pubDate>
+        <link>
+        https://eresendez.com/what-are-some-tips-to-make-working-remotely-the-most-effective</link>
+        <guid isPermaLink="true">https://eresendez.com/what-are-some-tips-to-make-working-remotely-the-most-effective</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>¿Cómo Escribir Un Buen Documento De Diseño De Software?</title>
+        
+          <description>&lt;p&gt;Angela Zhang en su &lt;a href=&quot;https://medium.freecodecamp.org/how-to-write-a-good-software-design-document-66fcf019569c&quot;&gt;blog post&lt;/a&gt; comenta las mejores prácticas para escribir un buen documento de especificaciones de software.&lt;/p&gt;
+
+</description>
+        
+        <pubDate>Wed, 18 Jul 2018 00:00:00 +0000</pubDate>
+        <link>
+        https://eresendez.com/how-to-write-a-good-software-design-document</link>
+        <guid isPermaLink="true">https://eresendez.com/how-to-write-a-good-software-design-document</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>¿Cuáles son los 5 pilares principales de una Landing Page exitosa?</title>
+        
+          <description>&lt;p&gt;Una landing page es una pieza muy importante para construir una estrategia exitosa de generación de prospectos o leads. Esta es la razón por la cual una gran cantidad de dueños de negocios dedican su tiempo a dirigir el tráfico a sus landing pages, con una esperanza de conversión.&lt;/p&gt;
+
+</description>
+        
+        <pubDate>Tue, 17 Jul 2018 00:00:00 +0000</pubDate>
+        <link>
+        https://eresendez.com/pillars-of-a-successful-landing-page</link>
+        <guid isPermaLink="true">https://eresendez.com/pillars-of-a-successful-landing-page</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>¿Cuál es un hábito que tienen las personas exitosas?</title>
+        
+          <description>&lt;p&gt;Desde el multimillonario Jeff Hoffman hasta tipos como Gary Vaynerchuk, Grant Cardone, Robert Greene y los principales pensadores, autores, científicos y empresarios del mundo.&lt;/p&gt;
+
+</description>
+        
+        <pubDate>Mon, 16 Jul 2018 00:00:00 +0000</pubDate>
+        <link>
+        https://eresendez.com/what-habit-that-successful-people-have</link>
+        <guid isPermaLink="true">https://eresendez.com/what-habit-that-successful-people-have</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>Responsive Web Design Projects - Build a Product Landing Page</title>
+        
+          <description>&lt;p&gt;Objetivo: Construir una app en &lt;a href=&quot;https://codepen.io/&quot;&gt;CodePen.io&lt;/a&gt; que funcione de manera similar a: &lt;a href=&quot;https://codepen.io/freeCodeCamp/full/RKRbwL&quot;&gt;https://codepen.io/freeCodeCamp/full/RKRbwL&lt;/a&gt;&lt;/p&gt;
+
+</description>
+        
+        <pubDate>Sun, 15 Jul 2018 00:00:00 +0000</pubDate>
+        <link>
+        https://eresendez.com/project-landing-page</link>
+        <guid isPermaLink="true">https://eresendez.com/project-landing-page</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>¿Cómo usar ingeniería inversa para alcanzar metas?</title>
+        
+          <description>&lt;p&gt;Esto funciona para metas a corto o largo plazo, da igual. Lo primordial es conocer exactamente &lt;a href=&quot;https://eresendez.com/are-goals-effective&quot;&gt;adonde quieres llegar&lt;/a&gt;.&lt;/p&gt;
+
+</description>
+        
+        <pubDate>Fri, 13 Jul 2018 00:00:00 +0000</pubDate>
+        <link>
+        https://eresendez.com/reach-goals-reverse-engineered</link>
+        <guid isPermaLink="true">https://eresendez.com/reach-goals-reverse-engineered</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>¿Son tus metas efectivas?</title>
+        
+          <description>&lt;p&gt;Respuesta corta: si, depende.&lt;/p&gt;
+
+</description>
+        
+        <pubDate>Thu, 12 Jul 2018 00:00:00 +0000</pubDate>
+        <link>
+        https://eresendez.com/are-goals-effective</link>
+        <guid isPermaLink="true">https://eresendez.com/are-goals-effective</guid>
+      </item>
+      
+    
+      
+      <item>
+        <title>Responsive Web Design Projects - Build a Survey Form</title>
+        
+          <description>&lt;p&gt;Objetivo: Construir una app en &lt;a href=&quot;https://codepen.io/#&quot;&gt;CodePen.io&lt;/a&gt; con una funcionalidad similar a: &lt;a href=&quot;https://codepen.io/freeCodeCamp/full/VPaoNP&quot;&gt;https://codepen.io/freeCodeCamp/full/VPaoNP&lt;/a&gt;.&lt;/p&gt;
+
+</description>
+        
+        <pubDate>Wed, 11 Jul 2018 00:00:00 +0000</pubDate>
+        <link>
+        https://eresendez.com/project-survey-form</link>
+        <guid isPermaLink="true">https://eresendez.com/project-survey-form</guid>
+      </item>
+      
+    
+  </channel>
+</rss>

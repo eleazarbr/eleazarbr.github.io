@@ -1,0 +1,1134 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="https://eresendez.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://eresendez.com/" rel="alternate" type="text/html" /><updated>2019-04-15T21:24:03+00:00</updated><id>https://eresendez.com/</id><title type="html">Eleazar Resendez</title><subtitle>Business &amp; Technology</subtitle><entry><title type="html">Laravel 5.7 &amp;amp; Bulma.io perspectiva general</title><link href="https://eresendez.com/laravel-bulma-perspectiva-general" rel="alternate" type="text/html" title="Laravel 5.7 &amp; Bulma.io perspectiva general" /><published>2018-12-13T00:00:00+00:00</published><updated>2018-12-13T00:00:00+00:00</updated><id>https://eresendez.com/laravel-bulma-perspectiva-general</id><content type="html" xml:base="https://eresendez.com/laravel-bulma-perspectiva-general">&lt;p&gt;Bulma es un framework CSS opensource, basado en Flexbox. 100% responsivo, modular y provee un sistema simple de grid.&lt;/p&gt;
+
+&lt;p&gt;Bulma es solo una colección de clases CSS, consiste en 39 archivos &lt;code class=&quot;highlighter-rouge&quot;&gt;.sass&lt;/code&gt; los cuales pueden ser importados individualmente.&lt;/p&gt;
+
+&lt;p&gt;Después de utilizar Bulma unos días, me doy cuenta que el framework efectivamente es sencillo y fácil de usar. El paquete también es muy pequeño, a diferencia de &lt;em&gt;Bootstrap&lt;/em&gt; y similares. No podría decir que como &lt;em&gt;contra&lt;/em&gt; carece de flexibilidad, porque tiene la opción de ser personalizado y al final nosotros siempre podemos sobreescribir cualquier estilo escribiendo un poco de CSS.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Tabla de contenidos&lt;/p&gt;
+  &lt;ul&gt;
+    &lt;li&gt;&lt;a href=&quot;#author-eleazar&quot;&gt;author: eleazar&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;#requerimientos&quot;&gt;Requerimientos&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;#instalaci%C3%B3n&quot;&gt;Instalación&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;#responsividad&quot;&gt;Responsividad&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;#modificadores&quot;&gt;Modificadores&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;#columnas&quot;&gt;Columnas&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;#otros-recursos--documentaci%C3%B3n&quot;&gt;Otros recursos / documentación&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;requerimientos&quot;&gt;Requerimientos&lt;/h2&gt;
+
+&lt;p&gt;1.- Usar el HTML5 doctype:&lt;/p&gt;
+
+&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;cp&quot;&gt;&amp;lt;!DOCTYPE html&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;2.- Agregar el responsive viewport meta tag:&lt;/p&gt;
+
+&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;meta&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;name=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;viewport&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;content=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;width=device-width, initial-scale=1&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;instalación&quot;&gt;Instalación&lt;/h2&gt;
+
+&lt;p&gt;Solo se necesita &lt;strong&gt;1 CSS&lt;/strong&gt; para empezar a utilizar &lt;em&gt;&lt;a href=&quot;https://bulma.io/documentation/overview/start/&quot;&gt;Bulma&lt;/a&gt;&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;Bulma se puede instalar de diferentes maneras:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Usar un &lt;strong&gt;CDN&lt;/strong&gt; con la URL a la hoja de estilos (&lt;a href=&quot;https://cdnjs.com/libraries/bulma&quot;&gt;https://cdnjs.com/libraries/bulma&lt;/a&gt;).&lt;/li&gt;
+  &lt;li&gt;Descarga del &lt;strong&gt;repositorio de GitHub&lt;/strong&gt; (&lt;a href=&quot;https://github.com/jgthms/bulma/tree/master/css&quot;&gt;https://github.com/jgthms/bulma/tree/master/css&lt;/a&gt;).&lt;/li&gt;
+  &lt;li&gt;Usar &lt;strong&gt;npm&lt;/strong&gt; para instalar el paquete.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Por ejemplo si compilamos assets con Laravel Mix, hacemos:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;npm install bulma&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Remover el import de Bootstrap en &lt;code class=&quot;highlighter-rouge&quot;&gt;app.scss&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Y en &lt;code class=&quot;highlighter-rouge&quot;&gt;app.scss&lt;/code&gt; incluir:&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;div class=&quot;language-scss highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;@import&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;~bulma/bulma.sass&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;4.- &lt;code class=&quot;highlighter-rouge&quot;&gt;npm run dev&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Podemos ver que la instalación ha sido correcta, añadiendo lo siguiente en &lt;code class=&quot;highlighter-rouge&quot;&gt;welcome.blade.php&lt;/code&gt;:&lt;/p&gt;
+
+&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;progress&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;progress is-primary&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;value=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;30&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;max=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;100&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;30%&lt;span class=&quot;nt&quot;&gt;&amp;lt;/progress&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;progress&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;progress is-info&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;value=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;45&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;max=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;100&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;45%&lt;span class=&quot;nt&quot;&gt;&amp;lt;/progress&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;progress&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;progress is-success&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;value=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;60&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;max=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;100&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;60%&lt;span class=&quot;nt&quot;&gt;&amp;lt;/progress&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;progress&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;progress is-warning&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;value=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;75&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;max=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;100&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;75%&lt;span class=&quot;nt&quot;&gt;&amp;lt;/progress&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;progress&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;progress is-danger&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;value=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;90&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;max=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;100&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;90%&lt;span class=&quot;nt&quot;&gt;&amp;lt;/progress&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;h2 id=&quot;responsividad&quot;&gt;Responsividad&lt;/h2&gt;
+
+&lt;p&gt;Cada elemento de Bulma es &lt;strong&gt;mobile-first&lt;/strong&gt; y es optimizado para lectura vertical, por default:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Las columnas se apilan verticalmente.&lt;/li&gt;
+  &lt;li&gt;El &lt;code class=&quot;highlighter-rouge&quot;&gt;nav&lt;/code&gt; menú se esconde.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Se puede forzar el &lt;strong&gt;horizontal&lt;/strong&gt; layout escribiendo el modificador &lt;code class=&quot;highlighter-rouge&quot;&gt;is-mobile&lt;/code&gt;.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Bulma tiene 5 breakpoints:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;mobile&lt;/code&gt;: arriba de &lt;code class=&quot;highlighter-rouge&quot;&gt;768px&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;tablet&lt;/code&gt;: de &lt;code class=&quot;highlighter-rouge&quot;&gt;769px&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;desktop&lt;/code&gt;: de &lt;code class=&quot;highlighter-rouge&quot;&gt;1024px&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;widescreen&lt;/code&gt;: de &lt;code class=&quot;highlighter-rouge&quot;&gt;1216px&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;fullhd&lt;/code&gt;: de &lt;code class=&quot;highlighter-rouge&quot;&gt;1408px&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Bulma usa &lt;a href=&quot;https://github.com/jgthms/bulma/blob/master/sass/utilities/mixins.sass#L81,L129&quot;&gt;9 responsive mixins&lt;/a&gt;:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;=mobile&lt;/code&gt; hasta &lt;code class=&quot;highlighter-rouge&quot;&gt;768px&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;=tablet&lt;/code&gt; de  &lt;code class=&quot;highlighter-rouge&quot;&gt;769px&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;=tablet-only&lt;/code&gt; de &lt;code class=&quot;highlighter-rouge&quot;&gt;769px&lt;/code&gt; y hasta &lt;code class=&quot;highlighter-rouge&quot;&gt;1023px&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;=touch&lt;/code&gt; hasta &lt;code class=&quot;highlighter-rouge&quot;&gt;1023px&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;=desktop&lt;/code&gt; de &lt;code class=&quot;highlighter-rouge&quot;&gt;1024px&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;=desktop-only&lt;/code&gt; de &lt;code class=&quot;highlighter-rouge&quot;&gt;1024px&lt;/code&gt; y hasta &lt;code class=&quot;highlighter-rouge&quot;&gt;1215px&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;=widescreen&lt;/code&gt; de &lt;code class=&quot;highlighter-rouge&quot;&gt;1216px&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;=widescreen-only&lt;/code&gt; de &lt;code class=&quot;highlighter-rouge&quot;&gt;1216px&lt;/code&gt; y hasta &lt;code class=&quot;highlighter-rouge&quot;&gt;1407px&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;=fullhd&lt;/code&gt; de &lt;code class=&quot;highlighter-rouge&quot;&gt;1408px&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;modificadores&quot;&gt;Modificadores&lt;/h2&gt;
+
+&lt;p&gt;Algo que me gustó de Bulma, es que también cuenta con clases de utilidad o modificadores, lo que permite obtener estilos alternativos para casi todos sus elementos. Estos modificadores empiezan con &lt;code class=&quot;highlighter-rouge&quot;&gt;is-*&lt;/code&gt; o &lt;code class=&quot;highlighter-rouge&quot;&gt;has-*&lt;/code&gt;. Por ejemplo:&lt;/p&gt;
+
+&lt;p&gt;Para convertir un botón normal en botón de Bulma, simplemente agregamos la clase &lt;code class=&quot;highlighter-rouge&quot;&gt;button&lt;/code&gt;.&lt;/p&gt;
+
+&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;button&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;button&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;Hello world&lt;span class=&quot;nt&quot;&gt;&amp;lt;/button&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Para cambiar el estilo usando modificadores, escribimos lo siguiente:&lt;/p&gt;
+
+&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;button&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;button is-large is-success is-rounded has-text-weight-bold&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;Hello world&lt;span class=&quot;nt&quot;&gt;&amp;lt;/button&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;Lo anterior crea un botón con borde redondo, background verde y fuente white-bold.&lt;/p&gt;
+
+&lt;h2 id=&quot;columnas&quot;&gt;Columnas&lt;/h2&gt;
+
+&lt;p&gt;Una de las cosas más importantes de cualquier framework CSS, es como resuelven el tema de las columnas. Bulma se basa en flexbox y de la siguiente manera se crea una fila con tres columnas:&lt;/p&gt;
+
+&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;columns&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;column&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+    Columna uno
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;column&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+    Columna dos
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;column&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+    Columna tres
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Una vez mas, utilizando los modificadores podemos controlar el tamaño del ancho de las columnas, algunos ejemplo:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;is-three-quarters&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;is-two-thirds&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;is-half&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;is-one-third&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;is-one-quarter&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;is-four-fifths&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;is-three-fifths&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;is-two-fifths&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;is-one-fifth&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;otros-recursos--documentación&quot;&gt;Otros recursos / documentación&lt;/h2&gt;
+
+&lt;p&gt;Lo mejor de todo es que el resto de la biblioteca es muy intuitiva y fácil. Entonces, el resto se entiende sin problemas.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Responsividad: &lt;a href=&quot;https://bulma.io/documentation/overview/responsiveness/&quot;&gt;https://bulma.io/documentation/overview/responsiveness/&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Mixins: &lt;a href=&quot;https://bulma.io/documentation/overview/mixins/&quot;&gt;https://bulma.io/documentation/overview/mixins/&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Componentes Lightweight para Vue.js basado en Bulma - &lt;a href=&quot;https://buefy.github.io/&quot;&gt;https://buefy.github.io/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>Eleazar Resendez</name></author><category term="Web Development" /><category term="Frontend" /><summary type="html">Bulma es un framework CSS opensource, basado en Flexbox. 100% responsivo, modular y provee un sistema simple de grid.</summary></entry><entry><title type="html">CSS básico — Recommendation</title><link href="https://eresendez.com/css-basico-recommendation" rel="alternate" type="text/html" title="CSS básico — Recommendation" /><published>2018-12-09T00:00:00+00:00</published><updated>2018-12-09T00:00:00+00:00</updated><id>https://eresendez.com/css-basico-recommendation</id><content type="html" xml:base="https://eresendez.com/css-basico-recommendation">&lt;p&gt;Recomendaciones para conocer y desarrollar un CSS flexible, duradero y sostenible (@mdo).&lt;/p&gt;
+
+&lt;p&gt;Lo mejor siempre será aprender bien los fundamentos (HTML, CSS y Javascript) ya que la web gira entorno a estas tecnologías, por lo que vale la pena invertir el tiempo.&lt;/p&gt;
+
+&lt;p&gt;Desde luego que hay muchos recursos en la web, solo hay que &lt;em&gt;googlear&lt;/em&gt; y encontrar algo que se adapte a nuestro estilo de aprendizaje.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Tabla de Contenidos&lt;/p&gt;
+  &lt;ul&gt;
+    &lt;li&gt;&lt;a href=&quot;#author-eleazar&quot;&gt;author: eleazar&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;#css-selectors&quot;&gt;CSS Selectors&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;#css-class&quot;&gt;CSS Class&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;#orden-de-declaraciones&quot;&gt;Orden de declaraciones&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;#naming-conventions&quot;&gt;Naming Conventions&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;#media-query-placement&quot;&gt;Media query placement&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;#importar-un-google-font&quot;&gt;Importar un Google Font&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;#el-atributo-id-para-dar-estilo&quot;&gt;El atributo id para dar estilo&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;#usar-notaci%C3%B3n-de-reloj-para-especificar-el-padding-y-margin-de-un-elemento&quot;&gt;Usar notación de reloj para especificar el Padding y Margin de un elemento&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;#usar-un-attribute-selector-para-dar-estilo&quot;&gt;Usar un Attribute Selector para dar estilo&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;#entender-unidades-absolutas-vs-relativas&quot;&gt;Entender unidades Absolutas vs. Relativas&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;#heredar-el-estilo-del-body-element&quot;&gt;Heredar el estilo del Body Element&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;#dar-prioridad-a-un-estilo-sobre-otro&quot;&gt;Dar prioridad a un estilo sobre otro&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;#sobreescribir-estilos-en-css-subsecuente&quot;&gt;Sobreescribir estilos en CSS subsecuente&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;#sobreescribir-declaraciones-de-clases-por-atributos-id&quot;&gt;Sobreescribir declaraciones de clases por atributos ID&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;#sobreescribir-declaraciones-de-clase-con-estilos-inline&quot;&gt;Sobreescribir declaraciones de clase con estilos Inline&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;#sobreescribir-todos-los-estilos-usando-important&quot;&gt;Sobreescribir todos los estilos usando Important&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;#usar-c%C3%B3digos-hexadecimales-para-colores-espec%C3%ADficos&quot;&gt;Usar códigos hexadecimales para colores específicos&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;#usar-c%C3%B3digos-hexadecimales-abreviados&quot;&gt;Usar códigos hexadecimales abreviados&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;#variables-css-y-variables-personalizadas&quot;&gt;Variables CSS y variables personalizadas&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;#variables-css-en-cascada&quot;&gt;Variables CSS en cascada&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;#usar-media-queries-para-cambiar-una-variable&quot;&gt;Usar media queries para cambiar una variable&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;#recursos&quot;&gt;Recursos&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;css-selectors&quot;&gt;CSS Selectors&lt;/h2&gt;
+
+&lt;p&gt;Existen cientos de &lt;code class=&quot;highlighter-rouge&quot;&gt;properties&lt;/code&gt; CSS para dar estilo a los elementos HTML. Un &lt;a href=&quot;https://www.w3schools.com/cssref/css_selectors.asp&quot;&gt;CSS Selector&lt;/a&gt; es un patrón usado para seleccionar el elemento al cual se le va dar estilo. Por ejemplo, si queremos que todos los elementos &lt;code class=&quot;highlighter-rouge&quot;&gt;h2&lt;/code&gt; sean rojos, añadimos la siguiente regla de estilo:&lt;/p&gt;
+
+&lt;div class=&quot;language-css highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;h2&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;nl&quot;&gt;color&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;red&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Es importante recordar agregar el punto y coma al final de cada regla de estilo.&lt;/p&gt;
+
+&lt;h2 id=&quot;css-class&quot;&gt;CSS Class&lt;/h2&gt;
+
+&lt;p&gt;Las clases son estilos reutilizables que se agregan a los elementos HTML.&lt;/p&gt;
+
+&lt;div class=&quot;language-css highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    &lt;span class=&quot;nc&quot;&gt;.blue-text&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;    &lt;/span&gt;
+    	&lt;span class=&quot;nl&quot;&gt;color&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;blue&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;  &lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Lo anterior, se puede aplicar a cualquier elemento HTML: &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;h2 class=&quot;blue-text&quot;&amp;gt;CatPhotoApp&amp;lt;/h2&amp;gt;&lt;/code&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;orden-de-declaraciones&quot;&gt;Orden de declaraciones&lt;/h2&gt;
+
+&lt;p&gt;Las declaraciones de propiedades se deben agrupar siguiendo el orden:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Posicionamiento&lt;/li&gt;
+  &lt;li&gt;Box model&lt;/li&gt;
+  &lt;li&gt;Tipográfico&lt;/li&gt;
+  &lt;li&gt;Visual&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;El posicionamiento es lo primero porque puede re-mover un elemento del flujo normal del documento y anular los estilos relacionados con el &lt;em&gt;box-model&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;El box-model viene a continuación, ya que dicta las dimensiones y la ubicación de un componente.&lt;/p&gt;
+
+&lt;p&gt;Todo lo demás tiene lugar dentro del componente o sin afectar a las dos secciones anteriores, y por lo tanto, son las últimas.&lt;/p&gt;
+
+&lt;div class=&quot;language-scss highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    &lt;span class=&quot;nc&quot;&gt;.declaration-order&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;cm&quot;&gt;/* Positioning */&lt;/span&gt;
+      &lt;span class=&quot;nl&quot;&gt;position&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;absolute&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+      &lt;span class=&quot;nl&quot;&gt;top&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+      &lt;span class=&quot;nl&quot;&gt;right&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+      &lt;span class=&quot;nl&quot;&gt;bottom&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+      &lt;span class=&quot;nl&quot;&gt;left&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+      &lt;span class=&quot;nl&quot;&gt;z-index&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;100&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+
+      &lt;span class=&quot;cm&quot;&gt;/* Box-model */&lt;/span&gt;
+      &lt;span class=&quot;nl&quot;&gt;display&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;block&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+      &lt;span class=&quot;nl&quot;&gt;float&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;right&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+      &lt;span class=&quot;nl&quot;&gt;width&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;100px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+      &lt;span class=&quot;nl&quot;&gt;height&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;100px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+
+      &lt;span class=&quot;cm&quot;&gt;/* Typography */&lt;/span&gt;
+      &lt;span class=&quot;nl&quot;&gt;font&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;normal&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;13px&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Helvetica Neue&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;sans-serif&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+      &lt;span class=&quot;nl&quot;&gt;line-height&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;.5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+      &lt;span class=&quot;nl&quot;&gt;color&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mh&quot;&gt;#333&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+      &lt;span class=&quot;nl&quot;&gt;text-align&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;center&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+
+      &lt;span class=&quot;cm&quot;&gt;/* Visual */&lt;/span&gt;
+      &lt;span class=&quot;nl&quot;&gt;background-color&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mh&quot;&gt;#f5f5f5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+      &lt;span class=&quot;nl&quot;&gt;border&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;1px&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;solid&lt;/span&gt; &lt;span class=&quot;mh&quot;&gt;#e5e5e5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+      &lt;span class=&quot;nl&quot;&gt;border-radius&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;3px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+
+      &lt;span class=&quot;cm&quot;&gt;/* Misc */&lt;/span&gt;
+      &lt;span class=&quot;nl&quot;&gt;opacity&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;naming-conventions&quot;&gt;Naming Conventions&lt;/h2&gt;
+
+&lt;p&gt;La idea es hacer que cada clase sea un componente individual que pueda ser reutiizado, dar a cada elemento una clase que lo represente, ser específicos con el nombre de las clases para que puedan ser reutilizables y fácil de identificar.&lt;/p&gt;
+
+&lt;p&gt;En resumen:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Mantener el nombre en minúsculas y utilizar guiones (no guiones bajos o camelCase). Los guiones sirven como rupturas naturales en la clase relacionada (por ejemplo, &lt;code class=&quot;highlighter-rouge&quot;&gt;.btn&lt;/code&gt; y &lt;code class=&quot;highlighter-rouge&quot;&gt;.btn-danger&lt;/code&gt;).&lt;/li&gt;
+  &lt;li&gt;Evitar la notación abreviada excesiva y arbitraria. &lt;code class=&quot;highlighter-rouge&quot;&gt;.btn&lt;/code&gt; es útil para &lt;em&gt;button&lt;/em&gt;, pero &lt;code class=&quot;highlighter-rouge&quot;&gt;.s&lt;/code&gt; no significa nada.&lt;/li&gt;
+  &lt;li&gt;Mantenga las clases lo más cortas y concisas posible.&lt;/li&gt;
+  &lt;li&gt;Use nombres significativos; Utilice nombres &lt;em&gt;estructurales&lt;/em&gt; o de &lt;em&gt;propósito&lt;/em&gt; sobre presentacionales. Nombrar de acuerdo al uso en lugar de la apariencia.&lt;/li&gt;
+  &lt;li&gt;Usar prefijos basadas en la clase primaria o base más cercana.&lt;/li&gt;
+  &lt;li&gt;Use las clases &lt;code class=&quot;highlighter-rouge&quot;&gt;.js-*&lt;/code&gt; para denotar el comportamiento (a diferencia del estilo), pero mantenga estas clases fuera de su CSS.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;También es útil aplicar muchas de estas reglas al crear nombres de variables Sass y Less.&lt;/p&gt;
+
+&lt;div class=&quot;language-css highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    &lt;span class=&quot;c&quot;&gt;/* Ejemplo malo */&lt;/span&gt;
+    &lt;span class=&quot;nc&quot;&gt;.t&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;...&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;nc&quot;&gt;.red&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;...&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;nc&quot;&gt;.header&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;...&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+    &lt;span class=&quot;c&quot;&gt;/* Ejemplo bueno */&lt;/span&gt;
+    &lt;span class=&quot;nc&quot;&gt;.tweet&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;...&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;nc&quot;&gt;.important&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;...&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;nc&quot;&gt;.tweet-header&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;...&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;media-query-placement&quot;&gt;Media query placement&lt;/h2&gt;
+
+&lt;p&gt;Colocar los &lt;code class=&quot;highlighter-rouge&quot;&gt;media query&lt;/code&gt; lo más cerca posible del conjunto de reglas. No los agrupe todos en una hoja de estilo separada o al final del documento. Ejemplo:&lt;/p&gt;
+
+&lt;div class=&quot;language-css highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    &lt;span class=&quot;nc&quot;&gt;.element&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;...&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;nc&quot;&gt;.element-avatar&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;...&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;nc&quot;&gt;.element-selected&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;...&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+    &lt;span class=&quot;k&quot;&gt;@media&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;min-width&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;480px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;nc&quot;&gt;.element&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;...&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+      &lt;span class=&quot;nc&quot;&gt;.element-avatar&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;...&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+      &lt;span class=&quot;nc&quot;&gt;.element-selected&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;...&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;importar-un-google-font&quot;&gt;Importar un Google Font&lt;/h2&gt;
+
+&lt;p&gt;En adición a los fonts comunes, se puede especificar &lt;em&gt;custom web fonts&lt;/em&gt;. Google Fonts es una librería gratis, para importar un Google Font, simplemente se copia la URL y se pega en el HTML.&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;link href=&quot;[https://fonts.googleapis.com/css?family=Lobster](https://fonts.googleapis.com/css?family=Lobster)&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot;&amp;gt;&lt;/code&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;No uses @import&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Comparado con &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;link&amp;gt;&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;@import&lt;/code&gt; es más lento, añade peticiones extra y puede causar otros problemas imprevistos.&lt;/p&gt;
+
+&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    &lt;span class=&quot;c&quot;&gt;&amp;lt;!-- Use link elements --&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;link&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;rel=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;stylesheet&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;core.css&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Ahora, ya podemos utilizar el font Lobster con la regla: &lt;code class=&quot;highlighter-rouge&quot;&gt;font-family: Lobster;&lt;/code&gt;. Cuando un font no esta disponible, podemos decirle al navegador que utilice otro font, separándolo con comas.&lt;/p&gt;
+
+&lt;div class=&quot;language-css highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    &lt;span class=&quot;nt&quot;&gt;p&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;nl&quot;&gt;font-family&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Helvetica&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;sans-serif&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;el-atributo-id-para-dar-estilo&quot;&gt;El atributo id para dar estilo&lt;/h2&gt;
+
+&lt;p&gt;La única diferencia de &lt;code class=&quot;highlighter-rouge&quot;&gt;id&lt;/code&gt; respecto a &lt;code class=&quot;highlighter-rouge&quot;&gt;class&lt;/code&gt; es que no es reusable y solo debe ser aplicada a un elemento.&lt;/p&gt;
+
+&lt;p&gt;Un &lt;code class=&quot;highlighter-rouge&quot;&gt;id&lt;/code&gt; incluso tiene más importancia que una &lt;code class=&quot;highlighter-rouge&quot;&gt;class&lt;/code&gt; , si ambos son aplicados al mismo elementos y tienen reglas de estilo en conflicto, el estilo del &lt;code class=&quot;highlighter-rouge&quot;&gt;id&lt;/code&gt; es el que será aplicado.&lt;/p&gt;
+
+&lt;div class=&quot;language-css highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    &lt;span class=&quot;nf&quot;&gt;#photo-element&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;nl&quot;&gt;background-color&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;green&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Casi nunca deberías usar &lt;code class=&quot;highlighter-rouge&quot;&gt;id&lt;/code&gt; para dar estilo. El comportamiento roto debido a las colisiones con &lt;code class=&quot;highlighter-rouge&quot;&gt;id&lt;/code&gt; es difícil de rastrear y es molesto.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;usar-notación-de-reloj-para-especificar-el-padding-y-margin-de-un-elemento&quot;&gt;Usar notación de reloj para especificar el Padding y Margin de un elemento&lt;/h2&gt;
+
+&lt;h2 id=&quot;usar-un-attribute-selector-para-dar-estilo&quot;&gt;Usar un Attribute Selector para dar estilo&lt;/h2&gt;
+
+&lt;p&gt;Existen otros CSS selectors aparte de &lt;code class=&quot;highlighter-rouge&quot;&gt;id&lt;/code&gt; y &lt;code class=&quot;highlighter-rouge&quot;&gt;class&lt;/code&gt;, por ejemplo: &lt;code class=&quot;highlighter-rouge&quot;&gt;[attr=value]&lt;/code&gt;, el cual da estilo al elemento que se especifique.&lt;/p&gt;
+
+&lt;div class=&quot;language-css highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;type&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&quot;radio&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    	&lt;span class=&quot;nl&quot;&gt;margin&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;20px&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0px&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;20px&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Al usar el atributo &lt;code class=&quot;highlighter-rouge&quot;&gt;type&lt;/code&gt; se le otorga un margin a todos los radio buttons.&lt;/p&gt;
+
+&lt;h2 id=&quot;entender-unidades-absolutas-vs-relativas&quot;&gt;Entender unidades Absolutas vs. Relativas&lt;/h2&gt;
+
+&lt;h2 id=&quot;heredar-el-estilo-del-body-element&quot;&gt;Heredar el estilo del Body Element&lt;/h2&gt;
+
+&lt;p&gt;Cada página HTML tiene un elemento &lt;code class=&quot;highlighter-rouge&quot;&gt;body&lt;/code&gt; y todos los otros elementos van a heredar el estilo que se defina en el elemento &lt;code class=&quot;highlighter-rouge&quot;&gt;body&lt;/code&gt;.&lt;/p&gt;
+
+&lt;div class=&quot;language-css highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    &lt;span class=&quot;nt&quot;&gt;body&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    	&lt;span class=&quot;nl&quot;&gt;color&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;green&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Lo anterior, da el color verde a todos los elementos dentro de &lt;code class=&quot;highlighter-rouge&quot;&gt;body&lt;/code&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;dar-prioridad-a-un-estilo-sobre-otro&quot;&gt;Dar prioridad a un estilo sobre otro&lt;/h2&gt;
+
+&lt;p&gt;Usualmente, los elementos HTML reciben múltiples estilos que entran en conflicto entre sí. Con lo anterior, un elemento &lt;code class=&quot;highlighter-rouge&quot;&gt;h1&lt;/code&gt; no siempre va a ser verde.&lt;/p&gt;
+
+&lt;p&gt;Al aplicar al elemento una clase que haga el texto rosa, la clase anula el color verde del &lt;code class=&quot;highlighter-rouge&quot;&gt;body&lt;/code&gt;.&lt;/p&gt;
+
+&lt;div class=&quot;language-css highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    &lt;span class=&quot;nc&quot;&gt;.pink-text&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    	&lt;span class=&quot;nl&quot;&gt;color&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;pink&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    &lt;span class=&quot;nt&quot;&gt;&amp;lt;h1&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;pink-text&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+    	Hello World!
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;/h1&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;La clase “pink-text” sobreescribió la declaración CSS del elemento &lt;code class=&quot;highlighter-rouge&quot;&gt;body&lt;/code&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;sobreescribir-estilos-en-css-subsecuente&quot;&gt;Sobreescribir estilos en CSS subsecuente&lt;/h2&gt;
+
+&lt;p&gt;Ahora que sabemos que las clases sobreescriben el CSS del elemento &lt;code class=&quot;highlighter-rouge&quot;&gt;body&lt;/code&gt;, la siguiente pregunta es: ¿que puede sobreescribir una clase?&lt;/p&gt;
+
+&lt;p&gt;Para ello vamos a crear una clase adicional que haga el texto azul, &lt;strong&gt;asegurando que este debajo de la clase pink-text&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;div class=&quot;language-css highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    &lt;span class=&quot;nc&quot;&gt;.pink-text&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    	&lt;span class=&quot;nl&quot;&gt;color&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;pink&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+    &lt;span class=&quot;nc&quot;&gt;.blue-text&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    	&lt;span class=&quot;nl&quot;&gt;color&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;blue&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Aplicamos la clase al elemento que tenga pink-text para ver cual gana.&lt;/p&gt;
+
+&lt;p&gt;La aplicación de múltiples clases en un elemento se realiza con un espacio entre ellos como este:&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;class=&quot;class1 class2&quot;&lt;/code&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;No importa en qué orden se enumeran las clases en el elemento HTML.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Pero, lo que si es importante es el &lt;strong&gt;orden de las declaraciones de clases&lt;/strong&gt; en la archivo .CSS.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;La segunda declaración siempre tendrá más prioridad sobre la primera.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Debido a que &lt;code class=&quot;highlighter-rouge&quot;&gt;.blue-text&lt;/code&gt; se declara después que &lt;code class=&quot;highlighter-rouge&quot;&gt;.pink-text&lt;/code&gt; esta anula los atributos de &lt;code class=&quot;highlighter-rouge&quot;&gt;pink-text&lt;/code&gt;.&lt;/p&gt;
+
+&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    &lt;span class=&quot;nt&quot;&gt;&amp;lt;h1&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;pink-text blue-text&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;Hello World!&lt;span class=&quot;nt&quot;&gt;&amp;lt;/h1&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;sobreescribir-declaraciones-de-clases-por-atributos-id&quot;&gt;Sobreescribir declaraciones de clases por atributos ID&lt;/h2&gt;
+
+&lt;p&gt;Los navegadores leen el CSS de arriba hacia abajo. Eso significa que en un conflicto, los navegadores van a usar cualquier declaración CSS que este al final.&lt;/p&gt;
+
+&lt;p&gt;Se puede sobreescribir el valor azul del elemento &lt;code class=&quot;highlighter-rouge&quot;&gt;h1&lt;/code&gt; si se define un &lt;code class=&quot;highlighter-rouge&quot;&gt;id&lt;/code&gt; al elemento y se da otro estilo.&lt;/p&gt;
+
+&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    &lt;span class=&quot;nt&quot;&gt;&amp;lt;h1&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;id=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;orange-text&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;pink-text blue-text&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;div class=&quot;language-css highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    &lt;span class=&quot;nf&quot;&gt;#orange-text&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    	&lt;span class=&quot;nl&quot;&gt;color&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;orange&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;No importa en donde se declare “orange-text”, porque el atributo id siempre tendrá prioridad.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;sobreescribir-declaraciones-de-clase-con-estilos-inline&quot;&gt;Sobreescribir declaraciones de clase con estilos Inline&lt;/h2&gt;
+
+&lt;p&gt;Hasta ahora se ha probado que las declaraciones id sobreescriben las declaraciones de clases.&lt;/p&gt;
+
+&lt;p&gt;El &lt;code class=&quot;highlighter-rouge&quot;&gt;inline style&lt;/code&gt; sobreescribe todo lo anterior.&lt;/p&gt;
+
+&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    &lt;span class=&quot;nt&quot;&gt;&amp;lt;h1&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;style=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;color:white;&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;id=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;orange-text&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;pink-text blue-text&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+    	Hello World! &lt;span class=&quot;c&quot;&gt;&amp;lt;!-- El texto es blanco --&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;/h1&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;sobreescribir-todos-los-estilos-usando-important&quot;&gt;Sobreescribir todos los estilos usando Important&lt;/h2&gt;
+
+&lt;p&gt;Aún existe otra forma de sobreescribir CSS, el método más poderoso de todos, pero ¿cuando usarlo?.&lt;/p&gt;
+
+&lt;p&gt;En algún momento, vamos a utilizar una librería CSS que accidentalmente sobreescriba nuestro CSS. Entonces, si queremos cambiar eso usamos &lt;code class=&quot;highlighter-rouge&quot;&gt;!important&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Volvamos atrás para añadir la palabra reservada &lt;code class=&quot;highlighter-rouge&quot;&gt;!important&lt;/code&gt; en la clase &lt;code class=&quot;highlighter-rouge&quot;&gt;.pink-text&lt;/code&gt; y el elemento se hará rosa.&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;color: pink !important;&lt;/code&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;usar-códigos-hexadecimales-para-colores-específicos&quot;&gt;Usar códigos hexadecimales para colores específicos&lt;/h2&gt;
+
+&lt;h2 id=&quot;usar-códigos-hexadecimales-abreviados&quot;&gt;Usar códigos hexadecimales abreviados&lt;/h2&gt;
+
+&lt;h2 id=&quot;variables-css-y-variables-personalizadas&quot;&gt;Variables CSS y variables personalizadas&lt;/h2&gt;
+
+&lt;p&gt;Las &lt;em&gt;CSS Variables&lt;/em&gt; son una poderosa manera de cambiar muchos estilos rápidamente al modificar un solo valor.&lt;/p&gt;
+
+&lt;p&gt;Para crear una Variable CSS, solamente tenemos que darle un &lt;code class=&quot;highlighter-rouge&quot;&gt;name&lt;/code&gt; con &lt;code class=&quot;highlighter-rouge&quot;&gt;dos guiones&lt;/code&gt; y asignarle un valor:&lt;/p&gt;
+
+&lt;div class=&quot;language-css highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nc&quot;&gt;.element&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;py&quot;&gt;--gray-color&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;#777777&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Lo anterior crea una variable llamada &lt;code class=&quot;highlighter-rouge&quot;&gt;--gray-color&lt;/code&gt; y le asigna el color gris hexadecimal. Para usarla se hace referencia de la siguiente manera:&lt;/p&gt;
+
+&lt;div class=&quot;language-css highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nc&quot;&gt;.element&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;py&quot;&gt;--gray-color&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;#777777&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;nl&quot;&gt;color&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;var&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;--gray-color&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;variables-css-en-cascada&quot;&gt;Variables CSS en cascada&lt;/h2&gt;
+
+&lt;p&gt;Cuando se crea una variable CSS solo esta disponible dentro del elemento en la cual fue creada y también esta disponible para los elementos anidados, este efecto se llama &lt;em&gt;cascada.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Si se definen las variables en el elemento &lt;code class=&quot;highlighter-rouge&quot;&gt;:root&lt;/code&gt; estarán disponibles para todo la página web.&lt;/p&gt;
+
+&lt;div class=&quot;language-css highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    &lt;span class=&quot;nd&quot;&gt;:root&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    	&lt;span class=&quot;py&quot;&gt;--color-gray&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;#777777&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;usar-media-queries-para-cambiar-una-variable&quot;&gt;Usar media queries para cambiar una variable&lt;/h2&gt;
+
+&lt;h2 id=&quot;recursos&quot;&gt;Recursos&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Un buen recurso es &lt;a href=&quot;https://caniuse.com/&quot;&gt;CanIUse.com&lt;/a&gt; en donde puedes tipear cualquier &lt;em&gt;feature&lt;/em&gt; en su buscador para saber si el navegador soporta la característica y en que versión.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://developer.mozilla.org/&quot;&gt;Mozilla Developer Network&lt;/a&gt;, es otro gran sitio que uso diariamente.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://codeguide.co/#html-syntax&quot;&gt;codeguide.co&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>Eleazar Resendez</name></author><category term="Web Development" /><category term="Frontend" /><summary type="html">Recomendaciones para conocer y desarrollar un CSS flexible, duradero y sostenible (@mdo).</summary></entry><entry><title type="html">Cómo crear Hero-Images hermosas (y persuasivas) para tu tienda en línea</title><link href="https://eresendez.com/como-crear-hero-images-para-tu-eshop" rel="alternate" type="text/html" title="Cómo crear Hero-Images hermosas (y persuasivas) para tu tienda en línea" /><published>2018-11-24T00:00:00+00:00</published><updated>2018-11-24T00:00:00+00:00</updated><id>https://eresendez.com/como-crear-hero-images-para-tu-eshop</id><content type="html" xml:base="https://eresendez.com/como-crear-hero-images-para-tu-eshop">&lt;p&gt;Muchas páginas y plantillas tienen un componente importante en común: una imagen principal en su &lt;em&gt;homepage&lt;/em&gt;. Esta imagen es conocida como &lt;em&gt;hero&lt;/em&gt;, &lt;em&gt;banner&lt;/em&gt;, o &lt;em&gt;imágenes carrusel&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;Son esenciales y &lt;a href=&quot;https://www.shopify.com/blog/16480796-how-to-create-beautiful-and-persuasive-hero-images-for-your-online-store&quot;&gt;aquí&lt;/a&gt;, Shopify publicó un gran post describiendo las mejores prácticas para usarlas y provee recursos para crear excelentes y persuasivas &lt;em&gt;hero-images&lt;/em&gt;.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Tabla de contenidos&lt;/p&gt;
+  &lt;ul&gt;
+    &lt;li&gt;&lt;a href=&quot;#ubicaci%C3%B3n&quot;&gt;Ubicación&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;#prop%C3%B3sito&quot;&gt;Propósito&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;#qu%C3%A9-debe-incluir&quot;&gt;Qué debe incluir&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;#c%C3%B3mo-crear-una-hero-image&quot;&gt;Cómo crear una hero-image&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;#conclusi%C3%B3n&quot;&gt;Conclusión&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&quot;ubicación&quot;&gt;Ubicación&lt;/h3&gt;
+
+&lt;p&gt;Una &lt;em&gt;hero-image&lt;/em&gt; abarca casi todo el espacio de la &lt;em&gt;homepage&lt;/em&gt;, significa que puede ser un activo muy valioso para el negocio si se usan correctamente.&lt;/p&gt;
+
+&lt;h3 id=&quot;propósito&quot;&gt;Propósito&lt;/h3&gt;
+
+&lt;p&gt;El uso depende de las metas del negocio, por ejemplo:&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;1. Para ayudar a crear una marca y contar una historia&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Un uso potencial de esta imagen es ayudar a construir una marca, es efectivo porque el negocio y los productos tienen una historia que suma e implica presentar información clave que educa a los visitantes en la historia de la marca.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;2. Para contestar las preguntas del cliente&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Otro enfoque común es presentar respuestas a preguntas frecuentes, por ejemplo: “Envío GRATIS en MX”&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;3. Para resaltar la propuesta de valor&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;La propuesta de valor explica exactamente a los clientes el valor que los productos entregan, éste es un buen lugar para resaltar la propuesta de valor porque es donde la mayoría de los visitantes aterrizan.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;4. Para hacer anuncios&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Uno uso destacado es presentar un anuncio como una venta y de igual manera es una gran oportunidad de notificar, ya que alcanza la mayor cantidad de visitantes.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;5. Presentar un producto o una línea de productos&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Finalmente, otro uso popular es mostrar un producto o una linea de productos en particular, esto puede ser perfecto para cuando se lanzan nuevos productos y se desea que reciban toda la atención, además de ofrecer productos con el margen de beneficio más alto o productos que se intentan liquidar.&lt;/p&gt;
+
+&lt;h3 id=&quot;qué-debe-incluir&quot;&gt;Qué debe incluir&lt;/h3&gt;
+
+&lt;p&gt;Hay 3 elementos principales y la combinación de cada uno puede llevar a una &lt;em&gt;hero-image&lt;/em&gt; persuasiva que compele al visitante a la acción que se desea en línea con el objetivo de conversión.&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Imagen llamativa - Al ojo humano le encantan las imágenes grandes, audaces y brillantes, precisamente la razón por la cual la fotografía de un producto es importante. Se necesita un gráfico de alta resolución que llame la atención.&lt;/li&gt;
+  &lt;li&gt;Redacción atrayente - El &lt;em&gt;copy&lt;/em&gt; son las palabras que se usan para comunicar un mensaje. Debido a la naturaleza de la imagen y al tiempo de comunicar el mensaje, el texto debe ser conciso y preciso.&lt;/li&gt;
+  &lt;li&gt;Sólido &lt;em&gt;Call-To-Action&lt;/em&gt;: Texto o un botón, todas las imágenes deben presentar una llamada a la acción prominente que indique al lector la acción que desea que realicen. Ejemplo: COMPRAR AHORA, LEER NUESTRA HISTORIA, MÁS INFORMACIÓN, etc.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;cómo-crear-una-hero-image&quot;&gt;Cómo crear una hero-image&lt;/h3&gt;
+
+&lt;p&gt;Para ello vamos a utilizar una variedad de herramientas que pueden facilitar este proceso incluso para los menos expertos en tecnología.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Imágenes libre de derechos, sin costo&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://burst.shopify.com/&quot;&gt;Burst by Shopify&lt;/a&gt;, es una nueva plataforma fotográfica para emprendedores, puedes encontrar fotos de alta resolución de productos e imágenes de estilo de vida que son perfectas para campañas de marketing y redes sociales.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://thestocks.im/&quot;&gt;The Stocks&lt;/a&gt; reúne las mejores fotos sin royalties en un sitio web limpio y fácil de navegar.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://join.deathtothestockphoto.com/&quot;&gt;Death To Stock Photo&lt;/a&gt; envía imágenes gratuitas por correo electrónico una vez al mes, por lo que es una opción para comenzar a crear una colección de imágenes únicas y usarlas en el futuro.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://pixabay.com/&quot;&gt;Pixabay&lt;/a&gt; Más de 400,000 imágenes gratis, vectores e ilustraciones artísticas, todas las imágenes de este sitio son de Pixabay.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://graphicburger.com/&quot;&gt;Graphic Burger&lt;/a&gt; es un gran recurso con fotos e imágenes gratuitas para uso comercial.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://picjumbo.com/&quot;&gt;PicJumbo&lt;/a&gt; es un recurso realmente bueno para fotos de alta calidad, gratis. Una gran selección y todas las categorías hacen que las grandes imágenes sean fáciles de encontrar.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://morguefile.com/&quot;&gt;morgueFile&lt;/a&gt; ha existido por mucho tiempo y tiene miles de fotos gratuitas.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Software de edición&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.adobe.com/products/photoshop.html&quot;&gt;Adobe Photoshop&lt;/a&gt; (PAGO) es el programa de elección entre los artistas y fotógrafos de diseño gráfico, sin embargo, tiene un precio y una curva de aprendizaje pronunciada. La buena noticia es que hay varias alternativas que son mucho más fáciles de usar y gratuitas.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://apps.pixlr.com/editor/&quot;&gt;Pixlr&lt;/a&gt; - (gratis) Un editor de imágenes gratuito basado en la web y descargable. Si estás familiarizado con la edición de imágenes, encontrará que Pixlr es bastante fácil e intuitivo de utilizar. Desafortunadamente, sin experiencia previa en la edición de imágenes, es posible que Pixlr te resulte un poco difícil.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.pixelmator.com/&quot;&gt;Pixelmator&lt;/a&gt; - (Aplicación OSX de pago) es un editor de imágenes rico y potente para OS X que tiene un costo de $600.00 mxn aproximadamente.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.canva.com/&quot;&gt;Canva&lt;/a&gt;: (Freemium) Canva es una aplicación de edición de imágenes basada en la web bastante nueva, que va más allá de la simple edición de imágenes. Su objetivo es hacer que el diseño sea simple para cualquier persona. La aplicación facilita la selección del tamaño de imagen que desea producir, e incluye elementos de diseño(gratuitas y de pago).&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.picmonkey.com/&quot;&gt;PicMonkey&lt;/a&gt; (gratis) Aunque PicMonkey es gratuito, hay una versión premium que proporciona muchas cosas extra por un pequeño cargo mensual.&lt;/p&gt;
+
+&lt;h3 id=&quot;conclusión&quot;&gt;Conclusión&lt;/h3&gt;
+
+&lt;p&gt;Es necesario cambiar estas imágenes con frecuencia para tener una tienda fresca, animada e impulsar a los visitantes a tomar las acciones acordes a los objetivos de conversión.&lt;/p&gt;</content><author><name>Eleazar Resendez</name></author><category term="Technopreneurship" /><category term="Marketing" /><summary type="html">Muchas páginas y plantillas tienen un componente importante en común: una imagen principal en su homepage. Esta imagen es conocida como hero, banner, o imágenes carrusel.</summary></entry><entry><title type="html">Contribuciones OpenSource</title><link href="https://eresendez.com/opensource-contributions" rel="alternate" type="text/html" title="Contribuciones OpenSource" /><published>2018-11-21T00:00:00+00:00</published><updated>2018-11-21T00:00:00+00:00</updated><id>https://eresendez.com/opensource-contributions</id><content type="html" xml:base="https://eresendez.com/opensource-contributions">&lt;p&gt;Hay muchas razones para contribuir a proyectos Open Source, cada quien tiene sus razones personales, por lo que es necesario conocer nuestras fortalezas y debilidades relacionadas con los proyectos que elegimos.&lt;/p&gt;
+
+&lt;p&gt;De acuerdo a nuestros intereses y conocimientos podemos escoger uno o dos proyectos, eso es tarea sencilla, ya de aquí viene la parte interesante.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Aquí escribiré lo que he hecho para empezar a contribuir en proyectos de código abierto.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&quot;seleccionar-un-proyecto&quot;&gt;Seleccionar un proyecto&lt;/h3&gt;
+
+&lt;p&gt;Para seleccionar un proyecto, primero debemos saber cuales son nuestras expectativas y en base a eso buscar proyectos relacionados. Leer sus wikis, sitios web, tratar de entender de qué se tratan.&lt;/p&gt;
+
+&lt;p&gt;Para este ejemplo, se &lt;em&gt;seleccionó el proyecto&lt;/em&gt; &lt;a href=&quot;https://github.com/alexeymezenin/laravel-best-practices&quot;&gt;alexeymezenin/laravel-best-practices&lt;/a&gt;. Las razones por las cuales quiero contribuir es porque actualmente trabajo con ese framework y me llama la atención las buenas prácticas.&lt;/p&gt;
+
+&lt;h3 id=&quot;enviar-un-correo-de-introducción&quot;&gt;Enviar un correo de introducción&lt;/h3&gt;
+
+&lt;p&gt;Una vez que haya encontrado el proyecto, suscríbase a su lista de correo de desarrollo. La mayoría de los proyectos tienen detalles sobre cómo contribuir / comenzar las secciones. Si todavía no se siente cómodo presentándose a la comunidad, espere un momento y lea los correos que vienen de la lista.&lt;/p&gt;
+
+&lt;h3 id=&quot;empezar-a-contribuir&quot;&gt;Empezar a contribuir&lt;/h3&gt;
+
+&lt;p&gt;Aparte de &lt;em&gt;codificar&lt;/em&gt;, existen muchas maneras de contribuir, por ejemplo:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Diseño&lt;/li&gt;
+  &lt;li&gt;Testing&lt;/li&gt;
+  &lt;li&gt;Documentación&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;!--
+Read More
+
+- https://www.quora.com/How-do-I-get-started-with-Open-Source-Contributions
+- https://www.quora.com/search?q=open+source+contribution
+- https://www.quora.com/search?q=open+source+contribution
+
+--&gt;</content><author><name>Eleazar Resendez</name></author><category term="Projects" /><category term="OpenSource" /><summary type="html">Hay muchas razones para contribuir a proyectos Open Source, cada quien tiene sus razones personales, por lo que es necesario conocer nuestras fortalezas y debilidades relacionadas con los proyectos que elegimos.</summary></entry><entry><title type="html">Vanilla Javascript Tingle Modal</title><link href="https://eresendez.com/vanilla-javascript-tingle-modal" rel="alternate" type="text/html" title="Vanilla Javascript Tingle Modal" /><published>2018-10-09T00:00:00+00:00</published><updated>2018-10-09T00:00:00+00:00</updated><id>https://eresendez.com/vanilla-javascript-tingle-modal</id><content type="html" xml:base="https://eresendez.com/vanilla-javascript-tingle-modal">&lt;p&gt;En la búsqueda de un modal que sea realmente sencillo, sin tanta dependencia y sin usar jQuery, encontré el siguiente modal: &lt;a href=&quot;https://robinparisi.github.io/tingle/&quot;&gt;Tingle&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/robinparisi/tingle&quot;&gt;Código fuente en Github&lt;/a&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Sin dependencias&lt;/li&gt;
+  &lt;li&gt;Totalmente personalizable con CSS&lt;/li&gt;
+  &lt;li&gt;CSS transitions&lt;/li&gt;
+  &lt;li&gt;Simple API&lt;/li&gt;
+  &lt;li&gt;Creado con UX en mente&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;intalación&quot;&gt;Intalación&lt;/h3&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Método&lt;/th&gt;
+      &lt;th&gt;Procedimiento&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Bower&lt;/td&gt;
+      &lt;td&gt;bower install tingle –save&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;NPM&lt;/td&gt;
+      &lt;td&gt;npm install tingle.js –save&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Download básico&lt;/td&gt;
+      &lt;td&gt;&lt;a href=&quot;https://github.com/robinparisi/tingle/archive/master.zip&quot;&gt;download.zip&lt;/a&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;Solo es necesario agregar el CSS y JS.&lt;/p&gt;
+
+&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;link&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;rel=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;stylesheet&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;tingle.min.css&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;script &lt;/span&gt;&lt;span class=&quot;na&quot;&gt;src=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;tingle.min.js&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/script&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;ejemplo&quot;&gt;Ejemplo&lt;/h3&gt;
+
+&lt;p&gt;Haz clic en el botón para ver el modal en acción.&lt;/p&gt;
+
+&lt;div class=&quot;tingle-demo tingle-demo-tiny hidden&quot;&gt;
+&lt;h1&gt;Tingle test&lt;/h1&gt;
+&lt;p&gt;Hello world!&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;button class=&quot;hover:bg-blue text-blue-dark font-semibold hover:text-white py-2 px-4 border border-blue hover:border-transparent rounded js-tingle-modal-1&quot;&gt;Click me!&lt;/button&gt;&lt;/p&gt;
+
+&lt;p&gt;Solo es necesario lo siguiente:&lt;/p&gt;
+
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;modal&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;tingle&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;modal&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;({&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;cssClass&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'class1'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'class2'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;
+
+&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;btn&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;document&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;querySelector&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'.js-tingle-modal-1'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;nx&quot;&gt;btn&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;addEventListener&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'click'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;modal&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;open&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;
+
+&lt;span class=&quot;nx&quot;&gt;modal&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;setContent&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;document&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;querySelector&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'.tingle-demo-tiny'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;innerHTML&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Para más opciones y configuración ver: &lt;a href=&quot;https://robinparisi.github.io/tingle/&quot;&gt;https://robinparisi.github.io/tingle/&lt;/a&gt;&lt;/p&gt;
+
+&lt;script&gt;
+var modal_tingle_sample = new tingle.modal();
+
+var btn_sample = document.querySelector('.js-tingle-modal-1');
+btn_sample.addEventListener('click', function() {
+    modal_tingle_sample.open();
+});
+
+modal_tingle_sample.setContent(document.querySelector('.tingle-demo-tiny').innerHTML);
+&lt;/script&gt;</content><author><name>Eleazar Resendez</name></author><category term="Frontend" /><category term="Javascript" /><summary type="html">En la búsqueda de un modal que sea realmente sencillo, sin tanta dependencia y sin usar jQuery, encontré el siguiente modal: Tingle.</summary></entry><entry><title type="html">Principios del Diseño Web Responsivo</title><link href="https://eresendez.com/principios-del-dise%C3%B1o-web-adaptable" rel="alternate" type="text/html" title="Principios del Diseño Web Responsivo" /><published>2018-09-16T00:00:00+00:00</published><updated>2018-09-16T00:00:00+00:00</updated><id>https://eresendez.com/principios-del-dise%C3%B1o-web-adaptable</id><content type="html" xml:base="https://eresendez.com/principios-del-dise%C3%B1o-web-adaptable">&lt;p&gt;Existen muchos tipos de dispositivos que pueden acceder a la web. Estos dispositivos tienen diferentes tamaños de pantalla, resoluciones y potencia de procesamiento. La estructura de la página y las reglas de CSS deben ser flexibles para acomodar estas diferencias. En general, se diseña el CSS de la página para el público objetivo.&lt;/p&gt;
+
+&lt;p&gt;Esta entrada cubrirá las formas básicas de usar CSS para el Diseño Web Responsivo.&lt;/p&gt;
+
+&lt;h2 id=&quot;table-of-contents&quot;&gt;Table of contents&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;#author-eleazar&quot;&gt;author: eleazar&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#table-of-contents&quot;&gt;Table of contents&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#media-query&quot;&gt;Media Query&lt;/a&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#diferencia-entre-max-width-y-min-width&quot;&gt;Diferencia entre max-width y min-width&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#im%C3%A1genes-responsivas&quot;&gt;Imágenes responsivas&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;media-query&quot;&gt;Media Query&lt;/h2&gt;
+
+&lt;p&gt;Media Queries es una técnica introducida en CSS3 y modifica la presentación del contenido en función del tamaño de las ventanas o viewports. El viewport es el área visible de un usuario de una página web, y es diferente según el dispositivo utilizado para acceder al sitio.&lt;/p&gt;
+
+&lt;p&gt;Las Media Queries usan la regla &lt;code class=&quot;highlighter-rouge&quot;&gt;@media&lt;/code&gt;, un tipo de medio y una condición y si coincide con el tipo de dispositivo en el que se muestra el documento, se aplican los estilos. Puede tener tantos selectores y estilos dentro del media query como se desee.&lt;/p&gt;
+
+&lt;p&gt;Ejemplo de media query que devuelve el contenido cuando el &lt;strong&gt;ancho&lt;/strong&gt; del dispositivo es &lt;strong&gt;menor o igual a 100 px&lt;/strong&gt;:&lt;/p&gt;
+
+&lt;div class=&quot;language-css highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;@media&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;screen&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;and&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;max-width&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;100px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;c&quot;&gt;/* CSS */&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;y la siguiente media query devuelve el contenido cuando la &lt;strong&gt;altura&lt;/strong&gt; del dispositivo es &lt;strong&gt;mayor o igual a 350 px&lt;/strong&gt;:&lt;/p&gt;
+
+&lt;div class=&quot;language-css highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;@media&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;screen&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;and&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;min-height&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;350px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;c&quot;&gt;/* CSS */&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;El CSS dentro de la media query se aplica solo si el tipo de medio coincide con el del dispositivo que se está utilizando.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;diferencia-entre-max-width-y-min-width&quot;&gt;Diferencia entre max-width y min-width&lt;/h3&gt;
+
+&lt;p&gt;&lt;strong&gt;Maximum Width&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;@media screen and (max-width: 600px) {...}&lt;/code&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Lo anterior significa: “Si el [ancho-del-dispositivo]” es &lt;em&gt;menor o igual&lt;/em&gt; a 600px, entonces…&lt;/li&gt;
+  &lt;li&gt;Funciona desde 0px hasta 600px.&lt;/li&gt;
+  &lt;li&gt;Es un limite del ancho máximo de un elemento el cual su tamaño puede ser modificado por el navegador.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Mininum Width&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;@media screen and (min-width: 600px) {...}&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;“Si el [ancho-del-dispositivo]” es &lt;em&gt;mayor o igual&lt;/em&gt; que 600px, entonces…&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Es lo contrario a max-width&lt;/li&gt;
+  &lt;li&gt;El navegador puede incrementar el tamaño del elemento y disminuir no menos al min-width.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Ambas condiciones se pueden mezclar para especificar un rango de tamaños.&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;@media screen and (max-width: 600px) and (min-width: 400px)  {...}&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Lo anterior se ejecuta si la pantalla esta entre 600-400px de ancho.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Con &lt;code class=&quot;highlighter-rouge&quot;&gt;min-width&lt;/code&gt; se diseña una experiencia mobile-first y con &lt;code class=&quot;highlighter-rouge&quot;&gt;max_width&lt;/code&gt; una desktop-first&lt;/em&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;imágenes-responsivas&quot;&gt;Imágenes responsivas&lt;/h2&gt;
+
+&lt;p&gt;En lugar de aplicar un &lt;code class=&quot;highlighter-rouge&quot;&gt;width&lt;/code&gt; absoluto a la imagen, se puede usar lo siguiente:&lt;/p&gt;
+
+&lt;div class=&quot;language-css highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;img&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;nl&quot;&gt;max-width&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;  &lt;span class=&quot;m&quot;&gt;100%&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;nl&quot;&gt;display&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;block&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;nl&quot;&gt;height&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;auto&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;La propiedad &lt;code class=&quot;highlighter-rouge&quot;&gt;max-width&lt;/code&gt; escala la imagen al ancho de su contenedor, y &lt;code class=&quot;highlighter-rouge&quot;&gt;display: block;&lt;/code&gt; cambia la posición de default (inline) a un block element en su propia linea. El &lt;code class=&quot;highlighter-rouge&quot;&gt;height&lt;/code&gt; auto mantiene el aspecto original de la imagen.&lt;/p&gt;</content><author><name>Eleazar Resendez</name></author><category term="Frontend" /><category term="CSS" /><summary type="html">Existen muchos tipos de dispositivos que pueden acceder a la web. Estos dispositivos tienen diferentes tamaños de pantalla, resoluciones y potencia de procesamiento. La estructura de la página y las reglas de CSS deben ser flexibles para acomodar estas diferencias. En general, se diseña el CSS de la página para el público objetivo.</summary></entry><entry><title type="html">CSS Grid - Introducción</title><link href="https://eresendez.com/css-grids-introduccion" rel="alternate" type="text/html" title="CSS Grid - Introducción" /><published>2018-09-13T00:00:00+00:00</published><updated>2018-09-13T00:00:00+00:00</updated><id>https://eresendez.com/css-grids-introduccion</id><content type="html" xml:base="https://eresendez.com/css-grids-introduccion">&lt;p&gt;CSS Grid ayuda crear fácilmente diseños web complejos. Funciona convirtiendo un elemento HTML en un contenedor de cuadrícula con filas y columnas para colocar elementos secundarios donde desees.&lt;/p&gt;
+
+&lt;h3 id=&quot;crear-el-primer-css-grid&quot;&gt;Crear el primer CSS Grid&lt;/h3&gt;
+
+&lt;p&gt;Para crear un grid container se establece la propiedad &lt;code class=&quot;highlighter-rouge&quot;&gt;display&lt;/code&gt; a &lt;code class=&quot;highlighter-rouge&quot;&gt;grid&lt;/code&gt;.&lt;/p&gt;
+
+&lt;div class=&quot;language-css highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nc&quot;&gt;.container&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;nl&quot;&gt;display&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;grid&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;agregar-columnas-con-grid-template-columns&quot;&gt;Agregar columnas con grid-template-columns&lt;/h3&gt;
+
+&lt;div class=&quot;language-css highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nc&quot;&gt;.container&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;nl&quot;&gt;display&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;grid&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;py&quot;&gt;grid-template-columns&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;50px&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;50px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;//&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;Dos&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;columnas&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;de&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;50px&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;cada&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;una&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;agregar-filas-con-grid-template-rows&quot;&gt;Agregar filas con grid-template-rows&lt;/h3&gt;
+
+&lt;div class=&quot;language-css highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nc&quot;&gt;.container&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;nl&quot;&gt;display&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;grid&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;py&quot;&gt;grid-template-columns&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;50px&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;50px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;py&quot;&gt;grid-template-rows&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;50px&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;50px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;//&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;Dos&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;filas&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;de&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;50px&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Con lo anterior es posible utilizar las siguientes unidades para establecer el tamaño:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;fr&lt;/code&gt;: establece el tamaño de la columna o fila a una fracción del tamaño disponible.&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;auto&lt;/code&gt;: establece el tamaño automáticamente.&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;%&lt;/code&gt;: ajusta el tamaño aun porcentaje del ancho de su contenedor.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;crear-espacios-con-grid-column-gap-y-grid-column-row&quot;&gt;Crear espacios con grid-column-gap y grid-column-row&lt;/h3&gt;
+
+&lt;p&gt;Para dejar espacios entre columnas y filas:&lt;/p&gt;
+
+&lt;div class=&quot;language-css highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nc&quot;&gt;.container&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;py&quot;&gt;grid-column-gap&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;10px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;py&quot;&gt;grid-row-gap&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;10px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Agregar gap más rápido:&lt;/p&gt;
+
+&lt;div class=&quot;language-css highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nc&quot;&gt;.container&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;err&quot;&gt;//&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;10px&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;en&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;rows&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;y&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;20px&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;en&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;columns&lt;/span&gt;
+    &lt;span class=&quot;py&quot;&gt;grid-gap&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;10px&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;20px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;controlar-el-espaciado-interno&quot;&gt;Controlar el espaciado interno&lt;/h3&gt;
+
+&lt;p&gt;Con esta propiedad el ítem de un cuadricula, puede ocupar más espacio, solo hay que especificar de que linea a que linea ocupará ese espacio. Aplica tanto para columns, como rows.&lt;/p&gt;
+
+&lt;div class=&quot;language-css highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nc&quot;&gt;.container&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;nl&quot;&gt;grid-column&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;//&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;De&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;la&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;linea&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;2&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;la&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;4.&lt;/span&gt;
+    &lt;span class=&quot;nl&quot;&gt;grid-row&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;//&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;De&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;la&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;linea&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;2&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;la&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;4.&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;dividir-el-grid-en-áreas&quot;&gt;Dividir el grid en áreas&lt;/h3&gt;
+
+&lt;p&gt;Las celdas se pueden agrupar en áreas y darles un nombre personalizado. Cada palabra representa una celda y cada par de “ “ representa una fila. También, se puede usar un &lt;code class=&quot;highlighter-rouge&quot;&gt;.&lt;/code&gt; para designar una celda vacía.&lt;/p&gt;
+
+&lt;div class=&quot;language-css highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nc&quot;&gt;.container&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;py&quot;&gt;grid-template-areas&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+        &lt;span class=&quot;s1&quot;&gt;&quot;header header header&quot;&lt;/span&gt;
+        &lt;span class=&quot;s1&quot;&gt;&quot;advert content content&quot;&lt;/span&gt;
+        &lt;span class=&quot;s1&quot;&gt;&quot;footer footer footer&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;colocar-ítems-en-áreas-del-grid-con-la-propiedad-grid-area&quot;&gt;Colocar ítems en áreas del Grid con la propiedad grid-area&lt;/h3&gt;
+
+&lt;p&gt;Después de crear una plantilla de áreas para el contenedor grid, se puede colocar cualquier elemento en su área personalizada haciendo referencia al nombre que le dio.&lt;/p&gt;
+
+&lt;div class=&quot;language-css highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nc&quot;&gt;.item&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;py&quot;&gt;grid-area&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;footer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Lo anterior, establece ese ítem en el área llamada footer.&lt;/p&gt;
+
+&lt;h3 id=&quot;usar-grid-area-sin-crear-areas-templates&quot;&gt;Usar grid-area sin crear Areas Templates&lt;/h3&gt;
+
+&lt;p&gt;Se pueden crear áreas al vuelo, usando las lineas del grid.&lt;/p&gt;
+
+&lt;div class=&quot;language-css highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;item&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;py&quot;&gt;grid-area&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;grid-area: línea horizontal para comenzar en / línea vertical para comenzar en / línea horizontal para terminar en / línea vertical para terminar en.&lt;/p&gt;
+
+&lt;p&gt;Entonces, en el ejemplo anterior, el ítem va a consumir el espacio empezando en la linea horizontal 1 y terminando en la linea 2, después en la linea vertical 1 hasta la 4.&lt;/p&gt;
+
+&lt;h3 id=&quot;reducir-repetición-con-el-método-repeat&quot;&gt;Reducir repetición con el método repeat()&lt;/h3&gt;
+
+&lt;p&gt;Por ejemplo, crear 100 rows de 50px de alto:&lt;/p&gt;
+
+&lt;div class=&quot;language-css highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;grid-template-row&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;repeat&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;100&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;50px&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;limitar-el-tamaño-del-grid-con-la-función-minmax&quot;&gt;Limitar el tamaño del grid con la función minmax&lt;/h3&gt;
+
+&lt;p&gt;Para esto es necesario especificar un rango aceptable para el ítem.&lt;/p&gt;
+
+&lt;div class=&quot;language-css highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;grid-template-columns&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;100px&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;minmax&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;50px&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;200px&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Lo anterior crea dos columnas, una de 100px de ancho y la segunda con un mínimo de 50px y máximo 200px.&lt;/p&gt;
+
+&lt;h3 id=&quot;crear-diseño-flexibles-con-auto-fill&quot;&gt;Crear diseño flexibles con auto-fill&lt;/h3&gt;
+
+&lt;p&gt;Se pueden crear diseños flexibles si se combina &lt;code class=&quot;highlighter-rouge&quot;&gt;auto-fill&lt;/code&gt; con &lt;code class=&quot;highlighter-rouge&quot;&gt;minmax&lt;/code&gt;. Por ejemplo, lo siguiente crea columnas con el ancho especificado hasta que no quepa en la fila, cuando ya no cabe, se inserta en la siguiente fila automáticamente.&lt;/p&gt;
+
+&lt;div class=&quot;language-css highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;repeat&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;auto-fill&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;minmax&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;60px&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;1fr&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;));&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;crear-diseño-flexibles-con-auto-fit&quot;&gt;Crear diseño flexibles con auto-fit&lt;/h3&gt;
+
+&lt;p&gt;Funciona igual que &lt;code class=&quot;highlighter-rouge&quot;&gt;auto-fill&lt;/code&gt;, la diferencia es cuando se excede el tamaño del contenedor, &lt;code class=&quot;highlighter-rouge&quot;&gt;auto-fill&lt;/code&gt; sigue insertando filas o columnas y &lt;code class=&quot;highlighter-rouge&quot;&gt;auto-fit&lt;/code&gt; colapsa esas filas o columnas vacías y las estira al tamaño del contenedor.&lt;/p&gt;
+
+&lt;h3 id=&quot;usar-media-queries-para-crear-diseños-responsivos&quot;&gt;Usar Media Queries para crear diseños responsivos&lt;/h3&gt;
+
+&lt;p&gt;CSS Grid puede ser una manera fácil de hacer que el sitio sea más responsivo utilizando Media Queries para reorganizar las áreas, cambiar dimensiones de un grid y reorganizar la ubicación de los elementos.&lt;/p&gt;
+
+&lt;p&gt;Cuando el ancho del viewport es &lt;code class=&quot;highlighter-rouge&quot;&gt;400px&lt;/code&gt; o más el header ocupa la fila superior completamente y el footer la inferior.&lt;/p&gt;
+
+&lt;div class=&quot;language-css highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;@media&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;min-width&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;300px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;nc&quot;&gt;.container&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;py&quot;&gt;grid-template-columns&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;auto&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;fr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+      &lt;span class=&quot;py&quot;&gt;grid-template-rows&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;auto&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;fr&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;auto&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+      &lt;span class=&quot;py&quot;&gt;grid-template-areas&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+        &lt;span class=&quot;s1&quot;&gt;&quot;advert header&quot;&lt;/span&gt;
+        &lt;span class=&quot;s1&quot;&gt;&quot;advert content&quot;&lt;/span&gt;
+        &lt;span class=&quot;s1&quot;&gt;&quot;advert footer&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+  &lt;span class=&quot;k&quot;&gt;@media&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;min-width&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;400px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;){&lt;/span&gt;
+    &lt;span class=&quot;nc&quot;&gt;.container&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;py&quot;&gt;grid-template-areas&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+        &lt;span class=&quot;s1&quot;&gt;&quot;header header&quot;&lt;/span&gt;
+        &lt;span class=&quot;s1&quot;&gt;&quot;advert content&quot;&lt;/span&gt;
+        &lt;span class=&quot;s1&quot;&gt;&quot;footer footer&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;crear-grids-dentro-de-grids&quot;&gt;Crear grids dentro de grids&lt;/h3&gt;
+
+&lt;p&gt;Convertir un elemento en un &lt;code class=&quot;highlighter-rouge&quot;&gt;grid&lt;/code&gt; solo afecta el comportamiento de sus descendientes directos. Entonces, al convertir un descendiente directo en un &lt;code class=&quot;highlighter-rouge&quot;&gt;grid&lt;/code&gt;, tienes un &lt;code class=&quot;highlighter-rouge&quot;&gt;grid&lt;/code&gt; dentro de un &lt;code class=&quot;highlighter-rouge&quot;&gt;grid&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Por ejemplo, al establecer las propiedades de &lt;code class=&quot;highlighter-rouge&quot;&gt;display: grid;&lt;/code&gt; y &lt;code class=&quot;highlighter-rouge&quot;&gt;grid-template-columns&lt;/code&gt; de un ítem, se crea un &lt;code class=&quot;highlighter-rouge&quot;&gt;grid&lt;/code&gt; dentro de un &lt;code class=&quot;highlighter-rouge&quot;&gt;grid&lt;/code&gt;.&lt;/p&gt;</content><author><name>Eleazar Resendez</name></author><category term="Frontend" /><category term="CSS" /><summary type="html">CSS Grid ayuda crear fácilmente diseños web complejos. Funciona convirtiendo un elemento HTML en un contenedor de cuadrícula con filas y columnas para colocar elementos secundarios donde desees.</summary></entry><entry><title type="html">GitFlow - Flujo de trabajo</title><link href="https://eresendez.com/metodologia-gitflow" rel="alternate" type="text/html" title="GitFlow - Flujo de trabajo" /><published>2018-09-10T00:00:00+00:00</published><updated>2018-09-10T00:00:00+00:00</updated><id>https://eresendez.com/metodologia-gitflow</id><content type="html" xml:base="https://eresendez.com/metodologia-gitflow">&lt;p&gt;Gitflow es solo una idea abstracta de un flujo de trabajo con git publicada por &lt;a href=&quot;http://nvie.com/posts/a-successful-git-branching-model/&quot;&gt;Vincent D&lt;/a&gt;. Básicamente define un estricto modelo de branching centrado en el release del proyecto, provee un framework para gestionar grandes proyectos.&lt;/p&gt;
+
+&lt;h2 id=&quot;table-of-contents&quot;&gt;Table of contents&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;#author-eleazar&quot;&gt;author: eleazar&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#table-of-contents&quot;&gt;Table of contents&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#keypoints&quot;&gt;Keypoints&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#%C2%BFc%C3%B3mo-funciona&quot;&gt;¿Cómo funciona?&lt;/a&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#feature-branch&quot;&gt;Feature branch&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#terminando-una-feature-branch&quot;&gt;Terminando una feature branch&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#hotfix-branches&quot;&gt;Hotfix branches&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#en-resumen&quot;&gt;En resumen&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#herramientas&quot;&gt;Herramientas&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;keypoints&quot;&gt;Keypoints&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Asigna roles específicos a cada rama.&lt;/li&gt;
+  &lt;li&gt;Define cuando y como deben interactuar.&lt;/li&gt;
+  &lt;li&gt;Usa ramas individuales para preparar, mantener y guardar releases.&lt;/li&gt;
+  &lt;li&gt;Aconseja que tipo de ramas configurar y como deben ser mezcladas.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;cómo-funciona&quot;&gt;¿Cómo funciona?&lt;/h2&gt;
+
+&lt;p&gt;En lugar de usar solamente la rama &lt;code class=&quot;highlighter-rouge&quot;&gt;master&lt;/code&gt;, este flujo de trabajo utiliza dos ramas para registrar el historial del proyecto. La rama &lt;code class=&quot;highlighter-rouge&quot;&gt;master&lt;/code&gt; almacena el historial de versiones oficial, y la rama &lt;code class=&quot;highlighter-rouge&quot;&gt;develop&lt;/code&gt; sirve como una rama de integración de nuevas características.&lt;/p&gt;
+
+&lt;h3 id=&quot;feature-branch&quot;&gt;Feature branch&lt;/h3&gt;
+
+&lt;p&gt;Cada nueva característica debe residir en su propia rama. También, en lugar de crearse de &lt;code class=&quot;highlighter-rouge&quot;&gt;master&lt;/code&gt;, la &lt;code class=&quot;highlighter-rouge&quot;&gt;feature&lt;/code&gt; branch se creará de &lt;code class=&quot;highlighter-rouge&quot;&gt;develop&lt;/code&gt;. Cuando la característica este completa, se mezcla con develop. Las &lt;code class=&quot;highlighter-rouge&quot;&gt;features&lt;/code&gt; no deben de interactuar nunca con &lt;code class=&quot;highlighter-rouge&quot;&gt;master&lt;/code&gt;.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git checkout develop
+git checkout -b feature_branch
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;terminando-una-feature-branch&quot;&gt;Terminando una feature branch&lt;/h3&gt;
+
+&lt;p&gt;Cuando se termine la nueva característica, ahora es necesario mezclarla con develop.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git checkout develop
+git merge feature_branch
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Una vez que el desarrollo ha adquirido las características suficientes para un release (o se acerca una fecha de lanzamiento predeterminada), se crea una rama &lt;code class=&quot;highlighter-rouge&quot;&gt;release&lt;/code&gt; de &lt;code class=&quot;highlighter-rouge&quot;&gt;develop&lt;/code&gt;. La creación de esta rama inicia el siguiente ciclo de lanzamientos, por lo que no se pueden agregar nuevas características después de este punto; solo las correcciones de errores, la generación de documentación y otras tareas orientadas a la versión deberían ir en esta rama. Una vez que está todo listo, la rama de &lt;code class=&quot;highlighter-rouge&quot;&gt;release&lt;/code&gt; se fusiona en &lt;code class=&quot;highlighter-rouge&quot;&gt;master&lt;/code&gt; y se etiqueta con un número de versión. Además, debería fusionarse nuevamente en &lt;code class=&quot;highlighter-rouge&quot;&gt;develop&lt;/code&gt;, que puede haber progresado desde que se inició el release.&lt;/p&gt;
+
+&lt;p&gt;El uso de una rama dedicada para preparar lanzamientos permite que un equipo pueda pulir la versión actual mientras que otro equipo continúa trabajando en las funciones para la próxima versión. También crea fases de desarrollo bien definidas (por ejemplo, es fácil decir: “Esta semana nos estamos preparando para la versión 4.0” y verla realmente en la estructura del repositorio).&lt;/p&gt;
+
+&lt;p&gt;Hacer ramas de &lt;code class=&quot;highlighter-rouge&quot;&gt;release&lt;/code&gt; es otra operación directa de ramificación. Al igual que las ramas de &lt;code class=&quot;highlighter-rouge&quot;&gt;features&lt;/code&gt;, las ramas de &lt;code class=&quot;highlighter-rouge&quot;&gt;release&lt;/code&gt; se basan en la rama &lt;code class=&quot;highlighter-rouge&quot;&gt;develop&lt;/code&gt;. Se puede crear una nueva rama de &lt;code class=&quot;highlighter-rouge&quot;&gt;release&lt;/code&gt; utilizando los siguientes métodos.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git checkout develop
+git checkout -b release/0.1.0
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Una vez que el &lt;code class=&quot;highlighter-rouge&quot;&gt;release&lt;/code&gt; esté listo, se fusionará en &lt;code class=&quot;highlighter-rouge&quot;&gt;master&lt;/code&gt; y &lt;code class=&quot;highlighter-rouge&quot;&gt;develop&lt;/code&gt;, luego se eliminará la rama de &lt;code class=&quot;highlighter-rouge&quot;&gt;release&lt;/code&gt;. Es importante fusionarse nuevamente en &lt;code class=&quot;highlighter-rouge&quot;&gt;develop&lt;/code&gt; porque las actualizaciones críticas se pueden haber agregado a la rama de &lt;code class=&quot;highlighter-rouge&quot;&gt;release&lt;/code&gt; y deben ser accesibles a las nuevas características.&lt;/p&gt;
+
+&lt;p&gt;Para finalizar una rama de &lt;code class=&quot;highlighter-rouge&quot;&gt;release&lt;/code&gt;, use los siguientes métodos:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git checkout develop
+git merge release/0.1.0
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;hotfix-branches&quot;&gt;Hotfix branches&lt;/h3&gt;
+
+&lt;p&gt;Usadas para actualizar rápidamente ramas de producción. Son como ramas de &lt;code class=&quot;highlighter-rouge&quot;&gt;release&lt;/code&gt; y de &lt;code class=&quot;highlighter-rouge&quot;&gt;features&lt;/code&gt;, excepto que se basan de la rama de producción &lt;code class=&quot;highlighter-rouge&quot;&gt;master&lt;/code&gt; en lugar de &lt;code class=&quot;highlighter-rouge&quot;&gt;develop&lt;/code&gt;. Tan rápido como el fix este completo, debe mezclarse con tanto en &lt;code class=&quot;highlighter-rouge&quot;&gt;master&lt;/code&gt; como en &lt;code class=&quot;highlighter-rouge&quot;&gt;develop&lt;/code&gt;&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git checkout master
+git checkout -b hotfix_branch
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Y para finalizar:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git checkout master
+git merge hotfix_branch
+git checkout develop
+git merge hotfix_branch
+git branch -D hotfix_branch
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;en-resumen&quot;&gt;En resumen&lt;/h2&gt;
+
+&lt;p&gt;El flujo general de Gitflow es:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Una rama para develop se crea desde master&lt;/li&gt;
+  &lt;li&gt;Se crea una rama de release desde develop&lt;/li&gt;
+  &lt;li&gt;Las ramas de features se crean a partir de develop&lt;/li&gt;
+  &lt;li&gt;Cuando se completa una feature, se fusiona en la rama develop&lt;/li&gt;
+  &lt;li&gt;Cuando se completa la rama de release, se fusiona en develop y master&lt;/li&gt;
+  &lt;li&gt;Si se detecta un problema en master, se crea una rama de hotfix desde master&lt;/li&gt;
+  &lt;li&gt;Una vez que se completa hotfix, se combina en develop y master&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;herramientas&quot;&gt;Herramientas&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/nvie/gitflow&quot;&gt;Gitfow Toolset&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>Eleazar Resendez</name></author><category term="Git" /><summary type="html">Gitflow es solo una idea abstracta de un flujo de trabajo con git publicada por Vincent D. Básicamente define un estricto modelo de branching centrado en el release del proyecto, provee un framework para gestionar grandes proyectos.</summary></entry><entry><title type="html">Docker - Introducción</title><link href="https://eresendez.com/docker-introduccion" rel="alternate" type="text/html" title="Docker - Introducción" /><published>2018-09-10T00:00:00+00:00</published><updated>2018-09-10T00:00:00+00:00</updated><id>https://eresendez.com/docker-introduccion</id><content type="html" xml:base="https://eresendez.com/docker-introduccion">&lt;p&gt;Docker es una plataforma que permite separar las aplicaciones de la infraestructura, reduciendo el tiempo entre escribir código y administrar producción.&lt;/p&gt;
+
+&lt;p&gt;Una ventaja que me gusta es que deja el equipo limpio, al no instalar tantas cosas, ni cambiar la configuración del sistema.&lt;/p&gt;
+
+&lt;h3 id=&quot;table-of-contents&quot;&gt;Table of contents&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;#author-eleazar&quot;&gt;author: eleazar&lt;/a&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#table-of-contents&quot;&gt;Table of contents&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#requerimientos&quot;&gt;Requerimientos&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#terminolog%C3%ADa&quot;&gt;Terminología&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#run-your-containers&quot;&gt;Run your containers&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#m%C3%A1s-informaci%C3%B3n&quot;&gt;Más información&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;requerimientos&quot;&gt;Requerimientos&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.docker.com/products/docker-engine&quot;&gt;Instalar Docker &amp;gt;= 17.12&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;terminología&quot;&gt;Terminología&lt;/h3&gt;
+
+&lt;p&gt;Más información: &lt;a href=&quot;https://docs.docker.com/glossary/&quot;&gt;Docker glossary&lt;/a&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Service&lt;/strong&gt;: Es una definición de como quieres ejecutar los containers de tu aplicación, define que imagen ejecutar.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Image&lt;/strong&gt;: Es una colección ordenada de instrucciones que se usarán en el tiempo de ejecución de un container. Se pueden almacenar local o remotamente. Son de diferentes tamaños porque en esencia son el sistema completo.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Container&lt;/strong&gt;: es una instancia de una imagen, es stand-alone, es una pieza ejecutable de software que contiene todo lo que necesitas para: code, runtime, herramientas del sistema, librerías del sistema, configuraciones.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Volumes&lt;/strong&gt;: es un directorio designado dentro de uno o más containers, estan diseñados para conservar los datos, independientemente del ciclo de vida del container. Hay tres tipos de volumes: &lt;em&gt;host, anonymous y named&lt;/em&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;run-your-containers&quot;&gt;Run your containers&lt;/h3&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;docker-compose up -d&lt;/code&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;más-información&quot;&gt;Más información&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://blog.pusher.com/docker-for-development-getting-started/&quot;&gt;Docker for development: Getting started (Part 1)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>Eleazar Resendez</name></author><category term="Backend" /><summary type="html">Docker es una plataforma que permite separar las aplicaciones de la infraestructura, reduciendo el tiempo entre escribir código y administrar producción.</summary></entry><entry><title type="html">Instalar MongoDB Community Edition en Ubuntu 16.04 LTS</title><link href="https://eresendez.com/instalar-mongodb-ubuntu-16" rel="alternate" type="text/html" title="Instalar MongoDB Community Edition en Ubuntu 16.04 LTS" /><published>2018-08-27T00:00:00+00:00</published><updated>2018-08-27T00:00:00+00:00</updated><id>https://eresendez.com/instalar-mongodb-ubuntu-16</id><content type="html" xml:base="https://eresendez.com/instalar-mongodb-ubuntu-16">&lt;p&gt;Instalar MongoDB Community Edition en Ubuntu:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Importante: El paquete no oficial de mongodb provisto por Ubuntu no es mantenido por MongoDB. Siempre debes usar los paquetes oficiales de MongoDB mongodb-org, que se mantienen actualizados con las versiones de MongoDB mayores y menores más recientes.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;MongoDB solo proporciona paquetes para LTS de 64 bits (soporte a largo plazo); lanzamientos de Ubuntu; por ejemplo, 14.04 LTS (trusty) y 16.04 LTS (xenial). Consulte &lt;a href=&quot;https://docs.mongodb.com/manual/installation/#mongodb-supported-platforms&quot;&gt;Plataformas compatibles&lt;/a&gt; para obtener más información.&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Importe la clave pública utilizada por el sistema de gestión de paquetes. Ver &lt;a href=&quot;https://docs.mongodb.com/manual/tutorial/install-mongodb-on-ubuntu/#import-the-public-key-used-by-the-package-management-system&quot;&gt;Import the public key&lt;/a&gt; Ejemplo: &lt;code class=&quot;highlighter-rouge&quot;&gt;sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 9DA31620334BD75D9DCB49F368818C72E52529D4&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Ubuntu 16.04: Ver &lt;a href=&quot;https://docs.mongodb.com/manual/tutorial/install-mongodb-on-ubuntu/#create-a-list-file-for-mongodb&quot;&gt;Create a list file for mongodb&lt;/a&gt; Ejemplo: &lt;code class=&quot;highlighter-rouge&quot;&gt;echo &quot;deb [ arch=amd64,arm64 ] https://repo.mongodb.org/apt/ubuntu xenial/mongodb-org/4.0 multiverse&quot; | sudo tee /etc/apt/sources.list.d/mongodb-org-4.0.list&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;sudo apt update&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;sudo apt install mongodb&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;sudo apt install -y mongodb-org&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;En este punto obtengo lo siguiente:&lt;/p&gt;
+
+&lt;div class=&quot;language-sh highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;mongod &lt;span class=&quot;nt&quot;&gt;--version&lt;/span&gt;
+db version v4.0.2
+git version: fc1573ba18aee42f97a3bb13b67af7d837826b47
+OpenSSL version: OpenSSL 1.0.2g  1 Mar 2016
+allocator: tcmalloc
+modules: none
+build environment:
+    distmod: ubuntu1604
+    distarch: x86_64
+    target_arch: x86_64
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Por último, para iniciar mongo: &lt;code class=&quot;highlighter-rouge&quot;&gt;sudo service mongodb start&lt;/code&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;crear-un-usuario-administrador&quot;&gt;Crear un usuario administrador&lt;/h2&gt;
+
+&lt;p&gt;En la base de datos &lt;code class=&quot;highlighter-rouge&quot;&gt;admin&lt;/code&gt;, agregue un usuario con el rol &lt;code class=&quot;highlighter-rouge&quot;&gt;userAdminAnyDatabase&lt;/code&gt;. Por ejemplo, lo siguiente crea el usuario &lt;code class=&quot;highlighter-rouge&quot;&gt;myUserAdmin&lt;/code&gt; en la base de datos &lt;code class=&quot;highlighter-rouge&quot;&gt;admin&lt;/code&gt;.&lt;/p&gt;
+
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nx&quot;&gt;use&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;admin&lt;/span&gt;
+
+&lt;span class=&quot;nx&quot;&gt;db&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;createUser&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;na&quot;&gt;user&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;myUserAdmin&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+        &lt;span class=&quot;na&quot;&gt;pwd&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;abc123&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+        &lt;span class=&quot;na&quot;&gt;roles&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[{&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;role&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;userAdminAnyDatabase&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;db&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;admin&quot;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}]&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Vuelva a iniciar la instancia de &lt;code class=&quot;highlighter-rouge&quot;&gt;mongod&lt;/code&gt; con la opción de línea de comando &lt;code class=&quot;highlighter-rouge&quot;&gt;--auth&lt;/code&gt; o, si usa un archivo de configuración, la configuración &lt;code class=&quot;highlighter-rouge&quot;&gt;security.authorization&lt;/code&gt;.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;mongod --auth --port 27017 --dbpath /data/db1
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://docs.mongodb.com/manual/tutorial/install-mongodb-on-ubuntu/&quot;&gt;Docs. MongoDB&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://docs.mongodb.com/manual/tutorial/enable-authentication/&quot;&gt;Enable Auth&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>Eleazar Resendez</name></author><category term="Backend" /><summary type="html">Instalar MongoDB Community Edition en Ubuntu:</summary></entry></feed>

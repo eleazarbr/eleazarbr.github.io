@@ -1,0 +1,1216 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- Base Meta -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="HandheldFriendly" content="True">
+	<meta charset="utf-8">
+
+	<!-- dynamically fixing the title for tag/author pages -->
+
+
+
+	<title>
+		Laravel 5.6: Lista de paquetes favoritos
+	</title>
+
+	<!-- Styles'n'Scripts -->
+	<link rel="stylesheet" type="text/css" href="/assets/built/screen.css">
+	<link rel="stylesheet" type="text/css" href="/assets/built/screen.edited.css">
+	<link rel="stylesheet" type="text/css" href="/assets/built/main.css">
+	<link rel="stylesheet" type="text/css" href="/assets/built/syntax.css">
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Miriam+Libre" rel="stylesheet">
+	<script type="text/javascript" src="/assets/js/tingle.min.js"></script>
+	<style>.hljs { background: none; }</style>
+
+	<!-- This tag outputs SEO meta+structured data and other important settings -->
+	<meta name="description" content="Business & Technology">
+<link rel="shortcut icon" href="https://eresendez.com/assets/images/favicon.png" type="image/png">
+<link rel="canonical" href="https://eresendez.com/laravel-composer-paquetes-favoritos">
+<meta name="referrer" content="no-referrer-when-downgrade">
+
+ <!--title below is coming from _includes/dynamic_title-->
+<meta property="og:site_name" content="Eleazar Resendez">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Laravel 5.6: Lista de paquetes favoritos">
+<meta property="og:description" content="En esta entrada recopilo una lista de mis paquetes favoritos, se estará actualizando constantemente: Laravel Tinx - Reload your Laravel Tinker session from inside Tinker Utilizo tinker constantemente, también es útil agregar un alias a php artisan tinx para acceder más rápido. Ejemplo: gedit ~/.bashrc -&gt; alias tinx='php artisan tinx'">
+<meta property="og:url" content="https://eresendez.com/laravel-composer-paquetes-favoritos">
+<meta property="og:image" content="https://eresendez.com/assets/images/cover/composer.jpg">
+<meta property="article:publisher" content="https://www.facebook.com/eleazaresendez">
+<meta property="article:author" content="https://www.facebook.com/eleazaresendez">
+<meta property="article:published_time" content="2018-08-16T00:00:00+00:00">
+<meta property="article:modified_time" content="2018-08-16T00:00:00+00:00">
+<meta property="article:tag" content="Technology">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Laravel 5.6: Lista de paquetes favoritos">
+<meta name="twitter:description" content="En esta entrada recopilo una lista de mis paquetes favoritos, se estará actualizando constantemente: Laravel Tinx - Reload your Laravel Tinker session from inside Tinker Utilizo tinker constantemente, también es útil agregar un alias a php artisan tinx para acceder más rápido. Ejemplo: gedit ~/.bashrc -&gt; alias tinx='php artisan tinx'">
+<meta name="twitter:url" content="https://eresendez.com/">
+<meta name="twitter:image" content="https://eresendez.com/assets/images/cover/composer.jpg">
+<meta name="twitter:label1" content="Written by">
+<meta name="twitter:data1" content="Eleazar Resendez">
+<meta name="twitter:label2" content="Filed under">
+<meta name="twitter:data2" content="Technology">
+<meta name="twitter:site" content="@eleazarbr">
+<meta name="twitter:creator" content="@eleazarbr">
+<meta property="og:image:width" content="1400">
+<meta property="og:image:height" content="933">
+
+<script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Website",
+        "publisher": {
+            "@type": "Organization",
+            "name": "Eleazar Resendez",
+            "logo": "https://eresendez.com/"
+        },
+        "url": "https://eresendez.com/laravel-composer-paquetes-favoritos",
+        "image": {
+            "@type": "ImageObject",
+            "url": "https://eresendez.com/assets/images/cover/composer.jpg",
+            "width": 2000,
+            "height": 666
+        },
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://eresendez.com/laravel-composer-paquetes-favoritos"
+        },
+        "description": "En esta entrada recopilo una lista de mis paquetes favoritos, se estará actualizando constantemente: Laravel Tinx - Reload your Laravel Tinker session from inside Tinker Utilizo tinker constantemente, también es útil agregar un alias a php artisan tinx para acceder más rápido. Ejemplo: gedit ~/.bashrc -&gt; alias tinx='php artisan tinx'"
+    }
+</script>
+
+<meta name="generator" content="Jekyll 3.6.2">
+<link rel="alternate" type="application/rss+xml" title="Laravel 5.6: Lista de paquetes favoritos" href="/feed.xml">
+<link rel="author" href="https://plus.google.com/u/0/+EleazarResendezdelAngel">
+
+
+    <script type="text/javascript"> window.$crisp=[];window.CRISP_WEBSITE_ID="252245a4-2fd0-4313-bc24-74cd1f02f085";(function(){ d=document;s=d.createElement("script"); s.src="https://client.crisp.chat/l.js"; s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})(); </script>
+
+
+<meta name="p:domain_verify" content="11b77a77d815fab40c55db0e0163d1f1"/>
+
+</head>
+<body class="post-template">
+
+	<div class="site-wrapper">
+		<!-- All the main content gets inserted here, index.hbs, post.hbs, etc -->
+		<!-- default -->
+
+<!-- The tag above means: insert everything in this file
+into the {body} of the default.hbs template -->
+
+<header class="site-header outer">
+    <div class="inner">
+        <nav class="site-nav">
+	<div class="site-nav-left">
+		
+			
+				<a class="site-nav-logo" href="https://eresendez.com/">Eleazar Resendez</a>
+			
+		
+		
+			<div id="overlay-nav" class="covering">
+	<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+	<div class="covering-content">
+		<a href="/"><code>Home</code></a>
+		<a href="/tag/projects"><code>Work</code></a>
+		<a href="/tag/web-development"><code>Web development</code></a>
+		<a href="/tag/laravel"><code>Laravel</code></a>
+		<a href="/tag/woocommerce"><code>WooCommerce</code></a>
+		<a href="/author/eleazar"><code>About</code></a>
+	</div>
+</div>
+
+<ul class="nav" role="menu">
+	<li role="menuitem"><a href="#filter-by-tags" onclick="openNav()"><i class="fas fa-bars"></i></a></li>
+	<li role="menuitem"><a href="/">Home</a></li>
+	<li role="menuitem"><a href="/tag/projects/">Work</a></li>
+	<li role="menuitem"><a href="/author/eleazar">About</a></li>
+</ul>
+
+<script>
+	function openNav() {
+		document.getElementById("overlay-nav").style.height = "100%";
+	}
+
+	function closeNav() {
+		document.getElementById("overlay-nav").style.height = "0%";
+	}
+</script>
+
+		
+	</div>
+	<div class="site-nav-right">
+		<div class="social-links">
+			
+				<a class="social-link social-link-tw" href="https://twitter.com/eleazarbr" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M30.063 7.313c-.813 1.125-1.75 2.125-2.875 2.938v.75c0 1.563-.188 3.125-.688 4.625a15.088 15.088 0 0 1-2.063 4.438c-.875 1.438-2 2.688-3.25 3.813a15.015 15.015 0 0 1-4.625 2.563c-1.813.688-3.75 1-5.75 1-3.25 0-6.188-.875-8.875-2.625.438.063.875.125 1.375.125 2.688 0 5.063-.875 7.188-2.5-1.25 0-2.375-.375-3.375-1.125s-1.688-1.688-2.063-2.875c.438.063.813.125 1.125.125.5 0 1-.063 1.5-.25-1.313-.25-2.438-.938-3.313-1.938a5.673 5.673 0 0 1-1.313-3.688v-.063c.813.438 1.688.688 2.625.688a5.228 5.228 0 0 1-1.875-2c-.5-.875-.688-1.813-.688-2.75 0-1.063.25-2.063.75-2.938 1.438 1.75 3.188 3.188 5.25 4.25s4.313 1.688 6.688 1.813a5.579 5.579 0 0 1 1.5-5.438c1.125-1.125 2.5-1.688 4.125-1.688s3.063.625 4.188 1.813a11.48 11.48 0 0 0 3.688-1.375c-.438 1.375-1.313 2.438-2.563 3.188 1.125-.125 2.188-.438 3.313-.875z"/></svg>
+</a>
+			
+			
+				<a class="social-link social-link-gh" href="https://github.com/eleazarbr" target="_blank" rel="noopener"><svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   id="svg215"
+   version="1.1"
+   viewBox="0 0 11.493 11.493"
+  >
+  <defs
+     id="defs209" />
+  <metadata
+     id="metadata212">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     transform="translate(0,-285.507)"
+     id="layer1">
+    <path
+       id="path16"
+       style="fill:#fff;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.03527778"
+       d="M 5.74605,285.64853 C 2.57317,285.64853 0,288.22134 0,291.39528 c 0,2.53859 1.64642,4.69265 3.92995,5.45289 0.28751,0.0526 0.39229,-0.12488 0.39229,-0.27728 0,-0.13653 -0.005,-0.49777 -0.008,-0.9772 -1.59844,0.34713 -1.93569,-0.77046 -1.93569,-0.77046 -0.26141,-0.66393 -0.63818,-0.84067 -0.63818,-0.84067 -0.52176,-0.35631 0.0395,-0.34925 0.0395,-0.34925 0.57679,0.0406 0.88018,0.59231 0.88018,0.59231 0.51259,0.87806 1.34514,0.62442 1.67252,0.47731 0.0522,-0.37112 0.20073,-0.62442 0.36477,-0.768 -1.27599,-0.14534 -2.61761,-0.63817 -2.61761,-2.84021 0,-0.62759 0.22402,-1.14018 0.59161,-1.54199 -0.0593,-0.14535 -0.25647,-0.72955 0.0565,-1.52083 0,0 0.48224,-0.15452 1.58009,0.58879 0.45826,-0.12736 0.95003,-0.19086 1.43863,-0.19333 0.48824,0.002 0.97966,0.066 1.43862,0.19333 1.09714,-0.74331 1.57868,-0.58879 1.57868,-0.58879 0.31362,0.79128 0.11642,1.37548 0.0575,1.52083 0.3683,0.40181 0.59055,0.9144 0.59055,1.54199 0,2.20768 -1.34373,2.69346 -2.62361,2.83562 0.20602,0.17745 0.38982,0.52811 0.38982,1.06434 0,0.76799 -0.007,1.38782 -0.007,1.57621 0,0.15381 0.10371,0.33267 0.39511,0.27657 2.28177,-0.76164 3.92677,-2.91394 3.92677,-5.45218 0,-3.17394 -2.57316,-5.74675 -5.7471,-5.74675" />
+  </g>
+</svg></a>
+			
+			
+				<a class="social-link social-link-ln" href="https://linkedin.com/in/eleazarbr" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><path style="fill:#fff;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.03527778" d="M12.8 51.2V24.384h8.192V51.2H12.8m8.448-34.24c.064 2.304-1.664 4.16-4.416 4.16-2.56 0-4.224-1.856-4.224-4.16 0-2.368 1.728-4.16 4.352-4.16s4.288 1.792 4.288 4.16M42.752 51.2V36.352c0-3.456-1.152-5.824-4.16-5.824-2.24 0-3.584 1.6-4.224 3.136-.192.576-.256 1.344-.256 2.112V51.2H25.92V32.96c0-3.328-.128-6.144-.192-8.576h7.104l.384 3.776h.128c1.088-1.792 3.776-4.352 8.192-4.352 5.376 0 9.472 3.648 9.472 11.584V51.2h-8.256M64 5.632C64 2.56 61.44 0 58.368 0H5.632C2.56 0 0 2.56 0 5.632v52.736C0 61.44 2.56 64 5.632 64h52.736C61.44 64 64 61.44 64 58.368V5.632" fill="#1d87bd"/></svg></a>
+			
+			
+				<a id="search-modal" class="social-link social-link-ml" href="#search-modal"><svg viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M1216 832q0-185-131.5-316.5t-316.5-131.5-316.5 131.5-131.5 316.5 131.5 316.5 316.5 131.5 316.5-131.5 131.5-316.5zm512 832q0 52-38 90t-90 38q-54 0-90-38l-343-342q-179 124-399 124-143 0-273.5-55.5t-225-150-150-225-55.5-273.5 55.5-273.5 150-225 225-150 273.5-55.5 273.5 55.5 225 150 150 225 55.5 273.5q0 220-124 399l343 343q37 37 37 90z"></path></svg>
+</a>
+		</div>
+		
+	</div>
+</nav>
+
+    </div>
+</header>
+
+<!-- Everything inside the #post tags pulls data from the post -->
+<!-- #post -->
+
+<main id="site-main" class="site-main outer" role="main">
+    <div class="inner">
+
+        <article class="post-full post ">
+
+            <header class="post-full-header">
+                <section class="post-full-meta flex flex-col sm:flex-row">
+                    <time class="post-full-meta-date" datetime="16 August 2018">16 August, 2018</time>
+                    
+                        <span class="date-divider">/</span>
+                        
+                            
+                               <a href='/tag/technology/'>TECHNOLOGY</a>,
+                            
+                        
+                            
+                               <a href='/tag/laravel/'>LARAVEL</a>
+                            
+                        
+                    
+                    <span class="date-divider">/</span>
+					
+					
+						1 min read
+					
+                </section>
+                <h1 class="post-full-title">Laravel 5.6: Lista de paquetes favoritos</h1>
+            </header>
+
+            
+            <figure class="parallax post-full-image" style="background-image: url(/assets/images/cover/composer.jpg)">
+            </figure>
+            
+
+            <section class="post-full-content">
+                <div class="kg-card-markdown">
+                    <p>En esta entrada recopilo una lista de mis paquetes favoritos, se estará actualizando constantemente:</p>
+
+<ul>
+  <li><a href="https://github.com/furey/tinx">Laravel Tinx - Reload your Laravel Tinker session from inside Tinker</a>
+    <ul>
+      <li>Utilizo tinker constantemente, también es útil agregar un alias a <code class="highlighter-rouge">php artisan tinx</code> para acceder más rápido. Ejemplo: <code class="highlighter-rouge">gedit ~/.bashrc</code> -&gt; <code class="highlighter-rouge">alias tinx='php artisan tinx'</code></li>
+    </ul>
+  </li>
+  <li><a href="https://github.com/Xethron/migrations-generator">Migrations Generator - Generate migrations from an existing database</a></li>
+  <li><a href="https://github.com/orangehill/iseed">iSeed - Generate a new seed file from an existing database table</a></li>
+  <li><a href="https://github.com/barryvdh/laravel-dompdf">Laravel DOMPDF - HTML to PDF generator using dompdf</a></li>
+  <li><a href="https://github.com/laravel/socialite">Socialite - OAuth authentication with Facebook, Google, Twitter etc.</a></li>
+</ul>
+
+                </div>
+            </section>
+
+            <!-- Email subscribe form at the bottom of the page -->
+            
+
+            <footer class="post-full-footer">
+                <!-- Everything inside the #author tags pulls data from the author -->
+                <!-- #author-->
+                
+                    
+                        <section class="author-card">
+                            
+                                <img class="author-profile-image" src="/assets/images/eleazar.jpeg" alt="eleazar" />
+                            
+                            <section class="author-card-content">
+                                <h4 class="author-card-name"><a href="/author/eleazar">Eleazar Resendez</a></h4>
+                                
+                                    <p>
+                                        
+                                        
+
+A <span class="changing-keywords w-auto relative align-top inline-block">
+    <b class="visible">software engineer</b>
+    <b class="hidden">web developer</b>
+    <b class="hidden">lifelong learner</b>
+</span> — for the last 3 years focused on Laravel framework. Reliable, responsible, serious with a strong entrepreneurial can-Do mentality and the goal of making a huge positive impact on this world.
+
+                                    </p>
+                                
+                            </section>
+                        </section>
+                        <div class="post-full-footer-right">
+                            <a class="author-card-button" href="/author/eleazar">Read More</a>
+                        </div>
+                    
+                
+                <!-- /author  -->
+            </footer>
+
+            <!-- If you use Disqus comments, just uncomment this block.
+            The only thing you need to change is "test-apkdzgmqhj" - which
+            should be replaced with your own Disqus site-id. -->
+            
+                <section class="post-full-comments">
+                    <div id="disqus_thread"></div>
+                    <script>
+                        var disqus_config = function () {
+                            // this.page.url = 'https://eresendez.com/';
+                            // this.page.identifier = 'Eleazar Resendez';
+                            this.page.url = 'https://eresendez.com/laravel-composer-paquetes-favoritos';
+                            this.page.identifier = 'https://eresendez.com/laravel-composer-paquetes-favoritos';
+                        };
+                        (function() {
+                            var d = document, s = d.createElement('script');
+                            s.src = 'https://eleazar-resendez.disqus.com/embed.js';
+                            s.setAttribute('data-timestamp', +new Date());
+                            (d.head || d.body).appendChild(s);
+                        })();
+                    </script>
+                </section>
+            
+
+        </article>
+
+    </div>
+</main>
+
+<!-- Links to Previous/Next posts -->
+<aside class="read-next outer">
+    <div class="inner">
+        <div class="read-next-feed">
+            
+                
+                
+                
+                
+                    <article class="read-next-card"
+                        
+                            
+                                style="background-image: url(url(/assets/images/cover/composer.jpg)"
+                            
+                        
+                    >
+                        <header class="read-next-card-header">
+                            <small class="read-next-card-header-sitetitle">&mdash; Eleazar Resendez &mdash;</small>
+                            
+                                <h3 class="read-next-card-header-title"><a href="/tag/technology/">Technology</a></h3>
+                            
+                        </header>
+                        <div class="read-next-divider"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 14.5s2 3 5 3 5.5-2.463 5.5-5.5S21 6.5 18 6.5c-5 0-7 11-12 11C2.962 17.5.5 15.037.5 12S3 6.5 6 6.5s4.5 3.5 4.5 3.5"/></svg>
+</div>
+                        <div class="read-next-card-content">
+                            <ul>
+                                
+                                
+                                  
+                                
+                                  
+                                
+                                  
+                                
+                                  
+                                
+                                  
+                                
+                                  
+                                
+                                  
+                                
+                                  
+                                
+                                  
+                                
+                                  
+                                
+                                  
+                                
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
+                                            <li><a href="/setting-up-gitlab-pages">Configurando Jekyll en GitLab Pages</a></li>
+                                        
+                                    
+                                  
+                                
+                                  
+                                    
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
+                                            <li><a href="/laravel-localization-how-to-make-multilanguage-project">Laravel 5.6: Localization. Cómo hacer un proyecto multilenguaje</a></li>
+                                        
+                                    
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
+                                            <li><a href="/laravel-send-mail-notification-using-mailtrap">Laravel 5.6: Enviar notificaciones por correo con Mailtrap.io</a></li>
+                                        
+                                    
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
+                                    
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
+                                    
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
+                                    
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
+                                    
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
+                                    
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
+                                    
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
+                                    
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
+                                    
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
+                                    
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
+                                    
+                                  
+                                
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
+                                    
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
+                                    
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
+                                    
+                                  
+                                
+                                  
+                                
+                                  
+                                
+                                  
+                                    
+                                        
+                                        
+                                    
+                                  
+                                
+                                  
+                                
+                                  
+                                
+                                  
+                                
+                            </ul>
+                        </div>
+                        <footer class="read-next-card-footer">
+                            <a href="/tag/technology/">
+                                
+                                    See all 17 posts  →
+                                
+                            </a>
+                        </footer>
+                    </article>
+                
+            
+
+            <!-- If there's a next post, display it using the same markup included from - partials/post-card.hbs -->
+            
+                
+    <article class="post-card post-template">
+        
+            <a class="post-card-image-link" href="/setting-up-gitlab-pages">
+                <div class="post-card-image" style="background-image: url(/assets/images/cover/gitlab.jpg)"></div>
+            </a>
+        
+        <div class="post-card-content">
+            <a class="post-card-content-link" href="/setting-up-gitlab-pages">
+                <header class="post-card-header">
+                    
+                        
+                            
+                               <span class="post-card-tags">Technology</span>
+                            
+                        
+                            
+                                <span class="post-card-tags">Jekyll</span>
+                            
+                        
+                    
+
+                    <h2 class="post-card-title">Configurando Jekyll en GitLab Pages</h2>
+                </header>
+                <section class="post-card-excerpt">
+                    <p>[GitLab Pages](https://about.gitlab.com/features/pages/) es un servicio para crear y alojar websites gratis para tus proyectos, donde es posible utilizar generadores de sitios estáticos, como Jekyll, Middleman, Hexo, Hugo, etc. y conectarlo con un dominio.</p>
+                </section>
+            </a>
+            <footer class="post-card-meta">
+                
+                    
+                        
+                        <img class="author-profile-image" src="/assets/images/eleazar.jpeg" alt="Eleazar Resendez" />
+                        
+                        <span class="post-card-author">
+                            <a href="/author/eleazar/">Eleazar Resendez</a>
+                        </span>
+                    
+                
+            </footer>
+        </div>
+    </article>
+
+            
+
+            <!-- If there's a previous post, display it using the same markup included from - partials/post-card.hbs -->
+            
+                
+    <article class="post-card post-template">
+        
+            <a class="post-card-image-link" href="/laravel-localization-how-to-make-multilanguage-project">
+                <div class="post-card-image" style="background-image: url(/assets/images/cover/langs.jpg)"></div>
+            </a>
+        
+        <div class="post-card-content">
+            <a class="post-card-content-link" href="/laravel-localization-how-to-make-multilanguage-project">
+                <header class="post-card-header">
+                    
+                        
+                            
+                               <span class="post-card-tags">Technology</span>
+                            
+                        
+                            
+                                <span class="post-card-tags">Laravel</span>
+                            
+                        
+                    
+
+                    <h2 class="post-card-title">Laravel 5.6: Localization. Cómo hacer un proyecto multilenguaje</h2>
+                </header>
+                <section class="post-card-excerpt">
+                    <p>Las funciones de localización de Laravel proporcionan una forma conveniente de obtener cadenas de texto en varios idiomas, lo que permite admitir fácilmente varios idiomas dentro de la aplicación. Las cadenas de texto</p>
+                </section>
+            </a>
+            <footer class="post-card-meta">
+                
+                    
+                        
+                        <img class="author-profile-image" src="/assets/images/eleazar.jpeg" alt="Eleazar Resendez" />
+                        
+                        <span class="post-card-author">
+                            <a href="/author/eleazar/">Eleazar Resendez</a>
+                        </span>
+                    
+                
+            </footer>
+        </div>
+    </article>
+
+            
+
+        </div>
+    </div>
+</aside>
+
+<!-- Floating header which appears on-scroll, included from includes/floating-header.hbs -->
+<div class="floating-header">
+	<div class="floating-header-logo">
+		<a href="https://eresendez.com/">
+			
+				<img src="/assets/images/favicon.png" alt="Eleazar Resendez icon" />
+			
+			<span>Eleazar Resendez</span>
+		</a>
+	</div>
+	<span class="floating-header-divider">&mdash;</span>
+	<div class="floating-header-title">Laravel 5.6: Lista de paquetes favoritos</div>
+	<div class="floating-header-share">
+		<div class="floating-header-share-label">Share this <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+    <path d="M7.5 15.5V4a1.5 1.5 0 1 1 3 0v4.5h2a1 1 0 0 1 1 1h2a1 1 0 0 1 1 1H18a1.5 1.5 0 0 1 1.5 1.5v3.099c0 .929-.13 1.854-.385 2.748L17.5 23.5h-9c-1.5-2-5.417-8.673-5.417-8.673a1.2 1.2 0 0 1 1.76-1.605L7.5 15.5zm6-6v2m-3-3.5v3.5m6-1v2"/>
+</svg>
+</div>
+		<div class="addthis_inline_share_toolbox"></div>
+	</div>
+	<progress class="progress" value="0">
+		<div class="progress-container">
+			<span class="progress-bar"></span>
+		</div>
+	</progress>
+</div>
+
+
+<!-- /post -->
+
+<!-- The #contentFor helper here will send everything inside it up to the matching #block helper found in default.hbs -->
+
+
+		<!-- Previous/next page links - displayed on every page -->
+		
+
+		<!-- The footer at the very bottom of the screen -->
+		<a href="#" class="go-top"><i class="fas fa-chevron-up"></i></a>
+<!-- class="go-top" -->
+<footer class="site-footer overlay outer font-bold">
+    <div class="site-footer-content inner">
+        <section class="copyright">&copy; 2019 <a href="https://eresendez.com/">Eleazar Resendez</a></section>
+        <!-- <section class="poweredby">Proudly published with <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> &
+            <a href="https://pages.github.com/" target="_blank" rel="noopener">GitHub Pages</a>
+        </section> -->
+        <nav class="site-footer-nav">
+            <a href="/">Blog</a>
+            
+                <!-- <a href="https://facebook.com/eleazaresendez" target="_blank" rel="noopener">Facebook</a> -->
+            
+            
+                <a href="https://twitter.com/eleazarbr" target="_blank" rel="noopener">Twitter</a>
+            
+            
+                <a href="https://github.com/eleazarbr" target="_blank" rel="noopener">GitHub</a>
+            
+            
+            
+        </nav>
+    </div>
+</footer>
+
+	</div>
+
+	<!-- The big email subscribe modal content -->
+	
+
+	<!-- Other Modals -->
+	<div class="hidden">
+		
+		<div id="search-form">
+    <form onSubmit="return lunr_search(document.getElementById('lunrsearch').value);" novalidate name="search">
+        <input autocomplete="off" type="text" class="transition focus:outline-0 border border-transparent focus:bg-white focus:border-grey-light placeholder-grey-darkest rounded bg-grey-lighter py-2 pr-4 pl-10 block w-full appearance-none leading-normal ds-input" id="lunrsearch" name="q" maxlength="255" value="" placeholder="Search the website" data-error-text="The search field is required :)" required>
+    </form>
+    <div id="lunrsearchresults">
+        <ul></ul>
+    </div>
+</div>
+
+<script>
+    var modal = new tingle.modal({
+        footer: true,
+        stickyFooter: true
+    });
+
+	var btn = document.querySelector('#search-modal');
+    btn.addEventListener('click', function() {
+        modal.open();
+    });
+
+    modal.addFooterBtn('Close', 'tingle-btn tingle-btn--default tingle-btn--pull-left', function(){
+        modal.close();
+    });
+
+    modal.setContent(document.querySelector('#search-form').innerHTML);
+
+    // Validations
+    const myForm = document.querySelector("form[name=search]");
+    myForm.addEventListener("submit", function() {
+        if (validator.checkForm(myForm)) {
+            // If all required form fields are validated, continue processing form
+        }
+        event.preventDefault();
+    });
+</script>
+
+
+<script type="text/javascript" src="/assets/js/lunr.js"></script>
+<script>
+    
+    var documents = [{
+        "id": 0,
+        "url": "https://eresendez.com/404.html",
+        "title": "404 - Page Not Found",
+        "body": "&lt;!DOCTYPE html&gt;       {{ page. title }}            {% include head. html %}                              {% if site. logo %}                      {% else %}            {{ site. title }}          {% endif %}                                              404          Page not found           Go to the front page →                                                            {% include post-card-error. html %}                        "
+    }, {
+        "id": 1,
+        "url": "https://eresendez.com/",
+        "title": "",
+        "body": "                    {% if site. logo %}                  {% else %}          {{ site. title }}        {% endif %}            {% if page. description %}{{ page. description }}{% else %}{{ site. description }}{% endif %}:               {% include site-nav. html %}                    {% include post-card. html %}      {% if site. snowflakes %}  {% include snowflakes. html %}{% endif %} "
+    }, {
+        "id": 2,
+        "url": "https://eresendez.com/contact/",
+        "title": "Contacto",
+        "body": "Ghost is professional publishing platform designed for modern journalism. This is a demo site of a basic Ghost install to give you a general sense of what a new Ghost site looks like when set up for the first time.  If you’d like to set up a site like this for yourself, head over to Ghost. org and start a free 14 day trial to give Ghost a try! If you’re a developer: Ghost is a completely open source (MIT) Node. js application built on a JSON API with an Ember. js admin client. It works with MySQL and SQLite, and is publicly available on Github. If you need help with using Ghost, you’ll find a ton of useful articles on our knowledgebase, as well as extensive developer documentation.          "
+    }, {
+        "id": 3,
+        "url": "https://eresendez.com/about/",
+        "title": "About",
+        "body": "Hola"
+    }, {
+        "id": 4,
+        "url": "https://eresendez.com/about/index.md.bak",
+        "title": "About",
+        "body": "Ghost is professional publishing platform designed for modern journalism. This is a demo site of a basic Ghost install to give you a general sense of what a new Ghost site looks like when set up for the first time.  If you’d like to set up a site like this for yourself, head over to Ghost. org and start a free 14 day trial to give Ghost a try! If you’re a developer: Ghost is a completely open source (MIT) Node. js application built on a JSON API with an Ember. js admin client. It works with MySQL and SQLite, and is publicly available on Github. If you need help with using Ghost, you’ll find a ton of useful articles on our knowledgebase, as well as extensive developer documentation. "
+    }, {
+        "id": 5,
+        "url": "https://eresendez.com/tag/projects/",
+        "title": "Tag Page",
+        "body": "{% include dynamic_tag_info. html %}       {% include site-nav. html %}          {{ page. tag | capitalizeall }}              {% if tag_description %}          {{ tag_description }}        {% elsif page. tag %}  			  A collection of {{ paginator. total_posts }} posts        {% endif %}      :                         {% include post-card. html %}      "
+    }, {
+        "id": 6,
+        "url": "https://eresendez.com/tag/frontend/",
+        "title": "Tag Page",
+        "body": "{% include dynamic_tag_info. html %}       {% include site-nav. html %}          {{ page. tag | capitalizeall }}              {% if tag_description %}          {{ tag_description }}        {% elsif page. tag %}  			  A collection of {{ paginator. total_posts }} posts        {% endif %}      :                         {% include post-card. html %}      "
+    }, {
+        "id": 7,
+        "url": "https://eresendez.com/tag/technopreneurship/",
+        "title": "Tag Page",
+        "body": "{% include dynamic_tag_info. html %}       {% include site-nav. html %}          {{ page. tag | capitalizeall }}              {% if tag_description %}          {{ tag_description }}        {% elsif page. tag %}  			  A collection of {{ paginator. total_posts }} posts        {% endif %}      :                         {% include post-card. html %}      "
+    }, {
+        "id": 8,
+        "url": "https://eresendez.com/tag/goals/",
+        "title": "Tag Page",
+        "body": "{% include dynamic_tag_info. html %}       {% include site-nav. html %}          {{ page. tag | capitalizeall }}              {% if tag_description %}          {{ tag_description }}        {% elsif page. tag %}  			  A collection of {{ paginator. total_posts }} posts        {% endif %}      :                         {% include post-card. html %}      "
+    }, {
+        "id": 9,
+        "url": "https://eresendez.com/tag/technology/",
+        "title": "Tag Page",
+        "body": "{% include dynamic_tag_info. html %}       {% include site-nav. html %}          {{ page. tag | capitalizeall }}              {% if tag_description %}          {{ tag_description }}        {% elsif page. tag %}  			  A collection of {{ paginator. total_posts }} posts        {% endif %}      :                         {% include post-card. html %}      "
+    }, {
+        "id": 10,
+        "url": "https://eresendez.com/tag/marketing/",
+        "title": "Tag Page",
+        "body": "{% include dynamic_tag_info. html %}       {% include site-nav. html %}          {{ page. tag | capitalizeall }}              {% if tag_description %}          {{ tag_description }}        {% elsif page. tag %}  			  A collection of {{ paginator. total_posts }} posts        {% endif %}      :                         {% include post-card. html %}      "
+    }, {
+        "id": 11,
+        "url": "https://eresendez.com/tag/software-design/",
+        "title": "Tag Page",
+        "body": "{% include dynamic_tag_info. html %}       {% include site-nav. html %}          {{ page. tag | capitalizeall }}              {% if tag_description %}          {{ tag_description }}        {% elsif page. tag %}  			  A collection of {{ paginator. total_posts }} posts        {% endif %}      :                         {% include post-card. html %}      "
+    }, {
+        "id": 12,
+        "url": "https://eresendez.com/tag/web-development/",
+        "title": "Tag Page",
+        "body": "{% include dynamic_tag_info. html %}       {% include site-nav. html %}          {{ page. tag | capitalizeall }}              {% if tag_description %}          {{ tag_description }}        {% elsif page. tag %}  			  A collection of {{ paginator. total_posts }} posts        {% endif %}      :                         {% include post-card. html %}      "
+    }, {
+        "id": 13,
+        "url": "https://eresendez.com/tag/coderwall/",
+        "title": "Tag Page",
+        "body": "{% include dynamic_tag_info. html %}       {% include site-nav. html %}          {{ page. tag | capitalizeall }}              {% if tag_description %}          {{ tag_description }}        {% elsif page. tag %}  			  A collection of {{ paginator. total_posts }} posts        {% endif %}      :                         {% include post-card. html %}      "
+    }, {
+        "id": 14,
+        "url": "https://eresendez.com/tag/computer-science/",
+        "title": "Tag Page",
+        "body": "{% include dynamic_tag_info. html %}       {% include site-nav. html %}          {{ page. tag | capitalizeall }}              {% if tag_description %}          {{ tag_description }}        {% elsif page. tag %}  			  A collection of {{ paginator. total_posts }} posts        {% endif %}      :                         {% include post-card. html %}      "
+    }, {
+        "id": 15,
+        "url": "https://eresendez.com/tag/git/",
+        "title": "Tag Page",
+        "body": "{% include dynamic_tag_info. html %}       {% include site-nav. html %}          {{ page. tag | capitalizeall }}              {% if tag_description %}          {{ tag_description }}        {% elsif page. tag %}  			  A collection of {{ paginator. total_posts }} posts        {% endif %}      :                         {% include post-card. html %}      "
+    }, {
+        "id": 16,
+        "url": "https://eresendez.com/tag/web-development/",
+        "title": "Tag Page",
+        "body": "{% include dynamic_tag_info. html %}       {% include site-nav. html %}          {{ page. tag | capitalizeall }}              {% if tag_description %}          {{ tag_description }}        {% elsif page. tag %}  			  A collection of {{ paginator. total_posts }} posts        {% endif %}      :                         {% include post-card. html %}      "
+    }, {
+        "id": 17,
+        "url": "https://eresendez.com/tag/sql/",
+        "title": "Tag Page",
+        "body": "{% include dynamic_tag_info. html %}       {% include site-nav. html %}          {{ page. tag | capitalizeall }}              {% if tag_description %}          {{ tag_description }}        {% elsif page. tag %}  			  A collection of {{ paginator. total_posts }} posts        {% endif %}      :                         {% include post-card. html %}      "
+    }, {
+        "id": 18,
+        "url": "https://eresendez.com/tag/woocommerce/",
+        "title": "Tag Page",
+        "body": "{% include dynamic_tag_info. html %}       {% include site-nav. html %}          {{ page. tag | capitalizeall }}              {% if tag_description %}          {{ tag_description }}        {% elsif page. tag %}  			  A collection of {{ paginator. total_posts }} posts        {% endif %}      :                         {% include post-card. html %}      "
+    }, {
+        "id": 19,
+        "url": "https://eresendez.com/tag/laravel/",
+        "title": "Tag Page",
+        "body": "{% include dynamic_tag_info. html %}       {% include site-nav. html %}          {{ page. tag | capitalizeall }}              {% if tag_description %}          {{ tag_description }}        {% elsif page. tag %}  			  A collection of {{ paginator. total_posts }} posts        {% endif %}      :                         {% include post-card. html %}      "
+    }, {
+        "id": 20,
+        "url": "https://eresendez.com/tag/jekyll/",
+        "title": "Tag Page",
+        "body": "{% include dynamic_tag_info. html %}       {% include site-nav. html %}          {{ page. tag | capitalizeall }}              {% if tag_description %}          {{ tag_description }}        {% elsif page. tag %}  			  A collection of {{ paginator. total_posts }} posts        {% endif %}      :                         {% include post-card. html %}      "
+    }, {
+        "id": 21,
+        "url": "https://eresendez.com/tag/javascript/",
+        "title": "Tag Page",
+        "body": "{% include dynamic_tag_info. html %}       {% include site-nav. html %}          {{ page. tag | capitalizeall }}              {% if tag_description %}          {{ tag_description }}        {% elsif page. tag %}  			  A collection of {{ paginator. total_posts }} posts        {% endif %}      :                         {% include post-card. html %}      "
+    }, {
+        "id": 22,
+        "url": "https://eresendez.com/tag/backend/",
+        "title": "Tag Page",
+        "body": "{% include dynamic_tag_info. html %}       {% include site-nav. html %}          {{ page. tag | capitalizeall }}              {% if tag_description %}          {{ tag_description }}        {% elsif page. tag %}  			  A collection of {{ paginator. total_posts }} posts        {% endif %}      :                         {% include post-card. html %}      "
+    }, {
+        "id": 23,
+        "url": "https://eresendez.com/tag/css/",
+        "title": "Tag Page",
+        "body": "{% include dynamic_tag_info. html %}       {% include site-nav. html %}          {{ page. tag | capitalizeall }}              {% if tag_description %}          {{ tag_description }}        {% elsif page. tag %}  			  A collection of {{ paginator. total_posts }} posts        {% endif %}      :                         {% include post-card. html %}      "
+    }, {
+        "id": 24,
+        "url": "https://eresendez.com/tag/opensource/",
+        "title": "Tag Page",
+        "body": "{% include dynamic_tag_info. html %}       {% include site-nav. html %}          {{ page. tag | capitalizeall }}              {% if tag_description %}          {{ tag_description }}        {% elsif page. tag %}  			  A collection of {{ paginator. total_posts }} posts        {% endif %}      :                         {% include post-card. html %}      "
+    }, {
+        "id": 25,
+        "url": "https://eresendez.com/author/eleazar/",
+        "title": "Author Page",
+        "body": "{% for author in site. data. authors %}  {% if author[1]. username == page. author %}  &lt;header class= site-header parallax outer {% if author[1]. cover or page. cover %}  style= background-image: url({{ site. baseurl }}{% if author[1]. cover %}{{ author[1]. cover }}{% elsif page. cover %}{{ page. cover }}{% endif %}) {% else %}no-cover{% endif %} &gt;    &lt;div class= inner &gt;      {% include site-nav. html %}      &lt;div class= site-header-content &gt;        {% if author[1]. picture %}                  {% endif %}        &lt;h1 class= site-title &gt;{{ author[1]. name }}&lt;/h1&gt;        {% if author[1]. bio %}          &lt;h2 class= author-bio &gt;            {% capture filename %}{{ author[1]. bio }}{% endcapture %}            {% include {{ filename }} %}          &lt;/h2&gt;        {% endif %}        &lt;div class= author-meta &gt;          {% if author[1]. location %}            &lt;div class= author-location &gt;{{ author[1]. location }} •&lt;/div&gt;          {% endif %}          &lt;div class= author-stats &gt;            {% if paginator. total_posts == 0 %}No posts{% elsif paginator. total_posts == 1 %}1 post{% else %}{{ paginator. total_posts }} posts{% endif %} •          &lt;/div&gt;          {% if author[1]. url %}            {% include icons/website. html %}          {% endif %}          {% if author[1]. twitter %}            {% include icons/twitter. html %}          {% endif %}          {% if author[1]. facebook %}            {% include icons/facebook. html %}          {% endif %}          {% if site. github %}            {% include icons/github. html %}          {% endif %}          {% if site. linkedin %}            {% include icons/linkedin. html %}          {% endif %}          {% if author[1]. email %}            {% include icons/envelope. html %}          {% endif %}          {% if author[1]. skype %}            {% include icons/skype. html %}          {% endif %}            {% include icons/rss. html %}          {% if site. buymeacoffee %}                      {% endif %}        &lt;/div&gt;      &lt;/div&gt;    &lt;/div&gt;  &lt;/header&gt;  {% endif %}{% endfor %}                   {% include post-card. html %}      "
+    }, {
+        "id": 26,
+        "url": "https://eresendez.com/robots.txt",
+        "title": "",
+        "body": "      Sitemap: {{ “sitemap. xml”   absolute_url }}   "
+    }, {
+        "id": 27,
+        "url": "https://eresendez.com/laravel-bulma-perspectiva-general",
+        "title": "Laravel 5.7 & Bulma.io perspectiva general",
+        "body": "2018/12/13 - Bulma es un framework CSS opensource, basado en Flexbox. 100% responsivo, modular y provee un sistema simple de grid. Bulma es solo una colección de clases CSS, consiste en 39 archivos . sass los cuales pueden ser importados individualmente. Después de utilizar Bulma unos días, me doy cuenta que el framework efectivamente es sencillo y fácil de usar. El paquete también es muy pequeño, a diferencia de Bootstrap y similares. No podría decir que como contra carece de flexibilidad, porque tiene la opción de ser personalizado y al final nosotros siempre podemos sobreescribir cualquier estilo escribiendo un poco de CSS.  Tabla de contenidos    author: eleazar  Requerimientos  Instalación  Responsividad  Modificadores  Columnas  Otros recursos / documentación Requerimientos: 1. - Usar el HTML5 doctype: &lt;!DOCTYPE html&gt;2. - Agregar el responsive viewport meta tag: &lt;meta name= viewport  content= width=device-width, initial-scale=1 &gt;Instalación: Solo se necesita 1 CSS para empezar a utilizar Bulma. Bulma se puede instalar de diferentes maneras:  Usar un CDN con la URL a la hoja de estilos (https://cdnjs. com/libraries/bulma).  Descarga del repositorio de GitHub (https://github. com/jgthms/bulma/tree/master/css).  Usar npm para instalar el paquete. Por ejemplo si compilamos assets con Laravel Mix, hacemos:  npm install bulma Remover el import de Bootstrap en app. scss Y en app. scss incluir:@import  ~bulma/bulma. sass ;4. - npm run dev Podemos ver que la instalación ha sido correcta, añadiendo lo siguiente en welcome. blade. php: &lt;progress class= progress is-primary  value= 30  max= 100 &gt;30%&lt;/progress&gt;&lt;progress class= progress is-info  value= 45  max= 100 &gt;45%&lt;/progress&gt;&lt;progress class= progress is-success  value= 60  max= 100 &gt;60%&lt;/progress&gt;&lt;progress class= progress is-warning  value= 75  max= 100 &gt;75%&lt;/progress&gt;&lt;progress class= progress is-danger  value= 90  max= 100 &gt;90%&lt;/progress&gt;Responsividad: Cada elemento de Bulma es mobile-first y es optimizado para lectura vertical, por default:  Las columnas se apilan verticalmente.  El nav menú se esconde.  Se puede forzar el horizontal layout escribiendo el modificador is-mobile. Bulma tiene 5 breakpoints:  mobile: arriba de 768px tablet: de 769px desktop: de 1024px widescreen: de 1216px fullhd: de 1408pxBulma usa 9 responsive mixins:  =mobile hasta 768px =tablet de 769px =tablet-only de 769px y hasta 1023px =touch hasta 1023px =desktop de 1024px =desktop-only de 1024px y hasta 1215px =widescreen de 1216px =widescreen-only de 1216px y hasta 1407px =fullhd de 1408pxModificadores: Algo que me gustó de Bulma, es que también cuenta con clases de utilidad o modificadores, lo que permite obtener estilos alternativos para casi todos sus elementos. Estos modificadores empiezan con is-* o has-*. Por ejemplo: Para convertir un botón normal en botón de Bulma, simplemente agregamos la clase button. &lt;button class= button &gt;Hello world&lt;/button&gt;Para cambiar el estilo usando modificadores, escribimos lo siguiente: &lt;button class= button is-large is-success is-rounded has-text-weight-bold &gt;Hello world&lt;/button&gt;Lo anterior crea un botón con borde redondo, background verde y fuente white-bold. Columnas: Una de las cosas más importantes de cualquier framework CSS, es como resuelven el tema de las columnas. Bulma se basa en flexbox y de la siguiente manera se crea una fila con tres columnas: &lt;div class= columns &gt; &lt;div class= column &gt;  Columna uno &lt;/div&gt; &lt;div class= column &gt;  Columna dos &lt;/div&gt; &lt;div class= column &gt;  Columna tres &lt;/div&gt;&lt;/div&gt;Una vez mas, utilizando los modificadores podemos controlar el tamaño del ancho de las columnas, algunos ejemplo:  is-three-quarters is-two-thirds is-half is-one-third is-one-quarter is-four-fifths is-three-fifths is-two-fifths is-one-fifthOtros recursos / documentación: Lo mejor de todo es que el resto de la biblioteca es muy intuitiva y fácil. Entonces, el resto se entiende sin problemas.  Responsividad: https://bulma. io/documentation/overview/responsiveness/ Mixins: https://bulma. io/documentation/overview/mixins/ Componentes Lightweight para Vue. js basado en Bulma - https://buefy. github. io/"
+    }, {
+        "id": 28,
+        "url": "https://eresendez.com/css-basico-recommendation",
+        "title": "CSS básico — Recommendation",
+        "body": "2018/12/09 - Recomendaciones para conocer y desarrollar un CSS flexible, duradero y sostenible (@mdo). Lo mejor siempre será aprender bien los fundamentos (HTML, CSS y Javascript) ya que la web gira entorno a estas tecnologías, por lo que vale la pena invertir el tiempo. Desde luego que hay muchos recursos en la web, solo hay que googlear y encontrar algo que se adapte a nuestro estilo de aprendizaje.  Tabla de Contenidos    author: eleazar  CSS Selectors  CSS Class  Orden de declaraciones  Naming Conventions  Media query placement  Importar un Google Font  El atributo id para dar estilo  Usar notación de reloj para especificar el Padding y Margin de un elemento  Usar un Attribute Selector para dar estilo  Entender unidades Absolutas vs. Relativas  Heredar el estilo del Body Element  Dar prioridad a un estilo sobre otro  Sobreescribir estilos en CSS subsecuente  Sobreescribir declaraciones de clases por atributos ID  Sobreescribir declaraciones de clase con estilos Inline  Sobreescribir todos los estilos usando Important  Usar códigos hexadecimales para colores específicos  Usar códigos hexadecimales abreviados  Variables CSS y variables personalizadas  Variables CSS en cascada  Usar media queries para cambiar una variable  Recursos CSS Selectors: Existen cientos de properties CSS para dar estilo a los elementos HTML. Un CSS Selector es un patrón usado para seleccionar el elemento al cual se le va dar estilo. Por ejemplo, si queremos que todos los elementos h2 sean rojos, añadimos la siguiente regla de estilo: h2 { color: red; }Es importante recordar agregar el punto y coma al final de cada regla de estilo. CSS Class: Las clases son estilos reutilizables que se agregan a los elementos HTML.   . blue-text {      	color: blue;    }Lo anterior, se puede aplicar a cualquier elemento HTML: &lt;h2 class= blue-text &gt;CatPhotoApp&lt;/h2&gt;. Orden de declaraciones: Las declaraciones de propiedades se deben agrupar siguiendo el orden:  Posicionamiento Box model Tipográfico VisualEl posicionamiento es lo primero porque puede re-mover un elemento del flujo normal del documento y anular los estilos relacionados con el box-model. El box-model viene a continuación, ya que dicta las dimensiones y la ubicación de un componente. Todo lo demás tiene lugar dentro del componente o sin afectar a las dos secciones anteriores, y por lo tanto, son las últimas.   . declaration-order {   /* Positioning */   position: absolute;   top: 0;   right: 0;   bottom: 0;   left: 0;   z-index: 100;   /* Box-model */   display: block;   float: right;   width: 100px;   height: 100px;   /* Typography */   font: normal 13px  Helvetica Neue , sans-serif;   line-height: 1. 5;   color: #333;   text-align: center;   /* Visual */   background-color: #f5f5f5;   border: 1px solid #e5e5e5;   border-radius: 3px;   /* Misc */   opacity: 1;  }Naming Conventions: La idea es hacer que cada clase sea un componente individual que pueda ser reutiizado, dar a cada elemento una clase que lo represente, ser específicos con el nombre de las clases para que puedan ser reutilizables y fácil de identificar. En resumen:  Mantener el nombre en minúsculas y utilizar guiones (no guiones bajos o camelCase). Los guiones sirven como rupturas naturales en la clase relacionada (por ejemplo, . btn y . btn-danger).  Evitar la notación abreviada excesiva y arbitraria. . btn es útil para button, pero . s no significa nada.  Mantenga las clases lo más cortas y concisas posible.  Use nombres significativos; Utilice nombres estructurales o de propósito sobre presentacionales. Nombrar de acuerdo al uso en lugar de la apariencia.  Usar prefijos basadas en la clase primaria o base más cercana.  Use las clases . js-* para denotar el comportamiento (a diferencia del estilo), pero mantenga estas clases fuera de su CSS. También es útil aplicar muchas de estas reglas al crear nombres de variables Sass y Less.   /* Ejemplo malo */  . t { . . . }  . red { . . . }  . header { . . . }  /* Ejemplo bueno */  . tweet { . . . }  . important { . . . }  . tweet-header { . . . }Media query placement: Colocar los media query lo más cerca posible del conjunto de reglas. No los agrupe todos en una hoja de estilo separada o al final del documento. Ejemplo:   . element { . . . }  . element-avatar { . . . }  . element-selected { . . . }  @media (min-width: 480px) {   . element { . . . }   . element-avatar { . . . }   . element-selected { . . . }  }Importar un Google Font: En adición a los fonts comunes, se puede especificar custom web fonts. Google Fonts es una librería gratis, para importar un Google Font, simplemente se copia la URL y se pega en el HTML. &lt;link href= [https://fonts. googleapis. com/css?family=Lobster](https://fonts. googleapis. com/css?family=Lobster)  rel= stylesheet  type= text/css &gt;  No uses @import Comparado con &lt;link&gt;, @import es más lento, añade peticiones extra y puede causar otros problemas imprevistos.   &lt;!-- Use link elements --&gt;  &lt;link rel= stylesheet  href= core. css &gt;Ahora, ya podemos utilizar el font Lobster con la regla: font-family: Lobster;. Cuando un font no esta disponible, podemos decirle al navegador que utilice otro font, separándolo con comas.   p {   font-family: Helvetica, sans-serif;  }El atributo id para dar estilo: La única diferencia de id respecto a class es que no es reusable y solo debe ser aplicada a un elemento. Un id incluso tiene más importancia que una class , si ambos son aplicados al mismo elementos y tienen reglas de estilo en conflicto, el estilo del id es el que será aplicado.   #photo-element {   background-color: green;  } Casi nunca deberías usar id para dar estilo. El comportamiento roto debido a las colisiones con id es difícil de rastrear y es molesto. Usar notación de reloj para especificar el Padding y Margin de un elemento: Usar un Attribute Selector para dar estilo: Existen otros CSS selectors aparte de id y class, por ejemplo: [attr=value], el cual da estilo al elemento que se especifique.   [type= radio ] {  	margin: 20px 0px 20px 0px;  }Al usar el atributo type se le otorga un margin a todos los radio buttons. Entender unidades Absolutas vs. Relativas: Heredar el estilo del Body Element: Cada página HTML tiene un elemento body y todos los otros elementos van a heredar el estilo que se defina en el elemento body.   body {  	color: green;  }Lo anterior, da el color verde a todos los elementos dentro de body. Dar prioridad a un estilo sobre otro: Usualmente, los elementos HTML reciben múltiples estilos que entran en conflicto entre sí. Con lo anterior, un elemento h1 no siempre va a ser verde. Al aplicar al elemento una clase que haga el texto rosa, la clase anula el color verde del body.   . pink-text {  	color: pink;  }  &lt;h1 class= pink-text &gt;  	Hello World!  &lt;/h1&gt;La clase “pink-text” sobreescribió la declaración CSS del elemento body. Sobreescribir estilos en CSS subsecuente: Ahora que sabemos que las clases sobreescriben el CSS del elemento body, la siguiente pregunta es: ¿que puede sobreescribir una clase? Para ello vamos a crear una clase adicional que haga el texto azul, asegurando que este debajo de la clase pink-text.   . pink-text {  	color: pink;  }  . blue-text {  	color: blue;  }Aplicamos la clase al elemento que tenga pink-text para ver cual gana. La aplicación de múltiples clases en un elemento se realiza con un espacio entre ellos como este: class= class1 class2   No importa en qué orden se enumeran las clases en el elemento HTML. Pero, lo que si es importante es el orden de las declaraciones de clases en la archivo . CSS.  La segunda declaración siempre tendrá más prioridad sobre la primera. Debido a que . blue-text se declara después que . pink-text esta anula los atributos de pink-text.   &lt;h1 class= pink-text blue-text &gt;Hello World!&lt;/h1&gt;Sobreescribir declaraciones de clases por atributos ID: Los navegadores leen el CSS de arriba hacia abajo. Eso significa que en un conflicto, los navegadores van a usar cualquier declaración CSS que este al final. Se puede sobreescribir el valor azul del elemento h1 si se define un id al elemento y se da otro estilo.   &lt;h1 id= orange-text  class= pink-text blue-text &gt;  #orange-text {  	color: orange;  } No importa en donde se declare “orange-text”, porque el atributo id siempre tendrá prioridad. Sobreescribir declaraciones de clase con estilos Inline: Hasta ahora se ha probado que las declaraciones id sobreescriben las declaraciones de clases. El inline style sobreescribe todo lo anterior.   &lt;h1 style= color:white;  id= orange-text  class= pink-text blue-text &gt;  	Hello World! &lt;!-- El texto es blanco --&gt;  &lt;/h1&gt;Sobreescribir todos los estilos usando Important: Aún existe otra forma de sobreescribir CSS, el método más poderoso de todos, pero ¿cuando usarlo?. En algún momento, vamos a utilizar una librería CSS que accidentalmente sobreescriba nuestro CSS. Entonces, si queremos cambiar eso usamos !important. Volvamos atrás para añadir la palabra reservada !important en la clase . pink-text y el elemento se hará rosa. color: pink !important; Usar códigos hexadecimales para colores específicos: Usar códigos hexadecimales abreviados: Variables CSS y variables personalizadas: Las CSS Variables son una poderosa manera de cambiar muchos estilos rápidamente al modificar un solo valor. Para crear una Variable CSS, solamente tenemos que darle un name con dos guiones y asignarle un valor: . element {  --gray-color: #777777;}Lo anterior crea una variable llamada --gray-color y le asigna el color gris hexadecimal. Para usarla se hace referencia de la siguiente manera: . element {  --gray-color: #777777;  color: var(--gray-color);}Variables CSS en cascada: Cuando se crea una variable CSS solo esta disponible dentro del elemento en la cual fue creada y también esta disponible para los elementos anidados, este efecto se llama cascada. Si se definen las variables en el elemento :root estarán disponibles para todo la página web.   :root {  	--color-gray: #777777;  }Usar media queries para cambiar una variable: Recursos:  Un buen recurso es CanIUse. com en donde puedes tipear cualquier feature en su buscador para saber si el navegador soporta la característica y en que versión.  Mozilla Developer Network, es otro gran sitio que uso diariamente.  codeguide. co"
+    }, {
+        "id": 29,
+        "url": "https://eresendez.com/como-crear-hero-images-para-tu-eshop",
+        "title": "Cómo crear Hero-Images hermosas (y persuasivas) para tu tienda en línea",
+        "body": "2018/11/24 - Muchas páginas y plantillas tienen un componente importante en común: una imagen principal en su homepage. Esta imagen es conocida como hero, banner, o imágenes carrusel. Son esenciales y aquí, Shopify publicó un gran post describiendo las mejores prácticas para usarlas y provee recursos para crear excelentes y persuasivas hero-images.  Tabla de contenidos    Ubicación  Propósito  Qué debe incluir  Cómo crear una hero-image  Conclusión Ubicación: Una hero-image abarca casi todo el espacio de la homepage, significa que puede ser un activo muy valioso para el negocio si se usan correctamente. Propósito: El uso depende de las metas del negocio, por ejemplo: 1. Para ayudar a crear una marca y contar una historia Un uso potencial de esta imagen es ayudar a construir una marca, es efectivo porque el negocio y los productos tienen una historia que suma e implica presentar información clave que educa a los visitantes en la historia de la marca. 2. Para contestar las preguntas del cliente Otro enfoque común es presentar respuestas a preguntas frecuentes, por ejemplo: “Envío GRATIS en MX” 3. Para resaltar la propuesta de valor La propuesta de valor explica exactamente a los clientes el valor que los productos entregan, éste es un buen lugar para resaltar la propuesta de valor porque es donde la mayoría de los visitantes aterrizan. 4. Para hacer anuncios Uno uso destacado es presentar un anuncio como una venta y de igual manera es una gran oportunidad de notificar, ya que alcanza la mayor cantidad de visitantes. 5. Presentar un producto o una línea de productos Finalmente, otro uso popular es mostrar un producto o una linea de productos en particular, esto puede ser perfecto para cuando se lanzan nuevos productos y se desea que reciban toda la atención, además de ofrecer productos con el margen de beneficio más alto o productos que se intentan liquidar. Qué debe incluir: Hay 3 elementos principales y la combinación de cada uno puede llevar a una hero-image persuasiva que compele al visitante a la acción que se desea en línea con el objetivo de conversión.  Imagen llamativa - Al ojo humano le encantan las imágenes grandes, audaces y brillantes, precisamente la razón por la cual la fotografía de un producto es importante. Se necesita un gráfico de alta resolución que llame la atención.  Redacción atrayente - El copy son las palabras que se usan para comunicar un mensaje. Debido a la naturaleza de la imagen y al tiempo de comunicar el mensaje, el texto debe ser conciso y preciso.  Sólido Call-To-Action: Texto o un botón, todas las imágenes deben presentar una llamada a la acción prominente que indique al lector la acción que desea que realicen. Ejemplo: COMPRAR AHORA, LEER NUESTRA HISTORIA, MÁS INFORMACIÓN, etc. Cómo crear una hero-image: Para ello vamos a utilizar una variedad de herramientas que pueden facilitar este proceso incluso para los menos expertos en tecnología. Imágenes libre de derechos, sin costo Burst by Shopify, es una nueva plataforma fotográfica para emprendedores, puedes encontrar fotos de alta resolución de productos e imágenes de estilo de vida que son perfectas para campañas de marketing y redes sociales. The Stocks reúne las mejores fotos sin royalties en un sitio web limpio y fácil de navegar. Death To Stock Photo envía imágenes gratuitas por correo electrónico una vez al mes, por lo que es una opción para comenzar a crear una colección de imágenes únicas y usarlas en el futuro. Pixabay Más de 400,000 imágenes gratis, vectores e ilustraciones artísticas, todas las imágenes de este sitio son de Pixabay. Graphic Burger es un gran recurso con fotos e imágenes gratuitas para uso comercial. PicJumbo es un recurso realmente bueno para fotos de alta calidad, gratis. Una gran selección y todas las categorías hacen que las grandes imágenes sean fáciles de encontrar. morgueFile ha existido por mucho tiempo y tiene miles de fotos gratuitas. Software de edición Adobe Photoshop (PAGO) es el programa de elección entre los artistas y fotógrafos de diseño gráfico, sin embargo, tiene un precio y una curva de aprendizaje pronunciada. La buena noticia es que hay varias alternativas que son mucho más fáciles de usar y gratuitas. Pixlr - (gratis) Un editor de imágenes gratuito basado en la web y descargable. Si estás familiarizado con la edición de imágenes, encontrará que Pixlr es bastante fácil e intuitivo de utilizar. Desafortunadamente, sin experiencia previa en la edición de imágenes, es posible que Pixlr te resulte un poco difícil. Pixelmator - (Aplicación OSX de pago) es un editor de imágenes rico y potente para OS X que tiene un costo de $600. 00 mxn aproximadamente. Canva: (Freemium) Canva es una aplicación de edición de imágenes basada en la web bastante nueva, que va más allá de la simple edición de imágenes. Su objetivo es hacer que el diseño sea simple para cualquier persona. La aplicación facilita la selección del tamaño de imagen que desea producir, e incluye elementos de diseño(gratuitas y de pago). PicMonkey (gratis) Aunque PicMonkey es gratuito, hay una versión premium que proporciona muchas cosas extra por un pequeño cargo mensual. Conclusión: Es necesario cambiar estas imágenes con frecuencia para tener una tienda fresca, animada e impulsar a los visitantes a tomar las acciones acordes a los objetivos de conversión. "
+    }, {
+        "id": 30,
+        "url": "https://eresendez.com/opensource-contributions",
+        "title": "Contribuciones OpenSource",
+        "body": "2018/11/21 - Hay muchas razones para contribuir a proyectos Open Source, cada quien tiene sus razones personales, por lo que es necesario conocer nuestras fortalezas y debilidades relacionadas con los proyectos que elegimos. De acuerdo a nuestros intereses y conocimientos podemos escoger uno o dos proyectos, eso es tarea sencilla, ya de aquí viene la parte interesante.  Aquí escribiré lo que he hecho para empezar a contribuir en proyectos de código abierto. Seleccionar un proyecto: Para seleccionar un proyecto, primero debemos saber cuales son nuestras expectativas y en base a eso buscar proyectos relacionados. Leer sus wikis, sitios web, tratar de entender de qué se tratan. Para este ejemplo, se seleccionó el proyecto alexeymezenin/laravel-best-practices. Las razones por las cuales quiero contribuir es porque actualmente trabajo con ese framework y me llama la atención las buenas prácticas. Enviar un correo de introducción: Una vez que haya encontrado el proyecto, suscríbase a su lista de correo de desarrollo. La mayoría de los proyectos tienen detalles sobre cómo contribuir / comenzar las secciones. Si todavía no se siente cómodo presentándose a la comunidad, espere un momento y lea los correos que vienen de la lista. Empezar a contribuir: Aparte de codificar, existen muchas maneras de contribuir, por ejemplo:  Diseño Testing Documentación"
+    }, {
+        "id": 31,
+        "url": "https://eresendez.com/vanilla-javascript-tingle-modal",
+        "title": "Vanilla Javascript Tingle Modal",
+        "body": "2018/10/09 - En la búsqueda de un modal que sea realmente sencillo, sin tanta dependencia y sin usar jQuery, encontré el siguiente modal: Tingle. Código fuente en Github  Sin dependencias Totalmente personalizable con CSS CSS transitions Simple API Creado con UX en menteIntalación:       Método   Procedimiento         Bower   bower install tingle –save       NPM   npm install tingle. js –save       Download básico   download. zip   Solo es necesario agregar el CSS y JS. &lt;link rel= stylesheet  href= tingle. min. css &gt;&lt;script src= tingle. min. js &gt;&lt;/script&gt;Ejemplo: Haz clic en el botón para ver el modal en acción. Tingle testHello world! Click me! Solo es necesario lo siguiente: var modal = new tingle. modal({  cssClass: ['class1', 'class2']});var btn = document. querySelector('. js-tingle-modal-1');btn. addEventListener('click', function() {  modal. open();});modal. setContent(document. querySelector('. tingle-demo-tiny'). innerHTML);Para más opciones y configuración ver: https://robinparisi. github. io/tingle/ "
+    }, {
+        "id": 32,
+        "url": "https://eresendez.com/principios-del-dise%C3%B1o-web-adaptable",
+        "title": "Principios del Diseño Web Responsivo",
+        "body": "2018/09/16 - Existen muchos tipos de dispositivos que pueden acceder a la web. Estos dispositivos tienen diferentes tamaños de pantalla, resoluciones y potencia de procesamiento. La estructura de la página y las reglas de CSS deben ser flexibles para acomodar estas diferencias. En general, se diseña el CSS de la página para el público objetivo. Esta entrada cubrirá las formas básicas de usar CSS para el Diseño Web Responsivo. Table of contents:  author: eleazar Table of contents Media Query     Diferencia entre max-width y min-width    Imágenes responsivasMedia Query: Media Queries es una técnica introducida en CSS3 y modifica la presentación del contenido en función del tamaño de las ventanas o viewports. El viewport es el área visible de un usuario de una página web, y es diferente según el dispositivo utilizado para acceder al sitio. Las Media Queries usan la regla @media, un tipo de medio y una condición y si coincide con el tipo de dispositivo en el que se muestra el documento, se aplican los estilos. Puede tener tantos selectores y estilos dentro del media query como se desee. Ejemplo de media query que devuelve el contenido cuando el ancho del dispositivo es menor o igual a 100 px: @media screen and (max-width: 100px) {/* CSS */}y la siguiente media query devuelve el contenido cuando la altura del dispositivo es mayor o igual a 350 px: @media screen and (min-height: 350px) {/* CSS */} El CSS dentro de la media query se aplica solo si el tipo de medio coincide con el del dispositivo que se está utilizando. Diferencia entre max-width y min-width: Maximum Width @media screen and (max-width: 600px) {. . . }  Lo anterior significa: “Si el [ancho-del-dispositivo]” es menor o igual a 600px, entonces… Funciona desde 0px hasta 600px.  Es un limite del ancho máximo de un elemento el cual su tamaño puede ser modificado por el navegador. Mininum Width @media screen and (min-width: 600px) {. . . } “Si el [ancho-del-dispositivo]” es mayor o igual que 600px, entonces…  Es lo contrario a max-width El navegador puede incrementar el tamaño del elemento y disminuir no menos al min-width. Ambas condiciones se pueden mezclar para especificar un rango de tamaños. @media screen and (max-width: 600px) and (min-width: 400px) {. . . } Lo anterior se ejecuta si la pantalla esta entre 600-400px de ancho. Con min-width se diseña una experiencia mobile-first y con max_width una desktop-first. Imágenes responsivas: En lugar de aplicar un width absoluto a la imagen, se puede usar lo siguiente: img {  max-width: 100%;  display: block;  height: auto;}La propiedad max-width escala la imagen al ancho de su contenedor, y display: block; cambia la posición de default (inline) a un block element en su propia linea. El height auto mantiene el aspecto original de la imagen. "
+    }, {
+        "id": 33,
+        "url": "https://eresendez.com/css-grids-introduccion",
+        "title": "CSS Grid - Introducción",
+        "body": "2018/09/13 - CSS Grid ayuda crear fácilmente diseños web complejos. Funciona convirtiendo un elemento HTML en un contenedor de cuadrícula con filas y columnas para colocar elementos secundarios donde desees. Crear el primer CSS Grid: Para crear un grid container se establece la propiedad display a grid. . container {  display: grid;}Agregar columnas con grid-template-columns: . container {  display: grid;  grid-template-columns: 50px 50px; // Dos columnas de 50px cada una}Agregar filas con grid-template-rows: . container {  display: grid;  grid-template-columns: 50px 50px;  grid-template-rows: 50px 50px; // Dos filas de 50px}Con lo anterior es posible utilizar las siguientes unidades para establecer el tamaño:  fr: establece el tamaño de la columna o fila a una fracción del tamaño disponible.  auto: establece el tamaño automáticamente.  %: ajusta el tamaño aun porcentaje del ancho de su contenedor. Crear espacios con grid-column-gap y grid-column-row: Para dejar espacios entre columnas y filas: . container {  grid-column-gap: 10px;  grid-row-gap: 10px;}Agregar gap más rápido: . container {  // 10px en rows y 20px en columns  grid-gap: 10px 20px;}Controlar el espaciado interno: Con esta propiedad el ítem de un cuadricula, puede ocupar más espacio, solo hay que especificar de que linea a que linea ocupará ese espacio. Aplica tanto para columns, como rows. . container {  grid-column: 2/4; // De la linea 2 a la 4.   grid-row: 2/4; // De la linea 2 a la 4. }Dividir el grid en áreas: Las celdas se pueden agrupar en áreas y darles un nombre personalizado. Cada palabra representa una celda y cada par de “ “ representa una fila. También, se puede usar un . para designar una celda vacía. . container {  grid-template-areas:     header header header      advert content content      footer footer footer ;}Colocar ítems en áreas del Grid con la propiedad grid-area: Después de crear una plantilla de áreas para el contenedor grid, se puede colocar cualquier elemento en su área personalizada haciendo referencia al nombre que le dio. . item {  grid-area: footer;}Lo anterior, establece ese ítem en el área llamada footer. Usar grid-area sin crear Areas Templates: Se pueden crear áreas al vuelo, usando las lineas del grid. item {  grid-area: 1/1/2/4;}grid-area: línea horizontal para comenzar en / línea vertical para comenzar en / línea horizontal para terminar en / línea vertical para terminar en. Entonces, en el ejemplo anterior, el ítem va a consumir el espacio empezando en la linea horizontal 1 y terminando en la linea 2, después en la linea vertical 1 hasta la 4. Reducir repetición con el método repeat(): Por ejemplo, crear 100 rows de 50px de alto: grid-template-row: repeat(100, 50px);Limitar el tamaño del grid con la función minmax: Para esto es necesario especificar un rango aceptable para el ítem. grid-template-columns: 100px minmax(50px, 200px);Lo anterior crea dos columnas, una de 100px de ancho y la segunda con un mínimo de 50px y máximo 200px. Crear diseño flexibles con auto-fill: Se pueden crear diseños flexibles si se combina auto-fill con minmax. Por ejemplo, lo siguiente crea columnas con el ancho especificado hasta que no quepa en la fila, cuando ya no cabe, se inserta en la siguiente fila automáticamente. repeat(auto-fill, minmax(60px, 1fr));Crear diseño flexibles con auto-fit: Funciona igual que auto-fill, la diferencia es cuando se excede el tamaño del contenedor, auto-fill sigue insertando filas o columnas y auto-fit colapsa esas filas o columnas vacías y las estira al tamaño del contenedor. Usar Media Queries para crear diseños responsivos: CSS Grid puede ser una manera fácil de hacer que el sitio sea más responsivo utilizando Media Queries para reorganizar las áreas, cambiar dimensiones de un grid y reorganizar la ubicación de los elementos. Cuando el ancho del viewport es 400px o más el header ocupa la fila superior completamente y el footer la inferior. @media (min-width: 300px) {  . container{   grid-template-columns: auto 1fr;   grid-template-rows: auto 1fr auto;   grid-template-areas:     advert header      advert content      advert footer ;  } } @media (min-width: 400px){  . container{   grid-template-areas:     header header      advert content      footer footer ;  } }Crear grids dentro de grids: Convertir un elemento en un grid solo afecta el comportamiento de sus descendientes directos. Entonces, al convertir un descendiente directo en un grid, tienes un grid dentro de un grid. Por ejemplo, al establecer las propiedades de display: grid; y grid-template-columns de un ítem, se crea un grid dentro de un grid. "
+    }, {
+        "id": 34,
+        "url": "https://eresendez.com/metodologia-gitflow",
+        "title": "GitFlow - Flujo de trabajo",
+        "body": "2018/09/10 - Gitflow es solo una idea abstracta de un flujo de trabajo con git publicada por Vincent D. Básicamente define un estricto modelo de branching centrado en el release del proyecto, provee un framework para gestionar grandes proyectos. Table of contents:  author: eleazar Table of contents Keypoints ¿Cómo funciona?     Feature branch   Terminando una feature branch   Hotfix branches    En resumen HerramientasKeypoints:  Asigna roles específicos a cada rama.  Define cuando y como deben interactuar.  Usa ramas individuales para preparar, mantener y guardar releases.  Aconseja que tipo de ramas configurar y como deben ser mezcladas. ¿Cómo funciona?: En lugar de usar solamente la rama master, este flujo de trabajo utiliza dos ramas para registrar el historial del proyecto. La rama master almacena el historial de versiones oficial, y la rama develop sirve como una rama de integración de nuevas características. Feature branch: Cada nueva característica debe residir en su propia rama. También, en lugar de crearse de master, la feature branch se creará de develop. Cuando la característica este completa, se mezcla con develop. Las features no deben de interactuar nunca con master. git checkout developgit checkout -b feature_branchTerminando una feature branch: Cuando se termine la nueva característica, ahora es necesario mezclarla con develop. git checkout developgit merge feature_branchUna vez que el desarrollo ha adquirido las características suficientes para un release (o se acerca una fecha de lanzamiento predeterminada), se crea una rama release de develop. La creación de esta rama inicia el siguiente ciclo de lanzamientos, por lo que no se pueden agregar nuevas características después de este punto; solo las correcciones de errores, la generación de documentación y otras tareas orientadas a la versión deberían ir en esta rama. Una vez que está todo listo, la rama de release se fusiona en master y se etiqueta con un número de versión. Además, debería fusionarse nuevamente en develop, que puede haber progresado desde que se inició el release. El uso de una rama dedicada para preparar lanzamientos permite que un equipo pueda pulir la versión actual mientras que otro equipo continúa trabajando en las funciones para la próxima versión. También crea fases de desarrollo bien definidas (por ejemplo, es fácil decir: “Esta semana nos estamos preparando para la versión 4. 0” y verla realmente en la estructura del repositorio). Hacer ramas de release es otra operación directa de ramificación. Al igual que las ramas de features, las ramas de release se basan en la rama develop. Se puede crear una nueva rama de release utilizando los siguientes métodos. git checkout developgit checkout -b release/0. 1. 0Una vez que el release esté listo, se fusionará en master y develop, luego se eliminará la rama de release. Es importante fusionarse nuevamente en develop porque las actualizaciones críticas se pueden haber agregado a la rama de release y deben ser accesibles a las nuevas características. Para finalizar una rama de release, use los siguientes métodos: git checkout developgit merge release/0. 1. 0Hotfix branches: Usadas para actualizar rápidamente ramas de producción. Son como ramas de release y de features, excepto que se basan de la rama de producción master en lugar de develop. Tan rápido como el fix este completo, debe mezclarse con tanto en master como en develop git checkout mastergit checkout -b hotfix_branchY para finalizar: git checkout mastergit merge hotfix_branchgit checkout developgit merge hotfix_branchgit branch -D hotfix_branchEn resumen: El flujo general de Gitflow es:  Una rama para develop se crea desde master Se crea una rama de release desde develop Las ramas de features se crean a partir de develop Cuando se completa una feature, se fusiona en la rama develop Cuando se completa la rama de release, se fusiona en develop y master Si se detecta un problema en master, se crea una rama de hotfix desde master Una vez que se completa hotfix, se combina en develop y masterHerramientas:  Gitfow Toolset"
+    }, {
+        "id": 35,
+        "url": "https://eresendez.com/docker-introduccion",
+        "title": "Docker - Introducción",
+        "body": "2018/09/10 - Docker es una plataforma que permite separar las aplicaciones de la infraestructura, reduciendo el tiempo entre escribir código y administrar producción. Una ventaja que me gusta es que deja el equipo limpio, al no instalar tantas cosas, ni cambiar la configuración del sistema. Table of contents:  author: eleazar     Table of contents   Requerimientos   Terminología   Run your containers   Más información   Requerimientos:  Instalar Docker &gt;= 17. 12Terminología: Más información: Docker glossary  Service: Es una definición de como quieres ejecutar los containers de tu aplicación, define que imagen ejecutar.  Image: Es una colección ordenada de instrucciones que se usarán en el tiempo de ejecución de un container. Se pueden almacenar local o remotamente. Son de diferentes tamaños porque en esencia son el sistema completo.  Container: es una instancia de una imagen, es stand-alone, es una pieza ejecutable de software que contiene todo lo que necesitas para: code, runtime, herramientas del sistema, librerías del sistema, configuraciones.  Volumes: es un directorio designado dentro de uno o más containers, estan diseñados para conservar los datos, independientemente del ciclo de vida del container. Hay tres tipos de volumes: host, anonymous y named. Run your containers: docker-compose up -d Más información:  Docker for development: Getting started (Part 1)"
+    }, {
+        "id": 36,
+        "url": "https://eresendez.com/instalar-mongodb-ubuntu-16",
+        "title": "Instalar MongoDB Community Edition en Ubuntu 16.04 LTS",
+        "body": "2018/08/27 - Instalar MongoDB Community Edition en Ubuntu:  Importante: El paquete no oficial de mongodb provisto por Ubuntu no es mantenido por MongoDB. Siempre debes usar los paquetes oficiales de MongoDB mongodb-org, que se mantienen actualizados con las versiones de MongoDB mayores y menores más recientes. MongoDB solo proporciona paquetes para LTS de 64 bits (soporte a largo plazo); lanzamientos de Ubuntu; por ejemplo, 14. 04 LTS (trusty) y 16. 04 LTS (xenial). Consulte Plataformas compatibles para obtener más información.  Importe la clave pública utilizada por el sistema de gestión de paquetes. Ver Import the public key Ejemplo: sudo apt-key adv --keyserver hkp://keyserver. ubuntu. com:80 --recv 9DA31620334BD75D9DCB49F368818C72E52529D4 Ubuntu 16. 04: Ver Create a list file for mongodb Ejemplo: echo  deb [ arch=amd64,arm64 ] https://repo. mongodb. org/apt/ubuntu xenial/mongodb-org/4. 0 multiverse  | sudo tee /etc/apt/sources. list. d/mongodb-org-4. 0. list sudo apt update sudo apt install mongodb sudo apt install -y mongodb-orgEn este punto obtengo lo siguiente: mongod --versiondb version v4. 0. 2git version: fc1573ba18aee42f97a3bb13b67af7d837826b47OpenSSL version: OpenSSL 1. 0. 2g 1 Mar 2016allocator: tcmallocmodules: nonebuild environment:  distmod: ubuntu1604  distarch: x86_64  target_arch: x86_64Por último, para iniciar mongo: sudo service mongodb start Crear un usuario administrador: En la base de datos admin, agregue un usuario con el rol userAdminAnyDatabase. Por ejemplo, lo siguiente crea el usuario myUserAdmin en la base de datos admin. use admindb. createUser(  {    user:  myUserAdmin ,    pwd:  abc123 ,    roles: [{ role:  userAdminAnyDatabase , db:  admin  }]  })Vuelva a iniciar la instancia de mongod con la opción de línea de comando --auth o, si usa un archivo de configuración, la configuración security. authorization. mongod --auth --port 27017 --dbpath /data/db1 Docs. MongoDB Enable Auth"
+    }, {
+        "id": 37,
+        "url": "https://eresendez.com/lista-alternativas-mailchimp",
+        "title": "¿Cuáles son algunas alternativas más baratas y mejores a MailChimp?",
+        "body": "2018/08/26 - Aquí hay una lista de algunas alternativas baratas de MailChimp que vale la pena usar:  Sender. net Spark Post EmailOctopus Sendinblue lemlist SwipePost: Envía 200,000 correos electrónicos gratis por mes. (Recomendado) SendX SwipeMail: una solución de marketing por correo electrónico impulsada por inteligencia artificial Sales-push: una enriquecida plataforma de automatización de Email Marketing.  MailerLite Moosend Drip SalesHandy Aweber Get Response Active Campaign eSputnik. com"
+    }, {
+        "id": 38,
+        "url": "https://eresendez.com/livereload-actualiza-navegador-automaticamente",
+        "title": "LiveReload actualiza (refreshing) el navegador automáticamente",
+        "body": "2018/08/23 - LiveReload, el país de las maravillas para los desarrolladores web, un lugar increíble donde los navegadores no necesitan un botón de Refresh. Hace algunos meses utilicé Browsersync con Jekyll, herramienta similar a LiveReload, pero con más características y recuerdo que no obtenía el resultado deseado porque el navegador se actualizaba muy lento, probablemente por una mala configuración y como no disponía tiempo para adentrar en la documentación lo dejé así. Solamente necesitaba un refresh automático simple y eso es lo que hace LiveReload; supervisa los cambios en el sistema de archivos y tan pronto como se guarda un archivo, se preprocesará según sea necesario y el navegador se actualizará. También, cuando cambias un archivo CSS o una imagen, el navegador se actualiza al instante sin volver a cargar la página manualmente.  Para más información: livereload. com/.  LiveReload plugins LiveReload source code LiveReload getting startedPara utilizar en un proyecto Jekyll, simplemente se agrega en el Gemfile y se instala mediante bundle install. group :jekyll_plugins do # . . . others plugins . . .  gem 'jekyll-livereload'end BrowserSync en Laravel: En webpack. mix. js agregamos lo siguiente, cambiando domain. test por tu URL de desarrollo: mix. js('resources/js/app. js', 'public/js') . sass('resources/sass/app. scss', 'public/css') . browserSync('domain. test');Instalamos dependencias npm run install y la próxima vez que ejecutemos npm run watch nuestro sitio se refrescará automáticamente con BrowserSync. "
+    }, {
+        "id": 39,
+        "url": "https://eresendez.com/setting-up-gitlab-pages",
+        "title": "Configurando Jekyll en GitLab Pages",
+        "body": "2018/08/18 - GitLab Pages es un servicio para crear y alojar websites gratis para tus proyectos, donde es posible utilizar generadores de sitios estáticos, como Jekyll, Middleman, Hexo, Hugo, etc. y conectarlo con un dominio. Para cargar un proyecto Jekyll nuevo o existente con GitLabs Pages vamos a comenzar desde un proyecto Jekyll local:  Instalar Jekyll.  Usar jekyll new para crear un nuevo Proyecto Jekyll.  Agregar el archivo . gitlab-ci. yml a la raíz del proyecto.  Push el repositorio con los cambios a GitLab. GitLab CI: La clave de GitLab Pages es el archivo . gitlab-ci. yml, algo que le otorga un control absoluto sobre el proceso de compilación. Puedes ver la creación del sitio web en vivo siguiendo los rastros del job de CI. En simple forma el archivo . gitlab-ci. yml se ve así: image: ruby:2. 3variables: JEKYLL_ENV: productionpages: script: - bundle install - bundle exec jekyll build -d public artifacts:  paths:  - public only: - masterRecuerda que debes esperar a que el sitio se construya antes de que puedas ver sus cambios. Puedes rastrear la compilación en la pestaña Pipelines. Visita tu sitio!: Abre el navegador y visita https://username. gitlab. io/projectname o https://username. gitlab. io dependiendo si es una página de proyecto o página de usuario. "
+    }, {
+        "id": 40,
+        "url": "https://eresendez.com/laravel-composer-paquetes-favoritos",
+        "title": "Laravel 5.6: Lista de paquetes favoritos",
+        "body": "2018/08/16 - En esta entrada recopilo una lista de mis paquetes favoritos, se estará actualizando constantemente:  Laravel Tinx - Reload your Laravel Tinker session from inside Tinker     Utilizo tinker constantemente, también es útil agregar un alias a php artisan tinx para acceder más rápido. Ejemplo: gedit ~/. bashrc -&gt; alias tinx='php artisan tinx'    Migrations Generator - Generate migrations from an existing database iSeed - Generate a new seed file from an existing database table Laravel DOMPDF - HTML to PDF generator using dompdf Socialite - OAuth authentication with Facebook, Google, Twitter etc. "
+    }, {
+        "id": 41,
+        "url": "https://eresendez.com/laravel-localization-how-to-make-multilanguage-project",
+        "title": "Laravel 5.6: Localization. Cómo hacer un proyecto multilenguaje",
+        "body": "2018/08/15 - Las funciones de localización de Laravel proporcionan una forma conveniente de obtener cadenas de texto en varios idiomas, lo que permite admitir fácilmente varios idiomas dentro de la aplicación. Las cadenas de texto se almacenan en archivos dentro del directorio resources/lang. Dentro de este directorio debe haber un subdirectorio para cada idioma admitido por la aplicación, por ejemplo: /resources  /lang    /en      messages. php    /es      messages. phpEntonces, es necesario traducir cada linea a su idioma correspondiente. &lt;?php// resources/lang/es/messages. phpreturn [  'welcome' =&gt; 'Bienvenido a nuestra aplicación']; Crear un archivo locale. php en la carpeta config Crear un controlador LanguageController y su ruta Añadir select para lenguajes en el front-end Crear un middleware: LocaleMiddlewarePara este ejemplo vamos a crear un archivo locale. php para administrar los idiomas de la aplicación: Crear un archivo locale. php en la carpeta config: # locale. php&lt;?phpreturn [  /*   * Mostrar el seleccionador de lenguajes   *   * @var bool   */  'status' =&gt; true,  /*   * Lenguajes disponibles   *   * Agrega el código de lenguaje al siguiente array   * El código debe tener el mismo nombre que en la carpeta de lenguajes   * Asegurate de que estén en orden alfabetico   *   * El seleccionador de lenguaje no se verá en front si solo hay un lenguaje en el array   *   * @var array   */  'languages' =&gt; [    /*     * Key is the Laravel locale code     * Index 0 del sub-array es el Carbon locale code     * Index 1 del sub-array es el PHP locale code para setlocale()     * Index 2 del sub-array es true o false si usa RTL (right-to-left) css para el lenguaje     */    'en'  =&gt; ['en', 'en_US', false],    'es'  =&gt; ['es', 'es_ES', false],  ],];Crear un controlador LanguageController y su ruta: El siguiente paso es crear un controlador simple que almacene el lenguaje en la sesión: # LanguageController. php/** * @param $lang * * @return \Illuminate\Http\RedirectResponse */public function swap($lang){  // Almacenar el lenguaje en la session  session()-&gt;put('locale', $lang);  return redirect()-&gt;back();}Su respectiva ruta: # web. php// Switch entre los lenguajes incluidosRoute::get('lang/{lang}', 'LanguageController@swap')-&gt;name('lang. swap');Añadir select para lenguajes en el front-end: Con lo anterior, ahora es posible agregar un elemento en el front-end para poder seleccionar un lenguaje. &lt;!-- Languages --&gt;@if (config('locale. status') &amp;&amp; count(config('locale. languages')) &gt; 1)&lt;li class= dropdown &gt;  &lt;a href= javascript:void(0);  class= dropdown-toggle  data-toggle= dropdown  role= button &gt;    &lt;i class= material-icons &gt;language&lt;/i&gt;  &lt;/a&gt;  &lt;ul class= dropdown-menu &gt;    &lt;li class= header &gt;LENGUAJES&lt;/li&gt;      &lt;li class= body &gt;        &lt;ul class= menu tasks &gt;          @foreach (array_keys(config('locale. languages')) as $lang)            @if ($lang != App::getLocale())            &lt;li&gt;              &lt;a href= {!! route('lang. swap', $lang) !!} &gt;                &lt;h4&gt;                  {!! $lang !!}                  &lt;small&gt;{!! $lang !!}&lt;/small&gt;                &lt;/h4&gt;              &lt;/a&gt;            &lt;/li&gt;            @endif          @endforeach        &lt;/ul&gt;      &lt;/li&gt;    &lt;/li&gt;  &lt;/ul&gt;&lt;/li&gt;@endifDesde el front ahora es posible seleccionar lenguajes, al dar clic el key se guardará en la sesión, si verificas los datos de tu sesión mediante session()-&gt;all() obtendrías el siguiente resultado: _token :  eCvbkzkkL9JfyqlVIRPOtdW7FwYsWp9uXlsK2PJE _previousurl	 http://localhost:8000/sesion _flashold	[]new	[]locale	 es Crear un middleware: LocaleMiddleware: Este middleware se va a encargar de actualizar la variable 'locale' =&gt; 'es' que se encuentra en el archivo app. php en tiempo de ejecución, con el dato locale almacenado en la sesión, en cada petición que realice la aplicación. &lt;?phpnamespace App\Http\Middleware;use Closure;use Carbon\Carbon;/** * Class LocaleMiddleware. */class LocaleMiddleware{  /**   * Handle an incoming request.   *   * @param \Illuminate\Http\Request $request   * @param \Closure         $next   *   * @return mixed   */  public function handle($request, Closure $next)  {    /*     * Locale esta activado     */    if (config('locale. status')) {      if (session()-&gt;has('locale') &amp;&amp;        in_array(session()-&gt;get('locale'), array_keys(config('locale. languages')))) {        /*         * Establece el locale de Laravel         */        app()-&gt;setLocale(session()-&gt;get('locale'));        /*         * setLocale para php. Activa -&gt;formatLocalized() con valores localized para fecha         */        setlocale(LC_TIME, config('locale. languages')[session()-&gt;get('locale')][1]);        /*         * setLocale para usar locales de Carbon. Activa el diffForHumans() localized         */        Carbon::setLocale(config('locale. languages')[session()-&gt;get('locale')][0]);        /*         * Establece la variable de sesión si tiene soporte RTL         */        if (config('locale. languages')[session()-&gt;get('locale')][2]) {          session(['lang-rtl' =&gt; true]);        } else {          session()-&gt;forget('lang-rtl');        }      }    }    return $next($request);  }}Lo agregamos al grupo web en kernel. php protected $middlewareGroups = [ 'web' =&gt; [   // . . . otros middleware  \App\Http\Middleware\LocaleMiddleware::class, ],De esta manera, ya se encuentra todo terminado, finalmente es necesario utilizar el helper trans() en las vistas, para obtener los strings del idioma que esta seleccionado. &lt;!-- En lugar de --&gt;&lt;h4&gt; Lenguaje &lt;/h4&gt;&lt;!-- a Language con trans() --&gt;&lt;h4&gt; {!! trans('front. menus. language') !!} &lt;/h4&gt; &lt;!-- Language --&gt;Esto accederá al archivo /resources/lang/{lang}/front. php de la carpeta es o en y obtendrá el valor del key language. # /resources/lang/en/front. phpreturn [  // menus  'menus' =&gt; [    'language' =&gt; 'Language',  ]  // other translations. . . ];"
+    }, {
+        "id": 42,
+        "url": "https://eresendez.com/laravel-send-mail-notification-using-mailtrap",
+        "title": "Laravel 5.6: Enviar notificaciones por correo con Mailtrap.io",
+        "body": "2018/08/14 - Mailtrap es una solución que permite probar notificaciones por correo electrónico sin enviarlas a los usuarios reales de la aplicación. También permite ver todos sus correos electrónicos en línea, reenviarlos a su buzón habitual, compartirlos con el equipo y más. Ver cómo funciona. Con el conocimiento de que es y como funciona Mailtrap, al ingresar a nuestra cuenta, guardamos las credenciales SMTP para añadirlas en el archivo . env. MAIL_DRIVER=smtpMAIL_HOST= smtp. mailtrap. ioMAIL_PORT=2525MAIL_USERNAME=smtp. mailtrap. usernameMAIL_PASSWORD=smtp. mailtrap. passwordMAIL_ENCRYPTION=nullCon los recursos que proporciona Laravel sobre Notificaciones, crearemos una nueva notificación; el siguiente comando artisan, creará una nueva clase en el carpeta Notifications. php artisan make:notification SimpleNotificationRecordar que se tiene que agregar el trait Notifiable al modelo User. php &lt;?phpnamespace App;use Illuminate\Notifications\Notifiable;use Illuminate\Foundation\Auth\User as Authenticatable;class User extends Authenticatable{  use Notifiable;}Después vamos a utilizar el método notify, el cual espera una instancia de la notificación creada anteriormente.  notify se encuentra implementada en el trait Notifiable -&gt; RoutesNotifications del modelo User.  User::someUser()-&gt;first()-&gt;notify(new SimpleNotification); Con la ejecución del código anterior, las notificaciones ya deben de llegar a la bandeja de entrada en Mailtrap. Si se requiere personalizar el contenido de la notificación, pasamos un arreglo de la siguiente forma: $request-&gt;user()-&gt;notify(new SimpleNotification([ 'subject' =&gt; 'Asunto: Notificación simple', 'action' =&gt; route('user. edit', $id), 'gretting' =&gt; 'Gracias por usar nuestra aplicación!',]));Y en la clase SimpleNotification, modificar:   protected $data;  /**   * Create a new notification instance.   *   * @return void   */  public function __construct($data)  {    $this-&gt;data = $data;  }  /**   * Get the mail representation of the notification.   *   * @param mixed $notifiable   * @return \Illuminate\Notifications\Messages\MailMessage   */  public function toMail($notifiable)  {    return (new MailMessage)          -&gt;line($this-&gt;data['subject'])          -&gt;action('Más información', $this-&gt;data['url'])          -&gt;line($this-&gt;data['gretting']);  }Finalmente, cualquier otro texto debe ser modificado directamente en la vista. Dado que Mailtrap es concebido para ser utilizado en un ambiente de desarrollo y si tienes una aplicación que envía muchos correos, Mailtrap tiene una restricción que solamente es posible enviar 2 emails por segundo. Entonces, si esperas más de 5 correos electrónicos y no tienes la opción de cambiar Mailtrap, intenta: foreach ($emails as $email) {   . . .   Mail::send(. . . $email);   if (env('MAIL_HOST', false) == 'smtp. mailtrap. io') {     sleep(1); // o usleep (500000) para medio segundo   }}El código anterior solo debe ejecutarse en un entorno de prueba. "
+    }, {
+        "id": 43,
+        "url": "https://eresendez.com/laravel-social-authentication-socialite",
+        "title": "Laravel 5.6: Autenticación social con Laravel Socialite",
+        "body": "2018/08/10 - Con una nueva instalación de Laravel y despues de ejecutar php artisan make:auth para generar el sistema de autenticación básico de Laravel, ahora vamos configurar una autenticación Social OAuth. Contenido:  Configuración Rutas MigracionesPrimero instalar el paquete laravel/socialite usando Composer: composer require laravel/socialiteLaravel Socialite es una manera simple y conveniente de autenticarse con proveedores OAuth. Actualmente soporta autenticación con Facebook, Twitter, LinkedIn, Google, Github y Bitbucket. Para este ejemplo, se va a utilizar Google para iniciar sesión.  Puedes ver más proveedores en Socialite Providers Configuración: Antes de utilizar Socialite, se debe agregar credenciales para los servicios OAuth de la aplicación. Las credenciales deben colocarse en el archivo de configuración config/services. php, y deben usar la clave facebook, twitter, linkedin, google, github o bitbucket, según los proveedores que requiera la aplicación. Por ejemplo: 'google' =&gt; [  'client_id' =&gt; env('GOOGLE_ID'), // Your Google Client ID  'client_secret' =&gt; env('GOOGLE_SECRET'), // Your Google Client Secret  'redirect' =&gt; env('GOOGLE_REDIRECT'), // Google Redirect if Success],de igual manera en el archivo . env. GOOGLE_ID=YOUR_APP_IDGOOGLE_SECRET=YOUR_APP_SECRETGOOGLE_REDIRECT=http://localhost:8000/login/google/callbackPara obtener las credenciales:  Ir a https://console. developers. google. com Pestaña de credenciales Crear una credencial “ID de cliente OAuth”. Finalmente, es necesario activar Google+ API en https://console. developers. google. com, en la pestaña de Biblioteca.  Rutas: Ahora ya es posible autenticar usuarios! Se necesitan dos rutas: una para redireccionar al usuario al proveedor OAuth y otra para recibir la devolución de llamada del proveedor después de la autenticación. // web. phpRoute::get('login/{provider}', 'Auth\LoginController@redirectToProvider')-&gt;name('login. socialite');Route::get('login/{provider}/callback', 'Auth\LoginController@handleProviderCallback')-&gt;name('login. callback');Migraciones: También necesitamos ejecutar las migraciones para crear la tabla de usuarios, pero antes de eso debemos modificarla para almacenar el token de OAuth. Para ello, vamos a editar las migración CreateUsersTable en database/migrations, quedaría así: public function up(){  Schema::create('users', function (Blueprint $table) {    $table-&gt;increments('id');    $table-&gt;string('name');    $table-&gt;string('email')-&gt;unique();    $table-&gt;string('password')-&gt;nullable(); // Cambiar a nullable    $table-&gt;string('token'); // OAuth Token    $table-&gt;rememberToken();    $table-&gt;timestamps();  });}Recuerda agregar el atributo token al arreglo $fillable en el modelo User para evitar la excepción de asignación de Eloquent. protected $fillable = [  'name', 'email', 'password', 'token',];Solo falta añadir a la vista login. blade. php un simple botón para iniciar sesión con Google. &lt;a class= btn btn-block btn-social btn-google  href= {!! route('login. socialite', ['provider' =&gt; 'google']) !!} &gt; &lt;i class= fa fa-google-plus &gt;&lt;/i&gt; Iniciar sesión G Suite&lt;/a&gt;Y agregar las funciones al LoginController. php /** * Redirect the user to the GitHub authentication page. * * @return \Illuminate\Http\Response */public function redirectToProvider($provider){  return Socialite::driver($provider)-&gt;redirect();}/** * Obtain the user information from GitHub. * * @return \Illuminate\Http\Response */public function handleProviderCallback($provider){  $user = Socialite::driver($provider)-&gt;user();  $user = User::updateOrCreate([      'email' =&gt; $user-&gt;email    ],[      'token' =&gt; $user-&gt;token,      'name' =&gt; $user-&gt;name    ]);  auth()-&gt;login($user, true);  return redirect()-&gt;to($this-&gt;redirectPath());}La función de redirect() se encarga de enviar al usuario al proveedor OAuth, mientras que el método user() leerá la solicitud entrante y recuperará la información del usuario del proveedor. En el método handleProviderCallback($provider) se crea o se actualiza un nuevo usuario cuando sea redireccionado después de una autenticación exitosa desde la página OAuth. ¡Es todo! "
+    }, {
+        "id": 44,
+        "url": "https://eresendez.com/laravel-has-many-sync-method",
+        "title": "Laravel 5.6: función Sync para una relación Has Many",
+        "body": "2018/08/08 - Laravel tiene un método de sincronización para crear asociaciones con una relación de muchos a muchos. El método de sincronización acepta un arreglo de IDs para colocarlos en la tabla intermedia. Cualquier ID que no esté en el arreglo se eliminará de la tabla intermedia. Entonces, después de completar la operación anterior, solo los IDs del arreglo existirán en la tabla intermedia. Esto es excelente y si conocemos bien las relaciones de Eloquent, se esperaría tener una funcionalidad similar para una relación hasMany. Amith Gotamey comparte un método simple para hacerlo utilizando simplemente Collection. Para ilustrar esto, supongamos que tenemos un modelo User con una relación HasMany Contacts. /** * User Has Many Contacts * * @return hasMany */public function contacts(){  return $this-&gt;hasMany(Contact::class);}Ahora veamos cómo se vería el método de sincronización. /** * Sync contacts * * @param array $contacts */public function syncContacts(array $contact_items){  $children = $this-&gt;contacts;  $contact_items = collect($contact_items);  $deleted_ids = $children-&gt;filter(function ($child) use ($contact_items) {    return empty($contact_items-&gt;where('id', $child-&gt;id)-&gt;first());  })-&gt;map(function ($child) {    $id = $child-&gt;id;    $child-&gt;delete();    return $id;  });  /**   * Añadí esta sección por si es necesario actualizar   * los contactos que ya se encuentran relacionados.   */  $updates = $contact_items-&gt;filter(function ($contact) {    return isset($contact['id']);  })-&gt;map(function ($contact) {    $this-&gt;contacts-&gt;map(function ($c) use ($contact) {      $c-&gt;updateOrCreate([        'id' =&gt; $contact['id']      ],[        'type' =&gt; $contact['type'],        'value' =&gt; $contact['value'],      ]);    });  });  $attachments = $contact_items-&gt;filter(function ($contact) {    return ! isset($contact['id']);  })-&gt;map(function ($contact) use ($deleted_ids) {    $contact['id'] = $deleted_ids-&gt;pop();    return $contact;  })-&gt;toArray();  $this-&gt;contacts()-&gt;createMany($attachments);}Hope this helps! "
+    }, {
+        "id": 45,
+        "url": "https://eresendez.com/woocommerce-products-api-introduction",
+        "title": "Introducción - API de productos de WooCommerce v2",
+        "body": "2018/08/03 - Debido a que WooCommerce es un plugin, utiliza varias tablas de WordPress. WooCommerce almacena la información de los productos, cupones y pedidos en la tabla posts, también agrega su propias tablas: descripción de la base de datos.  Crear un producto Obtener un producto Actualizar un producto Batch update productsEn la documentación oficial se puede obtener la lista con información de las propiedades de productos que devuelve la API, tales como:  name slug permalink status description sku price, regular_price, sale_price, price_html total_sales, downloads (para productos digitales) stock_quantity, in_stock (bool flag) variations Si utilizas Laravel te recomiendo el siguiente paquete pixelpeter/laravel5-woocommerce-api-client es un wrapper de la API de WooCommerce. Crear un producto: La API nos ayuda a crear nuevos productos, mediante el siguiente endpoint: POST /wp-json/wc/v2/products Para almacenar un simple producto, es necesario recrear la siguiente estructura. &lt;?php$data = [  'name' =&gt; 'Premium Quality',  'type' =&gt; 'simple',  'regular_price' =&gt; '21. 99',  'description' =&gt; 'Pellentesque habitant morbi. ',  'short_description' =&gt; 'Pellentesque habitant. ',  'categories' =&gt; [    [      'id' =&gt; 9    ],    [      'id' =&gt; 14    ]  ],  'images' =&gt; [    [      'src' =&gt; 'http://demo. woothemes. com/56/2013/06/T_2_front. jpg',      'position' =&gt; 0    ],    [      'src' =&gt; 'http://demo. woothemes. com/56/2013/06/T_2_back. jpg',      'position' =&gt; 1    ]  ]];Como se observa en el ejemplo anterior, la propiedad regular_price debe ser un string. Si se omite el atributo position =&gt; 0 entonces el producto no tendrá una imagen de producto “destacada”, sino que esta imagen formará parte de una galería. También, a un producto se le puede asignar varias categorías y para crear nuestras primeras categorías se realiza mediante el siguiente webservice: POST /wp-json/wc/v2/products/categories &lt;?php$data = [  'name' =&gt; 'Clothing',  'image' =&gt; [    'src' =&gt; 'http://demo. woothemes. com/56/2013/06/T_2_front. jpg',  ]];Obtener un producto: El siguiente endpoint nos ayuda a obtener toda la lista de productos. GET /wp-json/wc/v2/products Opcionalmente, se le puede pasar una variedad de parametros como:  page per_page (máximo número de items en el resultado. Por default es 10) search (filtar por un término de búsqueda) sku in_stockActualizar un producto: Para actualizar un producto, es necesario conocer su {id} y hacer una petición PUT . PUT /wp-json/wc/v2/products/&lt;id&gt; &lt;?php$data = [ 'regular_price' =&gt; '24. 54'];$woocommerce-&gt;put('products/794', $data);Batch update products: Esto ayuda a crear, actualizar y eliminar varios productos por lotes. POST /wp-json/wc/v2/products/batch &lt;?php$data = [  'create' =&gt; [    [      'name' =&gt; 'Woo Single #1',      'type' =&gt; 'simple',      'regular_price' =&gt; '21. 99',      'virtual' =&gt; true,      'downloadable' =&gt; true,      'downloads' =&gt; [        [          'name' =&gt; 'Woo Single',          'file' =&gt; 'http://demo. woothemes. com/56/2013/06/cd_4_angle. jpg'        ]      ],      'categories' =&gt; [        [          'id' =&gt; 11        ],        [          'id' =&gt; 13        ]      ],      'images' =&gt; [        [          'src' =&gt; 'http://demo. woothemes. com/56/2013/06/cd_4_angle. jpg',          'position' =&gt; 0        ]      ]    ],    [      'name' =&gt; 'New Premium Quality',      'type' =&gt; 'simple',      'regular_price' =&gt; '21. 99',      'description' =&gt; 'Pellentesque habitant morbi tristique senectus et netus',      'short_description' =&gt; 'Pellentesque habitant morbi tristique senectus et',      'categories' =&gt; [        [          'id' =&gt; 9        ],        [          'id' =&gt; 14        ]      ],      'images' =&gt; [        [          'src' =&gt; 'http://demo. woothemes. com/56/2013/06/T_2_front. jpg',          'position' =&gt; 0        ],        [          'src' =&gt; 'http://demo. woothemes. com/56/2013/06/T_2_back. jpg',          'position' =&gt; 1        ]      ]    ]  ],  'update' =&gt; [    [      'id' =&gt; 799,      'default_attributes' =&gt; [        [          'id' =&gt; 6,          'name' =&gt; 'Color,          'option' =&gt; 'Green'        ],        [          'id' =&gt; 0,          'name' =&gt; 'Size',          'option' =&gt; 'M'        ]      ]    ]  ],  'delete' =&gt; [    794  ]];Lo interesante de la estructura, es que se tiene que especificar la acción a realizar mediante los keys create, update, delete, y dentro de cada clave, enviar un arreglo multidimensional con las propiedades a modificar. Con esta introducción a la API, es posible realizar las acciones más sencillas de creación de productos. "
+    }, {
+        "id": 46,
+        "url": "https://eresendez.com/collection-of-useful-gitignore-templates",
+        "title": "Una colección útil de archivos .gitignore",
+        "body": "2018/08/02 - El siguiente repositorio de GitHub contiene una colección útil de plantillas . gitignore. De hecho, es la colección de plantillas que se utiliza al crear nuevos repositorios. Para obtener más información sobre cómo funcionan los archivos . gitignore y cómo usarlos, los siguientes recursos son un excelente lugar para comenzar:  The Ignoring Files chapter of the Pro Git book.  The Ignoring Files article on the GitHub Help site.  The gitignore(5) manual page. Estructura de la carpeta: Los archivos en el directorio raíz son para plantillas . gitignore que son específicas del proyecto, como plantillas específicas de algún lenguaje o framework. En el directorio Global, se encuentrar las plantillas globales (específicas del sistema operativo o del editor). Vale la pena echar un vistazo y conocer que existen plantillas para:  Travis Actionscript Android AppEngine C CUDA CakePHP Clojure CodeIgniter CraftCMS Drupal Eagle Elisp Elixir Erlang FuelPHP GitBook Go Haskell Java Jekyll Joomla Kotlin Laravel Magento Maven Mercury Node Objective OpenCart Perl Prestashop Python Rails Ruby Scala Unity WordPress Yii ZendFramework"
+    }, {
+        "id": 47,
+        "url": "https://eresendez.com/basic-request-woocommerce-rest-api",
+        "title": "¿Cómo hacer una request básica con la REST API de WooCommerce?",
+        "body": "2018/08/01 - De acuerdo a la documentación de la REST API de WooCommerce, prácticamente lo que se necesita para empezar es lo siguiente:  WooCommerce 2. 6+.  WordPress 4. 4+ (memory limit de 128 MB o más).  PHP versión 7/superior y MySQL 5. 6/superior o MariaDB 10. 0/superior PHP 5. 2. 4+ y MySQL 5. 0+ llegaron a su fin y ya no se mantienen y, como tales, pueden exponer el sitio a vulnerabilidades de seguridad.  Soporte HTTP o HTTPS.  Activar los permalinks en WordPress: Settings &gt; Permalinks. Con los permalinks de default no funcionará.  Activar la opción REST API en WooCommerce &gt; Settings &gt; Advanced &gt; Legacy API.  Generar API Keys en WooCommerce &gt; Settings &gt; Advanced &gt; REST API.  Elegir el scope para cada llave (lectura y/o escritura) y asignar a un usuario. Listo, con estas Keys (Consumer Key y Consumer Secret) es posible realizar la siguiente prueba. Testing API - Una request básica: En un ambiente local tengo un solo producto. La API de productos permite crear, ver, actualizar y eliminar productos individuales o por lotes.  HTTP Request GET: Listar todos los productos /wp-json/wc/v2/productsPara esta prueba se utilizó Postman, pero antes es necesario configurar la pestaña de Authorization.  Elegir basic auth Agregar nuestro consumer key y secret key en los campos de username y password. Una vez hecho lo anterior, ya es posible hacer la petición y ver que se obtiene un estado HTTP 200 OK (successful). Y finalmente, se realizó una pequeña prueba con la API de WooCommerce. [  {     id : 19,     name :  Producto de prueba ,     slug :  producto-de-prueba ,     permalink :  http://woocommerce. local/product/producto-de-prueba/ ,     date_created :  2018-08-03T17:00:43 ,     date_created_gmt :  2018-08-03T17:00:43 ,     date_modified :  2018-08-03T17:00:43 ,     date_modified_gmt :  2018-08-03T17:00:43 ,     type :  simple ,     status :  publish ,     featured : false,     catalog_visibility :  visible ,     description :  &lt;p&gt;Testing API&lt;/p&gt;\n ,    . . .   }]Recursos de utilidad:  La API facilita un Index con información de todos los endpoints, no necesita autenticación para acceder: /wp-json/wc/v2 Guía paso a paso. Test if the API is working.  Documentación para desarrolladores.  Tutorial Setting Up Basic Auth. Librerías y herramientas:  PHP Library Node. js Library Python Library Ruby Library PostmanSi utilizas Laravel, te recomiendo el paquete pixelpeter/laravel5-woocommerce-api-client que puede ser instalado vía composer. Es un wrapper para la API y con los datos obtenidos anteriormente se agregan al archivo . env. WOOCOMMERCE_STORE_URL=http://example. orgWOOCOMMERCE_CONSUMER_KEY=ck_your-consumer-keyWOOCOMMERCE_CONSUMER_SECRET=cs_your-consumer-secretWOOCOMMERCE_VERIFY_SSL=falseWOOCOMMERCE_VERSION=v2WOOCOMMERCE_WP_API=trueWOOCOMMERCE_WP_QUERY_STRING_AUTH=falseWOOCOMMERCE_WP_TIMEOUT=15Por ejemplo, para ver el Index con la información de todos los endpoints disponibles: use Woocommerce;return Woocommerce::get('');Es todo. "
+    }, {
+        "id": 48,
+        "url": "https://eresendez.com/how-do-i-learn-sql-resources",
+        "title": "Recursos para aprender SQL",
+        "body": "2018/07/30 - La mejor manera de aprender cualquier lenguaje, incluido SQL, es utilizarlo en proyectos de la vida real o en algo que nos interese, esto ayuda a analizar mejor los conceptos. Recursos::  SQL Course For Beginners: Learn SQL Using MySQL Database Learn SQL - Best SQL Tutorials ~ Hackr. io 18+ best online resources for learning SQL and database concepts 20+ SQL Tutorial/Guides: Learn SQL Online - A Guide SQL for Beginners. Learn basics of SQL in 1 HourCursos y tutoriales::  SQL Tutorial by Fresh2Refresh Learn SQL at Codecademy developed by Periscope Data SQL Test Learn Basics of SQL in 1 Hour.  Chartio’s Data Boot Camp Hands-on SQL for Beginners (Select, From, &amp; Where) 10 Queries SQL Course - studybyyourself Try SQL – free online course at Code School Vertabelo Academy – free online interactive SQL courses SQL Teaching Learn SQL: SQL: Learn with Expert Online Training Online Experts: 1:1 SQL Help from Proven Experts Learn SQL by Calculating Customer Lifetime Value Part 1: Setup, Counting and Filtering and Part 2 SQL Exercises SQLRU SQLZOO The Schemaverse GalaXQL New course: Learn SQL interactively on Khan Academy SQLTeachers. com Mode’s SQL Tutorial - free, interactive, geared toward analysis Learn Database Design with MySQL From Scratch"
+    }, {
+        "id": 49,
+        "url": "https://eresendez.com/coderwall-mixed-content-issue-laravel",
+        "title": "Coderwall Tip: Mixed content issue - Content must be served as HTTPS in Laravel",
+        "body": "2018/07/29 - Quiero recordar lo siguiente:  Cuando se pasa de http a https, generalmente se experimenta el problema: Mixed content issue - Content must be served as HTTPS. Entonces, primero modificar APP_URL en el archivo . env, con ésto, si utilizamos el helper assets ya no debe dar ningún problema con las URLs. APP_URL=https://mydomain. comFinalmente, agregar lo siguiente al inicio de api. php o web. php: if (App::environment('production')) {  URL::forceScheme('https');}"
+    }, {
+        "id": 50,
+        "url": "https://eresendez.com/deploying-jekyll-with-travisci",
+        "title": "Hacer deploy de Jekyll a GH Pages con plugins y TravisCI",
+        "body": "2018/07/28 - Después de probar muchas soluciones inefectivas para hacer deploy del sitio en GH-Pages, por la cuestión que Jekyll en GitHub corre en safe-mode y no es posible instalar plugins por razones de seguridad, llegué al siguiente post de Josh Frankel para hacer deploy utilizando TravisCI. Para no re-escribir el post, lo más importante es lo siguiente: Configuración de ramas en Github: Lo primero es crear una nueva rama de master llamada source. (El nombre no es importante, pero elegir algo que recordarás). Una vez creada la rama source, ya no será necesario usar la rama master para este repositorio. Ahora source se convertirá en el lugar donde se escriben los post del blog (todo el proyecto en sí), mientras que en master reside el sitio estático que carga Github Pages, master solo incluirá el directorio _site. Se recomienda cambiar la rama predeterminada del repositorio a source y opcionalmente, proteger la rama para evitar que se elimine o se sobrescriba accidentalmente. Token de acceso personal de Github: Ahora, es necesario darle a TravisCI algo para autenticarnos y que pueda realizar git push por nosotros. Para hacer esto, creemos un token de acceso personal. Esto se genera en GitHub Personal Token, otorgándole sólamente permisos de repo. Asegúrate de copiar el nuevo token en el portapapeles porque después no será posible volver a visualizarlo. Configuración en Jekyll: Necesitamos configurar algunas cosas para que nuestro sitio Jekyll funcione adecuadamente con TravisCI. Primero agrega lo siguiente al Gemfile. source  https://rubygems. org ruby RUBY_VERSION# Necesitaremos rake para construir el sitio en TravisCIgem  rake ,  ~&gt; 12 gem  jekyll # Ejemplo Opcional: Agregar los plugins dentro del grupo jekyll_pluginsgroup :jekyll_plugins do gem  jekyll-feed  gem  jekyll-sitemap  gem  jekyll-paginate-v2  gem  jekyll-seo-tag  gem  jekyll-compose ,  ~&gt; 0. 5  gem  jekyll-redirect-from endAdemás, vamos excluir ciertos archivos y directorios para que no terminen en la rama master una vez que TravisCI construya de la rama source. Usando el ejemplo anterior, el _config. yml podría verse así: # otras configuraciones# . . . # Los plugins del grupo jekyll_plugin del archivo Gemfileplugins: - jekyll-feed - jekyll-sitemap - jekyll-paginate-v2 - jekyll-seo-tag - jekyll-compose - jekyll-redirect-from# Exclude los siguientes archivos del proceso de construcción. exclude: - vendor - Gemfile - Gemfile. lock - LICENSE - README. md - RakefilePor último, y lo más importante, necesitamos un archivo . travis. yml para que TravisCI sepa que queremos que se ejecute. language: rubyrvm:- 2. 3. 1install:- bundle installdeploy: provider: pages skip_cleanup: true github_token: $GITHUB_TOKEN local_dir: _site target_branch: master on:  branch: sourceDe lo anterior: github_token: $GITHUB_TOKEN : Nuestro token de acceso personal. Esta es actualmente una referencia a una variable de entorno que se agregará en la sección de configuración de TravisCI a continuación. Todo esto básicamente dice: “Usando la rama source de este repositorio, inserte todos los archivos encontrados dentro del directorio _site en la rama master del repositorio”. Esto solo funciona al usar el siguiente Rakefile para construir manualmente el sitio. # filename: Rakefiletask :default do puts  Running CI tasks. . .   # Ejecuta el comando jekyll build para producción # TravisCI ahora tendrá un directorio con nuestros # archivos estáticos generados.  sh( JEKYLL_ENV=production bundle exec jekyll build ) puts  Jekyll successfully built endEl Rakefile de arriba se ejecuta en cada compilación. Es posible agregar otras comprobaciones que se requerirán que estas pasen sin fallas antes de que TravisCI terminé la construcción. Configuración en TravisCI: Ahora que tenemos nuestra configuración del sitio, se debe conectarla a TravisCI. Para ello, se ingresa a TravisCI iniciando sesión con su cuenta github. Esto le dará una lista de todos sus repositorios. Selecciona el repositorio que debe estar en el formato de username. github. io y habilítalo. Finalmente, en la página de configuración de TravisCI se crea una nueva variable de entorno llamada GITHUB_TOKEN. ¡Eso es todo! "
+    }, {
+        "id": 51,
+        "url": "https://eresendez.com/using-algolia-in-jekyll",
+        "title": "¿Cómo usar Algolia en Jekyll?",
+        "body": "2018/07/27 - Algolia es un servicio que hace que la búsqueda avanzada sea muy sencilla. Está bien documentado y es rapidísimo. Puedes ver algunos ejemplos impresionantes en su sitio. Para usar Algolia en Jekyll, se utilizará el plugin jekyll-algolia que permite enviar contenidos a nuestro index. Requerimientos:  Jekyll &gt;= 3. 6. 0 Ruby &gt;= 2. 3. 0 BundlerInstalación: Agregar jekyll-algolia en el archivo Gemfile source 'https://rubygems. org'gem 'jekyll', '~&gt; 3. 6'group :jekyll_plugins do gem 'jekyll-algolia'endEjecutar bundle install para actualizar las dependencias. Configuración: Ahora es necesario proporcionar las credenciales de Algolia para empezar a indexar el sitio. Si aún no tienes una cuenta de Algolia, puedes abrir un Community plan gratuito aquí. Una vez iniciado sesión, puedes obtener las credenciales en el dashboard. Con las credenciales, se debe definir el application_id e index_name dentro del archivo _config. yml como este: # _config. ymlalgolia: application_id: your_application_id index_name:   jekyll # You can replace that with whatever name you wantUso: Con las credenciales establecidas, ahora se puede actualizar el index mediante el siguiente comando: ALGOLIA_API_KEY='your_admin_api_key' bundle exec jekyll algoliaALGOLIA_API_KEY es una clave de administrador. Tiene acceso de escritura al index, por lo que es posible enviar nuevos datos. Por este motivo se establece en línea de comando y no en el archivo _config. yml, se debe mantener en secreto y no cargarla al sistema de control de versiones. El plugin solo se encarga de extraer los datos y llevarlos a un índice en Algolia. Ahora, sólamente es necesario crear el front-end que permita a los usuarios buscar esos datos. Más información:  Algolia for JekyllIssues: Si por alguna razón tu sitio Jekyll utiliza el plugin desactualizado jekyll-paginate tendrás el siguiente error: jekyll 3. 6. 2 | Error: Infinity, este problema se trata en el siguiente Issue en GitHub y prácticamente lo que se tiene que hacer es cambiar al plugin a jekyll-paginatev2  FloatDomainError: Infinity when trying to build an index"
+    }, {
+        "id": 52,
+        "url": "https://eresendez.com/project-laravel-mini-crm",
+        "title": "Mini-CRM con Laravel 5.6 y AdminBSB",
+        "body": "2018/07/23 - Objetivo: Construir un mini CRM utilizando Laravel 5. 6 y AdminBSB.  Proyecto en GitHub: Laravel MiniCRM Estado del proyecto: En progresoHerramientas usadas:  Laravel 5. 6 Laravel Mix AdminBSB: admin panel libre hecho con Bootstrap 3. x y Material Design.  Tabla de contenidos    Acerca del proyecto  Instalación  Instalación de AdminBSB en otro proyecto con Laravel Mix Acerca del proyecto: El proyecto contiene las siguientes caracteristicas:  [x] Autenticación básica de Laravel, posibilidad de iniciar sesión como administrador o usuario, se removio la habilidad para registrarse.  [x] Uso de migraciones para crear el esquema de la base de datos.  [x] Uso de seeders para crear primer usuario con email “admin@admin. com” y contraseña “password”.  [x] Tabla de Employees con campos: First name (required), last name (required), Company (foreign key a Companies), email, phone.  [x] Tabla Companies contiene campos: Name (required), email, logo (min 100×100) y website.  [x] Funcionalidad CRUD para Companies y Employees.  [x] Los logos de las empresas se almacenan en la carpeta storage/app/public y son accesibles desde public.  [x] Uso de validaciones personalizadas de Laravel con clases Request.  [x] Uso de paginación de Laravel para mostrar 10 recursos por página. Uso de la librería Datatables. net.  [x] Uso del tema front-end AdminBSB.  [x] Notificación por correo electrónico, usando Mailtrap. io.  [x] El proyecto es multi-lenguaje (en inglés y español, usando resources/lang).  [ ] Pruebas básicas con PHPUnit. Instalación:  Clona el repo git clone https://github. com/eleazarbr/laraveldaily-minicrm Crea una base de datos MySQL para el proyecto     mysql -u root -p,   create database minicrm;   \q    Desde el directorio raíz ejecuta cp . env. example . env Configura tu archivo . env Ejecuta composer install desde el directorio raíz Desde el directorio raíz ejecuta php artisan key:generate Desde el directorio raíz ejecuta php artisan migrate Desde el directorio raíz ejecuta php artisan make:auth Desde el directorio raíz ejecuta composer dump-autoload Desde el directorio raíz ejecuta php artisan db:seed Configura un virtual host o ejecuta php artisan serveInstalación de AdminBSB en otro proyecto con Laravel Mix: "
+    }, {
+        "id": 53,
+        "url": "https://eresendez.com/recopilacion-util-comandos-git",
+        "title": "Una recopilación de comandos git que me han ayudado",
+        "body": "2018/07/22 - En esta entrada voy a recopilar algunas caracteristicas de git que me han ayudado. Cómo eliminar últimos commits y volver a hacer push:  Cuando el último commit no es el primer commit: Para remover el último commit, podemos hacer simplemente git reset --soft HEAD^. Si vamos a remover multiples commits del top, entonces git reset --soft HEAD~2 para remover los últimos dos commits. Podemos incrementar el número para eliminar más commits.  Cuando el último commit es el primer commit: Ejecuta git update-ref -d HEAD. Finalmente, forzamos push usando git push origin +branchName. Cómo recuperar algo eliminado accidentalmente: Imagina que algo raro pasó y archivos fueron eliminados, es posible regresar en el tiempo donde las cosas funcionaban correctamente. git reflog# verás una lista de lo que has hecho en git, en todas tus ramas# cada cual tiene un index HEAD@{index}# encuentra el index antes de que todo se rompieragit reset HEAD@{index}# magic time machineBasics: Crear una nueva rama y saltar a ella: git checkout -b branchname// Lo anterior es un atajo a:git branch branchnamegit checkout branchnameEliminar una rama local: Mostrar las ramas locales y remotas git branch -a, mientras que con git branch -r se muestran únicamente las ramas remotas. git branch -d branchnameEliminar una rama remota: git push origin --delete branchnameEliminar todas las ramas de origin que ya no existan git remote prune originRenombrar una rama local y remota:  Si nos encontramos en la rama que queremos renombrar: git branch -m new-name Si estamos en una rama diferente: git branch -m old-name new-name Hacer los cambios en la rama remota: git push origin :old-name new-name Reset el upstream branch para la nueva rama local: git push origin -u new-name"
+    }, {
+        "id": 54,
+        "url": "https://eresendez.com/coderwall-gitignore-is-not-working",
+        "title": "Coderwall Tip: .gitignore is not working",
+        "body": "2018/07/21 - Algunas veces quiero ignorar un archivo, lo agrego a . gitignore y el archivo no desaparece de mi lista de cambios. Lo siguiente es un tip que quiero recordar porque siempre termino entrando a StackOverflow para leer la respuesta a esta pregunta.  Even if you haven’t tracked the files so far, git seems to be able to “know” about them even after you add them to . gitignore.  NOTE : First commit your current changes, or you will lose them. Then run the following commands from the top folder of your git repo: git rm -r --cached . git add . git commit -m  fixed untracked files "
+    }, {
+        "id": 55,
+        "url": "https://eresendez.com/what-are-some-tips-to-make-working-remotely-the-most-effective",
+        "title": "¿Cuáles son algunos consejos para que trabajar de forma remota sea lo más efectivo?",
+        "body": "2018/07/19 - Investigando cómo se desenvuelven los trabajadores remotos de compañías como Buffer, Automattic, GitHub y Basecamp. Avadhoot Kulkarni notó prácticas comunes que los trabajadores remotos exitosos comparten y a continuación hay cinco consejos sobre el trabajo a distancia que es bueno conocer antes de trabajar de ésta manera. 1. Crea un espacio de trabajo dedicado: Es realmente importante crear un espacio dedicado para ser utilizado exclusivamente para el trabajo. El objetivo es:  Mantener el trabajo y cosas personales separadas.  Permitir que otros (cónyuge, hijos, padres, mascotas …) sepan que está trabajando para que no le molesten. 2. Seguir un cronograma y dar seguimiento al tiempo: Peter F. Drucker, el famoso consultor de negocios y empresario, tiene un famoso dicho que dice:  Lo que se mide se gestiona Y para decirlo sin rodeos, el 99% de la población pasa por la vida sin medir su rendimiento. El éxito, nos guste o no, estará determinado en gran medida por nuestra capacidad de realizar grandes cantidades de trabajo de la manera más rápida y efectiva posible. El único problema es que la mayoría de la gente desconoce por completo cómo sus hábitos afectan su productividad. Por ejemplo:  Experimentar con diferentes rutinas en la mañana para encontrar cual es la forma mas efectiva de empezar el día.  Usar la técnica Pomodoro durante 2 semanas y comparar la productividad con semanas anteriores.  Intentar diferentes metodos de planficación y ver cuál es el más efectivo. 3. Tome descansos regulares: Administra tu energía, no tu tiempo. Afronte las tareas de acuerdo con la cantidad de energia que tomarán y cuánto puedes enfocarte en diferentes momentos durante el día. Los descansos son realmente importantes. Al trabajar continuamente sin interrupciones, comenzará a perder el enfoque y se volverá improductivo. Esto es especialmente cierto cuando trabajas solo, entonces, programar pausas por adelantado puede ayudar mucho. Diseñar una agenda de tal forma que puedas trabajar cuando tengas más energía y tomes descansos durante tus períodos de baja energía. 4. Aprender a comunicarse de manera efectiva usando la comunicación escrita: Como la mayoría de la comunicación en un equipo remoto ocurre a través de mensajes de texto (correos electrónicos, chat, etc. ), es importante aprender a comunicarse de manera efectiva mediante la comunicación escrita. Hay un equilibrio entre decir demasiado y no decir lo suficiente.  Ser claro: la claridad es esencial y la clave para una comunicación efectiva. No deje espacio para la ambigüedad en su escritura. Reitera lo que otros te piden que hagas para asegurarte de que entiendes correctamente. Pregunta claramente qué necesitas de los demás.  Usar listas cuando esté discutiendo más de una cosa a la vez. Será menos abarrotado, más fácil de entender y más fácil para la otra persona hacer referencia cuando responda.  A veces no es fácil explicar algo con el texto. Puede ser útil usar capturas de pantalla. O mejor aún, compartir la pantalla cuando se necesite explicar algo. 5. Salidas sociales: El aislamiento es parte inevitable del trabajo a distancia. Sentirse aislado no lo es. Incluso las personas que no son sociables necesitan estar con los demás de vez en cuando. Para combatir la soledad, puedes:  Unirte a un espacio de coworking.  Trabajar desde cafeterías.  Chatear con tus compañeros de trabajo con más frecuencia. No necesariamente tiene que ser sobre el trabajo. La mayoría de las compañías remotas tienen salas en Slack o HipChat para conversaciones generales. Usalos. Original Question &amp; Answer at Quora - What are some tips to make working remotely the most effective "
+    }, {
+        "id": 56,
+        "url": "https://eresendez.com/how-to-write-a-good-software-design-document",
+        "title": "¿Cómo Escribir Un Buen Documento De Diseño De Software?",
+        "body": "2018/07/18 - Angela Zhang en su blog post comenta las mejores prácticas para escribir un buen documento de especificaciones de software. Después de haber revisado cientos de estos documentos, ella ha observado una fuerte correlación entre los buenos documentos y el éxito final del proyecto. El artículo se divide en 4 secciones:  ¿Por qué escribir un documento de diseño? ¿Qué incluir en un documento de diseño? ¿Cómo escribirlo? El proceso a su alrededor¿Por qué escribir un documento de diseño?: Un documento de diseño, —también conocido como especificación técnica—, es una descripción de cómo se planea resolver un problema. Existen muchos artículos acerca del por qué es importante escribir un documento de diseño antes de sumergirse en la codificación. Entonces todo lo que diré aquí es:  Un documento de diseño es la herramienta más útil para asegurarse de que se realice el trabajo correcto. - Click to Tweet El objetivo principal de un documento de diseño es hacerte más efectivo forzándote a pensar en el diseño y a obtener retroalimentación de los demás. La gente a menudo piensa que el objetivo de un documento de diseño es enseñar a otros acerca de algún sistema o servir como documentación más adelante. Si bien estos pueden ser efectos secundarios beneficiosos, no son el objetivo en sí mismos. Como regla general, si se está trabajando en un proyecto que podría tomar a 1 ingeniero mes o más, debe escribir un documento de diseño. Pero no te detengas allí: muchos proyectos más pequeños también podrían beneficiarse de un mini documento de diseño. ¡Estupendo! Si todavía está leyendo, crees en la importancia de los documentos de diseño. Sin embargo, diferentes equipos de ingeniería, e incluso ingenieros dentro del mismo equipo, a menudo escriben documentos de diseño de manera muy diferente. Entonces, hablemos sobre el contenido, el estilo y el proceso de un buen documento de diseño. ¿Qué incluir en un documento de diseño?: Un documento de diseño describe la solución a un problema. Dado que la naturaleza de cada problema es diferente, naturalmente querrá estructurar su documento de diseño de manera diferente. Para comenzar, la siguiente es una lista de secciones que, al menos, debería considerar incluir en su próximo documento de diseño: Título y Gente: El título de su documento de diseño, los nombres de los autores (debe ser el mismo que la lista de personas que planean trabajar en este proyecto), los revisores del documento (hablaremos más sobre eso en la sección Proceso) y la fecha en que este documento fue actualizado por última vez. Resumen: Un resumen de alto nivel que todos los ingenieros deben entender y usar para decidir si les resulta útil leer el resto del documento. Debe ser de 3 párrafos como máximo. Contexto: Una descripción del problema en cuestión, por qué es necesario este proyecto, qué necesita saber la gente para evaluar este proyecto y cómo encaja en la estrategia técnica, la estrategia del producto o los objetivos trimestrales del equipo. Objetivos y no objetivos: La sección de Metas debería:  describir el impacto del proyecto orientado a los usuario, donde su usuario podría ser otro equipo de ingeniería o incluso otro sistema técnico especificar cómo medir el éxito mediante métricas: puntos extra si puede vincularse a un panel que rastrea esas métricas. Los no objetivos son igualmente importantes para describir qué problemas no se solucionarán para que todos estén en sintonía. Hitos: Una lista de checkpoints medibles, para que su PM y el gerente de su gerente puedan echarle un vistazo y saber aproximadamente cuándo se realizarán las diferentes partes del proyecto. Te ánimo a dividir el proyecto en grandes hitos para el usuario si el proyecto tiene más de un mes de duración. Debería verse algo como esto: Start Date: June 7, 2018Milestone 1 — New system MVP running in dark-mode: June 28, 2018Milestone 2 - Retire old system: July 4th, 2018End Date: Add feature X, Y, Z to new system: July 14th, 2018Solución actual: Además de describir la implementación actual, también debe realizar un ejemplo de alto nivel para ilustrar cómo los usuarios interactúan con este sistema y/o cómo los datos fluyen a través de él. Una historia de usuario es una excelente manera de enmarcar esto. Tenga en cuenta que su sistema puede tener diferentes tipos de usuarios con diferentes casos de uso. Solución propuesta: Muchas personas llaman a esto la sección de Arquitectura Técnica. Nuevamente, intente profundizar en las historias de usuario para concretar esto. Siéntase libre de incluir muchas subsecciones y diagramas. Proporcione una idea general primero, luego complete muchos detalles. Imagina un mundo en donde escribas esto, luego tomas unas vacaciones en una isla desierta, y otro ingeniero del equipo puede simplemente leerlo e implementar la solución como se describió. Soluciones alternativas: ¿Qué más consideraste al encontrar la solución anterior? ¿Cuáles son los pros y los contras de las alternativas? Monitoreo y Alerta: Me gusta incluir esta sección, porque a menudo la gente lo trata como una ocurrencia tardía, y casi siempre vuelve para morderlos más tarde cuando las cosas se rompen y no tienen idea de cómo o por qué. Impacto entre equipos: ¿Cómo aumentará esto en la carga de llamadas y de desarrollo?¿Cuánto dinero va a costar?¿Esto causa alguna regresión de latencia al sistema?¿Expone alguna vulnerabilidad de seguridad?¿Cuáles son algunas consecuencias negativas y efectos secundarios?¿Cómo podría el equipo de soporte comunicar esto a los clientes? Discusión: Cualquier tema abierto sobre el que no esté seguro, decisiones polémicas en las que le gustaría que los lectores influyan, sugerencias de trabajo futuro, etc. Alcance detallado y línea de tiempo: Esta sección será leída principalmente por los ingenieros que trabajan en este proyecto, sus líderes tecnológicos y sus gerentes. Por lo tanto, esta sección se encuentra al final del documento. Básicamente, este es el desglose de cómo y cuándo planea ejecutar cada parte del proyecto. También intento tratar esta sección del documento de diseño como un rastreador de tareas de proyectos en curso, así que actualizo esto cada vez que cambia mi estimación de alcance. Pero eso es más una preferencia personal.  ¿Cómo escribirlo?: Escribe lo más simple posible: No intente escribir como los documentos académicos que ha leído. Están escritos para impresionar a los revisores. Su documento está escrito para describir su solución y recibir comentarios de sus compañeros de equipo. Puedes lograr claridad usando:  Palabras simples Oraciones cortas Listas con viñetas y / o listas numeradas Ejemplos concretos, como “El usuario Alice conecta su cuenta bancaria, luego …”Agrega muchos diagramas y gráficos: Los gráficos a menudo pueden ser útiles para comparar varias opciones posibles, y los diagramas generalmente son más fáciles de analizar que el texto. He tenido buena suerte con Google Drawing para crear diagramas. Consejo profesional: recuerde agregar un enlace a la versión editable del diagrama debajo de la captura de pantalla, para que pueda actualizarlo fácilmente más adelante cuando las cosas inevitablemente cambien. Incluir números: La escala del problema a menudo determina la solución. Para ayudar a los revisores a tener una idea del estado del proyecto, incluya números reales como # de filas de bases de datos, # de errores de usuario, latencia, y cómo estas escalan con el uso (¿recuerdan la notación O-Grande?). Intenta ser gracioso: Una especificación no es un documento académico. Además, a las personas les gusta leer cosas divertidas, así que esta es una buena manera de mantener al lector involucrado. No exageres hasta el punto de alejarte de la idea central. Si tú, como yo, tenemos problemas para ser graciosos, Joel Spolsky (obviamente conocido por sus talentos de comedia …) tiene este consejo:  Una de las maneras más fáciles de ser gracioso es ser específico cuando no se lo solicita [… Ejemplo:] En lugar de decir “intereses especiales”, diga “agricultores de aguacates zurdos”. Haz la prueba escéptica: Antes de enviar su documento de diseño a otros para que lo revisen, finge ser el revisor. ¿Qué preguntas y dudas podría tener sobre este diseño? Luego dirígelos preventivamente. Haz la prueba de vacaciones: Si vas de vacaciones largas a un lugar sin acceso a Internet, ¿alguien en tu equipo puede leer el documento e implementarlo como quisieras? El objetivo principal de un documento de diseño no es el intercambio de conocimiento, pero esta es una buena forma de evaluar la claridad para que otros realmente puedan brindarle comentarios útiles.  El Proceso: Por ahora, vamos a hablar específicamente sobre cómo escribir el documento de diseño y obtener comentarios al respecto. En primer lugar, todos los que trabajen en el proyecto deberían ser parte del proceso de diseño. Está bien si el líder tecnológico termina impulsando muchas de las decisiones, pero todos deberían participar en la discusión y aceptar el diseño. Entonces, el “tú” a lo largo de este artículo es un “tú” realmente plural que incluye a todas las personas en el proyecto. En segundo lugar, el proceso de diseño no significa que estés mirando las ideas teóricas del pizarrón. No dude en ensuciarse las manos y proteste las soluciones potenciales. Esto no es lo mismo que comenzar a escribir el código de producción para el proyecto antes de escribir un documento de diseño. No hagas eso. Pero absolutamente debes sentirte libre de escribir algún código desechable para validar una idea. Para asegurarse de que solo escribe el código exploratorio, establezca como regla que nada de este código prototipo se combina con master. Después de eso, cuando empiece a tener una idea de cómo llevar a cabo su proyecto, haga lo siguiente:  Solicite a un ingeniero o técnico experimentado en su equipo que sea su crítico. Idealmente, sería alguien respetado y/o familiarizado con los casos extremos del problema.  Ve a una sala de conferencias con una pizarra blanca.  Describe el problema que estás abordando con este ingeniero (este es un paso muy importante, ¡no lo saltes!).  Luego, explica la implementación que tienes en mente y convénceles de que es lo correcto para construir. Hacer todo esto antes de comenzar a escribir su documento de diseño permite obtener retroalimentación tan pronto como sea posible, antes de invertir más tiempo y apegarse a cualquier solución específica. A menudo, incluso si la implementación sigue siendo la misma, su revisor puede señalar otros casos que necesita cubrir, indicar posibles áreas de confusión y anticiparse a las dificultades que puede encontrar más adelante. Luego, después de haber escrito un borrador de su documento de diseño, solicite al mismo revisor que lo lea nuevamente, y apúntelo añadiendo su nombre como revisor en la sección Título y Personas del documento de diseño. Esto crea incentivos adicionales y responsabilidad para el revisor. En ese sentido, considere agregar revisores especializados (como SRE e ingenieros de seguridad) para aspectos específicos del diseño. Una vez que usted y los revisores hayan finalizado la sesión, siéntase libre de enviar el documento de diseño a su equipo para obtener comentarios adicionales y compartir conocimientos. Sugiero limitar el tiempo de este proceso de recopilación de comentarios a alrededor de 1 semana para evitar retrasos prolongados. Comprométete a abordar todas las preguntas y comentarios que las personas dejen dentro de esa semana. Dejar comentarios colgados = karma malo. Por último, si hay mucha controversia entre usted, su revisor y otros ingenieros que leen el documento, le recomiendo que consolide todos los puntos de contención en la sección de Discusión de su documento. Luego, organice una reunión con las diferentes partes para hablar sobre estos desacuerdos en persona. ¡Una vez que haya hecho todo lo anterior, es hora de continuar con la implementación! Para obtener puntos extra, trate este documento de diseño como un documento vivo a medida que implementa el diseño. Actualice el documento cada vez que aprenda algo que lo lleve a realizar cambios en la solución original o actualice su alcance. Me agradecerás más tarde cuando no tengas que explicar las cosas una y otra vez a todas las partes interesadas. Finalmente, ¿cómo evaluamos el éxito de un documento de diseño? Un documento de diseño exitoso podría conducir a un resultado como este:  Pasas 5 días escribiendo el documento de diseño, esto te obliga a pensar en diferentes partes de la arquitectura técnica Recibes comentarios de los revisores de que X es la parte más arriesgada de la arquitectura propuesta Decides implementar X primero para eliminar el riesgo del proyecto 3 días después, descubres que X no es posible o es mucho más difícil de lo que originalmente pensabas Decide dejar de trabajar en este proyecto y priorizar otro trabajo en su lugarAl comienzo del artículo, dijimos que el objetivo de un documento de diseño es asegurarse de que se realice el trabajo correcto. En el ejemplo anterior, gracias a este documento de diseño, en lugar de desperdiciar potencialmente meses solo para abortar este proyecto, solo ha pasado 8 días. Parece un resultado bastante exitoso para mí. "
+    }, {
+        "id": 57,
+        "url": "https://eresendez.com/pillars-of-a-successful-landing-page",
+        "title": "¿Cuáles son los 5 pilares principales de una Landing Page exitosa?",
+        "body": "2018/07/17 - Una landing page es una pieza muy importante para construir una estrategia exitosa de generación de prospectos o leads. Esta es la razón por la cual una gran cantidad de dueños de negocios dedican su tiempo a dirigir el tráfico a sus landing pages, con una esperanza de conversión.  UPDATE: Una entrada de blog reciente recomendada: How to market your new project, incorporate design, create a landing page and get your users  Aquí un tablero de Pinterest lleno de ejemplos de landing pages de alta resolución: Top SaaS Landing Pages Ahora vamos a analizar 5 pilares principales de una landing page exitosa. 1. Pensar más allá de un simple formulario que impulse la participación del usuario: Uno de los factores que contribuyen a la conversión en una landing page es la participación del usuario (engagement). La landing page debe involucrar a los usuarios hasta el punto de convertirlos. Una de las formas para involucrar a los usuarios es agregando videos. Incluir video puede aumentar las conversiones en un 80 por ciento. El video permite compartir una historia de marca atractiva y generar confianza. Hace que los usuarios permanezcan más tiempo en su página, lo que les da tiempo para procesar la información de la marca y, en última instancia, reducir su tasa de rebote. 2. Crear una llamada a la acción convincente y explícita: (Con lo explícito no me refiero a un botón que diga: “Haga clic aquí, f***ing noob”). Un buen botón ayuda a convertir visitantes en suscriptores, prospectos o clientes. Un botón efectivo es simple, claro y es clickeable. Debería atraer a los usuarios para tentarlos a tomar la acción requerida. El texto del botón debe indicar explícitamente qué está haciendo el usuario cuando hace clic en él. De esa forma, harán clic en él con total intención y conocimiento de las consecuencias, y no se sorprenderán por un comportamiento inesperado. CTA no explícito (malo):  ¡Suban a bordo! CTA explícito (bueno):  Comenzar mi prueba gratuita de 30 días Hay cuatro elementos específicos de un botón de llamada a la acción que son muy importantes para el éxito:  El color: el color del botón debe contrastar con el fondo de su página de inicio. Usualmente, un CTA rojo, azul o verde son efectivos. Imagen vía Chartmogul; más de la mitad de todos los botones de CTA son verdes.    Tamaño: El tamaño del botón también es importante. No debe ser demasiado pequeño para que los usuarios lo pasen por alto, ni demasiado grande en la medida que ahuyente a los usuarios. Debe ser del tamaño adecuado y encajar con el diseño de la página.     Ubicación: la posición del botón es muy importante. Debería mostrarse de forma destacada donde los usuarios puedan verlo. No esconderlo en una esquina o debajo de un objeto que lo hará parecer oscuro. Deje que los usuarios lo noten inmediatamente cuando lleguen a la página mostrándolo en el lugar correcto.     Contenido: el mensaje en el botón también importa mucho. Debería atraer al público para que haga clic en él. Debe relacionarse con lo que le ofrece a sus usuarios. No use “enviar” ya que suena aterrador porque las personas no gustan dar sus detalles fácilmente.  3. Elegir imágenes relevantes: Las imágenes también son muy importantes. Como dice la famosa frase, “Una imagen vale más que mil palabras”. Las páginas que convierten deben tener imágenes relevantes. Según Hubspot, el 80 por ciento de las personas recuerda lo que ven y hacen. 4. Optimizar el formulario de prospectos para máximas conversiones: El formulario es otro elemento importante de conversión. Hay dos tipos diferentes de formularios que puede usar en la página: formularios cortos y largos. El formulario no debe ser demasiado largo para desalentar a sus usuarios de llenarla. Tampoco debe ser demasiado corto para poder recolectar detalles relevantes para su negocio. 5. Criterios de desempeño: Medir el rendimiento de la página es muy importante para saber si los visitantes del sitio están convirtiendo o no. Una buena herramienta para medir el rendimiento de la página es utilizar Google Analytics. Esto ayudará a medir cuántas personas llegaron a la página y cuantas se han convertido al proporcionarle sus detalles. Los siguientes son los criterios de rendimiento que ayudarán a saber cómo se está llevando la conversión en su landing page: La tasa de rebote: es la cantidad de visitantes que ingresaron a su página y no convirtieron. Si este número es alto, significa que no está utilizando las palabras clave adecuadas para atraer al público adecuado. También podría significar que el diseño de la página no es bueno. Tiempo en la página: necesita saber la duración de un visitante en su sitio web. ¿Cuánto tiempo se quedaron? ¿Dónde más visitaron mientras estuvo en el sitio web? Fuente de tráfico: saber de dónde provienen los visitantes de su sitio web le permitirá crear una página efectiva. Esto podría ser redes sociales, motores de búsqueda, etc. Otras recomendaciones:: La Propuesta Unica de Ventas (USP) debe ser clara y concisa: La USP necesita resumir lo que hace su negocio o producto, y necesita hacerlo en pocas palabras. MUCHAS personas decoran su USP con elaborados adverbios y adjetivos que simplemente no son necesarios. Mala USP:  “Comunicación crítica con el cliente con simplicidad sin esfuerzo y eficacia hermosa”. Buena USP:  “Comunicación con el cliente hecha simple”. Beneficios, no características: Uno de los mayores errores que se cometen es enumerar las excelentes funciones que ofrece el producto. La página se trata de mostrar los BENEFICIOS que el cliente recibirá al comprar su producto. Hay un lugar para listar las funciones, pero no en la landing page.  Características (malas):  1TB espacio de almacenamiento Cifrado SSL Software alojado en la nube Beneficios (bueno):  Nunca más te preocupes por quedarte sin espacio de almacenamiento.  Tranquilidad y protección contra hackers maliciosos.  Acceso desde cualquier lugar del mundo, en cualquier dispositivo. Finalmente, una prueba social REAL y convincente: La prueba social en la landing page debe ser lo más genuina posible. Es necesario ir más allá de simplemente mostrar un montón de logotipos de la empresa: ¡muestre a las personas que usan el producto! Mostrar cotizaciones, vincular a estudios de casos, ¡incluso por todas partes mostrar videos con entrevistas de clientes! Cuanto más “reales” se sientan, más personas se comprometerán con ellos y mayor será el efecto sobre su confianza. Original Q&amp;A at Quora - What are the 5 main pillars of a successful landing page "
+    }, {
+        "id": 58,
+        "url": "https://eresendez.com/what-habit-that-successful-people-have",
+        "title": "¿Cuál es un hábito que tienen las personas exitosas?",
+        "body": "2018/07/16 - Desde el multimillonario Jeff Hoffman hasta tipos como Gary Vaynerchuk, Grant Cardone, Robert Greene y los principales pensadores, autores, científicos y empresarios del mundo. Casi TODOS ellos dicen las mismas cosas una y otra vez (aunque de maneras ligeramente diferentes). El éxito deja huellas. Y el mejor lugar para encontrar esas huellas es ir directamente a la fuente. Estos son los hábitos más comunes que comparten todos los hacedores de alto rendimiento. Antes de comenzar: el hábito de éxito más importante. El hábito más importante que comparten todas las personas de gran éxito no es lo que se podría pensar. El ÚNICO hábito más importante de alto rendimiento es hacer lo que funcione para ti. El hecho de que Richard Branson se levante y haga ejercicio a las 5 a. m. no significa que debas hacerlo. Otros no pueden tener un día productivo si se levantan antes de las 8 a. m. Necesitan dormir más que la mayoría de las personas y hay que aceptarlo. Así que es necesario tomar en cuenta que aunque hay tópicos que puedes elegir, los de alto rendimiento no siguen todos los mismos hábitos de la misma manera. Algunos se despiertan temprano y levantan pesas. Otros duermen hasta el mediodía, trabajan hasta las 4 a. m. y corren ultramaratones. Algunos leen libros, otros miran videos de YouTube. Algunos meditan, otros no. Los hábitos específicos no es lo que realmente importa, pero el TRASFONDO detrás de esos hábitos sí lo es. Con eso fuera del camino, los 5 hábitos o “tópicos” más importantes que siguen las personas de alto rendimiento. 1. Priorizan la salud: Ya sea que practiquen yoga, cross fit, ultramaratones o una rutina de culturismo, aún no he conocido a una persona de alto rendimiento que no haga ejercicio activo ni priorice su salud. Cómo lo hacen difiere, pero cada persona que conozco que produce un gran impacto e ingresos tiene un cuidado excepcional de su salud. Descubre lo que funciona para ti y mantenlo. Encuentra una forma de ejercicio que disfrutes y hazlo todos los días. Come una dieta de alimentos integrales (ya sea paleo, keto o simplemente JERF) y elimina la comida chatarra de la despensa. Duerma lo suficiente como para sentirse bien descansado y listo para el día (no menos de 7 horas pero potencialmente hasta 10). Cuida tu salud y tu vida cambiará para siempre. 2. Dicen “No” más de lo que dicen “Sí”: Las personas de alto rendimiento y exitosas valoran su tiempo y dicen “no” a casi todo para que puedan decir “sí” a las cosas más importantes. Si se desea unir al rango del 1%, debes comprometerse a decir “no” con más frecuencia. Di no a TODO lo que no se correlacione directamente con tu misión o que no disfrutes. Claro, probablemente deberías ayudar a la abuela a mudarse al otro lado de la ciudad, pero no tienes la obligación de cumplir constantemente las “obligaciones” sociales, ayudar a tus amigos con sus ideas de negocio, o perder el tiempo trabajando en proyectos de baja prioridad. 3. Actúan en base a un plan y estrategia, no a la emoción: Cada persona de alto rendimiento tiene un plan. Ya sea que esté escrito en su diario, planeado en un mapa mental o garabateado en una servilleta, saben lo que se debe hacer y por qué. Antes de actuar, siempre toma el tiempo para desarrollar una estrategia para su objetivo. No dedique demasiado tiempo a la planificación, pero nunca actúe sin un plan de acción claro y un plan específico para lograr su visión. 4. Se comprometen con la maestría y la auto educación: Ya sea que lean libros, escuchen audios, miren videos de YouTube o se sienten con un mentor o entrenador una vez a la semana, cada persona de alto rendimiento se compromete a la auto educación. Averigüa qué formato te funciona y comprométase a buscar nuevos conocimientos DIARIAMENTE. Aprende todo lo que puedas y luego aplícalo de inmediato. El conocimiento es poder… cuando se aplica. 5. Constantemente buscan profundizar su autoconocimiento: Las personas de alto rendimiento se conocen a sí mismos. Ellos saben lo que funciona para ellos y lo que no. Ellos conocen sus debilidades y fortalezas. Saben a qué sesgos cognitivos son propensos y saben cómo su mente subconsciente distorsiona la realidad. Son increíblemente conscientes de sí mismos y, debido a esto, pueden tomar medidas objetivas y basadas en la evidencia para lograr sus objetivos. Si no tomas nada de esta lectura, TOMA ESTO. Cuando te conoces a ti mismo, tienes un mayor control sobre ti mismo. Y cuando puedes controlarte a ti mismo, no hay nada que no puedas lograr. Toma tu tiempo para pensar objetivamente sobre tus fortalezas, debilidades y predisposiciones. Hable con mentores, amigos, familiares y empleadores y solicite sus comentarios. Identifica y trabaja en tus puntos débiles. Haz todo lo que puedas para profundizar tu auto conocimiento. Porque es la clave de todo éxito. Espero que esto ayude. Original Answer: What is a habit that many successful people have? - Quora "
+    }, {
+        "id": 59,
+        "url": "https://eresendez.com/project-landing-page",
+        "title": "Responsive Web Design Projects - Build a Product Landing Page",
+        "body": "2018/07/15 - Objetivo: Construir una app en CodePen. io que funcione de manera similar a: https://codepen. io/freeCodeCamp/full/RKRbwL  URL del proyecto (editor view): Build a Product Landing Page - CodePen. io/eleazarbr URL del proyecto (full page):  Build a Product Landing Page - CodePen. io/eleazarbr Estado del proyecto: En ProgresoHerramientas utilizadas en este proyecto:  HTML JavaScript CSS (FlexBox)Debido a que el diseño gráfico no es lo mío, me basé visualmente en la siguiente Landing Page de Leadsbridge. com. Esta vez, no voy a compartir todo el código HTML aquí, en lugar de eso, escribo lo más relevante:  La landing page tiene un header con un logo (random) de la empresa dentro.  También, en el header existe un elemento nav (sticky) con links que apuntan a las secciones dentro de la página.  La barra de navegación tiene 3 elementos clickeables.  Se puede observar un video embebido en la pagina.  La landing page tiene un formulario, al hacer submit el email es enviado a una página que confirma que ha sido recibido correctamente.  La página es responsiva mediante media queries.  Se utiliza FlexBox en todo el proyecto. … Offtopic - El siguiente repositorio contiene el código fuente de un proyecto en Laravel utilizando el framework TailwindCSS. La idea fue aprender a usar TailwindCSS haciendo un sitio web corporativo con sus landing pages.  Isadeli Landing PageY finalmente, un post acerca de: ¿Cuáles son los 5 pilares principales de una Landing Page exitosa? "
+    }, {
+        "id": 60,
+        "url": "https://eresendez.com/reach-goals-reverse-engineered",
+        "title": "¿Cómo usar ingeniería inversa para alcanzar metas?",
+        "body": "2018/07/13 - Esto funciona para metas a corto o largo plazo, da igual. Lo primordial es conocer exactamente adonde quieres llegar. En el mundo de las Ciencias de la Computación, existe un algoritmo popular conocido como divide-conquer algorithm. El concepto detrás del algoritmo divide y vencerás es: romper un gran problema en partes más pequeñas, y posteriormente romper los subproblemas en subproblemas más pequeños, así hasta que sean tan simples que puedan resolverse directamente. Al final de este ejercicio será posible dar respuesta a las siguientes preguntas:  ¿Qué necesito saber para alcanzar mis metas? ¿Qué herramientas necesito? ¿Con quién puedo hablar que lo haya hecho anteriormente?¿Cómo usar este metodo?:  Elegir una meta. ver SMART framework.  Establecer los pasos:La ingeniería inversa se aplica empezando desde nuestra meta principal hasta el objetivo más bajo y simple. Hay que pensar y analizar todos los pasos que se deben tomar para bajar esa escalera. Estos objetivos más pequeños son la parte práctica, lo que se debe de hacer cada día para alcanzar la meta principal. Eso es exactamente lo que significa hacer ingeniería inversa, empezar con el fin en la mente y esencialmente averiguar cómo llegar allí.  Cada objetivo es escalable y puede descomponerse mediante ingeniería inversa.  Finalmente, empezar. Comenzar, de lo contrario nada sucederá. Dar el primer paso por la escalera que lleva a la meta, siempre habrá problemas y para eso hay que cambiar de método, pero a fin de cuentas la meta sigue siendo la misma. "
+    }, {
+        "id": 61,
+        "url": "https://eresendez.com/are-goals-effective",
+        "title": "¿Son tus metas efectivas?",
+        "body": "2018/07/12 - Respuesta corta: si, depende. Las metas son efectivas si se utilizan junto a los principios de la fórmula SMART y si son llevadas a la acción. Entonces, se puede aprender en el proceso y mejorar si es necesario hasta alcanzar la meta. Las metas correctas permiten:  Tener una dirección clara en nuestra mente Evitar la procastinación Saber decir no y enfocarse en lo que realmente es importante Ser medibles para conocer el progreso, ajustarlo, celebrarlo, aprender o cambiar. Los principios SMART proveen un framework para asegurarse de dar a las metas una correcta estructura. SMART representa: Specific: Las metas deben establecer exactamente lo que se debe alcanzar. Evitar las metas generales. Measurable: Son medibles. Saber que existe una fecha limite ayuda a ajustar los objetivos necesarios para lograr la meta. Assignable: ¿Quien es la persona responsable del éxito o fracaso de la meta? Realistic: Las metas son realistas, basadas en nuestra situación actual, con los recursos que disponemos (incluyendo el tiempo) y que tan importante es para uno mismo.  Ejemplo pŕactico: De acuerdo al Top ten New Year’s resolutions, el próposito número 1 de año nuevo es: “Mejorar el estado físico”. Mejorar el estado físico no dice nada. No aclara de que forma se va a mejorar el estado físico, ni en cuanto tiempo se piensa lograr, ni cuando empezar. “Yo subiré 10 kilos (en masa muscular) en tres meses” Ahora, la meta anterior es: Especifica: da claridad en cuantos kilos debe subir. Medible: se debe subir 10 kilos para lograr la meta, el progreso es medible y se puede ajustar objetivamente. Asignable: La meta esta asignada a uno mismo. Realista: No sé si tres meses sea realista pero creo que tendrá que comer mucho más y mejor.  Posteriormente, a partir de una meta, se crean pequeños objetivos o plan de acción para emprender el camino a su realización. En resumen:  La metas se definen mejor si son SMART.  Una meta se debe convertir en un plan de acción con objetivos atómicos.  Todo se debe de llevar a la acción lo antes posible.  Siempre habrá problemas, no se obtiene el resultado, entonces hacer pivot, la meta es la misma, solo se intenta otro camino.  Original Question: Quora - Are goals effective? "
+    }, {
+        "id": 62,
+        "url": "https://eresendez.com/project-survey-form",
+        "title": "Responsive Web Design Projects - Build a Survey Form",
+        "body": "2018/07/11 - Objetivo: Construir una app en CodePen. io con una funcionalidad similar a: https://codepen. io/freeCodeCamp/full/VPaoNP.  URL del proyecto (editor view): Build a Survey Form - CodePen. io/eleazarbr URL del proyecto (full page):  Build a Survey Form - CodePen. io/eleazarbr Estado del proyecto: TerminadoHerramientas usadas:  HTML CSS (FlexBox)Para este proyecto se utilizó CSS plano porque es el tema principal en las lecciones de freeCodeCamp, excluyendo el uso de jQuery, React, Angular y Vue. A continuación, el código HTML final: &lt;div class= container &gt;	&lt;form id= survey-form  class= form-container &gt;		&lt;h1 id= title &gt;Survey Form&lt;/h1&gt;		&lt;p id= description &gt;			Thanks for your time, I'm doing some research on			&lt;br&gt; People between 20 and 35 have desire to hire a dessert table for events . 			&lt;br&gt;Before we start, can you tell me a bit about yourself?		&lt;/p&gt;		&lt;div class= flex-items &gt;			&lt;div class= left-item &gt;				&lt;label for= name  id= name-label &gt; * Name &lt;/label&gt;			&lt;/div&gt;			&lt;div class= right-item &gt;				&lt;input type= text  class= text-input  name= name  id= name 					placeholder= Enter your name  required autofocus&gt;			&lt;/div&gt;		&lt;/div&gt;		&lt;div class= flex-items &gt;			&lt;div class= left-item &gt;				&lt;label for= email  id= email-label &gt; * Email &lt;/label&gt;			&lt;/div&gt;			&lt;div class= right-item &gt;				&lt;input type= email  class= text-input  name= email  id= email 					placeholder= Enter your email  required&gt;			&lt;/div&gt;		&lt;/div&gt;		&lt;div class= flex-items &gt;			&lt;div class= left-item &gt;				&lt;label for= age  id= age-label &gt; * Age &lt;/label&gt;			&lt;/div&gt;			&lt;div class= right-item &gt;				&lt;input class= text-input  type= number  name= age  id= number  min= 20  max= 35 					placeholder= You must be between 20 and 35 :) &gt;			&lt;/div&gt;		&lt;/div&gt;		&lt;div class= flex-items &gt;			&lt;div class= left-item &gt;				&lt;label for= question-1 &gt;					When was the last time you hired a dessert table?				&lt;/label&gt;			&lt;/div&gt;			&lt;div class= right-item &gt;			&lt;select id= dropdown  class= text-select  name= question-1 &gt;				&lt;option&gt;Since 1 to 3 months&lt;/option&gt;				&lt;option&gt;Since 3 to 6 months &lt;/option&gt;				&lt;option&gt;Since 6 months&lt;/option&gt;			&lt;/select&gt;			&lt;/div&gt;		&lt;/div&gt;		&lt;div class= flex-items &gt;			&lt;div class= left-item &gt;				&lt;label for= question-2 &gt;					What’s the biggest challenge you face when hiring a dessert table?				&lt;/label&gt;			&lt;/div&gt;			&lt;div class= right-item &gt;				&lt;textarea class= text-input  id= question-2  name= question-2 &gt;&lt;/textarea&gt;			&lt;/div&gt;		&lt;/div&gt;		&lt;div class= flex-items &gt;			&lt;div class= left-item &gt;				&lt;label for= question-3 &gt; Why is this a problem for you? &lt;/label&gt;			&lt;/div&gt;			&lt;div class= right-item &gt;				&lt;input type= text  class= text-input  id= question-3  name= question-3 &gt;			&lt;/div&gt;		&lt;/div&gt;		&lt;div class= flex-items &gt;			&lt;div class= left-item &gt;				&lt;label for= question-4 &gt;					How often does this happen?				&lt;/label&gt;			&lt;/div&gt;			&lt;div class= right-item &gt;				&lt;div&gt;&lt;input type= radio  name= question-4 &gt;Rarely&lt;/div&gt;				&lt;div&gt;&lt;input type= radio  name= question-4 &gt;Occasionally&lt;/div&gt;				&lt;div&gt;&lt;input type= radio  name= question-4 &gt;Very often&lt;/div&gt;			&lt;/div&gt;		&lt;/div&gt;		&lt;div class= flex-items &gt;			&lt;div class= left-item &gt;				&lt;label for= question-5 &gt;					I’m actually exploring a solution to solve your problem. 					Can I contact you for feedback if we find a solution?				&lt;/label&gt;			&lt;/div&gt;			&lt;div class= right-item &gt;				&lt;div&gt;&lt;input type= radio  name= question-5 &gt;Yes&lt;/div&gt;				&lt;div&gt;&lt;input type= radio  name= question-5 &gt;No, thank you&lt;/div&gt;			&lt;/div&gt;		&lt;/div&gt;		&lt;div class= flex-items &gt;			&lt;div class= left-item &gt;				&lt;label for= question-6 &gt; Any Comments or Suggestions? &lt;/label&gt;			&lt;/div&gt;			&lt;div class= right-item &gt;				&lt;textarea class= text-input  name= question-6  id= question-6 &gt;&lt;/textarea&gt;			&lt;/div&gt;		&lt;/div&gt;		&lt;button id= submit  class= btn btn-blue &gt;Submit&lt;/button&gt;	&lt;/form&gt;&lt;/div&gt;En resumen de la parte CSS:  Hay una división llamada container con un width: 100%; y display: flex;, dentro del mismo, un formulario con width: 50%; Se aplica una clase para los items de la izquierda y otra para los items de derecha Para los items de derecha se utiliza flex-direction: column; para que los input radio se muestren en vertical El input tiene un border-color: #9561e2; en hover Finalmente, se utilizó la propiedad box-shadow: 0 2px 4px 0 rgba(0,0,0,0. 10); para aplicar una sombra a los text areas. container {	background-color: white;	width: 100%;	padding: 2rem;	display: flex;	justify-content: center;}. form-container {	width: 50%;	max-widht: 20rem; 	display: flex; 	flex-direction: column; 	align-items: stretch;}. flex-items {	display: flex;	align-items: center;	margin-bottom: 1. 5rem;	margin: 1rem;}. left-item {	width: 33. 33333%;	text-align: right;	padding-right: 1rem;}. right-item {	width: 66. 66667%; 	display: flex; 	flex-direction: column;}body {	font-family: system-ui, BlinkMacSystemFont,		Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell,		Fira Sans, Droid Sans, Helvetica Neue, sans-serif;}h1 {	font-size: 1. 875rem;	color: #22292f;	text-align: center;}p {	font-size: 1rem;	color: #606f7b;	line-height: 1. 5;	text-align: center;}label {	color: #b8c2cc;	font-weight: 700;}. text-input { 	width: auto;	padding-top: 0. 5rem;	padding-bottom: 0. 5rem;	padding-left: 1rem;	padding-right: 1rem;	color: #22292f;	line-height: 1. 25;}. text-input:hover {	border-color: #9561e2;}. text-select {	width: auto;	box-shadow: 0 2px 4px 0 rgba(0,0,0,0. 10);	padding-left: 1rem;	padding-right: 1rem;	padding-top: 0. 5rem;	padding-bottom: 0. 5rem;	padding-right: 2rem;}. btn {	border-radius: . 25rem;	padding-top: 0. 5rem;	padding-bottom: 0. 5rem;	padding-left: 1rem;	padding-right: 1rem;}. btn-blue {	background-color: #3490dc;	color: white;}Ver el proyecto terminado en: Build a Survey Form - CodePen. io/eleazarbr "
+    }];
+
+    var idx = lunr(function () {
+        this.ref('id')
+        this.field('title')
+        this.field('body')
+
+        documents.forEach(function (doc) {
+            this.add(doc)
+        }, this)
+    });
+    function lunr_search(term) {
+        document.getElementById('lunrsearchresults').innerHTML = '<ul></ul>';
+        if(term) {
+            document.getElementById('lunrsearchresults').innerHTML = "<p>Search results for '" + term + "'</p>" + document.getElementById('lunrsearchresults').innerHTML;
+            //put results on the screen.
+            var results = idx.search(term);
+            if(results.length>0){
+                //console.log(idx.search(term));
+                //if results
+                for (var i = 0; i < results.length; i++) {
+                    // more statements
+                    var ref = results[i]['ref'];
+                    var url = documents[ref]['url'];
+                    var title = documents[ref]['title'];
+                    var body = documents[ref]['body'].substring(0,160)+'...';
+                    document.querySelectorAll('#lunrsearchresults ul')[0].innerHTML = document.querySelectorAll('#lunrsearchresults ul')[0].innerHTML + "<li class='lunrsearchresult'><a href='" + url + "'><span class='title'>" + title + "</span><br /><span class='body'>"+ body +"</span><br /><span class='url'>"+ url +"</span></a></li>";
+                }
+            } else {
+                document.querySelectorAll('#lunrsearchresults ul')[0].innerHTML = "<li class='lunrsearchresult'>No results found...</li>";
+            }
+        }
+        return false;
+    }
+</script>
+
+
+<style>
+    .lunrsearchresult .title {color: #d9230f;}
+    .lunrsearchresult .url {color: silver;}
+    .lunrsearchresult a {display: block; color: #777;}
+    .lunrsearchresult a:hover, .lunrsearchresult a:focus {text-decoration: none;}
+    .lunrsearchresult a:hover .title {text-decoration: underline;}
+</style>
+
+	</div>
+
+	<!-- jQuery + Fitvids, which makes all video embeds responsive -->
+	<script
+		src="https://code.jquery.com/jquery-3.2.1.min.js"
+		integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+		crossorigin="anonymous">
+	</script>
+	<script type="text/javascript" src="/assets/js/jquery.fitvids.js"></script>
+	<script type="text/javascript" src="/assets/js/validator-standalone.js"></script>
+	<script type="text/javascript" src="/assets/js/back-to-top.js"></script>
+
+	<!-- highlight.js -->
+	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/components/prism-abap.min.js"></script> -->
+	<script>
+	$(document).ready(function() {
+		$('pre code').each(function(i, block) {
+			hljs.highlightBlock(block);
+		});
+	});
+	</script>
+
+	<!-- Paginator increased to "infinit" in _config.yml -->
+	<!-- if paginator.posts  -->
+	<!-- <script>
+		var maxPages = parseInt('');
+	</script>
+	<script src="/assets/js/infinitescroll.js"></script> -->
+	<!-- /endif -->
+
+	
+
+	<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5be2f535129834f9"></script>
+
+	<!-- Add Google Analytics  -->
+	<!-- Google Analytics Tracking code -->
+
+
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-45112924-2', 'auto');
+    ga('send', 'pageview');
+</script>
+
+
+
+	<!-- The #block helper will pull in data from the #contentFor other template files. In this case, there's some JavaScript which we only want to use in post.hbs, but it needs to be included down here, after jQuery has already loaded. -->
+	
+		<script>
+
+// NOTE: Scroll performance is poor in Safari
+// - this appears to be due to the events firing much more slowly in Safari.
+//   Dropping the scroll event and using only a raf loop results in smoother
+//   scrolling but continuous processing even when not scrolling
+$(document).ready(function () {
+    // Start fitVids
+    var $postContent = $(".post-full-content");
+    $postContent.fitVids();
+    // End fitVids
+
+    var progressBar = document.querySelector('progress');
+    var header = document.querySelector('.floating-header');
+    var title = document.querySelector('.post-full-title');
+
+    var lastScrollY = window.scrollY;
+    var lastWindowHeight = window.innerHeight;
+    var lastDocumentHeight = $(document).height();
+    var ticking = false;
+
+    function onScroll() {
+        lastScrollY = window.scrollY;
+        requestTick();
+    }
+
+    function onResize() {
+        lastWindowHeight = window.innerHeight;
+        lastDocumentHeight = $(document).height();
+        requestTick();
+    }
+
+    function requestTick() {
+        if (!ticking) {
+            requestAnimationFrame(update);
+        }
+        ticking = true;
+    }
+
+    function update() {
+        var trigger = title.getBoundingClientRect().top + window.scrollY;
+        var triggerOffset = title.offsetHeight + 35;
+        var progressMax = lastDocumentHeight - lastWindowHeight;
+
+        // show/hide floating header
+        if (lastScrollY >= trigger + triggerOffset) {
+            header.classList.add('floating-active');
+        } else {
+            header.classList.remove('floating-active');
+        }
+
+        progressBar.setAttribute('max', progressMax);
+        progressBar.setAttribute('value', lastScrollY);
+
+        ticking = false;
+    }
+
+    window.addEventListener('scroll', onScroll, {passive: true});
+    window.addEventListener('resize', onResize, false);
+
+    update();
+});
+</script>
+
+	
+
+	<!-- Ghost outputs important scripts and data with this tag - it should always be the very last thing before the closing body tag -->
+	<!-- ghost_foot -->
+</body>
+</html>
